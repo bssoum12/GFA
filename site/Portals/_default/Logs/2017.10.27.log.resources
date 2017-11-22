@@ -1,0 +1,25 @@
+2017-10-27 18:12:34.850+02:00 [vmi134697][D:5][T:17][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): The file '/Install/Install.aspx' does not exist.
+   at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2017-10-27 18:14:40.570+02:00 [vmi134697][D:6][T:17][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: The module has not been activated or there is an issue with the license. If you have bought the product check your licenses on <a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank">your licenses page on www.bring2mind.net</a> (log in using the account you received when you first bought the product). Use the details of your license to activate the module on <a href="[LICENSEURL]">the license page</a>.<br />If you are trying out the module then you need to activate this in TRIAL mode. Go to <a href="[LICENSEURL]">the license page</a>, select TRIAL and click activate. Note that activation is also described in the installation manual of the module.
+   à Bring2mind.DNN.Modules.DMX.Services.Licensing.LicenseController.CheckLicense()
+   à Bring2mind.DNN.Modules.DMX.Entities.Entries.EntriesController.AddEntry(EntryInfo& objEntry, Boolean resetLastVersionId)
+   à Bring2mind.DNN.Modules.DMX.Edits.EditEntryPB.FinishWizard()
+   à System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   à System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-10-27 18:14:40.585+02:00 [vmi134697][D:6][T:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=45&error=The+module+has+not+been+activated+or+there+is+an+issue+with+the+license.+If+you+have+bought+the+product+check+your+licenses+on+%3ca+href%3d%22http%3a%2f%2fwww.bring2mind.net%2fClients%2fMyLicenses%2ftabid%2f132%2fDefault.aspx%22+target%3d%22_blank%22%3eyour+licenses+page+on+www.bring2mind.net%3c%2fa%3e+(log+in+using+the+account+you+received+when+you+first+bought+the+product).+Use+the+details+of+your+license+to+activate+the+module+on+%3ca+href%3d%22%5bLICENSEURL%5d%22%3ethe+license+page%3c%2fa%3e.%3cbr+%2f%3eIf+you+are+trying+out+the+module+then+you+need+to+activate+this+in+TRIAL+mode.+Go+to+%3ca+href%3d%22%5bLICENSEURL%5d%22%3ethe+license+page%3c%2fa%3e%2c+select+TRIAL+and+click+activate.+Note+that+activation+is+also+described+in+the+installation+manual+of+the+module.&content=0
+System.Exception: The module has not been activated or there is an issue with the license. If you have bought the product check your licenses on <a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank">your licenses page on www.bring2mind.net</a> (log in using the account you received when you first bought the product). Use the details of your license to activate the module on <a href="[LICENSEURL]">the license page</a>.<br />If you are trying out the module then you need to activate this in TRIAL mode. Go to <a href="[LICENSEURL]">the license page</a>, select TRIAL and click activate. Note that activation is also described in the installation manual of the module.
+   à Bring2mind.DNN.Modules.DMX.Services.Licensing.LicenseController.CheckLicense()
+   à Bring2mind.DNN.Modules.DMX.Entities.Entries.EntriesController.AddEntry(EntryInfo& objEntry, Boolean resetLastVersionId)
+   à Bring2mind.DNN.Modules.DMX.Edits.EditEntryPB.FinishWizard()
+   à System.Web.UI.WebControls.LinkButton.OnClick(EventArgs e)
+   à System.Web.UI.WebControls.LinkButton.RaisePostBackEvent(String eventArgument)
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

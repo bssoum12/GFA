@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied.ErrorMessage">
+    <value xml:space="preserve">L'accès a été refusé.</value>
+  </data>
+  <data name="MultipleFolderMappingsWithSameSettings.ErrorMessage">
+    <value xml:space="preserve">Il y a un autre FolderMapping utilisant le même compte et conteneur. Choisissez un compte ou un conteneur différent.</value>
+  </data>
+  <data name="plUNCPath.Help">
+    <value xml:space="preserve">Entrer le chemin d'accès UNC.</value>
+  </data>
+  <data name="plUNCPath.Text">
+    <value xml:space="preserve">Chemin d'accès UNC</value>
+  </data>
+  <data name="RequireFullTrust.ErrorMessage">
+    <value xml:space="preserve">Le provider UNC requiert la confiance totale (full trust).</value>
+  </data>
+  <data name="valUNCPath.ErrorMessage">
+    <value xml:space="preserve">Le chemin d'accès UNC est requis</value>
+  </data>
+</root>

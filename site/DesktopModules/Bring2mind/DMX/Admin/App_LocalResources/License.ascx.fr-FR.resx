@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plAccount.Help">
+    <value>Votre identifiant de compte (l'adresse email qui a été utilisé avec votre achat à partir de Snowcovered)</value>
+  </data>
+  <data name="plInvoice.Text">
+    <value>Numéro de la facture</value>
+  </data>
+  <data name="plInvoice.Help">
+    <value>Le numéro de facture (qui vous est donné par Snowcovered)</value>
+  </data>
+  <data name="ControlTitle_license.Text">
+    <value>Informations sur la licence</value>
+  </data>
+  <data name="B2MLicensing.Text">
+    <value>Licences Bring2mind</value>
+  </data>
+  <data name="btnRequestActivation.Text">
+    <value>Demande d'activation (Web Service)</value>
+  </data>
+  <data name="btnRequestActivationWeb.Text">
+    <value>Demande d'activation (Post Web)</value>
+  </data>
+  <data name="plTrialLicense.Help">
+    <value>Cochez cette case pour demander une licence d'essai</value>
+  </data>
+  <data name="plTrialLicense.Text">
+    <value>Licence d'essai</value>
+  </data>
+  <data name="plStatus.Help">
+    <value>C'est le statut de la licence actuellement stockée</value>
+  </data>
+  <data name="plStatus.Text">
+    <value>Statut</value>
+  </data>
+  <data name="Required.Error">
+    <value>Obligatoires</value>
+  </data>
+  <data name="ControlTitle.Text">
+    <value>Etat des licences et activation</value>
+  </data>
+  <data name="plAccount.Text">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="Callback.Error">
+    <value>Une erreur est survenue lors de l'activation. Message: {0} ({1}).</value>
+  </data>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="cmdManual.Text">
+    <value>Activation manuelle</value>
+  </data>
+  <data name="ControlHelp.Text">
+    <value>C'est là que vous pouvez vérifier le statut de votre licence de Document Exchange. Le compte et la facture doivent correspondre à l'achat de ce module. les Licences temporaires comme une licence d'essai sont indiquées par le fait qu'elles peuvent expirer. Le champ "service jusqu'à" indique &lt;b&gt; la date jusqu'à laquelle les mises à niveau peuvent être installées &lt;/b&gt;. S'il vous plaît garder cela à l'esprit avant d'installer une nouvelle version. Le champ "portails maximum" indique le nombre maximum de portails qui sont autorisés pour l'utilisation de ce module sur cette installation, et non pas le nombre absolu de portails de l'installation actuelle. &lt;br /&gt; Vous pouvez essayer de contacter le serveur Bring2mind soit par un service web, via la demande Web HTTP, ou directement en parcourant le site. Les deux premières méthodes ne fonctionneront que si le serveur est connecté à Internet. Si non, vous allez avoir à copier l'ID du serveur qui est générée lorsque vous cliquez sur «Activation manuelle» et l'utiliser pour créer une clé d'activation &lt;br /&gt; Si vous avez des questions n'hésitez pas à nous contacter par le biais &lt;a href="mailto:info@bring2mind.net"&gt;info@bring2mind.net&lt;/a&gt;.</value>
+  </data>
+  <data name="lblCheckLicense.Text">
+    <value>Vérifiez vos licences sur &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt; votre page sur les licences www.bring2mind.net &lt;/a&gt;. Se connecter avec le compte que vous avez reçu lorsque vous avez acheté le produit.</value>
+  </data>
+  <data name="LicenseSave.Error">
+    <value>&lt;p class="NormalRed"&gt; La sauvegarde de la licence a échouée. L'erreur renvoyée est {0} (Trace {1}).&lt;br /&gt; S'il vous plaît assurez-vous que le fichier Portails / _default / dmxlicense.config n'est pas en lecture seule pour le process de travail (supprimer manuellement si nécessaire) et qu'il est possible d'écrire dans ce répertoire. &lt;/p&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plAccount.Text" xml:space="preserve">
+    <value>Email Address</value>
+  </data>
+  <data name="plAccount.Help" xml:space="preserve">
+    <value>Your account ID (the email address that was used with your purchase from Snowcovered)</value>
+  </data>
+  <data name="plInvoice.Text" xml:space="preserve">
+    <value>Invoice Number</value>
+  </data>
+  <data name="plInvoice.Help" xml:space="preserve">
+    <value>The invoice number (given to you by Snowcovered)</value>
+  </data>
+  <data name="plServerId.Text" xml:space="preserve">
+    <value>Server ID</value>
+  </data>
+  <data name="plServerId.Help" xml:space="preserve">
+    <value>The ID of this server</value>
+  </data>
+  <data name="plActivationKey.Text" xml:space="preserve">
+    <value>Activation Key</value>
+  </data>
+  <data name="plActivationKey.Help" xml:space="preserve">
+    <value>This is the key that has been sent to you by Bring2mind after your request</value>
+  </data>
+  <data name="ControlTitle_license.Text" xml:space="preserve">
+    <value>License Information</value>
+  </data>
+  <data name="B2MLicensing.Text" xml:space="preserve">
+    <value>Bring2mind Licensing</value>
+  </data>
+  <data name="Required.Error" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="btnManual.Text" xml:space="preserve">
+    <value>Manual Activation</value>
+  </data>
+  <data name="btnRequestActivation.Text" xml:space="preserve">
+    <value>Request Activation (Web Service)</value>
+  </data>
+  <data name="btnRequestActivationWeb.Text" xml:space="preserve">
+    <value>Request Activation (Web Post)</value>
+  </data>
+  <data name="cmdUpload.Text" xml:space="preserve">
+    <value>Submit Activation Key</value>
+  </data>
+  <data name="plTrialLicense.Help" xml:space="preserve">
+    <value>Check this to request a trial license</value>
+  </data>
+  <data name="plTrialLicense.Text" xml:space="preserve">
+    <value>Trial License</value>
+  </data>
+  <data name="ControlHelp.Text" xml:space="preserve">
+    <value>This is where you can verify the status of your license for Document Exchange. The account and invoice should correspond to the purchase of this module. Temporary licenses such as a trial license are indicated by the fact that they can expire. The 'service until' indicates &lt;b&gt;until which date upgrades can be installed&lt;/b&gt;. Please keep this in mind before installing a new version. The max portals indicates the maximum nr of portals that are allowed to use the module on this installation, not the absolute number of portals in the current installation.&lt;br /&gt;You can try to contact the Bring2mind server either through a web service, through and http web request, or by directly browsing to the website. The former 2 methods will only work if the server is connected to the Internet. If not you're going to have to copy the server ID that is generated when you click on 'manual activation' and use that to make an activation key.&lt;br /&gt;If you have any questions feel free to contact us through &lt;a href="mailto:info@bring2mind.net"&gt;info@bring2mind.net&lt;/a&gt;.</value>
+  </data>
+  <data name="ControlTitle.Text" xml:space="preserve">
+    <value>License Status and Activation</value>
+  </data>
+  <data name="plStatus.Help" xml:space="preserve">
+    <value>This is the status of the currently stored license</value>
+  </data>
+  <data name="plStatus.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="lblCheckLicense.Text" xml:space="preserve">
+    <value>Check your licenses on &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt;your licenses page on www.bring2mind.net&lt;/a&gt;. Log in using the account you received when you first bought the product.</value>
+  </data>
+  <data name="LicenseSave.Error" xml:space="preserve">
+    <value>&lt;p class="NormalRed"&gt;The license failed to save. The error returned was {0} (Trace {1}).&lt;br /&gt;Please make sure the file Portals/_default/dmxlicense.config is not readonly for the worker process (delete by hand if necessary) and that this directory can be written to.&lt;/p&gt;</value>
+  </data>
+  <data name="cmdReturn.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="DirectEntry.Help" xml:space="preserve">
+    <value>&lt;h2&gt;3. Go to Bring2mind site to get an activation key&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;Copy the generated Server ID from the text box above&lt;/li&gt;
+  &lt;li&gt;Click here to go to the Bring2mind site:&amp;nbsp;&lt;a
+ href="http://www.bring2mind.net/DesktopModules/Bring2mind/Licenses/CustomerDirectRequest.aspx"
+ class="dnnPrimaryAction" target="_blank"&gt;Go to Bring2mind for a key&lt;/a&gt;.
+This will bring up a new page. The following step assumes you have that
+page in front of you.&lt;/li&gt;
+  &lt;li&gt;Select Bring2Mind in Step 1&lt;/li&gt;
+  &lt;li&gt;Select Document Exchange in step 2&lt;/li&gt;
+  &lt;li&gt;Paste your Server ID into the&amp;nbsp;text box at Step 3&lt;/li&gt;
+  &lt;li&gt;Click the button "Generate Activation Key" (Step 4)&lt;/li&gt;
+  &lt;li&gt;Copy the new Activation Key displayed in the&amp;nbsp;text
+box at Step 5&lt;/li&gt;
+  &lt;li&gt;Go back to this DMX license page&lt;/li&gt;
+  &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Delete&lt;/span&gt;
+the current Activation Key &lt;span style="font-weight: bold;"&gt;and
+Paste&lt;/span&gt; in the New
+Activation Key&lt;/li&gt;
+  &lt;li&gt;Hit &lt;span style="font-weight: bold;"&gt;Submit
+Activation Key&lt;/span&gt; button&lt;/li&gt;
+  &lt;li&gt;You should see a message below the button indicating the
+status of your activation&amp;nbsp;request and license. The license is
+saved on disk as Portals/_default/DMXLicense.Config. Make sure this
+location can be written to and if there's any existing license file,
+please make sure it can be overwritten by ASP.NET.&lt;/li&gt;
+  &lt;li&gt;Lastly, click Return to go back to&amp;nbsp;the DMX module&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you experience difficulties please contact Bring2mind at &lt;a href="mailto:info@bring2mind.net"&gt;info@bring2mind.net&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="cmdGenerateServerKey.Text" xml:space="preserve">
+    <value>Generate Server Key</value>
+  </data>
+  <data name="Activate.Help" xml:space="preserve">
+    <value>4. Activate your DMX</value>
+  </data>
+  <data name="Details.Help" xml:space="preserve">
+    <value>1. Fill in details of license</value>
+  </data>
+  <data name="ServerKey.Help" xml:space="preserve">
+    <value>2. Generate the server key</value>
+  </data>
+</root>

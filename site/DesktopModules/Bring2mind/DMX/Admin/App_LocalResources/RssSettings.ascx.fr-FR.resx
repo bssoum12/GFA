@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="lblNoteModule.Text">
+    <value>Les réglages effectués ici s'appliquent uniquement à cette instance de module, et non pas toutes les instances DMX à travers le portail.</value>
+  </data>
+  <data name="plCategoryId.Help">
+    <value>Vous pouvez limiter à une seule catégorie</value>
+  </data>
+  <data name="plCategoryId.Text">
+    <value>Catégorie</value>
+  </data>
+  <data name="plEnabled.Help">
+    <value>Si désactivé, aucun flux RSS ne pourra être récupéré à partir de ce module</value>
+  </data>
+  <data name="plEnabled.Text">
+    <value>Activé</value>
+  </data>
+  <data name="plMaxAge.Help">
+    <value>Aucun ancien changement ne fera partie du flux.</value>
+  </data>
+  <data name="plMaxAge.Text">
+    <value>Ancienneté Maximum (en jours)</value>
+  </data>
+  <data name="plNumberOfItems.Help">
+    <value>Nombre d'articles à afficher</value>
+  </data>
+  <data name="plNumberOfItems.Text">
+    <value>Nombre d'articles</value>
+  </data>
+  <data name="plOnlyAnon.Help">
+    <value>Seules les informations concernant les documents publics seront dans le flux. Si désactivé l'utilisateur courant sera utilisé pour déterminer quels documents peuvent être dans le flux. REMARQUE: si ce flux doit être mis en cache quelque part, vous devriez activer cette fonctionnalité. Consultez la documentation pour plus de détails.</value>
+  </data>
+  <data name="plOnlyAnon.Text">
+    <value>Uniquement les documents publics</value>
+  </data>
+  <data name="plRowFilter.Help">
+    <value>Précisez votre propre filtre pour sélectionner le contenu DMX. La valeur par défaut est "Deleted=0 AND IsApproved=1 AND (Not EntryType LIKE '%Collection%')"</value>
+  </data>
+  <data name="plRowFilter.Text">
+    <value>Ligne de filtre</value>
+  </data>
+  <data name="plSortOrder.Help">
+    <value>Vous pouvez spécifier votre propre ordre de tri. L'ordre de tri par défaut est "LastModified DESC"</value>
+  </data>
+  <data name="plSortOrder.Text">
+    <value>Ordre de tri</value>
+  </data>
+  <data name="plShowIcon.Text">
+    <value>Afficher l'icône</value>
+  </data>
+  <data name="plDownloadLinks.Help">
+    <value>Les liens utilisés pour chaque élément peuvent être un lien de téléchargement (lancement direct d'un téléchargement lorsque vous cliquez dessus) ou un lien vers DMX où le document sera affiché.</value>
+  </data>
+  <data name="plDownloadLinks.Text">
+    <value>Liens de téléchargement</value>
+  </data>
+  <data name="ControlTitle_options.Text">
+    <value>Paramètres RSS Document Exchange</value>
+  </data>
+  <data name="NoCategory.Text">
+    <value>&lt;Ne Pas se limiter à une catégorie&gt;</value>
+  </data>
+  <data name="plShowIcon.Help">
+    <value>Si non actif, l'icône ne sera visible que pour les administrateurs. Notez que vous ne devez pas sélectionner 'module syndicat' dans les paramètres du module.</value>
+  </data>
+</root>

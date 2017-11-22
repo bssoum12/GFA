@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="host" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Upgrade DMX3 To DMX4">
+ <Description>This script will migrate DMX 3 data to DMX 4. It will reset permissions on DMX 3 data and migrate various text elements. Run this script after installing DMX 4 over a DMX 3 installation.</Description>
+ <Process>
+  <Run RunType="SQLTEST" Result="1" ErrorMessage="This database does not appear to be DMX 3 (any more). It is either new or already migrated. The Entries table is missing ViewRoles"><![CDATA[
+  SELECT COUNT(*) FROM syscolumns c LEFT JOIN sysobjects o ON c.id = o.id WHERE o.name = '{objectQualifier}DMX_Entries' AND c.name ='ViewRoles'
+  ]]></Run>
+  <Run RunType="SQLTEST" Result="1" ErrorMessage="This database does not appear to be DMX 3 (any more). It is either new or already migrated. The Entries table is missing EditRoles"><![CDATA[
+  SELECT COUNT(*) FROM syscolumns c LEFT JOIN sysobjects o ON c.id = o.id WHERE o.name = '{objectQualifier}DMX_Entries' AND c.name ='EditRoles'
+  ]]></Run>
+  <Run RunType="CODE" Command="RunDataUpgrade" Version="04.00.00">Bring2mind.DNN.Modules.DMX.Framework.ModuleController, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

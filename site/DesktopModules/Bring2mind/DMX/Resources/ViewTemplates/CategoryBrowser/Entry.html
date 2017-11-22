@@ -1,0 +1,32 @@
+<tr class="entryItem">
+ <td title="[entry:remarks]">
+  [entry:icon16html]
+ </td>
+ <td>
+  [if|2][entry:isfile][/if]
+  <a href="[dmxmodule:downloadurl]&EntryId=[entry:entryid]" title="[entry:remarks]">[entry:title]</a>
+  [endif|2]
+  [if|3][entry:iscollection][/if]
+  [entry:title]
+  [endif|3]
+  [if|4][entry:ishyperlink][/if]
+  <a href="[entry:entry]" title="[entry:remarks]">[entry:title]</a>
+  [endif|4]
+ </td>
+ <td>[entry:author]</td>
+ <td>[entry:lastmodified|g]</td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:entryid]&Command=Core_Download" class="disk_blue-png link" title="[resources:Command.Download]" style="display:[entry:isfile|block;none]">
+  </a>
+  <a href="[entry:entry]" target="_blank" class="dmxicon-16-hyperlink-gif link" title="[resources:Hyperlink.Text]" style="display:[entry:ishyperlink|block;none]">
+  </a>
+ </td>
+ [if|1][query:authenticated][/if]
+ <td style="display:[query:authenticated|block;none]">
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=subscribe&sel=[entry:entryid]" class="document_heart-png link" title="[resources:SubscribeX.Text]" style="display:[entry:issubscribed|none;block]">
+  </a>
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=unsubscribe&sel=[entry:entryid]" class="heart_broken-png link" title="[resources:UnSubscribeX.Text]" style="display:[entry:issubscribed|block;none]">
+  </a>
+ </td>
+ [endif|1]
+</tr>

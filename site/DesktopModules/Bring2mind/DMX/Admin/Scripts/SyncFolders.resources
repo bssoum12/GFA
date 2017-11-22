@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Synchronize all SyncFolders in Portal">
+ <Description>Synchronize all SyncFolders in the current portal starting 12 Months ago.</Description>
+ <Process>
+  <Run RunType="CODE" Command="SyncFolders" Months="-12">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

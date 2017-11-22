@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Collections.Text" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="Categories.Text" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Search.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="MySubscriptions.Text" xml:space="preserve">
+    <value>My Subscriptions</value>
+  </data>
+  <data name="UnknownOperation.Text" xml:space="preserve">
+    <value>Unknown operation</value>
+  </data>
+  <data name="UnknownAuthor.Text" xml:space="preserve">
+    <value>Unknown Author</value>
+  </data>
+  <data name="NotificationSent.Text" xml:space="preserve">
+    <value>&lt;br/&gt;A notification has been sent to the following email list:</value>
+  </data>
+  <data name="UnknownDeletedUser.Text" xml:space="preserve">
+    <value>unknown or deleted user</value>
+  </data>
+  <data name="Status.Text" xml:space="preserve">
+    <value>This version (nr [VersionNr]) created by [User] on [Date] at [Time].</value>
+  </data>
+  <data name="LastModification.Text" xml:space="preserve">
+    <value>Last modification: [Phrase] by [User] on [Date] at [Time]</value>
+  </data>
+  <data name="LastModificationQuick.Text" xml:space="preserve">
+    <value>Last Modified on [Date] at [Time].</value>
+  </data>
+  <data name="Collection.Text" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="Approved.Text" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="Yes.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="No.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Locked.Text" xml:space="preserve">
+    <value>Locked</value>
+  </data>
+  <data name="Private.Text" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="Deleted.Text" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="EditRoles.Text" xml:space="preserve">
+    <value>Roles that may edit</value>
+  </data>
+  <data name="CreatedOn.Text" xml:space="preserve">
+    <value>Created On</value>
+  </data>
+  <data name="CreatedBy.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="OriginalFilename.Text" xml:space="preserve">
+    <value>Original Filename</value>
+  </data>
+  <data name="Version.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Keywords.Text" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="Remarks.Text" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="UnknownUser.Text" xml:space="preserve">
+    <value>Unknown User</value>
+  </data>
+  <data name="LockedBy.Text" xml:space="preserve">
+    <value>Locked By</value>
+  </data>
+  <data name="LastVersion.Text" xml:space="preserve">
+    <value>Last Version</value>
+  </data>
+  <data name="Description.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="NoNotificationsSent.Text" xml:space="preserve">
+    <value>No notifications sent</value>
+  </data>
+  <data name="ViewRoles.Text" xml:space="preserve">
+    <value>Roles that can view</value>
+  </data>
+  <data name="SelectCommand.Text" xml:space="preserve">
+    <value>Select Command ...</value>
+  </data>
+  <data name="FolderUp.Button" xml:space="preserve">
+    <value>Folder Up</value>
+  </data>
+  <data name="NewFolder.Button" xml:space="preserve">
+    <value>New Folder</value>
+  </data>
+  <data name="NewItem.Button" xml:space="preserve">
+    <value>New Item</value>
+  </data>
+  <data name="Download.Button" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Copy.Button" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="Cut.Button" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="Paste.Button" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Delete.Button" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="HardDelete.Button" xml:space="preserve">
+    <value>Hard Delete</value>
+  </data>
+  <data name="Undelete.Button" xml:space="preserve">
+    <value>Undelete</value>
+  </data>
+  <data name="View.Button" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Edit.Button" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="RollBack.Button" xml:space="preserve">
+    <value>Roll Back</value>
+  </data>
+  <data name="Lock.Button" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="Unlock.Button" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="Approve.Button" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="Subscribe.Button" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="Unsubscribe.Button" xml:space="preserve">
+    <value>Unsubscribe</value>
+  </data>
+  <data name="RollBackConfirm.Text" xml:space="preserve">
+    <value>Do you wish to roll back to this version of the document?</value>
+  </data>
+  <data name="DeleteConfirm.Text" xml:space="preserve">
+    <value>Do you wish to delete this item/these items?</value>
+  </data>
+  <data name="HardDeleteConfirm.Text" xml:space="preserve">
+    <value>This operation cannot be undone!\nDo you wish to permanently delete this item/these items?</value>
+  </data>
+  <data name="Navbutton.Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Navbutton.Collections" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="Navbutton.MySubscriptions" xml:space="preserve">
+    <value>My Subscriptions</value>
+  </data>
+  <data name="Navbutton.Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Command.Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Command.Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Command.Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Command.New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Command.Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Command.ViewCategory" xml:space="preserve">
+    <value>View Category</value>
+  </data>
+  <data name="Command.ViewCollection" xml:space="preserve">
+    <value>View Folder</value>
+  </data>
+  <data name="Command.ViewSubscriptions" xml:space="preserve">
+    <value>View Subscriptions</value>
+  </data>
+  <data name="File.Adobe.Acrobat" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="File.Adobe.InDesign" xml:space="preserve">
+    <value>Indesign File</value>
+  </data>
+  <data name="File.Adobe.Photoshop" xml:space="preserve">
+    <value>Photoshop File</value>
+  </data>
+  <data name="File.Autocad.Dwg" xml:space="preserve">
+    <value>Autocad Drawing</value>
+  </data>
+  <data name="File.Avi" xml:space="preserve">
+    <value>Avi Movie</value>
+  </data>
+  <data name="File.Bmp" xml:space="preserve">
+    <value>Bmp Image</value>
+  </data>
+  <data name="File.Dxf" xml:space="preserve">
+    <value>Dxf Image</value>
+  </data>
+  <data name="File.Emf" xml:space="preserve">
+    <value>Emf Image</value>
+  </data>
+  <data name="File.Eps" xml:space="preserve">
+    <value>Eps Image</value>
+  </data>
+  <data name="File.Gif" xml:space="preserve">
+    <value>Gif Image</value>
+  </data>
+  <data name="File.Htm" xml:space="preserve">
+    <value>Html File</value>
+  </data>
+  <data name="File.Jpg" xml:space="preserve">
+    <value>Jpeg Image</value>
+  </data>
+  <data name="File.Microsoft.Excel" xml:space="preserve">
+    <value>Excel Document</value>
+  </data>
+  <data name="File.Microsoft.Infopath" xml:space="preserve">
+    <value>Infopath File</value>
+  </data>
+  <data name="File.Microsoft.Powerpoint" xml:space="preserve">
+    <value>Powerpoint Document</value>
+  </data>
+  <data name="File.Microsoft.Word" xml:space="preserve">
+    <value>Word Document</value>
+  </data>
+  <data name="File.Mpeg" xml:space="preserve">
+    <value>Mpeg Movie</value>
+  </data>
+  <data name="File.Png" xml:space="preserve">
+    <value>Png Image</value>
+  </data>
+  <data name="File.Quicktime" xml:space="preserve">
+    <value>Quicktime Movie</value>
+  </data>
+  <data name="File.Rar" xml:space="preserve">
+    <value>Rar File</value>
+  </data>
+  <data name="File.Rtf" xml:space="preserve">
+    <value>Rtf Document</value>
+  </data>
+  <data name="File.Svg" xml:space="preserve">
+    <value>Svg Image</value>
+  </data>
+  <data name="File.Targa" xml:space="preserve">
+    <value>Targa Image</value>
+  </data>
+  <data name="File.Text" xml:space="preserve">
+    <value>Text Document</value>
+  </data>
+  <data name="File.Tiff" xml:space="preserve">
+    <value>Tiff Image</value>
+  </data>
+  <data name="File.Ttf" xml:space="preserve">
+    <value>Ttf Font</value>
+  </data>
+  <data name="File.Unknown" xml:space="preserve">
+    <value>Unknown File</value>
+  </data>
+  <data name="File.Wav" xml:space="preserve">
+    <value>Wav File</value>
+  </data>
+  <data name="File.Wmf" xml:space="preserve">
+    <value>Wmf Image</value>
+  </data>
+  <data name="File.Zip" xml:space="preserve">
+    <value>Zip File</value>
+  </data>
+  <data name="Hyperlink.Text" xml:space="preserve">
+    <value>Hyperlink</value>
+  </data>
+  <data name="EntryEdit.Permission" xml:space="preserve">
+    <value>Edit Entry</value>
+  </data>
+  <data name="EntryView.Permission" xml:space="preserve">
+    <value>View Entry</value>
+  </data>
+  <data name="File.Menu" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Collection.Type" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="File.Type" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Hyperlink.Type" xml:space="preserve">
+    <value>Hyperlink</value>
+  </data>
+  <data name="APPROVE.Permission" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="EDIT.Permission" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="VIEW.Permission" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="SearchResults.Text" xml:space="preserve">
+    <value>Search Results</value>
+  </data>
+  <data name="DetailsPage.Details.Title" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="NonApprovedItems.Text" xml:space="preserve">
+    <value>Non-approved items</value>
+  </data>
+  <data name="Subscriptions.Text" xml:space="preserve">
+    <value>Subscribed Content</value>
+  </data>
+  <data name="NonApprovedOwnedItems.Text" xml:space="preserve">
+    <value>My unapproved items</value>
+  </data>
+  <data name="ADD.Permission" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="LicenseErrorHost.Text" xml:space="preserve">
+    <value>The module has not been activated or there is an issue with the license. If you have bought the product check your licenses on &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt;your licenses page on www.bring2mind.net&lt;/a&gt; (log in using the account you received when you first bought the product). Use the details of your license to activate the module on &lt;a href="[LICENSEURL]"&gt;the license page&lt;/a&gt;.&lt;br /&gt;If you are trying out the module then you need to activate this in TRIAL mode. Go to &lt;a href="[LICENSEURL]"&gt;the license page&lt;/a&gt;, select TRIAL and click activate. Note that activation is also described in the installation manual of the module.</value>
+  </data>
+  <data name="LicenseErrorUser.Text" xml:space="preserve">
+    <value>There appears to be a licensing issue. Please log in as host to correct this.</value>
+  </data>
+  <data name="LicenseExpired.Text" xml:space="preserve">
+    <value>Your license expired on {0:d}. Check your licenses on &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt;your licenses page on www.bring2mind.net&lt;/a&gt;. Log in using the account you received when you first bought the product.</value>
+  </data>
+  <data name="LicensePortalsExceeded.Text" xml:space="preserve">
+    <value>The number of portals for this license has been exceeded. It allows {0} portals to use DMX. Please remove DMX from at least one of the portals to get it working again or purchase an upgrade.</value>
+  </data>
+  <data name="ValidLocalHost.Text" xml:space="preserve">
+    <value>The module is fully active through localhost</value>
+  </data>
+  <data name="DMXRoot.Text" xml:space="preserve">
+    <value>&lt;DMX Root Folder&gt;</value>
+  </data>
+  <data name="Required.Error" xml:space="preserve">
+    <value>Required!</value>
+  </data>
+  <data name="author.Searchterm" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="contents.Searchterm" xml:space="preserve">
+    <value>Contents</value>
+  </data>
+  <data name="keywords.Searchterm" xml:space="preserve">
+    <value>Keywords</value>
+  </data>
+  <data name="originalfilename.Searchterm" xml:space="preserve">
+    <value>Original Filename</value>
+  </data>
+  <data name="remarks.Searchterm" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="title.Searchterm" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="version.Searchterm" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="LicenseActivated.Text" xml:space="preserve">
+    <value>This installation is activated.</value>
+  </data>
+  <data name="Number.Error" xml:space="preserve">
+    <value>Value must be a number</value>
+  </data>
+  <data name="WholeNumber.Error" xml:space="preserve">
+    <value>Value must be a whole number</value>
+  </data>
+  <data name="LicenseServiceExceeded.Text" xml:space="preserve">
+    <value>Your service period for this license has expired on {0:d}. Check your licenses on &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt;your licenses page on www.bring2mind.net&lt;/a&gt;. Log in using the account you received when you first bought the product.</value>
+  </data>
+  <data name="File.Xml" xml:space="preserve">
+    <value>XML File</value>
+  </data>
+  <data name="Regex.Error" xml:space="preserve">
+    <value>Your input did not meet requirements. Please recheck what you typed.</value>
+  </data>
+  <data name="File.Microsoft.ExcelX" xml:space="preserve">
+    <value>Excel Sheet</value>
+  </data>
+  <data name="File.Microsoft.PowerpointX" xml:space="preserve">
+    <value>Powerpoint Presentation</value>
+  </data>
+  <data name="File.Microsoft.WordX" xml:space="preserve">
+    <value>Word Document</value>
+  </data>
+  <data name="Expression.Error" xml:space="preserve">
+    <value>Illegal characters in string</value>
+  </data>
+  <data name="ResourceNotFound.Text" xml:space="preserve">
+    <value>Resource {0} not found in file {1}</value>
+  </data>
+  <data name="CORE_APPROVE.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;The following actions have taken place which require your approval:&lt;/p&gt;
+&lt;p&gt;[CORE_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVE.Subject" xml:space="preserve">
+    <value>There are documents waiting for approval</value>
+  </data>
+  <data name="CORE_APPROVE_RT1.RepeatTemplate" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+was [LogType:Phrase] by [Editor:Displayname] on [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_AUDIT.Body" xml:space="preserve">
+    <value>&lt;p&gt;The following action has taken place:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+was [LogType:Phrase] by [Editor:Displayname] on [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_AUDIT.Subject" xml:space="preserve">
+    <value>Document Audit Email</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Recipient:Displayname],&lt;/p&gt;&lt;p&gt;The following documents have been approved:&lt;br /&gt;
+&lt;p&gt;[CORE_EDITOR_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE.Subject" xml:space="preserve">
+    <value>Documents have been approved</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE_RT1.RepeatTemplate" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Recipient:Displayname],&lt;/p&gt;&lt;p&gt;The following documents have been approved by you:&lt;br /&gt;
+&lt;p&gt;[CORE_EDITOR_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE.Subject" xml:space="preserve">
+    <value>You have approved documents</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE_RT1.RepeatTemplate" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_SUBSCRIBER.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;The following actions have taken place on documents you are tracking:&lt;/p&gt;
+&lt;p&gt;[CORE_SUBSCRIBER_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_SUBSCRIBER_RT1.RepeatTemplate" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+was [LogType:Phrase] by [Editor:Displayname] on [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_SUBSCRIBER.Subject" xml:space="preserve">
+    <value>Document Changes Notification</value>
+  </data>
+  <data name="CORE_MAILME.Body" xml:space="preserve">
+    <value>&lt;p&gt;Dear [Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;You have requested the following document(s):&lt;/p&gt;
+&lt;p&gt;[CORE_MAILME_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Please find them attached.&lt;/p&gt;
+&lt;p&gt;Kind regards,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[DMX:Portalname]&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_MAILME.Subject" xml:space="preserve">
+    <value>Your requested documents</value>
+  </data>
+  <data name="CORE_MAILME_RT1.RepeatTemplate" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="FailedRecipient.Text" xml:space="preserve">
+    <value>The message was not delivered to the following address(es) - {0}</value>
+  </data>
+  <data name="SMTPConfigurationProblem.Text" xml:space="preserve">
+    <value>There is a problem with the configuration of your SMTP Server. Mail was not sent.</value>
+  </data>
+  <data name="Subscribe.Phrase" xml:space="preserve">
+    <value>Subscribed</value>
+  </data>
+  <data name="Add.Phrase" xml:space="preserve">
+    <value>added</value>
+  </data>
+  <data name="Approve.Phrase" xml:space="preserve">
+    <value>approved</value>
+  </data>
+  <data name="Delete.Phrase" xml:space="preserve">
+    <value>deleted</value>
+  </data>
+  <data name="Download.Phrase" xml:space="preserve">
+    <value>downloaded</value>
+  </data>
+  <data name="Edit.Phrase" xml:space="preserve">
+    <value>edited</value>
+  </data>
+  <data name="Import.Phrase" xml:space="preserve">
+    <value>imported</value>
+  </data>
+  <data name="Lock.Phrase" xml:space="preserve">
+    <value>locked</value>
+  </data>
+  <data name="MailMe.Phrase" xml:space="preserve">
+    <value>emailed</value>
+  </data>
+  <data name="Move.Phrase" xml:space="preserve">
+    <value>moved</value>
+  </data>
+  <data name="Rollback.Phrase" xml:space="preserve">
+    <value>rolled back</value>
+  </data>
+  <data name="Undelete.Phrase" xml:space="preserve">
+    <value>undeleted</value>
+  </data>
+  <data name="Unlock.Phrase" xml:space="preserve">
+    <value>unlocked</value>
+  </data>
+  <data name="Unsubscribe.Phrase" xml:space="preserve">
+    <value>unsubscribed</value>
+  </data>
+  <data name="Upload.Phrase" xml:space="preserve">
+    <value>uploaded</value>
+  </data>
+  <data name="DocumentExchange.Text" xml:space="preserve">
+    <value>Document Exchange</value>
+  </data>
+  <data name="Author.Text" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="Created.Text" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="FileSize.Text" xml:space="preserve">
+    <value>File Size</value>
+  </data>
+  <data name="IsApproved.Text" xml:space="preserve">
+    <value>Is Approved</value>
+  </data>
+  <data name="LastModified.Text" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="LockedUntil.Text" xml:space="preserve">
+    <value>Locked Until</value>
+  </data>
+  <data name="Log.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="Permissions.Text" xml:space="preserve">
+    <value>Permissions</value>
+  </data>
+  <data name="ThisItemDeleted.Text" xml:space="preserve">
+    <value>This item has been deleted</value>
+  </data>
+  <data name="ThisItemLocked.Text" xml:space="preserve">
+    <value>This item has been locked</value>
+  </data>
+  <data name="ThisItemNotApproved.Text" xml:space="preserve">
+    <value>This item has not yet been approved</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Versions.Text" xml:space="preserve">
+    <value>Versions</value>
+  </data>
+  <data name="File.Wma" xml:space="preserve">
+    <value>Windows Media Player audio file</value>
+  </data>
+  <data name="File.Wmv" xml:space="preserve">
+    <value>Windows Media Player Movie</value>
+  </data>
+  <data name="RecycleBin.Text" xml:space="preserve">
+    <value>Recycle Bin</value>
+  </data>
+  <data name="Collection.SyncFolder" xml:space="preserve">
+    <value>Synchronized Folder</value>
+  </data>
+  <data name="MustUploadFile.Error" xml:space="preserve">
+    <value>You must upload a file</value>
+  </data>
+  <data name="MustSpecifyUrl.Error" xml:space="preserve">
+    <value>You must specify a url</value>
+  </data>
+  <data name="Synchronize.Phrase" xml:space="preserve">
+    <value>synchronized</value>
+  </data>
+  <data name="SyncIn.Phrase" xml:space="preserve">
+    <value>synchronized and copied to document exchange</value>
+  </data>
+  <data name="SyncOut.Phrase" xml:space="preserve">
+    <value>synchronized and copied to disk</value>
+  </data>
+  <data name="ParentChildMove.Error" xml:space="preserve">
+    <value>You are trying to move an item into a child of itself.</value>
+  </data>
+  <data name="SyncFolder.Text" xml:space="preserve">
+    <value>Synchronized Folder</value>
+  </data>
+  <data name="ItemLockedMove.Error" xml:space="preserve">
+    <value>Cannot move item. The item is locked.</value>
+  </data>
+  <data name="NoEditMove.Error" xml:space="preserve">
+    <value>Cannot move item. No edit permission on item.</value>
+  </data>
+  <data name="NoParentAddMove.Error" xml:space="preserve">
+    <value>Move not permitted. No add permission on new parent.</value>
+  </data>
+  <data name="Default.Loading" xml:space="preserve">
+    <value>&lt;table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0"&gt;
+&lt;tr&gt;&lt;td align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="{0}DesktopModules/Bring2mind/DMX/images/CA/spinner.gif" width="16" height="16" border="0"&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ViewDialog.Content" xml:space="preserve">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%"&gt;
+ &lt;tr&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/left.png');filter:alpha(opacity=60);" width="7"&gt;&lt;/td&gt;
+  &lt;td id="dlgViewContentCell" style="vertical-align:top;"&gt;
+   &lt;div id="dlgViewContent" style="overflow:auto;width:{2}px;height:{3}px;"&gt;
+{1}
+  &lt;/div&gt;
+  &lt;/td&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/right.png');filter:alpha(opacity=60);" width="7"&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="vw-con-l"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="vw-con-r"&gt;&amp;nbsp;&lt;/div&gt;</value>
+  </data>
+  <data name="ViewDialog.Footer" xml:space="preserve">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%" style="filter:alpha(opacity=80);"&gt;
+ &lt;tr&gt;
+  &lt;td width="9" class="ca-dialog-bottom-left-png"&gt;&lt;/td&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/bottom-mid.png');"&gt;&lt;div style="height:7px;overflow:hidden;"&gt;&amp;nbsp;&lt;/div&gt;&lt;/td&gt;
+  &lt;td width="9" class="ca-dialog-bottom-right-png"&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="ViewDialog.Header" xml:space="preserve">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%" style="filter:alpha(opacity=60);" height="35"&gt;
+ &lt;tr&gt;
+  &lt;td width="9" height="35" class="ca-dialog-top-left-png"&gt;&lt;/td&gt;
+  &lt;td height="35" style="background-image:url('{1}DesktopModules/Bring2mind/DMX/images/ca/dialog/top-mid.png');height:35px !important;" valign="middle"&gt;&lt;div style="color:White;font-size:15px;font-family:Arial;font-weight:bold;padding:8px;"&gt;{2}&lt;/div&gt;&lt;/td&gt;
+  &lt;td width="40" height="35" style="background-image:url('{1}DesktopModules/Bring2mind/DMX/images/ca/dialog/top-mid.png');height:35px !important;" valign="middle"&gt;
+   &lt;div class="ca-dialog-maximize-png" style="cursor:default;padding-top:4px;margin-top:4px;" onmousedown="this.className='ca-dialog-maximize-down-png';" onmouseup="this.className='ca-dialog-maximize-hover-png';" onclick="DialogMaximize('{0}');" onmouseover="this.className='ca-dialog-maximize-hover-png';" onmouseout="this.className='ca-dialog-maximize-png';" alt="Maximize" /&gt;
+  &lt;/td&gt;
+  &lt;td width="40" height="35" valign="top" class="ca-dialog-top-right-png"&gt;
+   &lt;div class="ca-dialog-close-png" style="cursor:default;padding-top:4px;margin-top:4px;" onmousedown="this.className='ca-dialog-close-down-png';" onmouseup="this.className='ca-dialog-close-hover-png';" onclick="{0}.Close();{0}.Dispose();" onmouseover="this.className='ca-dialog-close-hover-png';" onmouseout="this.className='ca-dialog-close-png';" alt="Close" /&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="ViewDialog.HeightOffset" xml:space="preserve">
+    <value>42</value>
+  </data>
+  <data name="ViewDialog.WidthOffset" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="DOCADMIN.Permission" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="WEBDAV.Permission" xml:space="preserve">
+    <value>WebDAV</value>
+  </data>
+  <data name="MAILING.Permission" xml:space="preserve">
+    <value>Mailing</value>
+  </data>
+  <data name="pageguide_close_value.Text" xml:space="preserve">
+    <value>&lt;a title="Close Guide" class="tlypageguide_close" href="#"&gt;close&lt;/a&gt;&lt;span&gt;&lt;/span&gt;&lt;div&gt;&lt;/div&gt;&lt;a title="Next" class="tlypageguide_back" href="#"&gt;Previous&lt;/a&gt;&lt;a title="Next" class="tlypageguide_fwd" href="#"&gt;Next&lt;/a&gt;</value>
+  </data>
+  <data name="pageguide_toggle_value.Text" xml:space="preserve">
+    <value>&lt;div title="Launch Page Guide" class="tlypageguide_toggle" style="right: -120px;"&gt;page guide&lt;div&gt;&lt;span&gt;Launch Page Guide&lt;/span&gt;&lt;/div&gt;&lt;a title="close guide" href="javascript:void(0);"&gt;close guide &amp;raquo;&lt;/a&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="And.Text" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="Or.Text" xml:space="preserve">
+    <value>or</value>
+  </data>
+  <data name="CannotOverwrite.Error" xml:space="preserve">
+    <value>You cannot overwrite '{0}'</value>
+  </data>
+</root>

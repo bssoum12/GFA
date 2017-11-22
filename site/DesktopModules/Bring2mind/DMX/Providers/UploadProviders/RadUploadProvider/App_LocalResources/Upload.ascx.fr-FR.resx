@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Progress.CancelButton">
+    <value>Annuler</value>
+  </data>
+  <data name="Progress.CurrentFileName">
+    <value>Téléchargement de fichier:</value>
+  </data>
+  <data name="Progress.TimeElapsed">
+    <value>Temps écoulé:</value>
+  </data>
+  <data name="Progress.TimeEstimated">
+    <value>Temps estimé:</value>
+  </data>
+  <data name="Progress.Total">
+    <value>Total</value>
+  </data>
+  <data name="Progress.TotalFiles">
+    <value>Total des fichiers:</value>
+  </data>
+  <data name="Progress.TransferSpeed">
+    <value>Vitesse:</value>
+  </data>
+  <data name="Progress.Uploaded">
+    <value>Téléchargé</value>
+  </data>
+  <data name="Progress.UploadedFiles">
+    <value>Fichiers envoyés:</value>
+  </data>
+  <data name="Upload.Add">
+    <value>Ajouter</value>
+  </data>
+  <data name="Upload.Clear">
+    <value>Effacer</value>
+  </data>
+  <data name="Upload.Delete">
+    <value>Supprimer</value>
+  </data>
+  <data name="Upload.Remove">
+    <value>Retirer</value>
+  </data>
+  <data name="Upload.Select">
+    <value>Sélectionnez</value>
+  </data>
+</root>

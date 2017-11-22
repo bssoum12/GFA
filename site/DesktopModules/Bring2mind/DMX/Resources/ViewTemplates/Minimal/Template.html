@@ -1,0 +1,25 @@
+<div class="title">
+ <div title="[entry:remarks]" class="icon" style="float:left">
+  [entry:thumbnailoricon32]
+ </div>
+ <div style="float:none" class="details">
+  <div class="link">[entry:title]</div>
+ </div>
+ <div style="float:right;padding-right:30px;display:[entry:iscollection|none;inline];">
+  <a href="[dmxmodule:url]EntryId=[entry:entryid]&Command=Core_Download" title="[entry:remarks]">
+   <img src="[dmxmodule:imageurl]/32/diskette_32.png" alt="[resources:Download.Button]" border="0" />
+  </a>
+ </div>
+</div>
+
+<div class="thumbnails">
+[subtemplate|BreadCrumb.html|breadcrumbs]
+</div>
+
+<div class="NormalRed" style="display:[entry:isdeleted|block;none];width:100%;text-align:center;padding:10px;">[resources:ThisItemDeleted.Text]</div>
+
+<p>[entry:remarks]</p>
+
+[subtemplate|Entry.html|entrylist|pagesize=-1]
+[subtemplate|Versions.html|entry:isfile|true]
+

@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plVersions.Text">
+    <value>Nombre de versions à conserver par défaut</value>
+  </data>
+  <data name="plVersions.Help">
+    <value>Vous pouvez définir le nombre de versions du document qui sera conservé sur le disque dur pour chaque document. C'est la valeur par défaut. Les versions précédentes seront physiquement supprimés.</value>
+  </data>
+  <data name="lblVersions.Text">
+    <value>(-1 = Conserver toutes les versions)</value>
+  </data>
+  <data name="valWholeNumber.Errormessage">
+    <value>Pas un nombre valide (entier)!</value>
+  </data>
+  <data name="valRequired.Errormessage">
+    <value>Obligatoires!</value>
+  </data>
+  <data name="lblNotePortal.Text">
+    <value>Remarque: ces paramètres s'appliquent à tous les modules Document Exchange de ce portail</value>
+  </data>
+  <data name="plPermissionsOnlyByAdmin.Text">
+    <value>Autorisations exclusives par Administrateur</value>
+  </data>
+  <data name="plPermissionsOnlyByAdmin.Help">
+    <value>Si activé, les autorisations sur les éléments seront héritées automatiquement de leur parent et ne pourront pas être définies par les utilisateurs réguliers / éditeurs du système.</value>
+  </data>
+  <data name="lock12hours.Text">
+    <value>12 Heures</value>
+  </data>
+  <data name="lock1hour.Text">
+    <value>1 heure</value>
+  </data>
+  <data name="lock1week.Text">
+    <value>1 semaine</value>
+  </data>
+  <data name="lock20mins.Text">
+    <value>20 Minutes</value>
+  </data>
+  <data name="lock24hours.Text">
+    <value>24 Heures</value>
+  </data>
+  <data name="lock2days.Text">
+    <value>2 Jours</value>
+  </data>
+  <data name="lock4hours.Text">
+    <value>4 Heures</value>
+  </data>
+  <data name="plLockDuration.Help">
+    <value>Spécifiez combien de temps un blocage doit demeurer sur un document lorsqu'il est verrouillé par l'interface web.</value>
+  </data>
+  <data name="plLockDuration.Text">
+    <value> Durée Verrouillage</value>
+  </data>
+  <data name="plDefaultDMX.Help">
+    <value>Indiquez l'emplacement où les utilisateurs doivent être dirigés pour visualiser le contenu de leurs notifications.</value>
+  </data>
+  <data name="plDefaultDMX.Text">
+    <value>module DMX par défaut</value>
+  </data>
+  <data name="plEnableWebDAV.Help">
+    <value>Si cette option est dé-sélectionnée toutes les fonctionnalités WebDAV seront indisponibles.</value>
+  </data>
+  <data name="plEnableWebDAV.Text">
+    <value>Activer WebDAV</value>
+  </data>
+  <data name="ExternalLocationAccess.Errormessage">
+    <value>Le chemin ne peut pas être consulté. S'il vous plaît vérifiez que le processus de travail a une autorisation d'accès complet à ce chemin.</value>
+  </data>
+  <data name="ExternalLocationTrust.Errormessage">
+    <value>Vous n'avez pas suffisamment d'autorisations IIS (niveau de confiance) pour effectuer cette opération.</value>
+  </data>
+  <data name="plWebDavHardDelete.Help">
+    <value>Si activé, les suppressions via WebDAV seront toujours traitées comme des suppressions complètes. Cela signifie que le document ne sera plus récupérable après suppression. Sinon, l'effacement signifie que le document est simplement marqué comme supprimé mais il peut être récupérés par un administrateur via l'interface web. Lors de l'effacement, le nom du fichier sera toujours reconnu par WebDAV et la tentative d'ajouter un nouveau fichier sous le même nom fera restaurer l'ancien.</value>
+  </data>
+  <data name="plWebDavHardDelete.Text">
+    <value>Suppression complète via WebDAV</value>
+  </data>
+  <data name="dshConfiguration.Text">
+    <value>Configuration (Niveau Host uniquement)</value>
+  </data>
+  <data name="plDebug.Help">
+    <value>Commutateur de l'installation en mode débogage</value>
+  </data>
+  <data name="plDebug.Text">
+    <value>mode débogage</value>
+  </data>
+  <data name="dshWebDAV.Text">
+    <value>Paramètres WebDAV</value>
+  </data>
+  <data name="plWebDAVPermissions.Help">
+    <value>Spécifier les rôles qui peuvent utiliser WebDAV avec DMX</value>
+  </data>
+  <data name="plWebDAVPermissions.Text">
+    <value>Autorisations WebDAV</value>
+  </data>
+  <data name="SimpleAllow.Permission">
+    <value>Autoriser</value>
+  </data>
+  <data name="plRemarksAsHtml.Help">
+    <value>Si activé, l'éditeur de champ remarques sera présenté avec des fonctionnalité étendue et les  remarques seront stockées sous forme Html</value>
+  </data>
+  <data name="plRemarksAsHtml.Text">
+    <value>Remarques en html</value>
+  </data>
+  <data name="plShowEarlyFinish.Help">
+    <value>Si activé, le bouton 'terminer' s'affichera sur chaque écran de l'Édition (ou 'nouvel enregistrement') de l'assistant</value>
+  </data>
+  <data name="plShowEarlyFinish.Text">
+    <value>Afficher "Terminer intermédiaire" en Edition</value>
+  </data>
+  <data name="plAuditEmail.Help">
+    <value>Si activé, un courriel sera adressé en fonction de la matrice des notifications à cette adresse email</value>
+  </data>
+  <data name="plAuditEmail.Text">
+    <value>Email de vérification</value>
+  </data>
+  <data name="GetTranslations.Text">
+    <value>Obtenez les Packs langues pour Document Exchange</value>
+  </data>
+  <data name="plQuickSearchTitleOnly.Help">
+    <value>Si activé, les recherches rapides porteront uniquement sur les titres des documents. Si non, elle porteront sur les titres, les mots clés et le contenu des documents.</value>
+  </data>
+  <data name="plQuickSearchTitleOnly.Text">
+    <value>Recherche rapide sur titre uniquement</value>
+  </data>
+  <data name="ControlTitle_options.Text">
+    <value>Options de Document Exchange</value>
+  </data>
+  <data name="plDefaultPortalAlias.Help">
+    <value>Lorsque les utilisateurs recevrons des courriels, cet alias portail sera utilisé.</value>
+  </data>
+  <data name="plDefaultPortalAlias.Text">
+    <value>Alias ​​portail par défaut</value>
+  </data>
+  <data name="plAllowAdminSyncFolder.Help">
+    <value>Si activé, l'administrateur de ce portail pourra ajouter des dossiers à synchroniser accessibles par des chemins externes UNC (en dehors du répertoire racine)
+</value>
+  </data>
+  <data name="plAllowAdminSyncFolder.Text">
+    <value>Autoriser Synchonisation externe</value>
+  </data>
+  <data name="plAllowEmailMe.Help">
+    <value>Si activé, les utilisateurs seront autorisés à envoyer eux-mêmes un fichier (ou plusieurs fichiers) par email.</value>
+  </data>
+  <data name="plAllowEmailMe.Text">
+    <value>Autoriser l'envoi par Email</value>
+  </data>
+  <data name="plUseGraveYard.Help">
+    <value>Si activé, tous les éléments complètement supprimés seront copiés dans un répertoire spécial (Portals/[id]/DMX/Graveyard) afin qu'ils puissent être récupérés si nécessaire.</value>
+  </data>
+  <data name="plUseGraveYard.Text">
+    <value>Utiliser le Cimetière</value>
+  </data>
+  <data name="Other.Text">
+    <value>&lt;Autres. Sélectionnez ci-dessous. &gt;</value>
+  </data>
+  <data name="dshThumbnails.Text">
+    <value>Paramètres des vignettes</value>
+  </data>
+  <data name="lblHeight.Text">
+    <value>H</value>
+  </data>
+  <data name="lblWidth.Text">
+    <value>L</value>
+  </data>
+  <data name="plEnableCustomThumbnails.Help">
+    <value>Si activé, les utilisateurs peuvent télécharger leurs propres vignettes pour un fichier</value>
+  </data>
+  <data name="plEnableCustomThumbnails.Text">
+    <value>Activer les vignettes personnalisées</value>
+  </data>
+  <data name="plEnableThumbnails.Help">
+    <value>Si activé, les vignettes sélectionnées seront générées si possible</value>
+  </data>
+  <data name="plEnableThumbnails.Text">
+    <value>Activer les vignettes</value>
+  </data>
+  <data name="plSecureThumbnails.Help">
+    <value>Si activé, les vignettes seront stockées dans DMX. Notez que cela affectera les performances. Sinon, la vignette est stockée comme un fichier image dans le répertoire des vignettes de DMX</value>
+  </data>
+  <data name="plSecureThumbnails.Text">
+    <value>Vignettes sécurisé</value>
+  </data>
+  <data name="plThumbnailSize.Help">
+    <value>Indiquez la taille (en pixels) de la boîte dans laquelle la vignette doit être positionnée</value>
+  </data>
+  <data name="plThumbnailSize.Text">
+    <value>Taille des vignettes</value>
+  </data>
+  <data name="plThumbnailType.Help">
+    <value>Précisez comment la vignette doit remplir la taille de la boîte: "Rétrécir" signifie la redimensionner pour qu'elle s'adapte aux dimensions de la boîte tout en conservant les proportions (ce qui signifie qu'il y a des parties de la boîte qui peuvent ne pas être remplie par la vignette). «Recadrer» signifie qu'elle est redimensionnée (en conservant les proportions d'aspect) mais il faudra remplir la boîte (ce qui signifie que les parties seront coupés). «Remplir» signifie que l'image est redimensionnée et étirée pour remplir la boîte (l'image est déformée).</value>
+  </data>
+  <data name="plThumbnailType.Text">
+    <value>Type de Vignette</value>
+  </data>
+  <data name="TNCrop.Text">
+    <value>Recadrer</value>
+  </data>
+  <data name="TNFill.Text">
+    <value>Remplir</value>
+  </data>
+  <data name="TNShrink.Text">
+    <value>Rétrécir</value>
+  </data>
+  <data name="plThumbnailFormat.Help">
+    <value>Sélectionnez le type de fichier pour enregistrer la vignette</value>
+  </data>
+  <data name="plThumbnailFormat.Text">
+    <value>Format Vignette</value>
+  </data>
+  <data name="dshPermissions.Text">
+    <value>Autorisations de l'application</value>
+  </data>
+  <data name="chkMailMethodAttachment.Text">
+    <value>Pièce jointe</value>
+  </data>
+  <data name="chkMailMethodLink.Text">
+    <value>Lien</value>
+  </data>
+  <data name="dshMailing.Text">
+    <value>Options d'envoi</value>
+  </data>
+  <data name="plMethods.Help">
+    <value>Sélectionnez la manière dont les utilisateurs peuvent envoyer ces documents. En tant que "pièce jointe" signifie que les destinataires reçoivent un e-mail (de grande taille) avec les documents réellement attachés. En tant que "lien" signifie que les bénéficiaires recevront des liens ajoutés au bas de l'email ce qui leur permetra de télécharger le document directement à partir de DMX en contournant toute sécurité.</value>
+  </data>
+  <data name="plMethods.Text">
+    <value>Méthodes d'envoie</value>
+  </data>
+  <data name="chkShowFree.Text">
+    <value>Liste d'email en texte libre</value>
+  </data>
+  <data name="chkShowRoles.Text">
+    <value>Rôles</value>
+  </data>
+  <data name="chkShowUsers.Text">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="optDays.Text">
+    <value>Jours</value>
+  </data>
+  <data name="optMonths.Text">
+    <value>Mois</value>
+  </data>
+  <data name="optWeeks.Text">
+    <value>Semaines</value>
+  </data>
+  <data name="optYears.Text">
+    <value>Années</value>
+  </data>
+  <data name="plDownloads.Help">
+    <value>Définir un nombre de téléchargements par défaut pendant lequel un lien restera actif</value>
+  </data>
+  <data name="plDownloads.Text">
+    <value>Compteur de téléchargement par défaut</value>
+  </data>
+  <data name="plDuration.Help">
+    <value>Définit la durée par défaut pendant laquelle un lien restera actif </value>
+  </data>
+  <data name="plDuration.Text">
+    <value>Durée lien par défaut</value>
+  </data>
+  <data name="plDurationMeasure.Help">
+    <value>Définit la mesure de durée par défaut</value>
+  </data>
+  <data name="plDurationMeasure.Text">
+    <value>Mesure de durée</value>
+  </data>
+  <data name="plEnableMailing.Help">
+    <value>Si activé,la logique de diffusion est activée. Les utilisateurs autorisés peuvent envoyer des documents qu'ils ont accès à quelqu'un d'autre sur la base des paramètres ci-dessous.</value>
+  </data>
+  <data name="plEnableMailing.Text">
+    <value>Activer</value>
+  </data>
+  <data name="plShowMailRecipients.Help">
+    <value>Sélectionnez la manière dont les utilisateurs peuvent sélectionner les destinataires des documents à envoyér. Notez que la sélection des utilisateurs ou des rôles permet aux utilisateurs de voir une liste de ces derniers. la sélection libre permet d'envoyer un e-mail à toute adresse de courriel. &lt;b&gt;NB: Veillez à en sélectionner au moins 1 sinon les utilisateurs ne seront pas en mesure d'envoyer quoi que ce soit.&lt;/b&gt;</value>
+  </data>
+  <data name="plShowMailRecipients.Text">
+    <value>Voir</value>
+  </data>
+  <data name="plUserCanChangeAvailability.Help">
+    <value>Si activé, les utilisateurs peuvent changer la durée de vie d'un lien d'accès direct généré</value>
+  </data>
+  <data name="plUserCanChangeAvailability.Text">
+    <value>L'utilisateur peut modifier la disponibilité</value>
+  </data>
+  <data name="plMailUseAdminSender.Help">
+    <value>Si activé, les courriels seront envoyés en utilisant l'administrateur du site comme expéditeur (vérifier les paramètres de site pour contrôle quel est ce compte). Sinon, l'utilisateur qui envoie le courriel sera l' expéditeur.</value>
+  </data>
+  <data name="plMailUseAdminSender.Text">
+    <value>Utilisez Admin comme expéditeur</value>
+  </data>
+  <data name="dshPermissionPermissions.Text">
+    <value>Permission Modifier les autorisations</value>
+  </data>
+</root>

@@ -1,0 +1,28 @@
+IF EXISTS (select * from dbo.sysobjects where id = object_id(N'{databaseOwner}{objectQualifier}DMX_DatabaseUsage') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DatabaseUsage
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_DatabaseUsage
+AS
+
+SELECT
+ o.name,
+ SUM(s.reserved_page_count) * 8.0 / 1024 reserved,
+ SUM(s.row_count) [rows]
+FROM
+ sys.dm_db_partition_stats s
+ INNER JOIN sys.objects o ON s.object_id = o.object_id
+GROUP BY o.name
+ORDER BY reserved DESC
+GO
+
+UPDATE {databaseOwner}{objectQualifier}SCHEDULE
+SET TypeFullName='Bring2mind.DNN.Modules.DMX.Services.SyncFolders.SyncFolderTask, BRING2MIND.DNN.MODULES.DMX.CORE'
+WHERE TypeFullName='Bring2mind.DNN.Modules.DMX.Framework.SyncFolderTask, BRING2MIND.DNN.MODULES.DMX.CORE'
+GO
+
+UPDATE {databaseOwner}{objectQualifier}SCHEDULE
+SET TypeFullName='Bring2mind.DNN.Modules.DMX.Framework.Maintenance, BRING2MIND.DNN.MODULES.DMX.CORE'
+WHERE TypeFullName='Bring2mind.DNN.Modules.DMX.Services.Schedule.Maintenance, BRING2MIND.DNN.MODULES.DMX.CORE'
+GO
+

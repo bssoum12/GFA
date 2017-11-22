@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+ <xsl:param name="IsDocAdmin" />
+ <xsl:param name="IsAdmin" />
+ <xsl:param name="AppPerms" />
+ <xsl:template match="Request">
+    <SiteMap>
+      <item Value="Search4">
+       <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Search4.Text']/value"/></xsl:attribute>
+       <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Search4.ToolTip']/value"/></xsl:attribute>
+       <xsl:attribute name="ClientSideCommand">clearSearch();Dialog2.Show();</xsl:attribute>
+      </item>
+    </SiteMap>
+ </xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Empty 'Graveyard'">
+ <Description>Empties all content from the 'graveyard'. This means that any hard deleted documents will be deleted from the hard disk.</Description>
+ <Process>
+  <Run RunType="CODE" Command="EmptyGraveyard">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

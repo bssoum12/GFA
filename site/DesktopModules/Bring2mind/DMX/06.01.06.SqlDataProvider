@@ -1,0 +1,84 @@
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+SET [Entry]=SUBSTRING([Entry],2,1999)
+WHERE [Entry] LIKE '\file_%'
+ AND StorageProviderID=1
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAttribute
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAttribute
+ @AttributeId INT
+AS
+DELETE FROM {databaseOwner}{objectQualifier}DMX_EntryAttributes
+WHERE
+ [AttributeId] = @AttributeId;
+DELETE FROM {databaseOwner}{objectQualifier}DMX_Attributes
+WHERE
+ [AttributeId] = @AttributeId
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogByTime') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogByTime
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogByTime
+ @PortalId Int,
+ @StartTime DATETIME,
+ @EndTime DATETIME
+AS
+SELECT
+ [Action],
+ MAX([Datime]) AS [Datime],
+ EntryId, 
+ MAX(LogId) AS LogId,
+ UserId, 
+ PortalId, 
+ LogTypeKey, 
+ ResourceFile, 
+ AttachFile, 
+ CustomSend, 
+ NotifyApprovers, 
+ NotifyAudit, 
+ NotifyEditors, 
+ NotifyOwner, 
+ NotifySelf, 
+ NotifySubscribers, 
+ Username, 
+ DisplayName
+FROM
+ (SELECT *
+  FROM {databaseOwner}{objectQualifier}vw_DMX_Log
+  WHERE
+   PortalId = @PortalId
+   AND Datime >= @StartTime
+   AND Datime < @EndTime) x
+GROUP BY
+ [Action],
+ EntryId, 
+ UserId, 
+ PortalId, 
+ LogTypeKey, 
+ ResourceFile, 
+ AttachFile, 
+ CustomSend, 
+ NotifyApprovers, 
+ NotifyAudit, 
+ NotifyEditors, 
+ NotifyOwner, 
+ NotifySelf, 
+ NotifySubscribers, 
+ Username, 
+ DisplayName
+ 
+GO
+

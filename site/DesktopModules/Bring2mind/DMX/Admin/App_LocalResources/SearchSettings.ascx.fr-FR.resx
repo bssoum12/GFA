@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plSearchProvider.Help">
+    <value>Sélectionnez le moteur de recherche à utiliser pour ce portail</value>
+  </data>
+  <data name="plSearchProvider.Text">
+    <value>Moteur de recherche</value>
+  </data>
+  <data name="ControlTitle_options.Text">
+    <value>Réglages de la recherche dans Document Exchange</value>
+  </data>
+  <data name="WholeNumber.Error">
+    <value>Ceci doit être un entier</value>
+  </data>
+  <data name="plMaxSearchResults.Text">
+    <value>Nombre Maximum de résultats recherchés</value>
+  </data>
+  <data name="plMaxSearchResults.Help">
+    <value>Le nombre maximum d'enregistrements à retrouver à partir du moteur de recherche pendant la recherche. Ce n'est &lt;b&gt; PAS LE MEME &lt;/b&gt; que le nombre d'enregistrements que l'utilisateur voit dans les résultats de recherche. Ce dernier correspond aux enregistrements retournés par le fournisseur de rechercher limité par les permissions de visualisation par utilisateur. Utilisez ce paramètre pour protéger le système contre les surcharges lors de la recherche de contenu.</value>
+  </data>
+</root>

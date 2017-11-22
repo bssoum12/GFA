@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ControlTitle_categories.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="ModuleHelp.Text">
+    <value>Utilisez cette option pour ajouter, déplacer ou supprimer des catégories</value>
+  </data>
+  <data name="btnAddNode.Text">
+    <value>Ajouter une catégorie</value>
+  </data>
+  <data name="btnCollapseAll.Text">
+    <value>Réduire tout</value>
+  </data>
+  <data name="btnDeleteNode.Text">
+    <value>Supprimer</value>
+  </data>
+  <data name="btnExpandAll.Text">
+    <value>Développer tout</value>
+  </data>
+  <data name="CatDeleteConfirm.Text">
+    <value>Souhaitez-vous supprimer la catégorie "{0}"?</value>
+  </data>
+  <data name="NewCategory.Text">
+    <value>Nouvelle catégorie</value>
+  </data>
+</root>

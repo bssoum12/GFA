@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="cmdSave.Text">
+    <value>Enregistrer les modifications</value>
+  </data>
+  <data name="confirmSave.Text">
+    <value>Ne vous souhaitez enregistrer vos modifications?</value>
+  </data>
+  <data name="plContent.Help">
+    <value>Modifier le contenu du fichier sélectionné</value>
+  </data>
+  <data name="plContent.Text">
+    <value>Modifier le contenu</value>
+  </data>
+  <data name="cmdCopy.Text">
+    <value>Copier</value>
+  </data>
+  <data name="cmdDelete.Text">
+    <value>Supprimer</value>
+  </data>
+  <data name="cmdEdit.Text">
+    <value>Modifier</value>
+  </data>
+  <data name="CopyRequired.Error">
+    <value>Vous devez remplir un nom pour le modèle copié</value>
+  </data>
+  <data name="plCopy.Help">
+    <value>Créez une copie de ce modèle afin que vous puissiez l'appliquer et la modifier. Merci de saisir un nouveau nom dans la zone de texte pour ce modèle.</value>
+  </data>
+  <data name="plCopy.Text">
+    <value>Copier le Modèle</value>
+  </data>
+  <data name="plFile.Help">
+    <value>Sélectionnez le fichier à éditer</value>
+  </data>
+  <data name="plFile.Text">
+    <value>Fichier</value>
+  </data>
+  <data name="plTemplates.Help">
+    <value>Choisissez parmi les modèles installés celui qui vous souhaitez utiliser pour ce module.</value>
+  </data>
+  <data name="plTemplates.Text">
+    <value>Sélectionner un modèle</value>
+  </data>
+  <data name="TemplateExists.Error">
+    <value>Un modèle de ce nom existe déjà. merci de choisir un autre nom.</value>
+  </data>
+  <data name="Delete.Confirm">
+    <value>Souhaitez-vous supprimer ce modèle?</value>
+  </data>
+  <data name="cmdDownload.Text">
+    <value>Télécharger</value>
+  </data>
+  <data name="txtUpload.Help">
+    <value>Télécharger un fichier zip du modèle dans le répertoire des modèles</value>
+  </data>
+  <data name="txtUpload.Text">
+    <value>Télécharger</value>
+  </data>
+  <data name="cmdUpload.Text">
+    <value>Télécharger</value>
+  </data>
+  <data name="MustBeZip.Error">
+    <value>Vous devez télécharger un fichier zip</value>
+  </data>
+  <data name="MustUploadFile.Error">
+    <value>Vous devez sélectionner un fichier à télécharger</value>
+  </data>
+  <data name="plUpload.Help">
+    <value>Télécharger un fichier modèle zip vers votre portail</value>
+  </data>
+  <data name="plUpload.Text">
+    <value>Télécharger</value>
+  </data>
+</root>

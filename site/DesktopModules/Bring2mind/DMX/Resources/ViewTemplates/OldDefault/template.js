@@ -1,0 +1,1 @@
+$(document).ready(function(){$("tr.entryItem:odd").addClass("entryAlternateItem")});

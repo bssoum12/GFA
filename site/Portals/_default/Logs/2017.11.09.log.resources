@@ -1,0 +1,646 @@
+2017-11-09 09:53:44.350+01:00 [vmi134697][D:4][T:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__0`1.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-11-09 09:53:44.350+01:00 [vmi134697][D:4][T:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__0`1.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-11-09 09:53:44.419+01:00 [vmi134697][D:4][T:37][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__0`1.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-11-09 09:53:44.420+01:00 [vmi134697][D:4][T:36][ERROR] DotNetNuke.Services.Exceptions.Exceptions - System.OperationCanceledException: L'opération a été annulée.
+   à System.Threading.CancellationToken.ThrowOperationCanceledException()
+   à System.Net.Http.HttpContentExtensions.<ReadAsAsyncCore>d__0`1.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.ModelBinding.FormatterParameterBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.HttpActionBinding.<ExecuteBindingAsyncCore>d__0.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__24.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__2.MoveNext()
+--- Fin de la trace de la pile à partir de l'emplacement précédent au niveau duquel l'exception a été levée ---
+   à System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   à System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   à System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   à System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+2017-11-09 10:50:37.123+01:00 [vmi134697][D:10][T:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:50:37.156+01:00 [vmi134697][D:10][T:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:32.658+01:00 [vmi134697][D:11][T:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:32.688+01:00 [vmi134697][D:11][T:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:38.148+01:00 [vmi134697][D:11][T:50][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:38.149+01:00 [vmi134697][D:11][T:50][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:47.696+01:00 [vmi134697][D:11][T:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:47.697+01:00 [vmi134697][D:11][T:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:57.233+01:00 [vmi134697][D:11][T:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:51:57.234+01:00 [vmi134697][D:11][T:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:54:59.397+01:00 [vmi134697][D:11][T:48][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:54:59.399+01:00 [vmi134697][D:11][T:48][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:55:04.800+01:00 [vmi134697][D:11][T:17][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:55:04.801+01:00 [vmi134697][D:11][T:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:55:50.719+01:00 [vmi134697][D:12][T:17][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:55:50.759+01:00 [vmi134697][D:12][T:17][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:57:01.856+01:00 [vmi134697][D:12][T:62][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-09 10:57:01.858+01:00 [vmi134697][D:12][T:62][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="DownloadSelection.Text" xml:space="preserve">
+    <value>Zip and Download</value>
+  </data>
+  <data name="DownloadSelection.ToolTip" xml:space="preserve">
+    <value>Add all items in selection or the contents of the selected folder(s) to a zip file and download it</value>
+  </data>
+  <data name="MailMe.Text" xml:space="preserve">
+    <value>Mail Me</value>
+  </data>
+  <data name="MailMe.ToolTip" xml:space="preserve">
+    <value>Email me the selected document</value>
+  </data>
+  <data name="MailMeN.Text" xml:space="preserve">
+    <value>Mail Me</value>
+  </data>
+  <data name="MailMeN.ToolTip" xml:space="preserve">
+    <value>Add all items in selection or the contents of the selected folder(s) to a zip file and email it to me</value>
+  </data>
+  <data name="Download.Text" xml:space="preserve">
+    <value>Download File</value>
+  </data>
+  <data name="Download.ToolTip" xml:space="preserve">
+    <value>Download selected file</value>
+  </data>
+  <data name="Hyperlink.Text" xml:space="preserve">
+    <value>Go to this hyperlink</value>
+  </data>
+  <data name="Hyperlink.ToolTip" xml:space="preserve">
+    <value>Redirect to the specified hyperlink.</value>
+  </data>
+  <data name="EditAttributes.Text" xml:space="preserve">
+    <value>Edit Attributes ...</value>
+  </data>
+  <data name="EditAttributes.ToolTip" xml:space="preserve">
+    <value>Edit attributes of selected item</value>
+  </data>
+  <data name="NewVersion.Text" xml:space="preserve">
+    <value>New Version ...</value>
+  </data>
+  <data name="NewVersion.ToolTip" xml:space="preserve">
+    <value>Upload a new version of this item and edit its attributes.</value>
+  </data>
+  <data name="New.Text" xml:space="preserve">
+    <value>New ...</value>
+  </data>
+  <data name="New.ToolTip" xml:space="preserve">
+    <value>Add a new item to this folder</value>
+  </data>
+  <data name="AddX.Text" xml:space="preserve">
+    <value>Add to Clipboard</value>
+  </data>
+  <data name="AddX.ToolTip" xml:space="preserve">
+    <value>Add the item/selection to the clipboard</value>
+  </data>
+  <data name="LockX.Text" xml:space="preserve">
+    <value>Lock</value>
+  </data>
+  <data name="LockX.ToolTip" xml:space="preserve">
+    <value>Lock item(s) in selection so noone else can edit these.</value>
+  </data>
+  <data name="UnlockX.Text" xml:space="preserve">
+    <value>Unlock</value>
+  </data>
+  <data name="UnlockX.ToolTip" xml:space="preserve">
+    <value>Unlock any locked item(s) in selection so others may edit it again</value>
+  </data>
+  <data name="DeleteX.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteX.ToolTip" xml:space="preserve">
+    <value>(Soft) delete item(s) in selection.</value>
+  </data>
+  <data name="DeleteX.Confirm" xml:space="preserve">
+    <value>Do you really want to delete {0}?</value>
+  </data>
+  <data name="UnDeleteX.Text" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="UnDeleteX.ToolTip" xml:space="preserve">
+    <value>Recover any deleted item(s) in selection from deleted status</value>
+  </data>
+  <data name="HardDeleteX.Text" xml:space="preserve">
+    <value>Hard Delete</value>
+  </data>
+  <data name="HardDeleteX.ToolTip" xml:space="preserve">
+    <value>Permanently remove the item(s) in this selection from the server. This action cannot be undone.</value>
+  </data>
+  <data name="HardDeleteX.Confirm" xml:space="preserve">
+    <value>Do you really want to permanently delete {0}?</value>
+  </data>
+  <data name="ApproveX.Text" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ApproveX.ToolTip" xml:space="preserve">
+    <value>Approve any unapproved item(s) in selection.</value>
+  </data>
+  <data name="SubscribeX.Text" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscribeX.ToolTip" xml:space="preserve">
+    <value>Subscribe so you get notified when changes occur to item(s) in selection.</value>
+  </data>
+  <data name="UnSubscribeX.Text" xml:space="preserve">
+    <value>Unsubscribe</value>
+  </data>
+  <data name="UnSubscribeX.ToolTip" xml:space="preserve">
+    <value>Unsubscribe so you no longer receive email notifcations from changes to item(s) in selection.</value>
+  </data>
+  <data name="ShowLink.Text" xml:space="preserve">
+    <value>Show Direct Link</value>
+  </data>
+  <data name="ShowLink.ToolTip" xml:space="preserve">
+    <value>Open a new window with the link to the file in it</value>
+  </data>
+  <data name="Navigate.Text" xml:space="preserve">
+    <value>Navigate</value>
+  </data>
+  <data name="Navigate.ToolTip" xml:space="preserve">
+    <value>Create a url to this item and load it. You can use this also to communicate a link to this item to someone else.</value>
+  </data>
+  <data name="Menu1.Text" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="Menu1.ToolTip" xml:space="preserve">
+    <value>This menu concerns the folder selected on the left in the tree.</value>
+  </data>
+  <data name="ClipBoard1.Text" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="ClipBoard1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Copy1.Text" xml:space="preserve">
+    <value>Copy Clipboard to Here</value>
+  </data>
+  <data name="Copy1.ToolTip" xml:space="preserve">
+    <value>Copy all contents from clipboard to this folder.</value>
+  </data>
+  <data name="Move1.Text" xml:space="preserve">
+    <value>Move Clipboard to Here</value>
+  </data>
+  <data name="Move1.ToolTip" xml:space="preserve">
+    <value>Move all contents from clipboard to this folder.</value>
+  </data>
+  <data name="Import1.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Import1.ToolTip" xml:space="preserve">
+    <value>Import documents to this folder.</value>
+  </data>
+  <data name="Menu2.Text" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="Menu2.ToolTip" xml:space="preserve">
+    <value>This menu concerns the item selected in the item list on the right.</value>
+  </data>
+  <data name="Menu3.Text" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="Menu3.ToolTip" xml:space="preserve">
+    <value>This menu operates on the selected items in the item list on the right</value>
+  </data>
+  <data name="Menu7.Text" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="Menu7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DownloadSelection7.Text" xml:space="preserve">
+    <value>Zip and Download</value>
+  </data>
+  <data name="DownloadSelection7.ToolTip" xml:space="preserve">
+    <value>Create a zip file with the clipboard items and download</value>
+  </data>
+  <data name="Clear7.Text" xml:space="preserve">
+    <value>Clear Clipboard</value>
+  </data>
+  <data name="Clear7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu4.Text" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="Menu4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Search4.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Search4.ToolTip" xml:space="preserve">
+    <value>Bring up search screen</value>
+  </data>
+  <data name="Menu5.Text" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="Menu5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Notifications5.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Notifications5.ToolTip" xml:space="preserve">
+    <value>Manage notification templates</value>
+  </data>
+  <data name="Categories5.Text" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Categories5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Attributes5.Text" xml:space="preserve">
+    <value>Global Attributes</value>
+  </data>
+  <data name="Attributes5.ToolTip" xml:space="preserve">
+    <value>Manage attributes that appear throughout the whole site</value>
+  </data>
+  <data name="Extensions5.Text" xml:space="preserve">
+    <value>Extensions</value>
+  </data>
+  <data name="Extensions5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="FileTypes5.Text" xml:space="preserve">
+    <value>File Types</value>
+  </data>
+  <data name="FileTypes5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RunScript5.Text" xml:space="preserve">
+    <value>Run Scripts</value>
+  </data>
+  <data name="RunScript5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminMainOptions5.Text" xml:space="preserve">
+    <value>Main Options</value>
+  </data>
+  <data name="AdminMainOptions5.ToolTip" xml:space="preserve">
+    <value>Edit options for Document Exchange for complete portal.</value>
+  </data>
+  <data name="AdminAddonSettings5.Text" xml:space="preserve">
+    <value>Addon Settings</value>
+  </data>
+  <data name="AdminAddonSettings5.ToolTip" xml:space="preserve">
+    <value>Edit settings for installed DMX Addons.</value>
+  </data>
+  <data name="AdminSearchSettings5.Text" xml:space="preserve">
+    <value>Search Settings</value>
+  </data>
+  <data name="AdminSearchSettings5.ToolTip" xml:space="preserve">
+    <value>Edit settings for DMX search.</value>
+  </data>
+  <data name="EditMenu5.Text" xml:space="preserve">
+    <value>Edit Menu</value>
+  </data>
+  <data name="EditMenu5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Menu6.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="Menu6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MainScreen6.Text" xml:space="preserve">
+    <value>Main Screen</value>
+  </data>
+  <data name="MainScreen6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Adding6.Text" xml:space="preserve">
+    <value>Adding and Changing Content</value>
+  </data>
+  <data name="Adding6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Approval6.Text" xml:space="preserve">
+    <value>Content Approval</value>
+  </data>
+  <data name="Approval6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Search6.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Search6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebDAV6.Text" xml:space="preserve">
+    <value>Using WebDAV</value>
+  </data>
+  <data name="WebDAV6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Options6.Text" xml:space="preserve">
+    <value>Main Options</value>
+  </data>
+  <data name="Options6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Settings6.Text" xml:space="preserve">
+    <value>Module Settings</value>
+  </data>
+  <data name="Settings6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Categories6.Text" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Categories6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Attributes6.Text" xml:space="preserve">
+    <value>Custom Attributes</value>
+  </data>
+  <data name="Attributes6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Notifications6.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="Notifications6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="File6.Text" xml:space="preserve">
+    <value>File Types</value>
+  </data>
+  <data name="File6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditInWord.Text" xml:space="preserve">
+    <value>Open in Word</value>
+  </data>
+  <data name="EditInWord.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditInExcel.Text" xml:space="preserve">
+    <value>Open in Excel</value>
+  </data>
+  <data name="EditInExcel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditInPowerpoint.Text" xml:space="preserve">
+    <value>Open in Powerpoint</value>
+  </data>
+  <data name="EditInPowerpoint.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditInInfopath.Text" xml:space="preserve">
+    <value>Open in Infopath</value>
+  </data>
+  <data name="EditInInfopath.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="EditInPS.Text" xml:space="preserve">
+    <value>Open in Photoshop</value>
+  </data>
+  <data name="EditInPS.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminRssSettings5.ToolTip" xml:space="preserve">
+    <value>Control how the Rss feed is rendered to the outside world.</value>
+  </data>
+  <data name="AdminRssSettings5.Text" xml:space="preserve">
+    <value>Rss Settings</value>
+  </data>
+  <data name="Rss6.Text" xml:space="preserve">
+    <value>RSS</value>
+  </data>
+  <data name="Rss6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminLanguages5.Text" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="AdminLanguages5.ToolTip" xml:space="preserve">
+    <value>Get language packs for Document Exchange</value>
+  </data>
+  <data name="ViewTemplateEdit5.Text" xml:space="preserve">
+    <value>Edit Templates</value>
+  </data>
+  <data name="ViewTemplateEdit5.ToolTip" xml:space="preserve">
+    <value>Edit templates used in templated views</value>
+  </data>
+  <data name="Templates6.ToolTip" xml:space="preserve">
+    <value>Using and creating view templates</value>
+  </data>
+  <data name="Templates6.Text" xml:space="preserve">
+    <value>Templates</value>
+  </data>
+  <data name="Attributes1.Text" xml:space="preserve">
+    <value>Manage Attributes</value>
+  </data>
+  <data name="Attributes1.ToolTip" xml:space="preserve">
+    <value>Add or change attributes that apply to this folder and its children</value>
+  </data>
+  <data name="CopyX.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CopyX.ToolTip" xml:space="preserve">
+    <value>Copy items to clipboard</value>
+  </data>
+  <data name="CutX.Text" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="CutX.ToolTip" xml:space="preserve">
+    <value>Cut items to clipboard</value>
+  </data>
+  <data name="Paste1.Text" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="Paste1.ToolTip" xml:space="preserve">
+    <value>Paste contents of clipboard here</value>
+  </data>
+  <data name="SyncFolders6.Text" xml:space="preserve">
+    <value>Synchronized Folders</value>
+  </data>
+  <data name="SyncFolders6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminStorageSettings5.Text" xml:space="preserve">
+    <value>Storage Settings</value>
+  </data>
+  <data name="AdminStorageSettings5.ToolTip" xml:space="preserve">
+    <value>Specify how DMX stores your documents</value>
+  </data>
+  <data name="EmptyRecycleBin4.ToolTip" xml:space="preserve">
+    <value>Hard deletes all items marked as deleted</value>
+  </data>
+  <data name="EmptyRecycleBin4.Text" xml:space="preserve">
+    <value>Empty Recycle Bin</value>
+  </data>
+  <data name="Storage6.Text" xml:space="preserve">
+    <value>Storage Settings</value>
+  </data>
+  <data name="Storage6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminUploadSettings5.Text" xml:space="preserve">
+    <value>Upload Settings</value>
+  </data>
+  <data name="AdminUploadSettings5.ToolTip" xml:space="preserve">
+    <value>Specify which control to use for uploading content in this portal</value>
+  </data>
+  <data name="AdminGetHelp5.Text" xml:space="preserve">
+    <value>Get Help</value>
+  </data>
+  <data name="AdminGetHelp5.ToolTip" xml:space="preserve">
+    <value>Get help from Bring2mind for Document Exchange</value>
+  </data>
+  <data name="Create.Text" xml:space="preserve">
+    <value>Create ...</value>
+  </data>
+  <data name="Create.ToolTip" xml:space="preserve">
+    <value>Create a file inline</value>
+  </data>
+  <data name="CreateHtml.Text" xml:space="preserve">
+    <value>Html file</value>
+  </data>
+  <data name="CreateHtml.ToolTip" xml:space="preserve">
+    <value>Create a new HTML file inline</value>
+  </data>
+  <data name="CreateText.Text" xml:space="preserve">
+    <value>Text file</value>
+  </data>
+  <data name="CreateText.ToolTip" xml:space="preserve">
+    <value>Create a new text file inline</value>
+  </data>
+  <data name="EditInline.Help" xml:space="preserve">
+    <value>Edit and create a new version</value>
+  </data>
+  <data name="EditInline.Text" xml:space="preserve">
+    <value>Edit New Version</value>
+  </data>
+  <data name="ViewX.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewX.ToolTip" xml:space="preserve">
+    <value>View document online</value>
+  </data>
+  <data name="NewFile.Text" xml:space="preserve">
+    <value>File(s)</value>
+  </data>
+  <data name="NewFolder.Text" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="NewHyperlink.Text" xml:space="preserve">
+    <value>Hyperlink</value>
+  </data>
+  <data name="SubscriptionMgrX.Text" xml:space="preserve">
+    <value>Subscription Manager</value>
+  </data>
+  <data name="SubscriptionMgrX.ToolTip" xml:space="preserve">
+    <value>Launches the subscription manager for admins</value>
+  </data>
+  <data name="PropertiesX.Text" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PropertiesX.ToolTip" xml:space="preserve">
+    <value>Show details of this file/folder in a pop-up window</value>
+  </data>
+  <data name="Mail.Text" xml:space="preserve">
+    <value>Mail</value>
+  </data>
+  <data name="Mail.ToolTip" xml:space="preserve">
+    <value>Mail document(s) to someone else</value>
+  </data>
+  <data name="Recover5.Text" xml:space="preserve">
+    <value>Recover</value>
+  </data>
+  <data name="Recover5.ToolTip" xml:space="preserve">
+    <value>Recover files from hard deletes</value>
+  </data>
+  <data name="Upload6.Text" xml:space="preserve">
+    <value>Upload Settings</value>
+  </data>
+  <data name="Upload6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="WebConfig6.Text" xml:space="preserve">
+    <value>Web.Config Settings</value>
+  </data>
+  <data name="WebConfig6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Mailing6.Text" xml:space="preserve">
+    <value>Mailing</value>
+  </data>
+  <data name="Mailing6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AddToDnn5.Help" xml:space="preserve">
+    <value>Add selected folder to the folders of this portal so users can use this from within other DNN components</value>
+  </data>
+  <data name="AddToDnn5.Text" xml:space="preserve">
+    <value>Add Folder to DotNetNuke</value>
+  </data>
+  <data name="AdminDNNFolderProvider5.Text" xml:space="preserve">
+    <value>Add DMX To DNN</value>
+  </data>
+  <data name="AdminDNNFolderProvider5.ToolTip" xml:space="preserve">
+    <value>Add a folder of DMX to DNN's internal file manager</value>
+  </data>
+  <data name="DNNFolderProvider6.Text" xml:space="preserve">
+    <value>DNN Folder Provider</value>
+  </data>
+  <data name="DNNFolderProvider6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdminLicense5.Text" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="AdminLicense5.ToolTip" xml:space="preserve">
+    <value>Activate this module</value>
+  </data>
+  <data name="WebDavLink.Help" xml:space="preserve">
+    <value>Use this link to open this resource through WebDAV</value>
+  </data>
+  <data name="WebDavLink.Text" xml:space="preserve">
+    <value>WebDAV Link</value>
+  </data>
+</root>

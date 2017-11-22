@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Repair Structure">
+ <Description>This script will attempt to repair any errors in the DMX structure in the current portal.</Description>
+ <Process>
+  <Run RunType="SQL">
+ <![CDATA[
+
+-- disable triggers to allow this to run without interference
+DISABLE TRIGGER ALL ON {databaseOwner}{objectQualifier}DMX_Entries
+GO
+
+-- any orphaned documents?
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+SET CollectionId = 0
+FROM {databaseOwner}{objectQualifier}DMX_Entries e
+ WHERE NOT EXISTS (SELECT e1.EntryId FROM {databaseOwner}{objectQualifier}DMX_Entries e1 WHERE e1.EntryId=e.CollectionId)
+ AND e.CollectionId <> 0
+ AND e.PortalId=@PortalId
+GO
+
+-- set last version IDs that are null
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+ SET LastVersionId = EntryId
+ WHERE LastVersionId IS NULL
+ AND PortalId=@PortalId
+GO
+
+-- recalculate all paths
+exec {databaseOwner}{objectQualifier}DMX_UpdatePaths @PortalId
+GO
+
+-- re-enable triggers
+ENABLE TRIGGER ALL ON {databaseOwner}{objectQualifier}DMX_Entries
+GO
+
+ ]]></Run>
+  <Run RunType="CODE" Command="RestartApplication">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>
+

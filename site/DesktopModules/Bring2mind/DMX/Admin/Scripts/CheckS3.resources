@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Check Amazon S3 Storage">
+ <Description>Check S3 storage for inconsistencies.</Description>
+ <Process>
+  <Run RunType="CODE" Command="Check">Bring2mind.DNN.Modules.DMX.Services.Storage.S3StorageProvider.S3StorageProvider, BRING2MIND.DNN.MODULES.DMX</Run>
+ </Process>
+</Script>

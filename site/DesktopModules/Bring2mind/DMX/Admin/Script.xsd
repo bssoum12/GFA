@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by Peter Donker (Bring2mind) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+ <xs:element name="Script">
+  <xs:annotation>
+   <xs:documentation>Script to run in DMX</xs:documentation>
+  </xs:annotation>
+  <xs:complexType>
+   <xs:all>
+    <xs:element name="Description" type="xs:string"/>
+    <xs:element name="Process">
+     <xs:complexType>
+      <xs:sequence>
+       <xs:element name="Run" maxOccurs="unbounded">
+        <xs:complexType>
+         <xs:simpleContent>
+          <xs:extension base="xs:string">
+           <xs:attribute name="RunType" use="required">
+            <xs:annotation>
+             <xs:documentation>Can be either CODE for a class that implemente IRunScript or SQL for SQL Script to run</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+             <xs:restriction base="xs:token">
+              <xs:enumeration value="CODE"/>
+              <xs:enumeration value="SQL"/>
+              <xs:enumeration value="BREAK"/>
+              <xs:enumeration value="SQLTEST"/>
+             </xs:restriction>
+            </xs:simpleType>
+           </xs:attribute>
+           <xs:anyAttribute processContents="lax">
+            <xs:annotation>
+             <xs:documentation>For a code processor any other attributes will be sent as parameters: AttributeName=AttributeValue</xs:documentation>
+            </xs:annotation>
+           </xs:anyAttribute>
+          </xs:extension>
+         </xs:simpleContent>
+        </xs:complexType>
+       </xs:element>
+      </xs:sequence>
+     </xs:complexType>
+    </xs:element>
+   </xs:all>
+   <xs:attribute name="Permission" type="xs:string" use="required"/>
+   <xs:attribute name="Title" type="xs:string" use="required"/>
+  </xs:complexType>
+ </xs:element>
+</xs:schema>

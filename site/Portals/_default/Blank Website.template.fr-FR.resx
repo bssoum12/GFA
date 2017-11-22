@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="LocalizedTemplateName.Text" xml:space="preserve">
+    <value>Site Web vide</value>
+  </data>
+  <data name="Setting.DefaultLanguage.Text">
+    <value>fr-FR</value>
+  </data>
+  <data name="Setting.FooterText.Text" xml:space="preserve">
+    <value>Copyright [year] DNN Corp</value>
+  </data>
+  <data name="PortalDescription.Text" xml:space="preserve">
+    <value>Le modèle de site vierge utilise le thème Cavalier, mais contient un nombre minimal de pages et aucun contenu. Cela permet aux utilisateurs de commencer avec un site « vide » sans avoir à supprimer toutes les pages et le contenu du modèle par défaut.</value>
+  </data>
+  <data name="Tab.Home.Description.Text">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Tab.Home.Keywords.Text">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Tab.Home.Name.Text">
+    <value>Accueil</value>
+  </data>
+  <data name="Tab.Home.PageHeadText.Text">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Tab.Home.Title.Text">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="RoleGroup.Description.Text" xml:space="preserve">
+    <value>Un groupe de rôle factice qui représente les rôles globaux</value>
+  </data>
+  <data name="Tab.GettingStarted.Actions.Module.Content.0.Text" xml:space="preserve">
+    <value>Regarder la vidéo de mise en route</value>
+  </data>
+  <data name="Tab.GettingStarted.Actions.Module.Content.1.Text" xml:space="preserve">
+    <value>Permettez-moi tout ça</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.0.Text" xml:space="preserve">
+    <value>La vidéo ci-dessous vous permettra &lt;strong&gt;de bien démarrer&lt;/strong&gt; la création de votre nouveau site DotNetNuke. Utiliser DotNetNuke est simple et rapide, obtenez un site fonctionnel avec un véritable contenu en seulement quelques minutes</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.1.Text" xml:space="preserve">
+    <value>Regarder la vidéo</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Title.0.Text" xml:space="preserve">
+    <value>Nouveautés de la version 7.0</value>
+  </data>
+  <data name="Tab.GettingStarted.Name.Text" xml:space="preserve">
+    <value>Pour commencer</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.0.Text" xml:space="preserve">
+    <value>Déjà un expert ?</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.1.Text" xml:space="preserve">
+    <value>Configurer votre adresse de courriel, installer des packs de langue et configurer d'autres paramètres avancés.</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.2.Text" xml:space="preserve">
+    <value>Définir les paramètres de configuration avancée</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.3.Text" xml:space="preserve">
+    <value>Vous cherchez des réponses ?</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.4.Text" xml:space="preserve">
+    <value>Vous avez des questions, des idées d'améliorations ou souhaitez simplement rencontrer d'autres membres de DotNetNuke ?</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.5.Text" xml:space="preserve">
+    <value>Trouver une réponse</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.6.Text" xml:space="preserve">
+    <value>Soumettre une idée</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.7.Text" xml:space="preserve">
+    <value>Nous apprécions toujours vos commentaires</value>
+  </data>
+  <data name="Tab.GettingStarted.RightPane.Module.Content.8.Text" xml:space="preserve">
+    <value>Nous serions ravis d'avoir votre avis</value>
+  </data>
+  <data name="Tab.GettingStarted.Title.Text" xml:space="preserve">
+    <value>Bienvenue dans votre installation</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Title.1.Text" xml:space="preserve">
+    <value>Apprenez les bases du travail avec DNN</value>
+  </data>
+  <data name="Tab.GettingStarted.Header.Module.Title.Text" xml:space="preserve">
+    <value>&lt;strong&gt;Et voilà&lt;/strong&gt; vous venez de terminer l’installation de DotNetNuke. &lt;strong&gt;Qu’aimeriez-vous faire ensuite ?&lt;/strong&gt;</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.2.Text" xml:space="preserve">
+    <value>Découvrez quels ajouts et améliorations nous avons apportés à DotNetNuke 7.0.</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.3.Text" xml:space="preserve">
+    <value>Regarder la vidéo</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.10.Text" xml:space="preserve">
+    <value>Ajouter une nouvelle fonctionnalité</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.11.Text" xml:space="preserve">
+    <value>Améliorer votre site avec des capacités telles que le e-commerce.</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.12.Text" xml:space="preserve">
+    <value>Visiter la boutique DotNetNuke</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.13.Text">
+    <value>Sponsors</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.4.Text" xml:space="preserve">
+    <value>Personnaliser votre DotNetNuke</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.5.Text" xml:space="preserve">
+    <value>Êtes-vous prêt à personnaliser DotNetNuke ?</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.6.Text" xml:space="preserve">
+    <value>Nous avons les ressources et les outils nécessaires pour accomplir tout ce que vous pouvez imaginer.</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.7.Text" xml:space="preserve">
+    <value>Je veux...</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.8.Text" xml:space="preserve">
+    <value>Changer le look de mon site</value>
+  </data>
+  <data name="Tab.GettingStarted.LeftPane.Module.Content.9.Text" xml:space="preserve">
+    <value>Trouver de nouveaux thèmes pour votre site web sur la boutique DotNetNuke.</value>
+  </data>
+  <data name="Tab.AdvancedSettings.ContentPane.Module.Title.Text" xml:space="preserve">
+    <value>Paramètres de configuration avancés</value>
+  </data>
+  <data name="Tab.AdvancedSettings.Description.Text" xml:space="preserve">
+    <value>Paramètres de configuration avancés</value>
+  </data>
+  <data name="Tab.AdvancedSettings.Name.Text" xml:space="preserve">
+    <value>Paramètres de configuration avancés</value>
+  </data>
+  <data name="Tab.AdvancedSettings.Title.Text" xml:space="preserve">
+    <value>Paramètres de configuration avancés</value>
+  </data>
+  <data name="Tab.About.RightPane.OtherModule.Content.8.Text" xml:space="preserve">
+    <value>Donnez votre avis</value>
+  </data>
+  <data name="Tab.SearchAdmin.ContentPane.Module.Title.Text">
+    <value>Indexation</value>
+  </data>
+  <data name="Tab.SearchAdmin.Description.Text">
+    <value>Indexation</value>
+  </data>
+  <data name="Tab.WorkflowManagament.Content.Text">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="Tab.WorkflowManagament.Title.Text" xml:space="preserve">
+    <value>Gestion du workflow</value>
+  </data>
+  <!---->
+</root>

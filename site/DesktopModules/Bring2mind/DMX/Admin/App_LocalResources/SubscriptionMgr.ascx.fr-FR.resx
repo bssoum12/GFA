@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AddHelp.Text">
+    <value>Utilisez Nom d'utilisateur, email ou UserID</value>
+  </data>
+  <data name="cmdAddSubscriber.Text">
+    <value>Ajouter</value>
+  </data>
+  <data name="Delete.Confirm">
+    <value>Voulez-vous vraiment supprimer cet abonnement ?</value>
+  </data>
+  <data name="displayname.Header">
+    <value>Nom d'affichage</value>
+  </data>
+  <data name="DocEntryId.Text">
+    <value>ID Entrée</value>
+  </data>
+  <data name="DocLastModified.Text">
+    <value>Dernière mise à jour</value>
+  </data>
+  <data name="DocPath.Text">
+    <value>Chemin</value>
+  </data>
+  <data name="DocTitle.Text">
+    <value>Titre du document / du dossier</value>
+  </data>
+  <data name="email.Header">
+    <value>Email</value>
+  </data>
+  <data name="Intro.Text">
+    <value>Vous pouvez voir qui sera notifié et quand pour chaque dossier / document spécifique. Il y a quatre catégories: (1) le propriétaire, qui est le propriétaire du document, (2) approbateurs, les utilisateurs qui ont un rôle d'approbation, (3) les éditeurs, les utilisateurs avec des droits d'édition, et (4) les abonnés, les utilisateurs qui se sont abonné au document&lt;strong&gt; ou à son dossier parent&lt;/strong&gt;. La deuxième colonne indique les événements qui vont déclencher une notification à envoyer à la catégorie. Cette question est régie par la matrice de notification que vous gérez dans l'écran de gestion des paramètres de notification. Enfin, la troisième colonne vous montre les utilisateurs impliqués. Pour les abonnés, vous pouvez supprimer leurs abonnements et ajouter des abonnements à l'élément courant. Pour ceux qui ont hérité d'abonnements (ie souscriptions aux dossiers parents), vous pouvez trouver un lien vers ce dossier parent.</value>
+  </data>
+  <data name="isinherited.Header">
+    <value>hérité</value>
+  </data>
+  <data name="lblAddSubscriber.Text">
+    <value>Ajouter un abonné</value>
+  </data>
+  <data name="lblApprovers.Text">
+    <value>Approbateurs</value>
+  </data>
+  <data name="lblCategory.Text">
+    <value>Catégorie</value>
+  </data>
+  <data name="lblEditors.Text">
+    <value>Editeurs</value>
+  </data>
+  <data name="lblEvents.Text">
+    <value>Evénements</value>
+  </data>
+  <data name="lblNotify.Text">
+    <value>Notifier</value>
+  </data>
+  <data name="lblOwner.Text">
+    <value>Propriétaire du document</value>
+  </data>
+  <data name="lblSubscribers.Text">
+    <value>Abonnés</value>
+  </data>
+  <data name="na.Text">
+    <value>N / A</value>
+  </data>
+  <data name="SubscriptionMgr.Text">
+    <value>Gestion des abonnements</value>
+  </data>
+  <data name="username.Header">
+    <value>Nom d'utilisateur</value>
+  </data>
+</root>

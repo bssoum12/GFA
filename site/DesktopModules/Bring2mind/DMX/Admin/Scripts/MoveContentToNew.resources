@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Move Old Content To New Storage Provider">
+ <Description>This script will move all old entries that are in different storage providers than the currently selected one to the currently selected content provider.</Description>
+ <Process>
+  <Run RunType="CODE" Command="MoveAllToNew">Bring2mind.DNN.Modules.DMX.Services.Storage.StorageController, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

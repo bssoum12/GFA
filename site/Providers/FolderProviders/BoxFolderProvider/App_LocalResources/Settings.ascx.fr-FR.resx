@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!---->
+  <note></note>
+  <data name="plClientId.Text" xml:space="preserve">
+    <value>ID client</value>
+  </data>
+  <data name="plClientSecret.Text" xml:space="preserve">
+    <value>Secret client</value>
+  </data>
+  <data name="valClientId.ErrorMessage" xml:space="preserve">
+    <value>ID client requis.</value>
+  </data>
+  <data name="valClientSecret.ErrorMessage" xml:space="preserve">
+    <value>Secret client requis.</value>
+  </data>
+  <data name="plClientId.Help" xml:space="preserve">
+    <value>Entrer l'ID client.</value>
+  </data>
+  <data name="plClientSecret.Help" xml:space="preserve">
+    <value>Entrer le secret client.</value>
+  </data>
+  <data name="MultipleFolderMappingsWithSameSettings.ErrorMessage" xml:space="preserve">
+    <value>Il ya un autre "FolderMapping" utilisant les mêmes paramètres. Veuillez entrer d'autres paramètres pour un nouveau mappage.</value>
+  </data>
+  <data name="plDirectLink.Help" xml:space="preserve">
+    <value>Si cette case est cochée, les chemins de fichiers pointeront vers le chemin distant, sinon le chemin "LinkClick" sera utilisé.&lt;br /&gt; Remarque : Seuls les comptes payants de Box peuvent utiliser des liens directs.</value>
+  </data>
+  <data name="plDirectLink.Text" xml:space="preserve">
+    <value>Utiliser un lien direct</value>
+  </data>
+  <data name="plParentFolder.Help" xml:space="preserve">
+    <value>Entrez le nom d'un dossier Box si vous souhaitez mapper ce fournisseur de dossier vers un dossier spécifique, par exemple entrez "Documents" ou "Documents/Entreprise" pour mapper ce dossier ou sous-dossier.&lt;br /&gt;Remarque : Laissez vide pour mapper le dossier racine de Box.</value>
+  </data>
+  <data name="plParentFolder.Text" xml:space="preserve">
+    <value>Dossier parent de Box</value>
+  </data>
+  <data name="plCallbackUri.Help" xml:space="preserve">
+    <value>Vous devez utiliser cette URL de callback tout en configurant l'application sur le site Box. Notez le «s» dans HTTPs dans l'URL de callback. Cette URL doit être configuré comme SSL.</value>
+  </data>
+  <data name="plCallbackUri.Text" xml:space="preserve">
+    <value>URL de callback de l'application Box requise</value>
+  </data>
+  <data name="BoxAuthentication1.ErrorMessage" xml:space="preserve">
+    <value>Erreur d'authentification Box, veuillez fournir des informations correctes et réessayer.</value>
+  </data>
+  <data name="NoBoxConnection.ErrorMessage" xml:space="preserve">
+    <value>Créer une connexion à Box requiert un certificat SSL valide, veuillez en installer un et réessayer.</value>
+  </data>
+  <data name="BoxAuthentication0.ErrorMessage" xml:space="preserve">
+    <value>Paramètres des dossiers enregistrés avec succès.</value>
+  </data>
+  <data name="BoxAuthentication2.ErrorMessage" xml:space="preserve">
+    <value>Le dossier parent n'existe pas, veuillez fournir des informations correctes et essayer à nouveau.</value>
+  </data>
+  <data name="BoxAuthentication3.ErrorMessage" xml:space="preserve">
+    <value>Erreur fatale lors de l'authentification Box, veuillez fournir des informations correctes et réessayer.</value>
+  </data>
+  <data name="TestConnection.Text" xml:space="preserve">
+    <value>Tester la connexion</value>
+  </data>
+  <data name="NoBoxConnectionAuth.ErrorMessage" xml:space="preserve">
+    <value>Échec de l'authentification Box. Veuillez vérifier l'ID et le secret client.</value>
+  </data>
+  <!---->
+</root>

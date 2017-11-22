@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Tableau de bord : Produits / Services" Alignment="Left" />
+  <DataSources>
+    <SqlDataSource ComponentName="sqlDataSource1">
+      <Name>sqlDataSource</Name>
+      <Connection Name="erpConnectionString" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="Materials_GetMaterialsCount">
+        <ProcName>Materials_GetMaterialsCount</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_GetPropertiesCount">
+        <ProcName>Materials_GetPropertiesCount</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_MaterialsSpecification_Select">
+        <ProcName>Materials_GetMaterialsSpecificationsCount</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_DashboardGetTopBrands">
+        <Parameter Name="@Locale" Type="System.String">Fr-fr</Parameter>
+        <ProcName>Materials_DashboardGetTopBrands</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_DashbordGetMaterialsByDisciplines">
+        <ProcName>Materials_DashbordGetMaterialsByDisciplines</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_DashbordGetMaterialsAndSpecifications">
+        <ProcName>Materials_DashbordGetMaterialsAndSpecifications</ProcName>
+      </Query>
+      <Query Type="StoredProcQuery" Name="Materials_DashboardGetMaterialsNumberByYear">
+        <ProcName>Materials_DashboardGetMaterialsNumberByYear</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Produits / Services" DataSource="sqlDataSource1" DataMember="Materials_GetMaterialsCount" ViewType="CircularThreeFourth">
+      <DataItems>
+        <Measure DataMember="Column1" DefaultId="DataItem0" />
+      </DataItems>
+      <GaugeElement Name="Total">
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat FormatType="Number" Precision="0" />
+        <PercentVariationNumericFormat FormatType="Percent" />
+        <PercentOfTargetNumericFormat FormatType="Percent" />
+      </GaugeElement>
+    </Gauge>
+    <Gauge ComponentName="gaugeDashboardItem2" Name="Familles" DataSource="sqlDataSource1" DataMember="Materials_MaterialsSpecification_Select" ViewType="CircularThreeFourth">
+      <DataItems>
+        <Measure DataMember="Column1" DefaultId="DataItem0" />
+      </DataItems>
+      <GaugeElement Name="Total">
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat FormatType="Number" Precision="0" />
+        <PercentVariationNumericFormat FormatType="Percent" />
+        <PercentOfTargetNumericFormat FormatType="Percent" />
+      </GaugeElement>
+    </Gauge>
+    <Gauge ComponentName="gaugeDashboardItem3" Name="Propriétés" DataSource="sqlDataSource1" DataMember="Materials_GetPropertiesCount" ViewType="CircularThreeFourth">
+      <DataItems>
+        <Measure DataMember="Column1" DefaultId="DataItem0" />
+      </DataItems>
+      <GaugeElement Name="Total">
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat FormatType="Number" Precision="0" />
+        <PercentVariationNumericFormat FormatType="Percent" />
+        <PercentOfTargetNumericFormat FormatType="Percent" />
+      </GaugeElement>
+    </Gauge>
+    <Chart ComponentName="chartDashboardItem1" Name="Nombre d'article par année" DataSource="sqlDataSource1" DataMember="Materials_DashboardGetMaterialsNumberByYear">
+      <DataItems>
+        <Dimension DataMember="CreatedYear" ColoringMode="Hue" DefaultId="DataItem0" />
+        <Measure DataMember="Nb" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" Title="Nombre" />
+          <Series>
+            <Simple Name="Nombre">
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <AxisX TitleVisible="true" Title="Année" />
+    </Chart>
+    <Chart ComponentName="chartDashboardItem2" Name="Top 10 articles par marques" DataSource="sqlDataSource1" DataMember="Materials_DashboardGetTopBrands">
+      <DataItems>
+        <Dimension DataMember="Brand" Name="Marques" ColoringMode="Hue" DefaultId="DataItem0" />
+        <Measure DataMember="Nb" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple Name="Nombres">
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="Top 10 disciplines par nombre d'articles" DataSource="sqlDataSource1" DataMember="Materials_DashbordGetMaterialsByDisciplines">
+      <DataItems>
+        <Dimension DataMember="Discipline" ColoringMode="Hue" DefaultId="DataItem0" />
+        <Measure DataMember="NB" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple Name="Nombres">
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem4" Name="Top 10 familles par nombre d'articles" DataSource="sqlDataSource1" DataMember="Materials_DashbordGetMaterialsAndSpecifications">
+      <DataItems>
+        <Dimension DataMember="Specification" ColoringMode="Hue" DefaultId="DataItem0" />
+        <Measure DataMember="NB" DefaultId="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument DefaultId="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <AxisY TitleVisible="false" />
+          <Series>
+            <Simple Name="Nombre">
+              <Value DefaultId="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical" Weight="100">
+      <LayoutGroup Weight="100">
+        <LayoutGroup Orientation="Vertical" Weight="156.52694610778443">
+          <LayoutGroup Weight="100">
+            <LayoutGroup Orientation="Vertical" Weight="100">
+              <LayoutGroup Weight="151.42857142857142">
+                <LayoutGroup Orientation="Vertical" Weight="151.42857142857142">
+                  <LayoutGroup Weight="151.42857142857142">
+                    <LayoutGroup Orientation="Vertical" Weight="151.42857142857142">
+                      <LayoutGroup Weight="151.42857142857142">
+                        <LayoutItem DashboardItem="chartDashboardItem1" Weight="151.42857142857142" />
+                      </LayoutGroup>
+                    </LayoutGroup>
+                  </LayoutGroup>
+                  <LayoutItem DashboardItem="chartDashboardItem2" Weight="151.42857142857142" />
+                </LayoutGroup>
+                <LayoutGroup Orientation="Vertical" Weight="151.42857142857142">
+                  <LayoutItem DashboardItem="chartDashboardItem3" Weight="151.42857142857142" />
+                  <LayoutItem DashboardItem="chartDashboardItem4" Weight="151.42857142857142" />
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+        <LayoutGroup Orientation="Vertical" Weight="43.473053892215574">
+          <LayoutItem DashboardItem="gaugeDashboardItem2" Weight="65.919811582771374" />
+          <LayoutItem DashboardItem="gaugeDashboardItem1" Weight="62.288891604546023" />
+          <LayoutItem DashboardItem="gaugeDashboardItem3" Weight="63.835779276326761" />
+        </LayoutGroup>
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

@@ -1,0 +1,70 @@
+/******* Category Tree *******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_CategoryGetChildXml') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_CategoryGetChildXml
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE FUNCTION {databaseOwner}{objectQualifier}DMX_CategoryGetChildXml
+ (@PortalId INT, @ParentId INT, @Locale NVARCHAR(10))
+RETURNS XML
+BEGIN
+ RETURN (
+  SELECT
+   c.CategoryId AS '@Id',
+   ISNULL(cml.CategoryName, c.CategoryName) AS '@Name',
+   {databaseOwner}{objectQualifier}DMX_CategoryGetChildXml(@PortalId, c.CategoryId, @Locale)
+  FROM {databaseOwner}{objectQualifier}DMX_Categories c
+   LEFT JOIN {databaseOwner}{objectQualifier}DMX_CategoriesML cml ON cml.CategoryId=c.CategoryId AND cml.Locale=@Locale
+  WHERE c.ParentId=@ParentId AND c.PortalId=@PortalId
+  FOR XML PATH('category'), TYPE, ROOT('categories')
+ )
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoryTreeAsXml') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoryTreeAsXml
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoryTreeAsXml
+ @PortalId INT,
+ @ParentId INT,
+ @Locale NVARCHAR(10)
+AS
+SELECT
+   c.CategoryId AS '@Id',
+   ISNULL(cml.CategoryName, c.CategoryName) AS '@Name',
+   {databaseOwner}{objectQualifier}DMX_CategoryGetChildXml(@PortalId, c.CategoryId, @Locale)
+  FROM {databaseOwner}{objectQualifier}DMX_Categories c
+   LEFT JOIN {databaseOwner}{objectQualifier}DMX_CategoriesML cml ON cml.CategoryId=c.CategoryId AND cml.Locale=@Locale
+  WHERE c.ParentId=@ParentId AND c.PortalId=@PortalId
+  FOR XML PATH('category'), TYPE, ROOT('categories')
+GO
+
+/******* Search Screen Setting *******/
+UPDATE {databaseOwner}{objectQualifier}ModuleSettings
+ SET SettingName='SearchResultsScreenMode', SettingValue='1'
+WHERE SettingName='ShowAdvancedSearchPanel'
+ AND SettingValue='True'
+GO
+
+UPDATE {databaseOwner}{objectQualifier}ModuleSettings
+ SET SettingName='SearchResultsScreenMode', SettingValue='0'
+WHERE SettingName='ShowAdvancedSearchPanel'
+ AND SettingValue='False'
+GO
+
+/******* Try fixing Lucene lib version *******/
+BEGIN TRY
+ EXEC('UPDATE {databaseOwner}{objectQualifier}Assemblies SET Version = ''2.9.2'' WHERE AssemblyName = ''Bring2mind.Lucene.Net.dll''');
+END TRY
+BEGIN CATCH
+END CATCH;
+GO
+

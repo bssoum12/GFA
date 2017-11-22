@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Reset Nr Versions To Keep">
+ <Description>This script sets the nr of versions to keep for each document to the default value in the main settings.</Description>
+ <Process>
+  <Run RunType="SQL">
+   <![CDATA[
+
+DECLARE @NrToKeep INT
+SET @NrToKeep = (SELECT TOP 1 SettingValue FROM {databaseOwner}{objectQualifier}DMX_Settings WHERE SettingName='Versions' AND PortalId=@PortalId);
+
+IF @NrToKeep<1
+ UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+ SET VersionsToKeep = NULL
+ WHERE PortalId=@PortalId
+ELSE
+ UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+ SET VersionsToKeep = @NrToKeep
+ WHERE PortalId=@PortalId
+GO
+
+ ]]>
+  </Run>
+ </Process>
+</Script>

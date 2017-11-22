@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdDropServer.Text">
+    <value>dissocier</value>
+  </data>
+  <data name="cmdLinkServer.Text">
+    <value>Associer</value>
+  </data>
+  <data name="plIndexCatalog.Help">
+    <value>Entrez le nom du catalogue que vous avez créé pour indexer le contenu de ce portail</value>
+  </data>
+  <data name="plIndexCatalog.Text">
+    <value>Catalogue d'indexation</value>
+  </data>
+  <data name="AttachFailure.Text">
+    <value>Une erreur s'est produite lors de l'association du serveur: &lt;br/&gt;</value>
+  </data>
+  <data name="DropFailure.Text">
+    <value>Une erreur s'est produite lors de la dissociation du serveur:&lt;br/&gt;</value>
+  </data>
+  <data name="lblHelp.Text">
+    <value>&lt;p&gt;This screen 'attaches' a 'linked server' in SQL. The name of the catalog you've created is used for this. Note that to attach a server you need SA privileges in SQL Server. So in this case, the DNN installation needs SA privileges. Alternatively you can attach the server by hand in SQL yourself by executing the following statement:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;EXEC sp_addlinkedserver 'MYCAT', 'Index Server', 'MSIDXS', 'MYCAT'&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Where MYCAT is your catalog. Similarly you can drop an attached server by hand using:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;EXEC sp_dropserver 'MYCAT'&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Read the search manual for more information and screenshots.&lt;/p&gt;</value>
+  </data>
+  <data name="plLocalFilePath.Help">
+    <value>Si vous n'utilisez pas IIS et SQL sur la même machine, spécifiez le chemin afin que le service d'indexation voit les fichiers. Laissez vide pour le chemin par défaut!</value>
+  </data>
+  <data name="plLocalFilePath.Text">
+    <value>Chemin du fichier local</value>
+  </data>
+</root>

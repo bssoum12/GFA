@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Prepare Portal">
+ <Description>This script sets up the basic DMX functionality for your portal.</Description>
+ <Process>
+  <Run RunType="SQL">
+ <![CDATA[
+
+-- Ensure core registration
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}{objectQualifier}DMX_Addons WHERE AddonKey = 'Core')
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Addons ([AddonKey], [Availability], [Description], [Installed], [Name])
+VALUES ('Core', 'All', 'Document Exchange Core', GETDATE(), 'Core')
+GO
+
+-- Rebuild Extensions
+
+DELETE FROM {databaseOwner}{objectQualifier}DMX_Extensions
+WHERE PortalId=@PortalId AND Addon='Core'
+GO
+
+DECLARE @AdministratorRoleId INT
+SET @AdministratorRoleId = (SELECT AdministratorRoleId FROM {databaseOwner}{objectQualifier}Portals WHERE PortalId=@PortalId)
+
+-- Commands
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', 'Bring2mind/DMX/API/Entries/Download', Null, 'Command.Download', Null, Null, 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultedit}', Null, 'Command.Edit', Null, Null, 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultedit}', Null, 'Command.New', Null, Null, 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', Null, 'Command.ViewCollection', 'Collection-Gif', 'Collection-Big-Gif', 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES (CAST(@AdministratorRoleId AS VARCHAR(10))+';', 'Core', 'Bring2mind/DMX/Admin/SubscriptionMgr.ascx', Null, 'Command.SubscriptionMgr', Null, Null, 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', 'Bring2mind/DMX/Apps/Mail.ascx', Null, 'Command.Mail', Null, Null, 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, 'File');
+
+-- Content Providers
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Entities.Entries.EntriesController, Bring2mind.DNN.Modules.DMX.Core', '0', 'ent(\d+)|recyclebin', 'Contents.Collections', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Entities.Categories.CategoriesController, Bring2mind.DNN.Modules.DMX.Core', '1', 'cat(\d+)', 'Contents.Categories', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Services.Search.SearchController, Bring2mind.DNN.Modules.DMX.Core', '2', 'searchresults', 'Contents.SearchResults', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Services.Approval.ApprovalController, Bring2mind.DNN.Modules.DMX.Core', '3', 'nonapproveditems|nonapprovedowneditems', 'Contents.NonApprovedItems', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Services.Subscription.SubscriptionsController, Bring2mind.DNN.Modules.DMX.Core', '4', 'subscriptions', 'Contents.Subscriptions', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+-- Processors
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [EntryTypes], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind.DNN.Modules.DMX.Services.Thumbnails.ThumbnailController, BRING2MIND.DNN.MODULES.DMX.CORE', '0', 'File.Jpg;File.Png;File.Tiff;File.Gif;File.Bmp;', 'EntryProcessor.Thumbnail.Core', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+-- Details Pages
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [NodePattern], [EntryTypes], [ExtensionKey], [IsPrivate], [PortalId], [ResourceFile])
+VALUES ('-1;', 'Core', 'Bring2mind/DMX/Controls/Details.ascx', '0', 'ent(\d+)', 'File;Collection;Hyperlink;', 'DetailsPage.Details', 0, @PortalId, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+-- Types
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', Null, 'Collection', 'Collection-Gif', 'Collection-Big-Gif', 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES (CAST(@AdministratorRoleId AS VARCHAR(10))+';', 'Core', '{defaultview}', Null,  'Collection.SyncFolder', 'Collection-SyncFolder-Gif', 'Collection-SyncFolder-Big-Gif', 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'pdf', 'File.Adobe.Acrobat', 'File-Adobe-Acrobat-Gif', 'File-Adobe-Acrobat-Big-Gif', 0, 'application/pdf', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/View/File.Adobe.Acrobat.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'indd', 'File.Adobe.InDesign', 'File-Adobe-InDesign-Gif', 'File-Adobe-InDesign-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'psd', 'File.Adobe.Photoshop', 'File-Adobe-Photoshop-Gif', 'File-Adobe-Photoshop-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'dwg', 'File.Autocad.Dwg', 'File-Dwg-Gif', 'File-Dwg-Big-Gif', 0, 'application/acad', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'avi', 'File.Avi', 'File-Avi-Gif', 'File-Avi-Big-Gif', 0, 'video/x-msvideo', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'bmp', 'File.Bmp', 'File-Bmp-Gif', 'File-Bmp-Big-Gif', 0, 'image/bmp', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'dxf', 'File.Dxf', 'File-Dxf-Gif', 'File-Dxf-Big-Gif', 0, 'application/dxf', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'emf', 'File.Emf', 'File-Emf-Gif', 'File-Emf-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'eps', 'File.Eps', 'File-Eps-Gif', 'File-Eps-Big-Gif', 0, 'application/postscript', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'gif', 'File.Gif', 'File-Gif-Gif', 'File-Gif-Big-Gif', 0, 'image/gif', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/View/File.Image.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [EditControl], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'htm;html', 'File.Htm', 'File-Htm-Gif', 'File-Htm-Big-Gif', 0, 'text/html', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/Edit/File.Htm.ascx', 'Bring2mind/DMX/Controls/View/File.Htm.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'jpg;jpeg', 'File.Jpg', 'File-Jpg-Gif', 'File-Jpg-Big-Gif', 0, 'image/jpeg', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/View/File.Image.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'xls', 'File.Microsoft.Excel', 'File-Microsoft-Excel-Gif', 'File-Microsoft-Excel-Big-Gif', 0, 'application/vnd.ms-excel', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'xlsx', 'File.Microsoft.ExcelX', 'File-Microsoft-ExcelX-Gif', 'File-Microsoft-ExcelX-Big-Gif', 0, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'xsn', 'File.Microsoft.Infopath', 'File-Microsoft-Infopath-Gif', 'File-Microsoft-Infopath-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'ppt', 'File.Microsoft.Powerpoint', 'File-Microsoft-Powerpoint-Gif', 'File-Microsoft-Powerpoint-Big-Gif', 0, 'application/powerpoint', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'pptx', 'File.Microsoft.PowerpointX', 'File-Microsoft-PowerpointX-Gif', 'File-Microsoft-PowerpointX-Big-Gif', 0, 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'doc', 'File.Microsoft.Word', 'File-Microsoft-Word-Gif', 'File-Microsoft-Word-Big-Gif', 0, 'application/msword', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'docx', 'File.Microsoft.WordX', 'File-Microsoft-WordX-Gif', 'File-Microsoft-WordX-Big-Gif', 0, 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'mpg;mpeg;mpe', 'File.Mpeg', 'File-Mpeg-Gif', 'File-Mpeg-Big-Gif', 0, 'video/mpeg', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'png', 'File.Png', 'File-Png-Gif', 'File-Png-Big-Gif', 0, 'image/png', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/View/File.Image.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'mov', 'File.Quicktime', 'File-Quicktime-Gif', 'File-Quicktime-Big-Gif', 0, 'video/quicktime', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'rar', 'File.Rar', 'File-Rar-Gif', 'File-Rar-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'rtf', 'File.Rtf', 'File-Rtf-Gif', 'File-Rtf-Big-Gif', 0, 'text/richtext', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'svg', 'File.Svg', 'File-Svg-Gif', 'File-Svg-Big-Gif', 0, 'application/svg', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'tga', 'File.Targa', 'File-Targa-Gif', 'File-Targa-Big-Gif', 0, 'image/targa', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [EditControl], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'txt', 'File.Text', 'File-Text-Gif', 'File-Text-Big-Gif', 0, 'text/plain', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/Edit/File.Text.ascx', 'Bring2mind/DMX/Controls/View/File.Text.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes], [ViewControl])
+VALUES ('-1;', 'Core', '{defaultview}', 'tif;tiff', 'File.Tiff', 'File-Tiff-Gif', 'File-Tiff-Big-Gif', 0, 'image/tiff', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null, 'Bring2mind/DMX/Controls/View/File.Image.ascx');
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'ttf', 'File.Ttf', 'File-Ttf-Gif', 'File-Ttf-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', Null, 'File.Unknown', 'File-Unknown-Gif', 'File-Unknown-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'wav', 'File.Wav', 'File-Wav-Gif', 'File-Wav-Big-Gif', 0, 'audio/x-wav', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'wmf', 'File.Wmf', 'File-Wmf-Gif', 'File-Wmf-Big-Gif', 0, 'application/octet-stream', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 1, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'zip', 'File.Zip', 'File-Zip-Gif', 'File-Zip-Big-Gif', 0, 'application/zip', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', Null, 'Hyperlink', 'Hyperlink-Gif', 'Hyperlink-Big-Gif', 0, Null, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Extensions ([AccessRights], [Addon], [ControlToLoad], [Custom], [ExtensionKey], [Icon16], [Icon32], [IsPrivate], [MimeType], [ResourceFile], [PortalId], [ViewByDefault], [EntryTypes])
+VALUES ('-1;', 'Core', '{defaultview}', 'xml', 'File.Xml', 'File-Xml-Gif', 'File-Xml-Big-Gif', 0, 'text/txt', 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', @PortalId, 0, Null);
+GO
+
+
+-- Permissions
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE Addon='Core' AND PermissionKey='VIEW' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_Permissions] ([Addon], [PermissionKey], [PortalId], [ResourceFile]) VALUES (N'Core', N'VIEW', @PortalId, N'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE Addon='Core' AND PermissionKey='EDIT' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_Permissions] ([Addon], [PermissionKey], [PortalId], [ResourceFile]) VALUES (N'Core', N'EDIT', @PortalId, N'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE Addon='Core' AND PermissionKey='ADD' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_Permissions] ([Addon], [PermissionKey], [PortalId], [ResourceFile]) VALUES (N'Core', N'ADD', @PortalId, N'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE Addon='Core' AND PermissionKey='APPROVE' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_Permissions] ([Addon], [PermissionKey], [PortalId], [ResourceFile]) VALUES (N'Core', N'APPROVE', @PortalId, N'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources');
+GO
+
+
+-- Rebuild PermissionEntrytypes
+
+DELETE FROM {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes]
+ WHERE EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Permissions] p WHERE p.Addon='Core' AND p.PortalId=@PortalId AND p.PermissionId={databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes].PermissionId)
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'File' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='VIEW' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Collection' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='VIEW' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Hyperlink' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='VIEW' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'File' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='EDIT' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Collection' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='EDIT' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Hyperlink' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='EDIT' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Collection' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='ADD' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'File' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='APPROVE' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Collection' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='APPROVE' AND [PortalId]=@PortalId;
+
+INSERT INTO {databaseOwner}[{objectQualifier}DMX_PermissionEntrytypes] ([PermissionId], [EntryType]) SELECT [PermissionId], N'Hyperlink' FROM {databaseOwner}[{objectQualifier}DMX_Permissions] WHERE [PermissionKey]='APPROVE' AND [PortalId]=@PortalId;
+GO
+
+
+-- Rebuild Permission Permissions
+
+DELETE FROM {databaseOwner}{objectQualifier}DMX_PermissionPermissions
+WHERE PermissionID IN 
+(SELECT PermissionID FROM {databaseOwner}{objectQualifier}DMX_Permissions p WHERE p.PortalID=@PortalId AND p.Addon='Core')
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='VIEW'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='EDIT'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='ADD'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='APPROVE'
+GO
+
+-- Log Types
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Add' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Add', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Approve' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Approve', @PortalId, NULL, 0, 0, N'CORE_APPROVER_APPROVE', N'CORE_EDITOR_APPROVE', NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Delete' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Delete', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, N'CORE_SUBSCRIBER', NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='HardDelete' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'HardDelete', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Download' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Download', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Edit' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Edit', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Import' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Import', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Lock' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Lock', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='MailMe' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'MailMe', @PortalId, NULL, 1, 1, NULL, NULL, NULL, 'CORE_MAILME', NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Move' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Move', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, N'CORE_SUBSCRIBER', NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Rollback' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Rollback', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Subscribe' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Subscribe', @PortalId, NULL, 0, 0, NULL, NULL, NULL, N'CORE_SUBSCRIBER', NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Undelete' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Undelete', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Unlock' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Unlock', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Unsubscribe' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Unsubscribe', @PortalId, NULL, 0, 0, NULL, NULL, NULL, N'CORE_SUBSCRIBER', NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Upload' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Upload', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='Synchronize' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'Synchronize', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='SyncIn' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'SyncIn', @PortalId, NULL, 0, 0, N'CORE_APPROVE', NULL, NULL, NULL, N'CORE_SUBSCRIBER', 1)
+GO
+
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_LogTypes] WHERE LogTypeKey='SyncOut' AND PortalId=@PortalId)
+INSERT INTO {databaseOwner}{objectQualifier}DMX_LogTypes ([LogTypeKey], [PortalId], [ResourceFile], [AttachFile], [CustomSend], [NotifyApprovers], [NotifyEditors], [NotifyOwner], [NotifySelf], [NotifySubscribers], [NotifyAudit]) VALUES (N'SyncOut', @PortalId, NULL, 0, 0, NULL, NULL, NULL, NULL, NULL, 1)
+GO
+
+-- Attributes
+
+-- SyncFolder Attribute
+IF NOT EXISTS (SELECT * FROM {databaseOwner}[{objectQualifier}DMX_Attributes] WHERE [Key]='Att_SyncFolder' AND PortalId=@PortalId)
+BEGIN
+ INSERT INTO {objectQualifier}DMX_Attributes (Addon, AttributeName, CollectionId, ControlToLoad, IsPrivate, [Key], PortalId, Required, ResourceFile, ShowInUI, [Values], ValueType, ViewOrder)
+ VALUES ('Core', 'Synchronized Folder', -1, 'Bring2mind/DMX/Controls/SyncFolderAtts.ascx', 0, 'Att_SyncFolder', @PortalId, 0, 'DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources', 0, NULL, 'Custom', 0);
+ DECLARE @NewAttID INT
+ SELECT @NewAttID = @@IDENTITY;
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_AttributeEntrytypes (AttributeID, EntryType)
+ VALUES (@NewAttID, 'Collection.SyncFolder');
+END
+GO
+
+ ]]></Run>
+  <Run RunType="CODE" Command="RunPortalAddonScripts">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+  <Run RunType="CODE" Command="RestartApplication">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>
+

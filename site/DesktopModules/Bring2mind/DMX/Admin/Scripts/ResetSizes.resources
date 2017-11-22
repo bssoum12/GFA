@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Reset Sizes">
+ <Description>This script will reparse all file sizes and reset folder sizes.</Description>
+ <Process>
+  <Run RunType="CODE" Command="ResetFileSizes">Bring2mind.DNN.Modules.DMX.Services.Storage.StorageController, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+  <Run RunType="SQL">
+    <![CDATA[
+EXEC {databaseOwner}{objectQualifier}DMX_ResetFolderSizes @PortalId
+GO
+  ]]>
+   </Run>
+ </Process>
+</Script>

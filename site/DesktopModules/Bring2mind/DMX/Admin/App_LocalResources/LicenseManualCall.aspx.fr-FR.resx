@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plAccount.Text">
+    <value>Adresse e-mail</value>
+  </data>
+  <data name="plAccount.Help">
+    <value>Votre identifiant de compte (l'adresse email qui a été utilisé avec votre achat de Snowcovered)</value>
+  </data>
+  <data name="plInvoice.Text">
+    <value>Numéro de la facture</value>
+  </data>
+  <data name="plInvoice.Help">
+    <value>Le numéro de facture (qui vous est donné par Snowcovered)</value>
+  </data>
+  <data name="plServerId.Text">
+    <value>ID du serveur</value>
+  </data>
+  <data name="plServerId.Help">
+    <value>L'ID de ce serveur</value>
+  </data>
+  <data name="plActivationKey.Text">
+    <value>Clé d'Activation</value>
+  </data>
+  <data name="plActivationKey.Help">
+    <value>C'est la clé qui a été envoyé par Bring2mind après votre demande</value>
+  </data>
+  <data name="ControlTitle_license.Text">
+    <value>Informations sur la licence</value>
+  </data>
+  <data name="B2MLicensing.Text">
+    <value>licence Bring2mind </value>
+  </data>
+  <data name="Required.Error">
+    <value>Obligatoires</value>
+  </data>
+  <data name="btnManual.Text">
+    <value>Activation manuelle</value>
+  </data>
+  <data name="btnRequestActivation.Text">
+    <value>Demande d'activation (Web Service)</value>
+  </data>
+  <data name="btnRequestActivationWeb.Text">
+    <value>Demande d'activation (Post Web)</value>
+  </data>
+  <data name="cmdUpload.Text">
+    <value>Envoyer la clé d'activation</value>
+  </data>
+  <data name="plTrialLicense.Help">
+    <value>Cochez cette case pour demander une licence d'essai</value>
+  </data>
+  <data name="plTrialLicense.Text">
+    <value>Licence d'essai</value>
+  </data>
+  <data name="ControlTitle.Text">
+    <value>Etat des licences et Activation</value>
+  </data>
+  <data name="plStatus.Help">
+    <value>C'est le statut de la licence actuellement stockée</value>
+  </data>
+  <data name="plStatus.Text">
+    <value>Statut</value>
+  </data>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="cmdGenerateServerKey.Text">
+    <value>Générer clé du serveur</value>
+  </data>
+  <data name="ControlHelp.Text">
+    <value>C'est là que vous pouvez vérifier le statut de votre licence de Document Exchange. Le compte et la facture doit correspondre à l'achat de ce module. Les Licences temporaires comme les licence d'essai sont indiquées par le fait qu'elles peuvent expirer. Le champ "service jusqu'à" indique &lt;b&gt; la date jusqu'à laquelle les mises à jour peuvent être installées &lt;/b&gt;. S'il vous plaît garder cela à l'esprit avant d'installer une nouvelle version. Le champs "portails max" indique le nombre maximum de portails qui sont autorisés en utilisant le module sur cette installation, et non pas le nombre absolu de portails de l'installation actuelle. &lt;br /&gt; Vous pouvez essayer de contacter le serveur Bring2mind soit par un service web, par une demande Web HTTP, ou directement en parcourant le site. Les deux premières méthodes ne fonctionneront que si le serveur est connecté à Internet. Si non, vous allez avoir à copier l'ID du serveur qui est générée lorsque vous cliquez sur "Activation Manuelle" et l'utiliser pour faire une clé d'activation &lt;br /&gt; Si vous avez des questions n'hésitez pas à nous contacter par le biais &lt;a href="mailto:info@bring2mind.net"&gt;info@bring2mind.net&lt;/a&gt;.</value>
+  </data>
+  <data name="lblCheckLicense.Text">
+    <value>Vérifiez vos licences sur &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt; votre page sur les licences www.bring2mind.net&lt;/a&gt;. Se connecter avec le compte que vous avez reçu lorsque vous avez acheté le produit.</value>
+  </data>
+  <data name="LicenseSave.Error">
+    <value>&lt;p class="NormalRed"&gt; La sauvegarde de la licence a échouée. L'erreur renvoyée est {0} (Trace {1}).&lt;br /&gt; S'il vous plaît assurez-vous que le fichier Portals/ _default / dmxlicense.config n'est pas en lecture seule pour le processus de travail (supprimez le manuellement si nécessaire) et que  l'écriture sur ce répertoire est autorisée. &lt;/p&gt;</value>
+  </data>
+  <data name="DirectEntry.Help">
+    <value>&lt;h1&gt;Methode d'Activation Manuelle&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;Copier l'ID générée par le Serveur dans la zone Texte ci-dessous&lt;/li&gt;
+  &lt;li&gt;Cliquez ici pour acceder au site Bring2mind:&amp;nbsp;&lt;a
+ href="http://www.bring2mind.net/DesktopModules/Bring2mind/Licenses/CustomerDirectRequest.aspx"
+ class="CommandButton" target="_blank"&gt;Aller sur Bring2mind pour une clé&lt;/a&gt;.
+Ceci vous amenera sur une nouvelle page. Les etapes suivantes supposent que vous ayez cette page devant vous.&lt;/li&gt;
+  &lt;li&gt;Etape 1 sélectionnez Bring2Mind &lt;/li&gt;
+  &lt;li&gt;Etape 2 sélectionnez Document Exchange&lt;/li&gt;
+  &lt;li&gt;Etape 3 Copier l'ID du Serveur dans la zone de texte &amp;nbsp;&lt;/li&gt;
+  &lt;li&gt;Etape 4 Cliquez sur "Generate Activation Key"&lt;/li&gt;
+  &lt;li&gt;Etape 5 Copier la nouvelle clé d'activation qui s'affiche dans la zone Texte&amp;nbsp;&lt;/li&gt;
+  &lt;li&gt;Retournez sur la page des licences de DMX&lt;/li&gt;
+  &lt;li&gt;&lt;span style="font-weight: bold;"&gt;Effacez&lt;/span&gt;
+la clé d'activation actuelle&lt;span style="font-weight: bold;"&gt;et collez&lt;/span&gt; y la nouvelle clé d'activation&lt;/li&gt;
+  &lt;li&gt;Hit &lt;span style="font-weight: bold;"&gt;Soumettre la clé d'activation&lt;/span&gt; button&lt;/li&gt;
+  &lt;li&gt;Vous devriez voir apparaitre un message en dessous du bouton vous indiquant l'état de la requête d'activation activation&amp;nbsp; de votre licence. la licence est sauvegardée sur le disk dans Portals/_default/DMXLicense.Config. Assurez-vous que cet endroit est autorisé en écriture et que si il y a déjà un fichier licence existant, assurez-vous qu'il puisse être remplacé par ASP.NET.&lt;/li&gt;
+  &lt;li&gt;Enfin, cliqkez sur retour pour revenir &amp;nbsp; au module DMX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Si vous rencontrez des difficultés, n"hésitez pas à contacter Bring2mind  &lt;a href="mailto:info@bring2mind.net"&gt;info@bring2mind.net&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+</root>

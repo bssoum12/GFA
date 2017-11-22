@@ -1,0 +1,10 @@
+Added http://www.bring2mind.net/DesktopModules/DNNEurope/LocalizationEditor/Pack.aspx?ObjectId=1&Locale=fr-FR&Version=06.02.03 to download list
+Proceeding to download. One moment please ...
+Retrieving: http://www.bring2mind.net/DesktopModules/DNNEurope/LocalizationEditor/Pack.aspx?ObjectId=1&Locale=fr-FR&Version=06.02.03
+Saving to: C:\site\Install\Language\ResourcePack.Bring2mind_DMX.06.02.03.fr-FR.zip
+Saved C:\site\Install\Language\ResourcePack.Bring2mind_DMX.06.02.03.fr-FR.zip
+An error occurred: Argument 'Start' must be greater than zero.
+Details:   
+ at Microsoft.VisualBasic.Strings.Mid(String str, Int32 Start)
+  
+ at Bring2mind.DNN.Modules.DMX.Services.Localization.PackInstaller.InstallPackages()

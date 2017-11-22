@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdCreate.Text">
+    <value>Créer</value>
+  </data>
+  <data name="cmdTest.Text">
+    <value>Tester</value>
+  </data>
+  <data name="plAccessKeyId.Help">
+    <value>Votre clé d'accès Amazon S3</value>
+  </data>
+  <data name="plAccessKeyId.Text">
+    <value>ID d'Accès de la clé</value>
+  </data>
+  <data name="plBucketName.Help">
+    <value>Nom du service de stockage S3 Amazon dans lequel seront stockés vos nouveaux fichiers DMX</value>
+  </data>
+  <data name="plBucketName.Text">
+    <value>Nom Service</value>
+  </data>
+  <data name="plSecretAccessKey.Help">
+    <value>Clé secrète de votre S3 Amazon</value>
+  </data>
+  <data name="plSecretAccessKey.Text">
+    <value>Clé secrète</value>
+  </data>
+  <data name="Success.Text">
+    <value>Succès</value>
+  </data>
+</root>

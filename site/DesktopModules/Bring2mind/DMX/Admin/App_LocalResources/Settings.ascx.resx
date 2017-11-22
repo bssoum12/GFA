@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plRootColl.Text" xml:space="preserve">
+    <value>Root Folder for module</value>
+  </data>
+  <data name="plRootColl.Help" xml:space="preserve">
+    <value>You can specify that this module will consider this folder to be the root folder. One cannot navigate upward of this folder.</value>
+  </data>
+  <data name="plStartup.Text" xml:space="preserve">
+    <value>Default View Screen</value>
+  </data>
+  <data name="plStartup.Help" xml:space="preserve">
+    <value>Which screen will be used to show to the visitor when first visiting this page? Leave blank for default control.</value>
+  </data>
+  <data name="ControlTitle_options.Text" xml:space="preserve">
+    <value>Document Exchange Module Settings</value>
+  </data>
+  <data name="NoneSpecified.Text" xml:space="preserve">
+    <value>&lt;Default&gt;</value>
+  </data>
+  <data name="plRootCat.Help" xml:space="preserve">
+    <value>Where applicable, the root category for this module instance will be the one specified. Leave on 'Categories' to show all categories</value>
+  </data>
+  <data name="plRootCat.Text" xml:space="preserve">
+    <value>Root Category</value>
+  </data>
+  <data name="plDefaultEditPane.Help" xml:space="preserve">
+    <value>Which control should be used when users edit content? Leave as is for default control.</value>
+  </data>
+  <data name="plDefaultEditPane.Text" xml:space="preserve">
+    <value>Default Edit Screen</value>
+  </data>
+  <data name="plRootPattern.Help" xml:space="preserve">
+    <value>Folder pattern to add after the root folder. If this folder does not exist, it'll be created. Use forward slashes for subfolders and avoid illegal characters like ampersands. Note you &lt;strong&gt;can use tokens&lt;/strong&gt;. So adding [User:Username] will inject the current user's username.</value>
+  </data>
+  <data name="plRootPattern.Text" xml:space="preserve">
+    <value>Root Pattern</value>
+  </data>
+  <data name="plAutoAddAddPermission.Text" xml:space="preserve">
+    <value>Add ADD permission</value>
+  </data>
+  <data name="plAutoAddViewPermission.Text" xml:space="preserve">
+    <value>Add VIEW permission</value>
+  </data>
+  <data name="plAutoCreateRoot.Text" xml:space="preserve">
+    <value>Auto Create</value>
+  </data>
+  <data name="ControlTitle_settings.Text" xml:space="preserve">
+    <value>Document Exchange Module Settings</value>
+  </data>
+  <data name="plDefaultSortOrder.Help" xml:space="preserve">
+    <value>Specify the default sort order for DMX. Default is 'IsCollection DESC, Title'.</value>
+  </data>
+  <data name="plDefaultSortOrder.Text" xml:space="preserve">
+    <value>Default Sort Order</value>
+  </data>
+  <data name="plAutoAddSubscription.Text" xml:space="preserve">
+    <value>Add Subscription</value>
+  </data>
+  <data name="plAutoInheritPermission.Text" xml:space="preserve">
+    <value>Auto Inherit Permission</value>
+  </data>
+  <data name="plAutoAddAddPermission.Help" xml:space="preserve">
+    <value>If selected the current user will automatically get ADD permission to this folder</value>
+  </data>
+  <data name="plAutoAddSubscription.Help" xml:space="preserve">
+    <value>If selected the current user will automatically be subscribed to this folder</value>
+  </data>
+  <data name="plAutoAddViewPermission.Help" xml:space="preserve">
+    <value>If selected the current user will automatically get VIEW permission to this folder</value>
+  </data>
+  <data name="plAutoCreateRoot.Help" xml:space="preserve">
+    <value>If selected the folder will be created if it is not already there</value>
+  </data>
+  <data name="plAutoInheritPermission.Help" xml:space="preserve">
+    <value>If selected the permissions from the parent folder will be inherited. If not selected ONLY administrators will be able to view and edit content plus anything resulting from the other options selected here</value>
+  </data>
+  <data name="RootPattern.Text" xml:space="preserve">
+    <value>Flexible Root Pattern</value>
+  </data>
+  <data name="plLimitCategoriesToCollection.Help" xml:space="preserve">
+    <value>If selected only documents will show on categories that fall under the DMX root of the current module</value>
+  </data>
+  <data name="plLimitCategoriesToCollection.Text" xml:space="preserve">
+    <value>Limit Categories To Folder</value>
+  </data>
+  <data name="scrEditEntry.Text" xml:space="preserve">
+    <value>Wizard edit</value>
+  </data>
+  <data name="scrEditEntryPB.Text" xml:space="preserve">
+    <value>Single edit screen</value>
+  </data>
+  <data name="scrSearch.Text" xml:space="preserve">
+    <value>Search Results Control</value>
+  </data>
+  <data name="scrTemplateView.Text" xml:space="preserve">
+    <value>Templated View</value>
+  </data>
+  <data name="scrViewCollection.Text" xml:space="preserve">
+    <value>Ajax UI (2 Panel)</value>
+  </data>
+  <data name="scrViewThreePanel.Text" xml:space="preserve">
+    <value>Ajax UI (3 Panel)</value>
+  </data>
+  <data name="plAutoUnifyChildren.Help" xml:space="preserve">
+    <value>Automatically permutate the new permission set for the new folder to all its contents (if that exists)</value>
+  </data>
+  <data name="plAutoUnifyChildren.Text" xml:space="preserve">
+    <value>Unify Permissions</value>
+  </data>
+  <data name="OtherData.Text" xml:space="preserve">
+    <value>Other Data Settings</value>
+  </data>
+  <data name="RootSettings.Help" xml:space="preserve">
+    <value>&lt;p&gt;These settings determine where this module will begin in the DMX folder tree. Select a 'root' folder to start in, and this will make DMX show that folder as the root in its tree. Use the "root folder pattern" to set a user specific place to start. See the help file for more details.&lt;/p&gt;</value>
+  </data>
+  <data name="RootSettings.Text" xml:space="preserve">
+    <value>Root Settings</value>
+  </data>
+  <data name="AdvancedUI.Text" xml:space="preserve">
+    <value>Advanced UI Settings</value>
+  </data>
+  <data name="UI.Text" xml:space="preserve">
+    <value>User Interface</value>
+  </data>
+  <data name="Other.Text" xml:space="preserve">
+    <value>&lt; Other (Specify Below) &gt;</value>
+  </data>
+  <data name="plDefaultEditPaneOther.Help" xml:space="preserve">
+    <value>If you've selected "Other" above for the edit control, you can specify the path (below DesktopModules) for the control to load. It must inherit from DMX's UI.ModuleBase</value>
+  </data>
+  <data name="plDefaultEditPaneOther.Text" xml:space="preserve">
+    <value>Other Edit UI Control</value>
+  </data>
+  <data name="plStartupOther.Help" xml:space="preserve">
+    <value>If you've selected "Other" above then you can specify the path (below DesktopModules) for the control to load. It must inherit from DMX's UI.ModuleBaseViewUI</value>
+  </data>
+  <data name="plStartupOther.Text" xml:space="preserve">
+    <value>Other View UI Control</value>
+  </data>
+  <data name="plShowDeletedInline.Help" xml:space="preserve">
+    <value>When checked deleted documents are shown in the folder they were in as well as in the recycle bin. If unchecked you can only find deleted items in the recycle bin.</value>
+  </data>
+  <data name="plShowDeletedInline.Text" xml:space="preserve">
+    <value>Show Deleted Inline</value>
+  </data>
+  <data name="plServeBootstrap.Help" xml:space="preserve">
+    <value>Uncheck if the skin already sends Bootstrap to the browser</value>
+  </data>
+  <data name="plServeBootstrap.Text" xml:space="preserve">
+    <value>Serve Bootstrap</value>
+  </data>
+</root>

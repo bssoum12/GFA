@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdBack.Text">
+    <value>Retour</value>
+  </data>
+  <data name="BaseType.Header">
+    <value>Type de base</value>
+  </data>
+  <data name="SpecificType.Header">
+    <value>Type spécifique</value>
+  </data>
+  <data name="Control.Header">
+    <value>Commande</value>
+  </data>
+  <data name="Extension.Header">
+    <value>Extension(s)</value>
+  </data>
+  <data name="MimeType.Header">
+    <value>Protocole Mime</value>
+  </data>
+  <data name="DefaultAction.Header">
+    <value>Action par défaut</value>
+  </data>
+  <data name="plBaseType.Text">
+    <value>Type de base</value>
+  </data>
+  <data name="plSpecificType.Text">
+    <value>Type spécifique</value>
+  </data>
+  <data name="plExtension.Text">
+    <value>Extension(s)</value>
+  </data>
+  <data name="plMimeType.Text">
+    <value>Protocole Mime</value>
+  </data>
+  <data name="plDefaultAction.Text">
+    <value>Action par défaut</value>
+  </data>
+  <data name="plIcon16.Text">
+    <value>Icône 16x16</value>
+  </data>
+  <data name="plIcon32.Text">
+    <value>Icône 32x32</value>
+  </data>
+  <data name="Addon.Header">
+    <value>Extension</value>
+  </data>
+  <data name="plResourceFile.Text">
+    <value>Fichier de ressources</value>
+  </data>
+  <data name="plResourceFile.Help">
+    <value>Fichier ressource où le nom descriptif pour cette extension peut être trouvé (communément DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources)</value>
+  </data>
+  <data name="plControl.Text">
+    <value>Contrôle</value>
+  </data>
+  <data name="plDownloadUrl.Text">
+    <value>URL de téléchargement</value>
+  </data>
+  <data name="plDownloadUrl.Help">
+    <value>Précisez si les url de ce type de fichier doivent remplacer le code de téléchargement par défaut</value>
+  </data>
+  <data name="Delete.Confirm">
+    <value>Etes-vous sûr de vouloir supprimer ce type?</value>
+  </data>
+  <data name="plBaseType.Help">
+    <value>Le type de base est l'une des plus petite sélection qui pilote le travail principal de DMX</value>
+  </data>
+  <data name="plSpecificType.Help">
+    <value>Ceci est une chaîne à définir qui doit être unique. Choisissez quelque chose qui a du sens comme Microsoft.Word.</value>
+  </data>
+  <data name="plExtension.Help">
+    <value>une liste des extensions DMX séparées par des points virgule peut être utilisée pour analyser les fichiers récemment téléchargés</value>
+  </data>
+  <data name="plMimeType.Help">
+    <value>Le type mime à envoyer au navigateur de sorte qu'il sache quelle est l'application externe à lancer pour afficher le fichier.</value>
+  </data>
+  <data name="plDefaultAction.Help">
+    <value>Choisissez ce que le navigateur doit faire avec le fichier. Notez que ce qui arrive à terme dépend des paramètres du navigateur de l'utilisateur final.</value>
+  </data>
+  <data name="plIcon16.Help">
+    <value>Le champ icône est soit un nom de classe soit un chemin relatif (à partir de la racine DNN) vers le fichier image de l'icône. Notez que le nom de classe sera préfixé de 'icone-16-'.</value>
+  </data>
+  <data name="plIcon32.Help">
+    <value>Le champ icône est soit un nom de classe soit un chemin relatif (à partir de la racine DNN) vers le fichier image de l'icône. Notez que le nom de classe sera préfixé de 'icone-32-'.</value>
+  </data>
+  <data name="plControl.Help">
+    <value>Contrôle de chargement de ce type. Ceci est utilisé quand un utilisateur arrive sur une page DMX et demande directement ce fichier (c'est à dire qu'il est dans la chaîne de requête tel que EntryID = XYZ)</value>
+  </data>
+  <data name="cmdReparse.Text">
+    <value>Analyse</value>
+  </data>
+  <data name="plReparse.Help">
+    <value>Analyser le contenu existant DMX pour ce type de fichier</value>
+  </data>
+  <data name="plReparse.Text">
+    <value>Analyser DMX</value>
+  </data>
+</root>

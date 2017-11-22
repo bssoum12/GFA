@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="InvalidRequest.Text">
+    <value>Requête non valide</value>
+  </data>
+  <data name="License.Text">
+    <value>Licence</value>
+  </data>
+  <data name="ContentOptions.Action">
+    <value>Options</value>
+  </data>
+  <data name="SyndicateModule.Action">
+    <value>Flux RSS</value>
+  </data>
+  <data name="ControlPanel.Text">
+    <value>Panneau de configuration</value>
+  </data>
+</root>

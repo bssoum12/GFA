@@ -1,0 +1,4 @@
+IF NOT EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SearchResults') AND name = N'{objectQualifier}IX_DMX_SearchResults')
+CREATE CLUSTERED INDEX {objectQualifier}IX_DMX_SearchResults ON {databaseOwner}{objectQualifier}DMX_SearchResults
+ ([SearchId] ASC);
+GO

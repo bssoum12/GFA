@@ -1,0 +1,388 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+VBFramework
+</name>
+</assembly>
+<members>
+<member name="T:VD.Modules.VBFramework.Components.FeatureController">
+ <summary>
+ The Controller class for VBFramework
+ 
+ The FeatureController class is defined as the BusinessController in the manifest file (.dnn)
+ DotNetNuke will poll this class to find out which Interfaces the class implements. 
+ 
+ The IPortable interface is used to import/export content from a DNN module
+ 
+ The ISearchable interface is used by DNN to index the content of a module
+ 
+ The IUpgradeable interface allows module developers to execute code during the upgrade 
+ process for a module.
+ 
+ Below you will find stubbed out implementations of each, uncomment and populate with your own data
+ </summary>
+</member>
+<member name="T:VD.Modules.VBFramework.Data.DataProvider">
+ <summary>
+ An abstract class for the data access layer
+ 
+ The abstract data provider provides the methods that a control data provider (sqldataprovider)
+ must implement. You'll find two commented out examples in the Abstract methods region below.
+ </summary>
+</member>
+<member name="T:VD.Modules.VBFramework.Data.SqlDataProvider">
+ -----------------------------------------------------------------------------
+ <summary>
+ SQL Server implementation of the abstract DataProvider class
+ 
+ This concreted data provider class provides the implementation of the abstract methods 
+ from data dataprovider.cs
+ 
+ In most cases you will only modify the Public methods region below.
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._localModule">
+<summary>
+Contrôle localModule.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._txtParamUrlService">
+<summary>
+Contrôle txtParamUrlService.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._lbtokeninputNewValue">
+<summary>
+Contrôle lbtokeninputNewValue.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._lbtokeninputvalue">
+<summary>
+Contrôle lbtokeninputvalue.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._popupNewContact">
+<summary>
+Contrôle popupNewContact.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._PopupControlContentControl1">
+<summary>
+Contrôle PopupControlContentControl1.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.TokenInputCtrl._NewContact">
+<summary>
+Contrôle NewContact.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._width">
+ <summary>
+ HtmlEditor Fields Width
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._height">
+ <summary>
+ HtmlEditor Fields Height
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._theme">
+ <summary>
+ HtmlEditor Fields Theme
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._cssClass">
+ <summary>
+ HtmlEditor Fields CSS Class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._imageSrc">
+ <summary>
+ Switch button image path
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xHTMLEditorML._imageClick">
+ <summary>
+ Switch button image click event
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.xHTMLEditorML.Page_Init(System.Object,System.EventArgs)">
+ <summary>
+ Init
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:VD.Modules.VBFramework.EIFxHTMLEditorExtensions">
+ <summary>
+ Module Hosting Extension methods for EIFxHTMLEditorML Control
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxHTMLEditorExtensions.GetHtmlFieldValueByLocale(System.Web.UI.UserControl,System.String)">
+ <summary>
+ Get Html Field Value By Locale
+ </summary>
+ <param name="Control">Current EIFxHTMLEditorML instance</param>
+ <param name="Locale">Locale code</param>
+ <returns>HTML value</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxHTMLEditorExtensions.SetHtmlFieldValueByLocale(System.Web.UI.UserControl,System.String,System.String)">
+ <summary>
+ Set Html Field Value By Locale
+ </summary>
+ <param name="Control">Current EIFxHTMLEditorML instance</param>
+ <param name="Locale">Locale code</param>
+ <param name="value">HTML value</param>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.popupWin._popupWind">
+<summary>
+Contrôle popupWind.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.popupWin._PopupControlContentControl1">
+<summary>
+Contrôle PopupControlContentControl1.
+</summary>
+<remarks>
+Champ généré automatiquement.
+Pour modifier, déplacez la déclaration de champ du fichier de concepteur dans le fichier code-behind.
+</remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._width">
+ <summary>
+ Text Fields Width
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._theme">
+ <summary>
+ Text Fields Theme
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._cssClass">
+ <summary>
+ Text Fields CSS Class
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._imageSrc">
+ <summary>
+ Switch button image path
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._imageClick">
+ <summary>
+ Switch button image click event
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:VD.Modules.VBFramework.xTextBoxML._maxLength">
+ <summary>
+ Text Fields MaxLength
+ </summary>
+ <history>
+   <para>[Ahmed.Aouina] 16/09/2014 Created</para>
+ </history>
+</member>
+<member name="M:VD.Modules.VBFramework.xTextBoxML.Page_Init(System.Object,System.EventArgs)">
+ <summary>
+ Init
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="T:VD.Modules.VBFramework.EIFxTextBoxExtensions">
+ <summary>
+ Module Hosting Extension methods for EIFxTextBoxML Control
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxTextBoxExtensions.GetTextFieldValueByLocale(System.Web.UI.UserControl,System.String)">
+ <summary>
+ Get Text Field Value By Locale
+ </summary>
+ <param name="Control">Current EifTextBoxML instance</param>
+ <param name="Locale">Locale code</param>
+ <returns>Text value</returns>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxTextBoxExtensions.SetTextFieldValueByLocale(System.Web.UI.UserControl,System.String,System.String)">
+ <summary>
+ Set Text Field Value By Locale
+ </summary>
+ <param name="Control">Current EifTextBoxML instance</param>
+ <param name="Locale">Locale code</param>
+ <param name="value">Text value</param>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxTextBoxExtensions.SetEnabled(System.Web.UI.UserControl,System.Boolean)">
+ <summary>
+ Set Enabled
+ </summary>
+ <param name="Control">Current EifTextBoxML instance</param>
+ <remarks></remarks>
+</member>
+<member name="M:VD.Modules.VBFramework.EIFxTextBoxExtensions.GetEnabled(System.Web.UI.UserControl)">
+ <summary>
+ Get Enabled
+ </summary>
+ <param name="Control">Current EifTextBoxML instance</param>
+ <remarks></remarks>
+</member>
+<member name="T:VD.Modules.VBFramework.Settings">
+ -----------------------------------------------------------------------------
+ <summary>
+ The Settings class manages Module Settings
+ 
+ Typically your settings control would be used to manage settings for your module.
+ There are two types of settings, ModuleSettings, and TabModuleSettings.
+ 
+ ModuleSettings apply to all "copies" of a module on a site, no matter which page the module is on. 
+ 
+ TabModuleSettings apply only to the current module on the current page, if you copy that module to
+ another page the settings are not transferred.
+ 
+ If you happen to save both TabModuleSettings and ModuleSettings, TabModuleSettings overrides ModuleSettings.
+ 
+ Below we have some examples of how to access these settings but you will need to uncomment to use.
+ 
+ Because the control inherits from VBFrameworkSettingsBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ </summary>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:VD.Modules.VBFramework.Settings.LoadSettings">
+ -----------------------------------------------------------------------------
+ <summary>
+ LoadSettings loads the settings from the Database and displays them
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="M:VD.Modules.VBFramework.Settings.UpdateSettings">
+ -----------------------------------------------------------------------------
+ <summary>
+ UpdateSettings saves the modified settings to the Database
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:VD.Modules.VBFramework.Edit">
+ <summary>
+ The View class displays the content
+ 
+ Typically your view control would be used to display content or functionality in your module.
+ 
+ View may be the only control you have in your project depending on the complexity of your module
+ 
+ Because the control inherits from VBFrameworkModuleBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ 
+ </summary>
+</member>
+<member name="M:VD.Modules.VBFramework.Edit.Page_Load(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Page_Load runs when the control is loaded
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="T:VD.Modules.VBFramework.View">
+ <summary>
+ The View class displays the content
+ 
+ Typically your view control would be used to display content or functionality in your module.
+ 
+ View may be the only control you have in your project depending on the complexity of your module
+ 
+ Because the control inherits from VBFrameworkModuleBase you have access to any custom properties
+ defined there, as well as properties from DNN such as PortalId, ModuleId, TabId, UserId and many more.
+ 
+ </summary>
+</member>
+<member name="M:VD.Modules.VBFramework.View.Page_Load(System.Object,System.EventArgs)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Page_Load runs when the control is loaded
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+<member name="P:VD.Modules.VBFramework.View.ModuleActions">
+ -----------------------------------------------------------------------------
+ <summary>
+ Registers the module actions required for interfacing with the portal framework
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+ <history>
+ </history>
+ -----------------------------------------------------------------------------
+</member>
+</members>
+</doc>

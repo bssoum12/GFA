@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plEntryType.Help">
+    <value>Actuellement, cette entrée est du même type que celui affiché dans cette liste déroulante. Vous pouvez encore changer cela, mais notez que le comportement du système peut changer en conséquence.</value>
+  </data>
+  <data name="plEntryType.Text">
+    <value>Type</value>
+  </data>
+  <data name="plVersionsToKeep.Help">
+    <value>Indiquez le nombre de versions à conserver.</value>
+  </data>
+  <data name="plVersionsToKeep.Text">
+    <value>Versions à conserver</value>
+  </data>
+  <data name="DefaultTitle.Text">
+    <value>Titre</value>
+  </data>
+  <data name="plUnzip.Help">
+    <value>Si coché, les fichiers contenus dans ce fichier zip seront extraits. Si vous choisissez de ne pas décompresser ici, le titre sera utilisé comme un nouveau dossier dans lequel seront décompressés les fichiers.</value>
+  </data>
+  <data name="plUnzip.Text">
+    <value>Décompresser</value>
+  </data>
+  <data name="chkUseNameAsFolder.Text">
+    <value>Utiliser le Nom comme Dossier</value>
+  </data>
+  <data name="plDescription.Help">
+    <value>Titre descriptif pour cet élément</value>
+  </data>
+  <data name="plAuthor.Text">
+    <value>Auteur</value>
+  </data>
+  <data name="plAuthor.Help">
+    <value>Auteur du document à afficher</value>
+  </data>
+  <data name="plKeywords.Text">
+    <value>Mots-clés</value>
+  </data>
+  <data name="plKeywords.Help">
+    <value>Liste des mots-clés séparés des points virgule</value>
+  </data>
+  <data name="plRemarks.Text">
+    <value>Remarques</value>
+  </data>
+  <data name="plRemarks.Help">
+    <value>Toutes remarques, commentaires, ou un résumé de l'article.</value>
+  </data>
+  <data name="cmdRemoveUploadedFile.Text">
+    <value>Retirer</value>
+  </data>
+  <data name="plUploadedFiles.Help">
+    <value>Ceci est la liste des fichiers téléchargés</value>
+  </data>
+  <data name="plUploadedFiles.Text">
+    <value>Fichiers téléchargés</value>
+  </data>
+  <data name="chkUseThumbnail.Text">
+    <value>Utilisez Vignette</value>
+  </data>
+  <data name="plThumbnail.Help">
+    <value>Vignette pour cette entrée / ces entrées</value>
+  </data>
+  <data name="plThumbnail.Text">
+    <value>Vignette</value>
+  </data>
+</root>

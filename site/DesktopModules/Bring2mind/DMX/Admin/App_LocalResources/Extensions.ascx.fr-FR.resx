@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plKey.Text">
+    <value>Clés</value>
+  </data>
+  <data name="plKey.Help">
+    <value>La clé d'identification pour cette extension. Veuillez consulter la documentation avant de modifier ou d'ajouter des clés.</value>
+  </data>
+  <data name="plControl.Text">
+    <value>Commande</value>
+  </data>
+  <data name="plCustom.Text">
+    <value>Personnalisé</value>
+  </data>
+  <data name="plCustom.Help">
+    <value>Champ pour la fonctionnalité personnalisée</value>
+  </data>
+  <data name="plRolesExecute.Text">
+    <value>Groupes autorisés à executer l'extension.</value>
+  </data>
+  <data name="plRolesExecute.Help">
+    <value>Spécifiez les groupes qui peuvent exécuter cette extension.</value>
+  </data>
+  <data name="cmdDelete.Text">
+    <value>Supprimer</value>
+  </data>
+  <data name="plDownloadUrl.Text">
+    <value>Téléchargement URL</value>
+  </data>
+  <data name="plDownloadUrl.Help">
+    <value>Spécifiez l'URL si ce type de fichier doit modifier le code de téléchargement par défaut.</value>
+  </data>
+  <data name="plControl.Help">
+    <value>Contrôle à charger</value>
+  </data>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="plResourceFile.Text">
+    <value>Fichier de ressources</value>
+  </data>
+  <data name="plResourceFile.Help">
+    <value>Fichier ressource où le nom descriptif pour cette extension peut être trouvé (communément DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources)</value>
+  </data>
+  <data name="plAppliesTo.Text">
+    <value>S'applique à</value>
+  </data>
+  <data name="plAppliesTo.Help">
+    <value>Si cette extension s'applique à un ensemble spécifique de types d'entrée, vous pouvez entrer ici une liste de clés séparées par des points virgule.</value>
+  </data>
+  <data name="cmdAdd.Text">
+    <value>Ajouter</value>
+  </data>
+  <data name="Delete.Confirm">
+    <value>Etes-vous sûr de vouloir supprimer cette extension?</value>
+  </data>
+</root>

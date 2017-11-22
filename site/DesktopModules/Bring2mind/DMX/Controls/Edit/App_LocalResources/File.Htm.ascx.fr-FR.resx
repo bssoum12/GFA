@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plPageContext.Help">
+    <value>N'est pertinent que si incorporé dans une page. C'est le modèle à utiliser lors de l'incorporation du contenu.</value>
+  </data>
+  <data name="plPageContext.Text">
+    <value>Modèle de la Page</value>
+  </data>
+  <data name="plTitle.Help">
+    <value>N'est pertinente que si incorporé dans une page. C'est le titre ajouté au bloc de tête de la page HTML.</value>
+  </data>
+  <data name="plTitle.Text">
+    <value>Titre de la page</value>
+  </data>
+  <data name="plUseHtmlPage.Help">
+    <value>Si activé le bloc HTML sera encapsulé dans le corps d'une page HTML complète</value>
+  </data>
+  <data name="plUseHtmlPage.Text">
+    <value>Ajouter contexte de la page HTML</value>
+  </data>
+  <data name="DefaultTemplate.Text">
+    <value>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head id="Head"&gt;
+ &lt;title&gt;[TITLE]&lt;/title&gt;
+&lt;/head&gt;
+&lt;body id="Body"&gt;
+[CONTENT]
+&lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>

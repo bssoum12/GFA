@@ -1,0 +1,66 @@
+Bring2mind END USER LICENSE AGREEMENT
+
+REDISTRIBUTION NOT PERMITTED
+
+Software License for Document Exchange Professional
+
+This License Agreement for Document Exchange Professional ("License Agreement") is a legal agreement
+between you (either an individual or an entity) and Bring2mind and Peter Donker for the Document Exchange
+Professional module ("the Software") for the DotNetNuke(R) framework. By installing, copying or otherwise using
+the Software, you agree to be bound by the terms of this License Agreement. If you do not agree
+to the terms of this License Agreement, do not install the Software. DotNetNuke(R) is a registered trademark
+of DotNetNuke Corp, Seattle, Washington, USA.
+
+1. GRANT OF LICENSE. 
+
+Bring2mind and Peter Donker hereby grant to you a non-exclusive license to use the Software and related Documentation, if any, subject to the following terms: 
+
+a) You may: 
+ (i) use the Software or a modified version of it on a single DotNetNuke(R) production installation;
+ (ii) use the Software or a modified version of it on one or more development or staging DotNetNuke(R) installations;
+ (iii) copy the Software for back-up, archival purposes provided any copy must contain all of the original Software's proprietary notices.
+
+b) Peter Donker may modify this agreement upon written notice to you.
+
+2. LICENSE RESTRICTIONS.
+
+You may not: 
+ (i) create derivative works based upon the Software or Documentation; 
+ (ii) copy the Software or Documentation (except for back-up or archival purposes); 
+ (iii) transfer rights to the Software or Documentation; or 
+ (iv) remove any proprietary notices or labels on the Software or Documentation.
+
+3. IPR.
+
+Title, ownership, rights, and intellectual property rights in and to the Software and Documentation shall remain with Peter Donker.
+
+4. NO WARRANTY. 
+
+The Software is being delivered to you "AS IS" and Bring2mind and Peter Donker make no warranty as to its use or performance. PETER DONKER DOES NOT AND CANNOT WARRANT THE PERFORMANCE OR RESULTS YOU MAY OBTAIN BY USING THE SOFTWARE. EXCEPT FOR ANY WARRANTY, CONDITION, REPRESENTATION OR TERM TO THE EXTENT TO WHICH THE SAME CANNOT OR MAY NOT BE EXCLUDED OR LIMITED BY LAW APPLICABLE TO YOU IN YOUR JURISDICTION, PETER DONKER MAKES NO WARRANTIES CONDITIONS, REPRESENTATIONS, OR TERMS (EXPRESS OR IMPLIED WHETHER BY STATUTE, COMMON LAW, CUSTOM, USAGE OR OTHERWISE) AS TO ANY MATTER INCLUDING WITHOUT LIMITATION NON-INFRINGEMENT OF THIRD PARTY RIGHTS, MERCHANTABILITY, INTEGRATION, SATISFACTORY QUALITY, OR FITNESS FOR ANY PARTICULAR PURPOSE. 
+ 
+5. LIMITATION OF LIABILITY. 
+
+IN NO EVENT WILL PETER DONKER BE LIABLE TO YOU FOR ANY DAMAGES, CLAIMS OR COSTS WHATSOEVER OR ANY CONSEQUENTIAL, INDIRECT, INCIDENTAL DAMAGES, OR ANY LOST PROFITS OR LOST SAVINGS OR FOR ANY CLAIM BY ANY THIRD PARTY. THE FOREGOING LIMITATIONS AND EXCLUSIONS APPLY TO THE EXTENT PERMITTED BY APPLICABLE LAW IN YOUR JURISDICTION. PETER DONKER'S AGGREGATE LIABILITY UNDER OR IN CONNECTION WITH THIS AGREEMENT SHALL BE LIMITED TO THE AMOUNT PAID FOR THE SOFTWARE, IF ANY. 
+
+6. TERMINATION.
+
+This License Agreement shall terminate automatically if you fail to comply with the limitations described in this license. No notice shall be required from Peter Donker to effectuate such termination. Upon termination, you must destroy all copies of the Software and Documentation. 
+
+7. MISCELLANEOUS.
+
+Bring2mind or Peter Donker do not hereby consent to any of your general terms or conditions. The terms and
+conditions contained in this License Agreement may not be modified except in a writing duly signed by you and
+Peter Donker. This License Agreement shall be governed by the laws of the Country of Switzerland, without regard
+to conflicts of law provisions, and you hereby consent to the exclusive jurisdiction of the court sitting in the
+city of Neuchatel, Switzerland.
+
+8. USE OF THIRD PARTY COMPONTENTS
+
+The Software includes the following third party components:
+(i) ComponentArt WebUI(R);
+(ii) Telerik RadUpload(R);
+(iii) DotLucene(R);
+(iv) Partners IT Services Ges.m.b.H
+Under no circumstance are you allowed to use these components other than in conjunction with the Software unless otherwise stated by the copyright holder. You also agree to any license agreements enclosed with the Software from these copyright holders.
+
+

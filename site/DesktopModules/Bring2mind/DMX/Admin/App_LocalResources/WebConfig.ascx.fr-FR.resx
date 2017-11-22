@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Absent.Text">
+    <value>Absents</value>
+  </data>
+  <data name="lblAction.Text">
+    <value>Action ou changement</value>
+  </data>
+  <data name="lblAspect.Text">
+    <value>Aspect</value>
+  </data>
+  <data name="lblCurrent.Text">
+    <value>Valeur actuelle</value>
+  </data>
+  <data name="lblNoteHost.Text">
+    <value>Notez ces paramètres affectent toute l'installation, c'est à dire tous les portails.</value>
+  </data>
+  <data name="plCA.Help">
+    <value>Cela va ajouter ou supprimer la capacité de l'installation d'utiliser le contrôle ComponentArt Upload</value>
+  </data>
+  <data name="plCA.Text">
+    <value>chargement CA</value>
+  </data>
+  <data name="plExecutionTimeout.Help">
+    <value>Délai jusqu'à ce qu'une requête soit interrompu par IIS</value>
+  </data>
+  <data name="plExecutionTimeout.Text">
+    <value>Délai d'exécution (s)</value>
+  </data>
+  <data name="plMaxUpload.Help">
+    <value>La taille maximale autorisée du fichier à télécharger (Mo)</value>
+  </data>
+  <data name="plMaxUpload.Text">
+    <value>Taille maxi de téléchargement (Mo)</value>
+  </data>
+  <data name="plTelerik.Help">
+    <value>Cela va ajouter ou supprimer la capacité de l'installation d'utiliser le contrôle Telerik RadUpload</value>
+  </data>
+  <data name="plTelerik.Text">
+    <value>RadUpload</value>
+  </data>
+  <data name="plWebDAV.Help">
+    <value>Ceci contrôle les lignes nécessaires WebDAV dans le web.config</value>
+  </data>
+  <data name="plWebDAV.Text">
+    <value>WebDAV</value>
+  </data>
+  <data name="ControlTitle_options.Text">
+    <value>Paramètres DNN Web.config</value>
+  </data>
+  <data name="valWholeNumber.Errormessage">
+    <value>Nombre invalide (entier)!</value>
+  </data>
+  <data name="False.Text">
+    <value>Off</value>
+  </data>
+  <data name="True.Text">
+    <value>On</value>
+  </data>
+  <data name="cmdToggle.Text">
+    <value>Basculer</value>
+  </data>
+  <data name="plIIS6.Help">
+    <value>IIS version 6 (Windows 2003/XP)</value>
+  </data>
+  <data name="plIIS6.Text">
+    <value>IIS6</value>
+  </data>
+  <data name="plIIS7.Help">
+    <value>IIS version 7 (Windows 2008/Vista/7)</value>
+  </data>
+  <data name="plIIS7.Text">
+    <value>IIS7</value>
+  </data>
+</root>

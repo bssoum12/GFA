@@ -1,0 +1,2 @@
+<%@ Control Language="vb" AutoEventWireup="false" CodeBehind="File.Image.ascx.vb" Inherits="Bring2mind.DNN.Modules.DMX.Controls.View.File_Image" %>
+<img src="<%=DownloadUrl(ThumbnailEntryId)%>&local=true" alt="<%=Entry.Title%>" border="0" />

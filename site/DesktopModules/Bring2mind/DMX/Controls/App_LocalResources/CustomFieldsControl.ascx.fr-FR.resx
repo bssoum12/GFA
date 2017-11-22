@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Required.Validator">
+    <value>Donnée obligatoire</value>
+  </data>
+  <data name="WholeNumber.Validator">
+    <value>Cela doit être un nombre entier</value>
+  </data>
+  <data name="Number.Validator">
+    <value>Ce doit être un nombre (virgule flottante)</value>
+  </data>
+  <data name="Date.Validator">
+    <value>Cela doit être une date valide</value>
+  </data>
+  <data name="Select.Text">
+    <value>&lt;Aucun&gt;</value>
+  </data>
+</root>

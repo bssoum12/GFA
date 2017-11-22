@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Folder.Text">
+    <value>Dossier :</value>
+  </data>
+  <data name="Relevance.Text">
+    <value>Pertinence :</value>
+  </data>
+  <data name="RootFolder.Text">
+    <value>Situé dans le dossier racine</value>
+  </data>
+  <data name="Download.Text">
+    <value>Télécharger</value>
+  </data>
+</root>

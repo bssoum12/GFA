@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdImport.Text">
+    <value>Récupérer</value>
+  </data>
+  <data name="ControlTitle_recover.Text">
+    <value>Récupération de suppression</value>
+  </data>
+  <data name="Item.ToolTip">
+    <value>Cet article a été supprimé le {0:f} par {1}</value>
+  </data>
+  <data name="cmdCancel.Text">
+    <value>Annuler</value>
+  </data>
+</root>

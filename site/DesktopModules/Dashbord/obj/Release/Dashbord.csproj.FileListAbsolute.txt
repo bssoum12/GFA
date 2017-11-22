@@ -1,0 +1,4 @@
+C:\site\bin\Dashbord.dll
+C:\site\bin\Dashbord.pdb
+C:\site\DesktopModules\Dashbord\obj\Release\Dashbord.dll
+C:\site\DesktopModules\Dashbord\obj\Release\Dashbord.pdb

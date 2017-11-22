@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="lblDefText.Text">
+    <value>Par défaut (sous Portails/[id]/DMX)</value>
+  </data>
+  <data name="optSubDirDaily.Text">
+    <value>Quotidien</value>
+  </data>
+  <data name="optSubDirMonthly.Text">
+    <value>Mensuel</value>
+  </data>
+  <data name="optSubDirNone.Text">
+    <value>Aucun</value>
+  </data>
+  <data name="optSubDirYearly.Text">
+    <value>Annuel</value>
+  </data>
+  <data name="plChangeFileExtensions.Help">
+    <value>Si activé, les noms de fichier seront renommés ". ressources» pour fournir une protection supplémentaire contre le téléchargement direct. Si votre répertoire de stockage est sous la racine du site WEB, nous vous conseillons vivement de choisir cette option. Cependant, vous ne serez pas en mesure de tirer profit des capacités de recherche plein texte de IIS.</value>
+  </data>
+  <data name="plChangeFileExtensions.Text">
+    <value>Modification extensions</value>
+  </data>
+  <data name="plRepLoc.Help">
+    <value>Lieu où les fichiers seront stockés physiquement. Cela peut être n'importe où sur le serveur.</value>
+  </data>
+  <data name="plRepLoc.Text">
+    <value>Localisation du référentiel</value>
+  </data>
+  <data name="plSubDir.Help">
+    <value>DMX peut automatiquement créer les sous-répertoires pour réduire la taille des répertoires dans lesquels les éléments sont stockés</value>
+  </data>
+  <data name="plSubDir.Text">
+    <value>Sous-répertoires</value>
+  </data>
+</root>

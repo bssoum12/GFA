@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="DownloadSelection.Text">
+    <value>Compresser et télécharger</value>
+  </data>
+  <data name="DownloadSelection.ToolTip">
+    <value>Ajouter tous les éléments de la sélection ou le contenu du dossier sélectionné (s) dans un fichier zip et le télécharger</value>
+  </data>
+  <data name="MailMe.Text">
+    <value>M'envoyer par Email</value>
+  </data>
+  <data name="MailMe.ToolTip">
+    <value>M'envoyer par Email le document sélectionné</value>
+  </data>
+  <data name="MailMeN.Text">
+    <value>M'envoyer par Email</value>
+  </data>
+  <data name="MailMeN.ToolTip">
+    <value>Ajouter tous les éléments la sélection ou le contenu du dossier sélectionné (s) dans un fichier zip et me l'adresser par email</value>
+  </data>
+  <data name="OpenInExplorer.Text">
+    <value>Ouvrir dans l'Explorateur Windows</value>
+  </data>
+  <data name="OpenInExplorer.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Download.ToolTip">
+    <value>Télécharger le fichier sélectionné</value>
+  </data>
+  <data name="Hyperlink.ToolTip">
+    <value>Redirection vers l'hyperlien indiqué.</value>
+  </data>
+  <data name="EditAttributes.Text">
+    <value>Editer les attributs ...</value>
+  </data>
+  <data name="EditAttributes.ToolTip">
+    <value>Modifier les attributs de l'élément sélectionné</value>
+  </data>
+  <data name="NewVersion.Text">
+    <value>Nouvelle version ...</value>
+  </data>
+  <data name="NewVersion.ToolTip">
+    <value>Charger une nouvelle version de cet élément et modifier ses attributs.</value>
+  </data>
+  <data name="New.ToolTip">
+    <value>Ajouter un nouvel élément à ce dossier</value>
+  </data>
+  <data name="AddX.Text">
+    <value>Ajouter au presse-papiers</value>
+  </data>
+  <data name="AddX.ToolTip">
+    <value>Ajouter l'élément / la sélection au presse-papier</value>
+  </data>
+  <data name="LockX.Text">
+    <value>Verrouillage</value>
+  </data>
+  <data name="LockX.ToolTip">
+    <value>Verrouiller le(s) élément(s) de la sélection afin que personne d'autre ne puisse les modifier.</value>
+  </data>
+  <data name="UnlockX.Text">
+    <value>Déverrouiller</value>
+  </data>
+  <data name="UnlockX.ToolTip">
+    <value>Déverrouiller un élément verrouillé de la sélection de sorte que d'autres personnes puissent le modifier à nouveau</value>
+  </data>
+  <data name="DeleteX.Text">
+    <value>Effacer</value>
+  </data>
+  <data name="DeleteX.ToolTip">
+    <value>Effacer le(s) élément(s) de la sélection.</value>
+  </data>
+  <data name="UnDeleteX.Text">
+    <value>Récupérer</value>
+  </data>
+  <data name="UnDeleteX.ToolTip">
+    <value>Récupérer un élément effacé de la sélection ayant le statut effacé</value>
+  </data>
+  <data name="HardDeleteX.Text">
+    <value>Supprimer définitivement</value>
+  </data>
+  <data name="HardDeleteX.ToolTip">
+    <value>Supprimer définitivement du serveur le(s) élément(s) de cette sélection . Cette action ne pourra pas être annulée.</value>
+  </data>
+  <data name="ApproveX.Text">
+    <value>Approuver</value>
+  </data>
+  <data name="ApproveX.ToolTip">
+    <value>Approuver tous les éléments non-approuvé (s) de la sélection.</value>
+  </data>
+  <data name="SubscribeX.Text">
+    <value>Abonnement</value>
+  </data>
+  <data name="SubscribeX.ToolTip">
+    <value>Abonnez-vous pour être averti lorsque des changements se produisent à le(s)élément(s) de la sélection.</value>
+  </data>
+  <data name="UnSubscribeX.Text">
+    <value>Désabonnement</value>
+  </data>
+  <data name="UnSubscribeX.ToolTip">
+    <value>Se désabonner pour ne plus recevoir de notification email des modifications apportées au(x) élément(s) dela sélection.</value>
+  </data>
+  <data name="ShowLink.Text">
+    <value>Afficher Lien direct</value>
+  </data>
+  <data name="ShowLink.ToolTip">
+    <value>Ouvre une nouvelle fenêtre avec le lien vers le fichier dans ce</value>
+  </data>
+  <data name="Navigate.Text">
+    <value>Naviguez</value>
+  </data>
+  <data name="Navigate.ToolTip">
+    <value>Créer une URL pour cet élément et le charger. Vous pouvez l'utiliser pour communiquer un lien vers cet article à quelqu'un d'autre.</value>
+  </data>
+  <data name="Menu1.Text">
+    <value>Dossier</value>
+  </data>
+  <data name="Menu1.ToolTip">
+    <value>Ce menu concerne le dossier sélectionné sur la gauche dans l’arborescence</value>
+  </data>
+  <data name="ClipBoard1.Text">
+    <value>Presse-papiers</value>
+  </data>
+  <data name="ClipBoard1.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Copy1.Text">
+    <value>Copier le contenu du presse-papiers ici</value>
+  </data>
+  <data name="Copy1.ToolTip">
+    <value>Copier tout le contenu du presse-papiers dans ce dossier.</value>
+  </data>
+  <data name="Move1.Text">
+    <value>Déplacer le presse-papier ici</value>
+  </data>
+  <data name="Move1.ToolTip">
+    <value>Déplacer tout le contenu du presse-papier dans ce dossier.</value>
+  </data>
+  <data name="Import1.Text">
+    <value>Importer</value>
+  </data>
+  <data name="Import1.ToolTip">
+    <value>Importer les documents vers ce dossier.</value>
+  </data>
+  <data name="Menu2.Text">
+    <value>Élément</value>
+  </data>
+  <data name="Menu2.ToolTip">
+    <value>Ce menu concerne l'élément sélectionné dans la liste d'éléments située à droite.</value>
+  </data>
+  <data name="Menu3.Text">
+    <value>Sélection</value>
+  </data>
+  <data name="Menu3.ToolTip">
+    <value>Ce menu agit sur les éléments sélectionnés dans la liste d'éléments située à droite.</value>
+  </data>
+  <data name="Menu7.Text">
+    <value>Presse-papiers</value>
+  </data>
+  <data name="Menu7.ToolTip">
+    <value> </value>
+  </data>
+  <data name="DownloadSelection7.Text">
+    <value>Compresser et télécharger</value>
+  </data>
+  <data name="DownloadSelection7.ToolTip">
+    <value>Créer un fichier compressé à partir des éléments du presse-papiers et le télécharger</value>
+  </data>
+  <data name="Clear7.Text">
+    <value>Vider le presse-papiers</value>
+  </data>
+  <data name="Clear7.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Menu4.Text">
+    <value>Outils</value>
+  </data>
+  <data name="Menu4.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Search4.Text">
+    <value>Recherche</value>
+  </data>
+  <data name="Search4.ToolTip">
+    <value>Afficher l'écran de recherche</value>
+  </data>
+  <data name="Menu5.Text">
+    <value>Administrateur</value>
+  </data>
+  <data name="Menu5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Notifications5.Text">
+    <value>Notifications</value>
+  </data>
+  <data name="Notifications5.ToolTip">
+    <value>Gérer les modèles de notification</value>
+  </data>
+  <data name="Categories5.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="Categories5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Extensions5.Text">
+    <value>Extensions</value>
+  </data>
+  <data name="Extensions5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="FileTypes5.Text">
+    <value>Types de fichier</value>
+  </data>
+  <data name="FileTypes5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="RunScript5.Text">
+    <value>Exécuter les scripts</value>
+  </data>
+  <data name="RunScript5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="AdminMainOptions5.Text">
+    <value>Options principales</value>
+  </data>
+  <data name="AdminMainOptions5.ToolTip">
+    <value>Options de modification de Document Exchange pour le portail entier.</value>
+  </data>
+  <data name="AdminAddonSettings5.Text">
+    <value>Réglages des extensions</value>
+  </data>
+  <data name="AdminAddonSettings5.ToolTip">
+    <value>Modifier les réglages pour les extensions DMX installées.</value>
+  </data>
+  <data name="AdminSearchSettings5.Text">
+    <value>Options de recherche</value>
+  </data>
+  <data name="AdminSearchSettings5.ToolTip">
+    <value>Modifier les options de recherche de DMX.</value>
+  </data>
+  <data name="EditMenu5.Text">
+    <value>Menu d'édition</value>
+  </data>
+  <data name="EditMenu5.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Menu6.Text">
+    <value>Aide</value>
+  </data>
+  <data name="Menu6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="MainScreen6.Text">
+    <value>Écran principal</value>
+  </data>
+  <data name="MainScreen6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Adding6.Text">
+    <value>Ajouter et changer le contenu</value>
+  </data>
+  <data name="Adding6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Approval6.Text">
+    <value>Approbation du contenu</value>
+  </data>
+  <data name="Approval6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Search6.Text">
+    <value>Recherche</value>
+  </data>
+  <data name="Search6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="WebDAV6.Text">
+    <value>Utiliser WebDAV</value>
+  </data>
+  <data name="WebDAV6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Options6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Settings6.Text">
+    <value>Réglages du module</value>
+  </data>
+  <data name="Settings6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Categories6.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="Categories6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Attributes6.Text">
+    <value>Attributs personnalisés</value>
+  </data>
+  <data name="Attributes6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="Notifications6.Text">
+    <value>Notifications</value>
+  </data>
+  <data name="Notifications6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="File6.Text">
+    <value>Types de fichier</value>
+  </data>
+  <data name="File6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="EditInWord.Text">
+    <value>Ouvrir avec Word</value>
+  </data>
+  <data name="EditInWord.ToolTip">
+    <value> </value>
+  </data>
+  <data name="EditInExcel.Text">
+    <value>Ouvrir avec Excel</value>
+  </data>
+  <data name="EditInExcel.ToolTip">
+    <value> </value>
+  </data>
+  <data name="EditInPowerpoint.Text">
+    <value>Ouvrir avec Powerpoint</value>
+  </data>
+  <data name="EditInPowerpoint.ToolTip">
+    <value> </value>
+  </data>
+  <data name="EditInInfopath.Text">
+    <value>Ouvrir avec Infopath</value>
+  </data>
+  <data name="EditInInfopath.ToolTip">
+    <value> </value>
+  </data>
+  <data name="EditInPS.Text">
+    <value>Ouvrir avec Photoshop</value>
+  </data>
+  <data name="EditInPS.ToolTip">
+    <value> </value>
+  </data>
+  <data name="AdminRssSettings5.ToolTip">
+    <value>Contrôlez la façon dont le flux RSS est géré pour le monde extérieur.</value>
+  </data>
+  <data name="AdminRssSettings5.Text">
+    <value>Paramètres RSS</value>
+  </data>
+  <data name="Rss6.Text">
+    <value>RSS</value>
+  </data>
+  <data name="Rss6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="AdminLanguages5.Text">
+    <value>Langues</value>
+  </data>
+  <data name="AdminLanguages5.ToolTip">
+    <value>Obtenez des packs de langue pour Document Exchange</value>
+  </data>
+  <data name="Download.Text">
+    <value>Télécharger fichiers</value>
+  </data>
+  <data name="Hyperlink.Text">
+    <value>Aller à cette hyperlien</value>
+  </data>
+  <data name="ViewTemplateEdit5.Text">
+    <value>Modifier les modèles</value>
+  </data>
+  <data name="ViewTemplateEdit5.ToolTip">
+    <value>Modifier les modèles utilisés dand les affichages de modéles</value>
+  </data>
+  <data name="AdminWebConfig5.ToolTip">
+    <value>personnaliser le Web.Config</value>
+  </data>
+  <data name="AdminWebConfig5.Text">
+    <value>Web.Config</value>
+  </data>
+  <data name="Templates6.ToolTip">
+    <value>Utilisation et création de modèles d'affichage</value>
+  </data>
+  <data name="Templates6.Text">
+    <value>Modèles</value>
+  </data>
+  <data name="Attributes5.Text">
+    <value>Attributs globaux</value>
+  </data>
+  <data name="Attributes5.ToolTip">
+    <value>Gérer les attributs qui apparaissent dans l'ensemble du site</value>
+  </data>
+  <data name="Attributes1.Text">
+    <value>Gérer les attributs</value>
+  </data>
+  <data name="Attributes1.ToolTip">
+    <value>Ajouter ou modifier les attributs qui s'appliquent à ce dossier et ses enfants</value>
+  </data>
+  <data name="CopyX.Text">
+    <value>Copier</value>
+  </data>
+  <data name="CopyX.ToolTip">
+    <value>Copier les éléments dans le presse papier</value>
+  </data>
+  <data name="CutX.Text">
+    <value>Couper</value>
+  </data>
+  <data name="CutX.ToolTip">
+    <value>Couper les éléments dans le presse papier</value>
+  </data>
+  <data name="Paste1.Text">
+    <value>Coller</value>
+  </data>
+  <data name="Paste1.ToolTip">
+    <value>Coller le contenu du presse-papiers ici</value>
+  </data>
+  <data name="SyncFolders6.Text">
+    <value>Dossiers synchronisés</value>
+  </data>
+  <data name="SyncFolders6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="AdminStorageSettings5.Text">
+    <value>Paramètres de stockage</value>
+  </data>
+  <data name="AdminStorageSettings5.ToolTip">
+    <value>Précisez comment DMX stocke vos documents</value>
+  </data>
+  <data name="EmptyRecycleBin4.ToolTip">
+    <value>Supprimer définitivement tous les éléments marqués comme effacésmés</value>
+  </data>
+  <data name="EmptyRecycleBin4.Text">
+    <value>Vider la corbeille</value>
+  </data>
+  <data name="Storage6.Text">
+    <value>Paramètres de stockage</value>
+  </data>
+  <data name="Storage6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="New.Text">
+    <value>Nouveau ...</value>
+  </data>
+  <data name="AdminUploadSettings5.Text">
+    <value>Paramètres de téléchargement</value>
+  </data>
+  <data name="AdminUploadSettings5.ToolTip">
+    <value>Spécifiez le contrôle à utiliser pour télécharger le contenu de ce portail</value>
+  </data>
+  <data name="AdminGetHelp5.Text">
+    <value>Obtenir de l'aide</value>
+  </data>
+  <data name="AdminGetHelp5.ToolTip">
+    <value>Obtenir de l'aide de Bring2mind pour Document Exchange</value>
+  </data>
+  <data name="Create.Text">
+    <value>Créer ...</value>
+  </data>
+  <data name="Create.ToolTip">
+    <value>Créer un fichier en ligne</value>
+  </data>
+  <data name="CreateHtml.Text">
+    <value>Fichier html</value>
+  </data>
+  <data name="CreateHtml.ToolTip">
+    <value>Créer un nouveau fichier HTML en ligne</value>
+  </data>
+  <data name="CreateText.Text">
+    <value>Fichier texte</value>
+  </data>
+  <data name="CreateText.ToolTip">
+    <value>Créer un nouveau fichier texte en ligne</value>
+  </data>
+  <data name="EditInline.Help">
+    <value>Editer et créer une nouvelle version</value>
+  </data>
+  <data name="EditInline.Text">
+    <value>Editer nouvelle version</value>
+  </data>
+  <data name="ViewX.Text">
+    <value>Visualiser</value>
+  </data>
+  <data name="ViewX.ToolTip">
+    <value>Visualiser document en ligne</value>
+  </data>
+  <data name="NewFile.Text">
+    <value>Fichier(s)</value>
+  </data>
+  <data name="NewFolder.Text">
+    <value>Dossier</value>
+  </data>
+  <data name="NewHyperlink.Text">
+    <value>Hyperlien</value>
+  </data>
+  <data name="DeleteX.Confirm">
+    <value>Voulez-vous vraiment supprimer {0}?</value>
+  </data>
+  <data name="HardDeleteX.Confirm">
+    <value>souhaitez-vous vraiment supprimer définitivement {0}?</value>
+  </data>
+  <data name="Options6.Text">
+    <value>Options du menu</value>
+  </data>
+  <data name="SubscriptionMgrX.Text">
+    <value>Gestion des abonnements</value>
+  </data>
+  <data name="SubscriptionMgrX.ToolTip">
+    <value>Lancer le gestionnaire d'abonnements pour les administrateurs</value>
+  </data>
+  <data name="PropertiesX.Text">
+    <value>Propriétés</value>
+  </data>
+  <data name="PropertiesX.ToolTip">
+    <value>Voir les détails de ce fichier / dossier dans une fenêtre pop-up</value>
+  </data>
+  <data name="Mail.Text">
+    <value>Courrier</value>
+  </data>
+  <data name="Mail.ToolTip">
+    <value>envoyer le(s) document(s) à quelqu'un d'autre</value>
+  </data>
+  <data name="Recover5.Text">
+    <value>Récupérer</value>
+  </data>
+  <data name="Recover5.ToolTip">
+    <value>Récupérer des fichiers à partir d'une suppression définitive</value>
+  </data>
+  <data name="Upload6.Text">
+    <value>Paramètres de téléchargement</value>
+  </data>
+  <data name="Upload6.ToolTip">
+    <value> </value>
+  </data>
+  <data name="WebConfig6.Text">
+    <value>Paramètres Web.config</value>
+  </data>
+  <data name="WebConfig6.ToolTip">
+    <value> </value>
+  </data>
+</root>

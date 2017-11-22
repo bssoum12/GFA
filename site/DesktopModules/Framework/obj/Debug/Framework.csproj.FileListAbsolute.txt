@@ -1,0 +1,5 @@
+C:\site\bin\Framework.dll
+C:\site\bin\Framework.pdb
+C:\site\DesktopModules\Framework\obj\Debug\Framework.csprojResolveAssemblyReference.cache
+C:\site\DesktopModules\Framework\obj\Debug\Framework.dll
+C:\site\DesktopModules\Framework\obj\Debug\Framework.pdb

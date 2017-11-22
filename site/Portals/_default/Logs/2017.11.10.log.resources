@@ -1,0 +1,99 @@
+2017-11-10 16:44:23.561+01:00 [vmi134697][D:2][T:11][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-10 16:44:23.610+01:00 [vmi134697][D:2][T:11][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-10 16:44:26.645+01:00 [vmi134697][D:2][T:20][FATAL] DotNetNuke.Framework.PageBase - An error has occurred while loading page.
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-10 16:44:26.646+01:00 [vmi134697][D:2][T:20][ERROR] DotNetNuke.Services.Exceptions.Exceptions - ~/Default.aspx?tabid=35&error=Dashboard+loading+settings+conflict.+Use+one+of+the+following+approaches+to+load+a+dashboard%3a%0d%0a-Specify+a+path+to+the+dashboard+XML+file+using+the+DashboardXmlPath+property.%0d%0a-Call+the+OpenDashboard+method.%0d%0a-Provide+a+dashboard+created+at+design+time+using+the+DashboardType+property.%0d%0a-Provide+a+path+to+a+folder+containing+dashboards+using+DashboardStorageFolder.%0d%0a-Use+the+SetDashboardStorage+to+specify+a+custom+dashboard+storage.%0d%0a&content=0
+System.Exception: Dashboard loading settings conflict. Use one of the following approaches to load a dashboard:
+-Specify a path to the dashboard XML file using the DashboardXmlPath property.
+-Call the OpenDashboard method.
+-Provide a dashboard created at design time using the DashboardType property.
+-Provide a path to a folder containing dashboards using DashboardStorageFolder.
+-Use the SetDashboardStorage to specify a custom dashboard storage.
+
+   à DevExpress.DashboardWeb.ASPxDashboard.ValidateDashboardStorage()
+   à DevExpress.DashboardWeb.ASPxDashboard.InitializeControlMode()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Control.LoadRecursive()
+   à System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2017-11-10 16:48:30.498+01:00 [vmi134697][D:4][T:12][ERROR] DotNetNuke.Services.Exceptions.Exceptions - FriendlyMessage="Erreur: Dashbord est actuellement indisponible." ctrl="ASP.desktopmodules_dashbord_view_ascx" exc="DevExpress.DataAccess.InvalidNameException: The query name cannot be empty.
+   à DevExpress.DataAccess.Sql.SqlQueryCollection.CheckQueryName(SqlQuery query)
+   à DevExpress.DataAccess.Sql.SqlQueryCollection.Add(SqlQuery item)
+   à VD.Modules.Dashbord.View.Page_Load(Object sender, EventArgs e) dans C:\site\DesktopModules\Dashbord\View.ascx.cs:ligne 49"
+2017-11-10 19:24:30.342+01:00 [vmi134697][D:2][T:22][FATAL] DotNetNuke.Web.Common.Internal.DotNetNukeHttpApplication - System.Web.HttpException (0x80004005): A potentially dangerous Request.Path value was detected from the client (:).
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.PipelineStepManager.ValidateHelper(HttpContext context)

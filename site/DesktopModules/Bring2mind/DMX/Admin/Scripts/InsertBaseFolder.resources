@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Insert Base Folder">
+ <Description>This script will insert a new folder at the root of your installation. All existing content will be moved to that new folder.</Description>
+ <Process>
+  <Run RunType="SQL"><![CDATA[
+
+BEGIN TRANSACTION
+
+DECLARE @NewID INT
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Entries (
+	[CollectionId],
+	[Deleted],
+	[Entry],
+	[EntryType],
+	[FileSize],
+	[Created],
+	[IsApproved],
+	[LastModified],
+	[LastVersionId],
+	[Owner],
+	[PortalId],
+	[Version],
+	[VersionsToKeep],
+ [Title]
+) SELECT 
+	-100,
+	0,
+	'',
+	'Collection',
+	0,
+	GETDATE(),
+	1,
+	GETDATE(),
+	NULL,
+	p.AdministratorId,
+	p.PortalId,
+	1,
+	0,
+ 'New Base Folder'
+FROM
+ {databaseOwner}{objectQualifier}Portals p
+WHERE
+ p.PortalId=@PortalId;
+
+SELECT @NewID = SCOPE_IDENTITY();
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_EntryPermissions (
+	[EntryId],
+	[PermissionId],
+	[RoleId],
+	[UserId],
+	AllowAccess,
+	PortalId
+) SELECT 
+	@NewID,
+	perm.PermissionId,
+	p.AdministratorRoleId,
+	-10,
+	1,
+	perm.PortalId
+FROM {databaseOwner}{objectQualifier}DMX_Permissions perm
+INNER JOIN {databaseOwner}{objectQualifier}Portals p ON perm.PortalId=p.PortalId
+WHERE perm.PortalId=@PortalId
+AND (NOT perm.PermissionKey='APPROVE');
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries SET
+	[CollectionId] = @NewID
+WHERE
+	[CollectionId] = 0
+AND
+ [PortalId] = @PortalId;
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries SET
+	[CollectionId] = 0
+WHERE
+	[EntryId] = @NewID;
+
+COMMIT
+
+ ]]></Run>
+ </Process>
+</Script>

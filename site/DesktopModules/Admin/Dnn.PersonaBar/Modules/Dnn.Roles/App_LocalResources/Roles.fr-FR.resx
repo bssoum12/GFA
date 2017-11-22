@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Create.Text" xml:space="preserve">
+    <value>Créer nouveau rôle</value>
+  </data>
+  <data name="DuplicateRole.Text" xml:space="preserve">
+    <value>Le nom de rôle existe déjà.</value>
+  </data>
+  <data name="nav_Roles.Text">
+    <value>Rôles</value>
+  </data>
+  <data name="SearchPlaceHolder.Text" xml:space="preserve">
+    <value>Rechercher un rôle par mot clé</value>
+  </data>
+  <data name="Actions.Header">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="AllGroups.Text" xml:space="preserve">
+    <value>[Tous les groupes]</value>
+  </data>
+  <data name="Auto.Header">
+    <value>Auto.</value>
+  </data>
+  <data name="GlobalRolesGroup.Text" xml:space="preserve">
+    <value>[Rôles globaux]</value>
+  </data>
+  <data name="GroupName.Header">
+    <value>Groupe</value>
+  </data>
+  <data name="LoadMore.Text" xml:space="preserve">
+    <value>Charger plus</value>
+  </data>
+  <data name="RoleName.Header" xml:space="preserve">
+    <value>Nom du rôle&amp;nbsp;</value>
+  </data>
+  <data name="Users.Header">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="AutoAssignment.Text" xml:space="preserve">
+    <value>Affectation automatique</value>
+  </data>
+  <data name="Cancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="Delete.Text">
+    <value>Supprimer</value>
+  </data>
+  <data name="Description.Text">
+    <value>Description</value>
+  </data>
+  <data name="NewGroup.Text" xml:space="preserve">
+    <value>Nouveau groupe</value>
+  </data>
+  <data name="Public.Text">
+    <value>Public</value>
+  </data>
+  <data name="plRoleGroups.Text" xml:space="preserve">
+    <value>Groupe de rôles</value>
+  </data>
+  <data name="Save.Text">
+    <value>Enregistrer</value>
+  </data>
+  <data name="DuplicateRoleGroup.Text" xml:space="preserve">
+    <value>Le nom du groupe existe déjà.</value>
+  </data>
+  <data name="GroupName.Required" xml:space="preserve">
+    <value>Ce champ est requis</value>
+  </data>
+  <data name="GroupName.Text" xml:space="preserve">
+    <value>Nom du groupe</value>
+  </data>
+  <data name="RoleName.Text" xml:space="preserve">
+    <value>Nom du rôle&amp;nbsp;</value>
+  </data>
+  <data name="securityModeListLabel.Text" xml:space="preserve">
+    <value>Mode de sécurité</value>
+  </data>
+  <data name="statusListLabel.Text">
+    <value>Statut</value>
+  </data>
+  <data name="DeleteRole.Confirm" xml:space="preserve">
+    <value>Êtes-vous sûr de que vouloir supprimer ce rôle ?</value>
+  </data>
+  <data name="NoData.Text" xml:space="preserve">
+    <value>Il n’y a pas de rôles dans ce groupe de rôles.</value>
+  </data>
+  <data name="RoleName.Required" xml:space="preserve">
+    <value>Ce champ est requis</value>
+  </data>
+  <data name="UpdateGroup.Text" xml:space="preserve">
+    <value>Mise à jour du groupe</value>
+  </data>
+  <data name="Add.Text">
+    <value>Ajouter</value>
+  </data>
+  <data name="AddUserPlaceHolder.Text" xml:space="preserve">
+    <value>Commencez à taper pour ajouter un utilisateur à ce rôle</value>
+  </data>
+  <data name="Expires.Header">
+    <value>Expiration</value>
+  </data>
+  <data name="Members.Header">
+    <value>Membres</value>
+  </data>
+  <data name="PageInfo.Text" xml:space="preserve">
+    <value>Page {0} sur {1}</value>
+  </data>
+  <data name="PageSummary.Text" xml:space="preserve">
+    <value>Affichage de {0}-{1} sur {2}</value>
+  </data>
+  <data name="Start.Header">
+    <value>Démarrer</value>
+  </data>
+  <data name="Users.Text">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="NoUsers.Text" xml:space="preserve">
+    <value>Il n’y a aucun utilisateur dans ce rôle.</value>
+  </data>
+  <data name="Search.Text">
+    <value>Chercher</value>
+  </data>
+  <data name="DeleteUser.Confirm" xml:space="preserve">
+    <value>Êtes-vous sûr de que vouloir supprimer cet utilisateur du rôle ?</value>
+  </data>
+  <data name="DeleteRoleGroup.Confirm" xml:space="preserve">
+    <value>Êtes-vous sûr de que vouloir supprimer ce groupe de rôles ?</value>
+  </data>
+  <data name="Approved.Text">
+    <value>Approuvé</value>
+  </data>
+  <data name="Both.Text" xml:space="preserve">
+    <value>Les deux</value>
+  </data>
+  <data name="Disabled.Text">
+    <value>Désactivé</value>
+  </data>
+  <data name="Pending.Text" xml:space="preserve">
+    <value>En attente</value>
+  </data>
+  <data name="SecurityRole.Text" xml:space="preserve">
+    <value>Membre du groupe</value>
+  </data>
+  <data name="SocialGroup.Text" xml:space="preserve">
+    <value>Groupe social</value>
+  </data>
+  <data name="AssignToExistUsers.Text" xml:space="preserve">
+    <value>Attribuer aux utilisateurs existants</value>
+  </data>
+  <data name="ActionCancelled.Message">
+    <value>Annulé.</value>
+  </data>
+  <data name="AssignToExistUsers.Help" xml:space="preserve">
+    <value>Attribuer ce rôle à tous les utilisateurs existants.</value>
+  </data>
+  <data name="DeleteInconsistency.Error" xml:space="preserve">
+    <value>Une incohérence s’est produite. Actualisez la page et essayez à nouveau.</value>
+  </data>
+  <data name="DeleteRole.Error" xml:space="preserve">
+    <value>Impossible de supprimer le rôle. Veuillez essayer plus tard</value>
+  </data>
+  <data name="DeleteRole.Message" xml:space="preserve">
+    <value>Rôle supprimé avec succès.</value>
+  </data>
+  <data name="DeleteRoleGroup.Error" xml:space="preserve">
+    <value>Impossible de supprimer le groupe de rôles. Veuillez essayer plus tard.</value>
+  </data>
+  <data name="DeleteRoleGroup.Message" xml:space="preserve">
+    <value>Groupe de rôles supprimé avec succès.</value>
+  </data>
+  <data name="Description.Help" xml:space="preserve">
+    <value>Saisir une description pour ce groupe.</value>
+  </data>
+  <data name="lblNewGroup.Text" xml:space="preserve">
+    <value>[Nouveau groupe]</value>
+  </data>
+  <data name="plRoleGroups.Help" xml:space="preserve">
+    <value>Sélectionner le groupe de rôles auquel appartient ce rôle.</value>
+  </data>
+  <data name="PublicRole.Help" xml:space="preserve">
+    <value>Cochez cette case si les utilisateurs peuvent s'abonner à ce rôle via la page Gérer les services de leur compte d'utilisateur.</value>
+  </data>
+  <data name="RoleAdded.Error" xml:space="preserve">
+    <value>Impossible de créer le rôle. Veuillez essayer plus tard.</value>
+  </data>
+  <data name="RoleAdded.Message" xml:space="preserve">
+    <value>Rôle créé avec succès.</value>
+  </data>
+  <data name="RoleName.Help" xml:space="preserve">
+    <value>Saisir un nom pour ce groupe.</value>
+  </data>
+  <data name="RoleUpdated.Error" xml:space="preserve">
+    <value>Impossible de mettre à jour le rôle. Veuillez essayer plus tard.</value>
+  </data>
+  <data name="RoleUpdated.Message" xml:space="preserve">
+    <value>Rôle mis à jour avec succès.</value>
+  </data>
+  <data name="securityModeListLabel.Help" xml:space="preserve">
+    <value>Choisir le mode de sécurité de ce rôle/groupe.</value>
+  </data>
+  <data name="statusListLabel.Help" xml:space="preserve">
+    <value>Sélectionner le statut pour ce rôle/groupe.</value>
+  </data>
+  <data name="RoleGroupUpdated.Error" xml:space="preserve">
+    <value>Impossible de mettre à jour le groupe de rôles. Veuillez essayer plus tard.</value>
+  </data>
+  <data name="RoleGroupUpdated.Message" xml:space="preserve">
+    <value>Groupe de rôles correctement mis à jour.</value>
+  </data>
+  <data name="AutoAssignment.Help" xml:space="preserve">
+    <value>Cocher cette case si les utilisateurs sont automatiquement affectés à ce rôle.</value>
+  </data>
+  <data name="GroupDescription.Help" xml:space="preserve">
+    <value>Saisir une description pour ce groupe de rôles.</value>
+  </data>
+  <data name="GroupDescription.Text">
+    <value>Description</value>
+  </data>
+  <data name="GroupName.Help" xml:space="preserve">
+    <value>Entrer un nom de groupe de rôles.</value>
+  </data>
+  <data name="PermissionsByRole.Text" xml:space="preserve">
+    <value>Autorisations par rôle</value>
+  </data>
+  <data name="SendEmail.Text" xml:space="preserve">
+    <value>Envoyer le message</value>
+  </data>
+  <data name="isOwner.Text" xml:space="preserve">
+    <value>Est propriétaire</value>
+  </data>
+  <data name="InSufficientPermissions.Text" xml:space="preserve">
+    <value>Vous n’avez pas les permissions pour effectuer cette action.</value>
+  </data>
+  <data name="UserNotFound.Text" xml:space="preserve">
+    <value>Utilisateur introuvable.</value>
+  </data>
+  <data name="InvalidRequest.Text" xml:space="preserve">
+    <value>Requête non valide.</value>
+  </data>
+  <data name="SecurityRoleDeleteNotAllowed.Text" xml:space="preserve">
+    <value>Rôles système ne peut pas être supprimés.</value>
+  </data>
+  <data name="CannotAssginUserToUnApprovedRole.Text" xml:space="preserve">
+    <value>Impossible d’affecter l’utilisateur à un rôle non approuvé.</value>
+  </data>
+  <data name="EditRole.Text" xml:space="preserve">
+    <value>Modifier le rôle</value>
+  </data>
+  <data name="UsersInRole.Text" xml:space="preserve">
+    <value>Utilisateurs ayant ce rôle</value>
+  </data>
+  <!---->
+</root>

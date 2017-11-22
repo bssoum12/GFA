@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="plVersions.Text" xml:space="preserve">
+    <value>Default nr of versions to keep</value>
+  </data>
+  <data name="plVersions.Help" xml:space="preserve">
+    <value>You can set the the number of document versions that will be kept on the harddisk for each item. This is the default value. Older versions will get physically deleted.</value>
+  </data>
+  <data name="lblVersions.Text" xml:space="preserve">
+    <value>(-1 = keep all versions)</value>
+  </data>
+  <data name="valWholeNumber.Errormessage" xml:space="preserve">
+    <value>Not a valid (whole) number!</value>
+  </data>
+  <data name="valRequired.Errormessage" xml:space="preserve">
+    <value>Required!</value>
+  </data>
+  <data name="lblNotePortal.Text" xml:space="preserve">
+    <value>Note: these settings apply to all Document Exchange modules in this portal</value>
+  </data>
+  <data name="plPermissionsOnlyByAdmin.Text" xml:space="preserve">
+    <value>Permissions Only By Admin</value>
+  </data>
+  <data name="plPermissionsOnlyByAdmin.Help" xml:space="preserve">
+    <value>Permissions on items automatically inherit from their parent and cannot be adjusted by regular users/editors of the system.</value>
+  </data>
+  <data name="ControlTitle_options.Text" xml:space="preserve">
+    <value>Document Exchange Options</value>
+  </data>
+  <data name="lock12hours.Text" xml:space="preserve">
+    <value>12 Hours</value>
+  </data>
+  <data name="lock1hour.Text" xml:space="preserve">
+    <value>1 Hour</value>
+  </data>
+  <data name="lock1week.Text" xml:space="preserve">
+    <value>1 Week</value>
+  </data>
+  <data name="lock20mins.Text" xml:space="preserve">
+    <value>20 Minutes</value>
+  </data>
+  <data name="lock24hours.Text" xml:space="preserve">
+    <value>24 Hours</value>
+  </data>
+  <data name="lock2days.Text" xml:space="preserve">
+    <value>2 Days</value>
+  </data>
+  <data name="lock4hours.Text" xml:space="preserve">
+    <value>4 Hours</value>
+  </data>
+  <data name="plAuditEmail.Help" xml:space="preserve">
+    <value>If specified an email is according to the notifications matrix to this email address</value>
+  </data>
+  <data name="plAuditEmail.Text" xml:space="preserve">
+    <value>Audit Email</value>
+  </data>
+  <data name="plLockDuration.Help" xml:space="preserve">
+    <value>Specify how long a lock should remain on a document when locked through the web interface.</value>
+  </data>
+  <data name="plLockDuration.Text" xml:space="preserve">
+    <value>Lock Duration</value>
+  </data>
+  <data name="plDefaultDMX.Help" xml:space="preserve">
+    <value>Specify where users should be directed to to see content when notified.</value>
+  </data>
+  <data name="plDefaultDMX.Text" xml:space="preserve">
+    <value>Default DMX Module</value>
+  </data>
+  <data name="plEnableWebDAV.Help" xml:space="preserve">
+    <value>If this is deselected all WebDAV capabilities will be unavailable.</value>
+  </data>
+  <data name="plEnableWebDAV.Text" xml:space="preserve">
+    <value>Enable WebDAV</value>
+  </data>
+  <data name="ExternalLocationAccess.Errormessage" xml:space="preserve">
+    <value>The path cannot be accessed. Please check that the worker process has full access to the path.</value>
+  </data>
+  <data name="ExternalLocationTrust.Errormessage" xml:space="preserve">
+    <value>You do not have sufficient IIS permissions (trust level) to perform this operation.</value>
+  </data>
+  <data name="plWebDavHardDelete.Help" xml:space="preserve">
+    <value>Deletes through WebDAV are always treated as hard deletes is checked. This means the document will no longer be recuperable after delete. Soft delete means the document is just marked as deleted but can be undeleted by an admin through the web interface. If soft deleted the filename will still be recognized by webDAV and attempts to add a new file under the same name will undelete the old.</value>
+  </data>
+  <data name="plWebDavHardDelete.Text" xml:space="preserve">
+    <value>WebDAV Hard Deletes</value>
+  </data>
+  <data name="dshConfiguration.Text" xml:space="preserve">
+    <value>Configuration (Host level only)</value>
+  </data>
+  <data name="plDebug.Help" xml:space="preserve">
+    <value>Switch installation to debug mode</value>
+  </data>
+  <data name="plDebug.Text" xml:space="preserve">
+    <value>Debug Mode</value>
+  </data>
+  <data name="dshWebDAV.Text" xml:space="preserve">
+    <value>WebDAV Settings</value>
+  </data>
+  <data name="plWebDAVPermissions.Help" xml:space="preserve">
+    <value>Specify which roles can use WebDAV with DMX</value>
+  </data>
+  <data name="plWebDAVPermissions.Text" xml:space="preserve">
+    <value>WebDAV Permissions</value>
+  </data>
+  <data name="SimpleAllow.Permission" xml:space="preserve">
+    <value>Allow</value>
+  </data>
+  <data name="plRemarksAsHtml.Help" xml:space="preserve">
+    <value>If selected the remarks field editor will be rendered as Rich Text editor and remarks will be stored as Html</value>
+  </data>
+  <data name="plRemarksAsHtml.Text" xml:space="preserve">
+    <value>Remarks as Html</value>
+  </data>
+  <data name="plShowEarlyFinish.Help" xml:space="preserve">
+    <value>Show the 'Finish' button on every screen of the Edit (or 'New Item') wizard</value>
+  </data>
+  <data name="plShowEarlyFinish.Text" xml:space="preserve">
+    <value>Show Intermediate Finish in Edit</value>
+  </data>
+  <data name="GetTranslations.Text" xml:space="preserve">
+    <value>Get Language Packs for Document Exchange</value>
+  </data>
+  <data name="plQuickSearchTitleOnly.Help" xml:space="preserve">
+    <value>If selected only the title will be searched by default during a quick search. If not, then title, keywords and contents will be searched.</value>
+  </data>
+  <data name="plQuickSearchTitleOnly.Text" xml:space="preserve">
+    <value>Quicksearch Title Only</value>
+  </data>
+  <data name="Other.Text" xml:space="preserve">
+    <value>&lt; Other. Select below. &gt;</value>
+  </data>
+  <data name="plDefaultPortalAlias.Help" xml:space="preserve">
+    <value>When users are sent emails, this portal alias will be used.</value>
+  </data>
+  <data name="plDefaultPortalAlias.Text" xml:space="preserve">
+    <value>Default Portal Alias</value>
+  </data>
+  <data name="plAllowAdminSyncFolder.Help" xml:space="preserve">
+    <value>If selected the Administrator of this portal can add synchronized folders that can access UNC folders outside the home directory.</value>
+  </data>
+  <data name="plAllowAdminSyncFolder.Text" xml:space="preserve">
+    <value>Allow External SynFolders</value>
+  </data>
+  <data name="plAllowEmailMe.Help" xml:space="preserve">
+    <value>If selected users are allowed to send themselves a file (or multiple files) by email.</value>
+  </data>
+  <data name="plAllowEmailMe.Text" xml:space="preserve">
+    <value>Allow Mail Me</value>
+  </data>
+  <data name="plUseGraveYard.Help" xml:space="preserve">
+    <value>If selected all hard deleted items will be written to a special directory (Portals/[id]/DMX/Graveyard) so they may be recuperated if need be.</value>
+  </data>
+  <data name="plUseGraveYard.Text" xml:space="preserve">
+    <value>Use Graveyard</value>
+  </data>
+  <data name="dshThumbnails.Text" xml:space="preserve">
+    <value>Thumbnails Settings</value>
+  </data>
+  <data name="lblHeight.Text" xml:space="preserve">
+    <value>H</value>
+  </data>
+  <data name="lblWidth.Text" xml:space="preserve">
+    <value>W</value>
+  </data>
+  <data name="plEnableCustomThumbnails.Help" xml:space="preserve">
+    <value>When selected users can upload their own thumbnail for a file</value>
+  </data>
+  <data name="plEnableCustomThumbnails.Text" xml:space="preserve">
+    <value>Enable Custom Thumbnails</value>
+  </data>
+  <data name="plEnableThumbnails.Help" xml:space="preserve">
+    <value>If selected thumbnails will be generated where possible</value>
+  </data>
+  <data name="plEnableThumbnails.Text" xml:space="preserve">
+    <value>Enable Thumbnails</value>
+  </data>
+  <data name="plSecureThumbnails.Help" xml:space="preserve">
+    <value>When selected thumbnails will be stored in DMX. Note this affects performance. If left unchecked the thumbnail is stored as an image file in the thumbnails directory of DMX</value>
+  </data>
+  <data name="plSecureThumbnails.Text" xml:space="preserve">
+    <value>Secure Thumbnails</value>
+  </data>
+  <data name="plThumbnailSize.Help" xml:space="preserve">
+    <value>Specify the size (in pixels) of the box within which the thumbnail must fall</value>
+  </data>
+  <data name="plThumbnailSize.Text" xml:space="preserve">
+    <value>Thumbnail Size</value>
+  </data>
+  <data name="plThumbnailType.Help" xml:space="preserve">
+    <value>Specify how the thumbnail should fill the size box: "Shrink" means resize it to fall in box while preserving aspect ratio (this means there are bits of the box not filled by the thumbnail). "Crop" means it is resized (preserving aspect ratio) but it will fill the box (this means that bits will be cut off). "Fill" means that the image is resized and stretched to fill the box (the image is deformed).</value>
+  </data>
+  <data name="plThumbnailType.Text" xml:space="preserve">
+    <value>Thumbnail Type</value>
+  </data>
+  <data name="TNCrop.Text" xml:space="preserve">
+    <value>Crop</value>
+  </data>
+  <data name="TNFill.Text" xml:space="preserve">
+    <value>Fill</value>
+  </data>
+  <data name="TNShrink.Text" xml:space="preserve">
+    <value>Shrink</value>
+  </data>
+  <data name="plThumbnailFormat.Help" xml:space="preserve">
+    <value>Select file type to save the thumbnail in</value>
+  </data>
+  <data name="plThumbnailFormat.Text" xml:space="preserve">
+    <value>Thumbnail Format</value>
+  </data>
+  <data name="dshPermissions.Text" xml:space="preserve">
+    <value>Application Permissions</value>
+  </data>
+  <data name="chkMailMethodAttachment.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="chkMailMethodLink.Text" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="dshMailing.Text" xml:space="preserve">
+    <value>Mailing Options</value>
+  </data>
+  <data name="plMethods.Help" xml:space="preserve">
+    <value>Select how users can send these documents. As attachment means recipients get a (large) email with the actual documents attached. As link means recipients get links added to the bottom of the email which permits them to download the document directly from DMX bypassing any security.</value>
+  </data>
+  <data name="plMethods.Text" xml:space="preserve">
+    <value>Mailing Methods</value>
+  </data>
+  <data name="chkShowFree.Text" xml:space="preserve">
+    <value>Free text email list</value>
+  </data>
+  <data name="chkShowRoles.Text" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="chkShowUsers.Text" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="optDays.Text" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="optMonths.Text" xml:space="preserve">
+    <value>Months</value>
+  </data>
+  <data name="optWeeks.Text" xml:space="preserve">
+    <value>Weeks</value>
+  </data>
+  <data name="optYears.Text" xml:space="preserve">
+    <value>Years</value>
+  </data>
+  <data name="plDownloads.Help" xml:space="preserve">
+    <value>Set default nr of downloads a link remains alive</value>
+  </data>
+  <data name="plDownloads.Text" xml:space="preserve">
+    <value>Default download count</value>
+  </data>
+  <data name="plDuration.Help" xml:space="preserve">
+    <value>Sets the default time a link will remain alive</value>
+  </data>
+  <data name="plDuration.Text" xml:space="preserve">
+    <value>Default link duration</value>
+  </data>
+  <data name="plDurationMeasure.Help" xml:space="preserve">
+    <value>Sets the default time a link will remain alive</value>
+  </data>
+  <data name="plDurationMeasure.Text" xml:space="preserve">
+    <value>Duration measure</value>
+  </data>
+  <data name="plEnableMailing.Help" xml:space="preserve">
+    <value>If checked the mailing logic is enabled. Authorized users may send documents they have access to to someone else based on the settings below.</value>
+  </data>
+  <data name="plEnableMailing.Text" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="plShowMailRecipients.Help" xml:space="preserve">
+    <value>Select how users can select recipients of mailed documents. Note that selecting users or roles allows those users to see a list of these. Selecting free email address sending allows users to send to any email address. &lt;b&gt;NB: Make sure to select at least 1 or users won't be able to send anything.&lt;/b&gt;</value>
+  </data>
+  <data name="plShowMailRecipients.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="plUserCanChangeAvailability.Help" xml:space="preserve">
+    <value>If selected users can change the lifetime of a generated direct access link</value>
+  </data>
+  <data name="plUserCanChangeAvailability.Text" xml:space="preserve">
+    <value>User can change availability</value>
+  </data>
+  <data name="plMailUseAdminSender.Help" xml:space="preserve">
+    <value>If checked tThe emails being sent will have the portal admin as sender (check portal settings to see which account that is). If unchecked the user sending will be used as sender.</value>
+  </data>
+  <data name="plMailUseAdminSender.Text" xml:space="preserve">
+    <value>Use Admin as Sender</value>
+  </data>
+  <data name="dshPermissionPermissions.Text" xml:space="preserve">
+    <value>Permission Edit Permissions</value>
+  </data>
+  <data name="lock1month.Text" xml:space="preserve">
+    <value>1 Month</value>
+  </data>
+  <data name="plNotificationsFromAddress.Help" xml:space="preserve">
+    <value>Use this email address as sender for all outgoing email. If left blank the portal email address will be used.</value>
+  </data>
+  <data name="plNotificationsFromAddress.Text" xml:space="preserve">
+    <value>Notifications Sender Address</value>
+  </data>
+  <data name="plUsePageGuide.Help" xml:space="preserve">
+    <value>Use the page guide help style instead of the DNN style help icons</value>
+  </data>
+  <data name="plUsePageGuide.Text" xml:space="preserve">
+    <value>Use PageGuide</value>
+  </data>
+  <data name="plMoveKeepOldPermissions.Help" xml:space="preserve">
+    <value>When moving a document, the document should keep its old permissions. If deselected then the document will assume the default permissions of the folder it is moved to. Windows default behavior is to keep the old permissions.</value>
+  </data>
+  <data name="plMoveKeepOldPermissions.Text" xml:space="preserve">
+    <value>Move Keep Old Permissions</value>
+  </data>
+  <data name="Hours.Text" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="plWebDAVCookieTimeout.Help" xml:space="preserve">
+    <value>WebDAV attempts to help authentication by setting a cookie on the user's machine. By default this times out after 1 hour. You can specify a different timeframe here.</value>
+  </data>
+  <data name="plWebDAVCookieTimeout.Text" xml:space="preserve">
+    <value>WebDAV Cookie Timeout</value>
+  </data>
+  <data name="plHidePermissionsWhenNoPermissions.Help" xml:space="preserve">
+    <value>Hide the permissions grid when the user has no permission to edit any of the permissions</value>
+  </data>
+  <data name="plHidePermissionsWhenNoPermissions.Text" xml:space="preserve">
+    <value>Hide Permissions When No Permissions</value>
+  </data>
+  <data name="plIncludeAllUsersByDefault.Help" xml:space="preserve">
+    <value>If checked then the default permissions on the root will include all users, if unchecked only administrators are pre-selected.</value>
+  </data>
+  <data name="plIncludeAllUsersByDefault.Text" xml:space="preserve">
+    <value>Include All Users By Default</value>
+  </data>
+</root>

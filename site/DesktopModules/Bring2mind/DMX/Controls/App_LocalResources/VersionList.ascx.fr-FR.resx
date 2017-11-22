@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Link.Text">
+    <value>lien</value>
+  </data>
+  <data name="Download.Text">
+    <value>Télécharger</value>
+  </data>
+</root>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="chkAllVersions.Text">
+    <value>Toutes les versions</value>
+  </data>
+  <data name="EditEntry.Text">
+    <value>Modifier un élément</value>
+  </data>
+  <data name="EditNewVersion.Text">
+    <value>Créer une nouvelle version</value>
+  </data>
+  <data name="FileSize.Heading">
+    <value>Taille</value>
+  </data>
+  <data name="LastModified.Heading">
+    <value>Modifié</value>
+  </data>
+  <data name="optAnd.Text">
+    <value>ET</value>
+  </data>
+  <data name="optOr.Text">
+    <value>OU</value>
+  </data>
+  <data name="plCombination.Help">
+    <value>Spécifiez le type de combinaison</value>
+  </data>
+  <data name="plCombination.Text">
+    <value>Combinaison</value>
+  </data>
+  <data name="plField.Help">
+    <value>Sélectionnez le champ pour la recherche</value>
+  </data>
+  <data name="plField.Text">
+    <value>Champ</value>
+  </data>
+  <data name="plSearchString.Help">
+    <value>Spécifiez le texte à rechercher</value>
+  </data>
+  <data name="plSearchString.Text">
+    <value>Termes à rechercher</value>
+  </data>
+  <data name="plSelection.Help">
+    <value>Quel genre de sélection spouhaitez-vous ?</value>
+  </data>
+  <data name="plSelection.Text">
+    <value>Sélectionnez</value>
+  </data>
+  <data name="Title.Heading">
+    <value>Nom</value>
+  </data>
+  <data name="tabRegularSearch.Text">
+    <value>Avancée</value>
+  </data>
+  <data name="plExact.Help">
+    <value>Si coché, la chaîne n'est pas séparée en mots, mais utilisé comme une phrase entière pour la recherche de correspondance</value>
+  </data>
+  <data name="plExact.Text">
+    <value>Exacte</value>
+  </data>
+  <data name="optAll.Text">
+    <value>Référentiel entier</value>
+  </data>
+  <data name="optAllFields.Text">
+    <value>Tous les champs</value>
+  </data>
+  <data name="optCoreFields.Text">
+    <value>Titre, mots clés, Contenu</value>
+  </data>
+  <data name="optFolder.Text">
+    <value>Ce dossier</value>
+  </data>
+  <data name="plScope.Help">
+    <value>Indiquez où vous souhaitez chercher</value>
+  </data>
+  <data name="plScope.Text">
+    <value>Portée</value>
+  </data>
+  <data name="tabQuickSearch.Text">
+    <value>Rechercher</value>
+  </data>
+  <data name="MailMeSent.Text">
+    <value>Documents envoyés à {0}</value>
+  </data>
+  <data name="cmdResetMenus.Text">
+    <value>Réinitialiser les menus</value>
+  </data>
+  <data name="cmdScheduledTask.Text">
+    <value>Exécuter Collection de Notifications</value>
+  </data>
+  <data name="optCoreFieldsTitle.Text">
+    <value>Titre</value>
+  </data>
+  <data name="NewItem.Text">
+    <value>Nouvel élément</value>
+  </data>
+  <data name="Search.Text">
+    <value>Rechercher</value>
+  </data>
+  <data name="NoAdd.Error">
+    <value>Vous n'êtes pas autorisé à déplacer le contenu vers {0}. merci de vérifier votre état de connexion.</value>
+  </data>
+  <data name="MovedContent.Text">
+    <value>Contenu déplacé</value>
+  </data>
+  <data name="NoPermission.Text">
+    <value>Vous ne semblez pas avoir la permission de faire cela. Merci de vérifier votre état de connexion.</value>
+  </data>
+  <data name="SplitterInitialSizes.Text">
+    <value>192|589|439|450|439|134|</value>
+  </data>
+  <data name="Locked.Text">
+    <value>Verrouillé</value>
+  </data>
+  <data name="NotApproved.Text">
+    <value>Non approuvé</value>
+  </data>
+  <data name="MailMeNoAllowed.Text">
+    <value>Fonction «s'envoyer par Email» non autorisée</value>
+  </data>
+  <data name="Filter.Text">
+    <value>Filtrer liste sur:</value>
+  </data>
+  <data name="Error.Text">
+    <value>Une erreur '{0}' s'est produite. Trace: &lt;br /&gt; {1}</value>
+  </data>
+  <data name="optSelectionAll.Text">
+    <value>Tous les mots</value>
+  </data>
+  <data name="optSelectionAny.Text">
+    <value>un des mots</value>
+  </data>
+  <data name="optSelectionExact.Text">
+    <value>Phrase exacte</value>
+  </data>
+  <data name="optSelectionWithout.Text">
+    <value>sans mots</value>
+  </data>
+  <data name="AddToCategoryRes.Text">
+    <value>Elément ajouté {0} à la catégorie {1}</value>
+  </data>
+  <data name="AddedContentToCategories.Text">
+    <value>Eléments ajoutés à la catégorie</value>
+  </data>
+</root>

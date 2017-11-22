@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessDenied.ErrorMessage">
+    <value xml:space="preserve">Vous ne pouvez créer un nouveau compartiment avec les informations d'identification spécifiées.</value>
+  </data>
+  <data name="BucketAlreadyExists.ErrorMessage">
+    <value xml:space="preserve">Le nom de compartiment demandé n'est pas disponible. Le compartiment est partagé par tous les utilisateurs du système. Choisissez un autre nom et essayez à nouveau.</value>
+  </data>
+  <data name="CredentialsRequired.ErrorMessage">
+    <value xml:space="preserve">Veuillez fournir vos informations d'identification avant l'actualisation de la liste des compartiments.</value>
+  </data>
+  <data name="InvalidBucketName.ErrorMessage">
+    <value xml:space="preserve">Le compartiment spécifié n'est pas valide.</value>
+  </data>
+  <data name="InvalidCredentials.ErrorMessage">
+    <value xml:space="preserve">Veuillez vérifier les informations d'identification AWS fournies.</value>
+  </data>
+  <data name="InvalidProtocol.ErrorMessage">
+    <value xml:space="preserve">Lorsque le nom du compartiment contient un point (".") vous devez sélectionner le protocole de communication HTTP.</value>
+  </data>
+  <data name="ListBuckets.ErrorMessage">
+    <value xml:space="preserve">Une erreur s'est produite en essayant d'obtenir la liste des compartiments.</value>
+  </data>
+  <data name="MultipleFolderMappingsWithSameSettings.ErrorMessage">
+    <value xml:space="preserve">Il y a un autre "FolderMapping" utilisant le même nom de compartiment. Entrez un nom différent.</value>
+  </data>
+  <data name="NewBucket.ErrorMessage">
+    <value xml:space="preserve">Une erreur s'est produite lors de la création du nouveau compartiment.</value>
+  </data>
+  <data name="NewBucket.Text">
+    <value xml:space="preserve">Nouveau compartiment</value>
+  </data>
+  <data name="plAccessKeyId.Help">
+    <value xml:space="preserve">Entrer l'identifiant de la clé d'accès (AccessKeyID).</value>
+  </data>
+  <data name="plAccessKeyId.Text">
+    <value xml:space="preserve">Identifiant de la clé d'accès (AccessKeyId)</value>
+  </data>
+  <data name="plBucketName.Help">
+    <value xml:space="preserve">Sélectionner ou entrer le nom du compartiment.</value>
+  </data>
+  <data name="plBucketName.Text">
+    <value xml:space="preserve">Nom du compartiment</value>
+  </data>
+  <data name="plDirectLink.Help">
+    <value xml:space="preserve">Si coché, le chemin d'accès pour les fichiers de ce type de dossier pointera vers le chemin d'accès réel. Dans le cas contraire le chemin sera caché au travers du LinkClick.</value>
+  </data>
+  <data name="plDirectLink.Text">
+    <value xml:space="preserve">Utiliser lien direct</value>
+  </data>
+  <data name="plProtocol.Help">
+    <value xml:space="preserve">Sélectionnez le protocole de communication.</value>
+  </data>
+  <data name="plProtocol.Text">
+    <value xml:space="preserve">Protocole de communication</value>
+  </data>
+  <data name="plSecretAccessKey.Help">
+    <value xml:space="preserve">Entrer la clé d'accès secrète (SecretAccessKey).</value>
+  </data>
+  <data name="plSecretAccessKey.Text">
+    <value xml:space="preserve">Clé d'accès secrète (SecretAccessKey)</value>
+  </data>
+  <data name="RefreshBucketList.Text">
+    <value xml:space="preserve">&lt;Rafraichir&gt;</value>
+  </data>
+  <data name="SelectBucket.Text">
+    <value xml:space="preserve">&lt;Sélectionner un compartiment&gt;</value>
+  </data>
+  <data name="SelectExistingBucket.Text">
+    <value xml:space="preserve">Sélectionner un compartiment existant</value>
+  </data>
+  <data name="TooManyBuckets.ErrorMessage">
+    <value xml:space="preserve">Vous avez tenté de créer plus de compartiments que permis.</value>
+  </data>
+  <data name="valAccessKeyId.ErrorMessage">
+    <value xml:space="preserve">L'identifiant de la clé d'accès (AccessKeyID) est nécessaire.</value>
+  </data>
+  <data name="valBucketName.ErrorMessage">
+    <value xml:space="preserve">Le nom du compartiment est requis.</value>
+  </data>
+  <data name="valSecretAccessKey.ErrorMessage">
+    <value xml:space="preserve">La clé d'accès secrète (SecretAccessKey) est nécessaire.</value>
+  </data>
+</root>

@@ -1,0 +1,6 @@
+C:\aquafish\bin\GestionTiers.dll
+C:\aquafish\bin\GestionTiers.pdb
+C:\aquafish\DesktopModules\GestionTiers\obj\Release\GestionTiers.dll
+C:\aquafish\DesktopModules\GestionTiers\obj\Release\GestionTiers.pdb
+C:\aquafish\DesktopModules\GestionTiers\obj\Release\GestionTiers.csprojResolveAssemblyReference.cache
+C:\aquafish\bin\GestionTiers.dll.config

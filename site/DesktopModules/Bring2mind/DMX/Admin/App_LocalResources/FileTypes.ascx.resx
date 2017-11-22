@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="cmdBack.Text" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="Addon.Header" xml:space="preserve">
+    <value>Addon</value>
+  </data>
+  <data name="BaseType.Header" xml:space="preserve">
+    <value>Base Type</value>
+  </data>
+  <data name="SpecificType.Header" xml:space="preserve">
+    <value>Specific Type</value>
+  </data>
+  <data name="Control.Header" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="Extension.Header" xml:space="preserve">
+    <value>Extension(s)</value>
+  </data>
+  <data name="MimeType.Header" xml:space="preserve">
+    <value>Mime Type</value>
+  </data>
+  <data name="DefaultAction.Header" xml:space="preserve">
+    <value>Default Action</value>
+  </data>
+  <data name="plResourceFile.Text" xml:space="preserve">
+    <value>Resource File</value>
+  </data>
+  <data name="plResourceFile.Help" xml:space="preserve">
+    <value>Resource File where the descriptive name for this extension can be found (commonly DesktopModules/Bring2mind/DMX/App_LocalResources/SharedResources)</value>
+  </data>
+  <data name="plBaseType.Text" xml:space="preserve">
+    <value>Base Type</value>
+  </data>
+  <data name="plBaseType.Help" xml:space="preserve">
+    <value>The base type is one of a small selection which drives the main working of DMX</value>
+  </data>
+  <data name="plSpecificType.Text" xml:space="preserve">
+    <value>Specific Type</value>
+  </data>
+  <data name="plSpecificType.Help" xml:space="preserve">
+    <value>This is a string you define that should be unique. Chose something that makes sense like Microsoft.Word.</value>
+  </data>
+  <data name="plExtension.Text" xml:space="preserve">
+    <value>Extension(s)</value>
+  </data>
+  <data name="plExtension.Help" xml:space="preserve">
+    <value>Semicolon separated list of extensions DMX can use to parse newly uploaded files</value>
+  </data>
+  <data name="plMimeType.Text" xml:space="preserve">
+    <value>Mime Type</value>
+  </data>
+  <data name="plMimeType.Help" xml:space="preserve">
+    <value>The mime type to send to the browser so it knows what external application to load to render the file.</value>
+  </data>
+  <data name="plDefaultAction.Text" xml:space="preserve">
+    <value>Default Action</value>
+  </data>
+  <data name="plDefaultAction.Help" xml:space="preserve">
+    <value>Chose what the browser should do with the file. Note that what eventually happens depends on the end user browser's settings.</value>
+  </data>
+  <data name="plIcon16.Text" xml:space="preserve">
+    <value>Icon 16x16</value>
+  </data>
+  <data name="plIcon16.Help" xml:space="preserve">
+    <value>The icon field is either a classname or a relative path (from the DNN root) to the icon image file. Note that the classname will have 'icon-16-' prepended to it.</value>
+  </data>
+  <data name="plIcon32.Text" xml:space="preserve">
+    <value>Icon 32x32</value>
+  </data>
+  <data name="plIcon32.Help" xml:space="preserve">
+    <value>The icon field is either a classname or a relative path (from the DNN root) to the icon image file. Note that the classname will have 'icon-32-' prepended to it.</value>
+  </data>
+  <data name="plControl.Text" xml:space="preserve">
+    <value>Control</value>
+  </data>
+  <data name="plControl.Help" xml:space="preserve">
+    <value>Control to load for this type. This is used when a user lands on a page with DMX and directly requests this file (i.e. it is in the querystring as EntryId=XYZ)</value>
+  </data>
+  <data name="plDownloadUrl.Text" xml:space="preserve">
+    <value>Download Url</value>
+  </data>
+  <data name="plDownloadUrl.Help" xml:space="preserve">
+    <value>Specify url if this type of file should override default download code</value>
+  </data>
+  <data name="Delete.Confirm" xml:space="preserve">
+    <value>Are you sure you wish to delete this type?</value>
+  </data>
+  <data name="cmdReparse.Text" xml:space="preserve">
+    <value>Reparse</value>
+  </data>
+  <data name="plReparse.Help" xml:space="preserve">
+    <value>Reparse existing DMX content for this file type</value>
+  </data>
+  <data name="plReparse.Text" xml:space="preserve">
+    <value>Reparse DMX</value>
+  </data>
+</root>

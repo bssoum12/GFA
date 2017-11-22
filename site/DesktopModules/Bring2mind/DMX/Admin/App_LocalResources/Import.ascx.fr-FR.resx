@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plDirectory.Text">
+    <value>Répertoire</value>
+  </data>
+  <data name="plDirectory.Help">
+    <value>Un chemin d'accès complet ou relatif aux fichiers. Il doit être sur le serveur Web lui-même.</value>
+  </data>
+  <data name="cmdImport.Text">
+    <value>Importer</value>
+  </data>
+  <data name="Cancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="ControlTitle_import.Text">
+    <value>Importer</value>
+  </data>
+  <data name="ImportTo.Text">
+    <value>Importer le contenu du répertoire ci-dessus vers {0}.</value>
+  </data>
+  <data name="cmdTest.Text">
+    <value>Test d'accès</value>
+  </data>
+  <data name="IllegalImport.Text">
+    <value>Vous ne pouvez pas importer à cet endroit</value>
+  </data>
+  <data name="CanRead.Text">
+    <value>Je peux lire correctement {0}</value>
+  </data>
+  <data name="NoFiles.Text">
+    <value>Mais je ne trouve pas tous les fichiers ou répertoires, ici ...</value>
+  </data>
+  <data name="ModuleHelp.Text">
+    <value>Importer</value>
+  </data>
+  <data name="NoAccess.Text">
+    <value>Je ne peux pas accéder {0}&lt;br /&gt; Assurez-vous que le processus de travail asp.net a la permission de lecture sur ce dossier.</value>
+  </data>
+</root>

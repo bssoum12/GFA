@@ -1,0 +1,40 @@
+<tr class="entryItem">
+ <td title="[entry:remarks]">
+  [entry:icon16html]
+ </td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:entryid]" title="[entry:remarks]">[entry:title]</a>
+ </td>
+ <td>[entry:author]</td>
+ <td>[entry:lastmodified|g]</td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:entryid]&Command=Core_Download" class="disk_blue-png link" title="[resources:Command.Download]" style="display:[entry:isfile|block;none]">
+  </a>
+  <a href="[entry:entry]" target="_blank" class="dmxicon-16-hyperlink-gif link" title="[resources:Hyperlink.Text]" style="display:[entry:ishyperlink|block;none]">
+  </a>
+ </td>
+ [if|1][query:authenticated][/if]
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:entryid]&Command=Core_Edit" class="document_edit-png link" title="[resources:Command.Edit]" style="display:[entry:canedit|block;none]">
+  </a>
+ </td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=delete&sel=[entry:entryid]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="document_delete-png link" title="[resources:Delete.Button]" style="display:[entry:canedit|block;none]">
+  </a>
+ </td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=cuttocb&sel=[entry:entryid]" class="cut-png link" title="[resources:CutX.Text]" style="display:[entry:canedit|block;none]">
+  </a>
+ </td>
+ <td>
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=copytocb&sel=[entry:entryid]" class="copy-png link" title="[resources:CopyX.Text]" style="display:block">
+  </a>
+ </td>
+ <td style="display:[query:authenticated|block;none]">
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=subscribe&sel=[entry:entryid]" class="document_heart-png link" title="[resources:SubscribeX.Text]" style="display:[entry:issubscribed|none;block]">
+  </a>
+  <a href="[dmxmodule:url]EntryId=[entry:collectionid]&cmd=unsubscribe&sel=[entry:entryid]" class="heart_broken-png link" title="[resources:UnSubscribeX.Text]" style="display:[entry:issubscribed|block;none]">
+  </a>
+ </td>
+ [endif|1]
+</tr>

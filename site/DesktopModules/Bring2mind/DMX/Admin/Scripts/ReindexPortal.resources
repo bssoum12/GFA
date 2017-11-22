@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Reindex Portal">
+ <Description>This script will reindex all found entries in the current portal.</Description>
+ <Process>
+  <Run RunType="CODE" Command="ReIndexPortal">Bring2mind.DNN.Modules.DMX.Services.Search.SearchController, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

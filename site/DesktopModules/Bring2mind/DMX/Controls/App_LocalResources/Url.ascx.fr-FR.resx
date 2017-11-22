@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="TabType.Text">
+    <value>Page (une page sur votre site)</value>
+  </data>
+  <data name="Type.Text">
+    <value>Type de lien:</value>
+  </data>
+  <data name="URLType.Text">
+    <value>URL (un lien vers une ressource externe)</value>
+  </data>
+  <data name="Tab.Text">
+    <value>Sélectionnez une page Web de votre site: &lt;BR&gt;</value>
+  </data>
+  <data name="URL.Text">
+    <value>Lieu: (entrez l'adresse du lien) &lt;BR&gt;</value>
+  </data>
+</root>

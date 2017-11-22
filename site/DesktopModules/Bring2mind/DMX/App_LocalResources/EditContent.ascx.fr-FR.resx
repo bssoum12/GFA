@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdSave.Text">
+    <value>Enregistrer</value>
+  </data>
+  <data name="ControlTitle_editcontent.Text">
+    <value>Modifier le contenu</value>
+  </data>
+  <data name="plContent.Help">
+    <value>Modifiez votre fichier ici.</value>
+  </data>
+  <data name="plContent.Text">
+    <value>Contenu</value>
+  </data>
+  <data name="plFilename.Help">
+    <value>nom que prendra le fichier en cas de téléchargement. L'extension est ajoutée si non précisée.</value>
+  </data>
+  <data name="plFilename.Text">
+    <value>Nom du fichier</value>
+  </data>
+</root>

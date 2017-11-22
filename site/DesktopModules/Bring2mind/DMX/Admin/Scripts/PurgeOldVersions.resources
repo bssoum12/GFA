@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Purge Old Versions">
+ <Description>Changing the nr of versions to keep for a document does not immediately delete the outdated versions. This script does that and empties the recycle bin!</Description>
+ <Process>
+  <Run RunType="SQL">
+   <![CDATA[
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+SET VersionsToKeep = NULL
+WHERE VersionsToKeep = 0
+ AND PortalId=@PortalId
+GO
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Entries
+SET Deleted=1
+FROM {databaseOwner}{objectQualifier}DMX_Entries e2
+ INNER JOIN
+(SELECT
+ e1.LastVersionId,
+ mv.MaxVersion,
+ e1.VersionsToKeep,
+ mv.MaxVersion - e1.VersionsToKeep OldestVersion
+FROM
+ {databaseOwner}{objectQualifier}DMX_Entries e1 INNER JOIN
+(SELECT
+ e.LastVersionId,
+ MAX(e.[Version]) MaxVersion
+FROM {databaseOwner}{objectQualifier}DMX_Entries e
+GROUP BY e.LastVersionId) mv ON e1.LastVersionId=mv.LastVersionId AND e1.[Version]=mv.MaxVersion
+WHERE NOT e1.VersionsToKeep IS NULL) x ON x.LastVersionId=e2.LastVersionId
+WHERE e2.[Version]<x.OldestVersion
+ AND e2.PortalId=@PortalId
+GO
+
+ ]]>
+  </Run>
+  <Run RunType="CODE" Command="EmptyRecycleBin">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

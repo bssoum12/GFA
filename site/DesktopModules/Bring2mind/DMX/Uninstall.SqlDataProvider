@@ -1,0 +1,1070 @@
+/******* SPROCS *******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddAttributeEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddAttributeEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddDirectAccessKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddDirectAccessKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddEntryAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddEntryAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddEntryCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddEntryCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddEntryPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddEntryPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddExtension') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddExtension
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddFolder') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddFolder
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddHostSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddHostSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddLogType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddLogType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddNotification') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddNotification
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddPermissionEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddPermissionEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddProvider') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddProvider
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddSubscription') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddSubscription
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AddToRepository') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_AddToRepository
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_CleanUpDirectAccessKeys') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_CleanUpDirectAccessKeys
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ClearEntryPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ClearEntryPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DatabaseUsage') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DatabaseUsage
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DBCleanup') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DBCleanup
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteApplicationPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteApplicationPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteAttributeEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAttributeEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteAttributeEntrytypes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteAttributeEntrytypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteDirectAccessKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteDirectAccessKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntryAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntryAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntryAttributesByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntryAttributesByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntryBranch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntryBranch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntryCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntryCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteEntryPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteEntryPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteExtension') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteExtension
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteFromRepository') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteFromRepository
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteLogType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteLogType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteNotification') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteNotification
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeletePermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeletePermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeletePermissionEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeletePermissionEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeletePermissionPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeletePermissionPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteProvider') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteProvider
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteSettings') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteSettings
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DeleteSubscription') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DeleteSubscription
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DirectAccess') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DirectAccess
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DMXInfo') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_DMXInfo
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryIsIn') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_EntryIsIn
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryPermissionMaintenance') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_EntryPermissionMaintenance
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_FindAddonByName') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_FindAddonByName
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_FindAttributeByKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_FindAttributeByKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_FindEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_FindEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAddonsWithFeature') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAddonsWithFeature
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAllPortalCollections') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAllPortalCollections
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetApplicationPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetApplicationPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetApplicationPermissionsForUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetApplicationPermissionsForUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetApprovedEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetApprovedEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributeEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributeEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributeEntrytypesByAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributeEntrytypesByAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributeListForEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributeListForEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributeLocalizations') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributeLocalizations
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributesByAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributesByAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributesByEntryType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributesByEntryType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAttributesByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAttributesByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetBreadCrumbs') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetBreadCrumbs
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategories') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoriesByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoriesByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoriesByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoriesByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoryByName') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoryByName
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoryLocalizations') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoryLocalizations
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCategoryTreeAsXml') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCategoryTreeAsXml
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetCollectionContents') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetCollectionContents
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetDirectAccessKeysByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetDirectAccessKeysByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntriesByFilenameInCollection') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntriesByFilenameInCollection
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntriesByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntriesByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntriesByPortalAndProvider') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntriesByPortalAndProvider
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntriesByUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntriesByUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttributeByEntryAndKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttributeByEntryAndKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttributeListForEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttributeListForEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttributesByAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttributesByAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttributesByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttributesByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryAttributesByKeyAndValue') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryAttributesByKeyAndValue
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryBranch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryBranch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByFilename') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByFilename
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByLockKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByLockKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByTitle') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitle
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByTitleInCollection') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitleInCollection
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryCategoriesByCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryCategoriesByCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryCategoriesByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryCategoriesByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryListAsXml') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryListAsXml
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryLocalizations') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryLocalizations
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryPermissionsByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryPermissionsByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryPermissionsForUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryPermissionsForUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryTitle') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryTitle
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEventLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEventLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetExtension') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetExtension
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetExtensionsByAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetExtensionsByAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetExtensionsByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetExtensionsByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetFromRepository') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetFromRepository
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetHostSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetHostSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLastActionEvent') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLastActionEvent
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogByTime') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogByTime
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogsByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogsByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogsByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogsByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogsByUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogsByUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetLogTypes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetLogTypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetModuleUsageList') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetModuleUsageList
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetNotification') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetNotification
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetParentChain') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetParentChain
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionByKey') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionByKey
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionEntrytypesByPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionEntrytypesByPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionsByPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionsByPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPermissionsForEntrytype') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPermissionsForEntrytype
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPortal') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPortal
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPortalAttributeListWithEntryData') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPortalAttributeListWithEntryData
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetPortalDetails') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetPortalDetails
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetProvider') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetProvider
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetProvidersByType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetProvidersByType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSettings') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSettings
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSpecificEntryPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSpecificEntryPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSubCategories') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSubCategories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSubscription') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSubscription
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSubscriptionsByEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSubscriptionsByEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSubscriptionsByUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSubscriptionsByUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetSubscriptionsForEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetSubscriptionsForEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUnsentNotifications') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUnsentNotifications
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUserPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUserPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUserRoles') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUserRoles
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUserRolesByRoleId') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUserRolesByRoleId
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUsersByRoleId') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUsersByRoleId
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetUsersToNotify') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetUsersToNotify
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_IsEntryPermissionByAdmin') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_IsEntryPermissionByAdmin
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_IsSuperUser') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_IsSuperUser
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_LimitSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_LimitSearch
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ListProviders') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ListProviders
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_LockEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_LockEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_MoveAllEntries') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_MoveAllEntries
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_MoveAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_MoveAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_MoveEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_MoveEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_MoveEntryAttributes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_MoveEntryAttributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_MoveLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_MoveLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_NumberOfCategories') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_NumberOfCategories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_RemoveDeadPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_RemoveDeadPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_RemoveOldUserNotifications') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_RemoveOldUserNotifications
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_RemoveOldUserSubscriptions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_RemoveOldUserSubscriptions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_RenameEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_RenameEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ReparseDMXFileTypes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ReparseDMXFileTypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ResetFolderSizes') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ResetFolderSizes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ResetPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ResetPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ResortCategories') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ResortCategories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SearchResultsClean') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SearchResultsClean
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetApplicationPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetApplicationPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetAttributeLocalization') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetAttributeLocalization
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetCategoryLocalization') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetCategoryLocalization
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetEntryCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetEntryCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetEntryLocalization') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetEntryLocalization
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetEntryThumbnail') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetEntryThumbnail
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetLastModified') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetLastModified
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetLastVersionID') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetLastVersionID
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetPermissionPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetPermissionPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SetSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SetSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SoftDeleteEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SoftDeleteEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ToggleDelete') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_ToggleDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifyPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifyRemovePermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyRemovePermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifySetPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifySetPermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnLockEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnLockEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateAddon') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateAddon
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateCategory') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateCategory
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateEntry') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateEntry
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateEntryAttribute') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateEntryAttribute
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateExtension') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateExtension
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateFileSize') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateFileSize
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateHostSetting') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateHostSetting
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateLog') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateLog
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateLogType') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateLogType
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateNotification') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateNotification
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdatePaths') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdatePaths
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdatePermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdatePermission
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateProvider') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateProvider
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UpdateSubscription') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UpdateSubscription
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UserAccess') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UserAccess
+GO
+
+/******* VIEWS *******/
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_ApplicationPermissions'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_ApplicationPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_Entries'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_EntriesLocalized'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_EntriesLocalized
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_EntryPermissions'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_EntryPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_Log'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_Log
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_Notifications'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_Notifications
+GO
+
+IF  EXISTS (SELECT * FROM sys.views WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}vw_DMX_PermissionPermissions'))
+DROP VIEW {databaseOwner}{objectQualifier}vw_DMX_PermissionPermissions
+GO
+
+/******* FUNCTIONS *******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_CategoryGetChildXml') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_CategoryGetChildXml
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ExtractConcatenate') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_ExtractConcatenate
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_fn_GetEntriesLocalized') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_fn_GetEntriesLocalized
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_fn_GetExtension') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_fn_GetExtension
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_fn_GetPath') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_fn_GetPath
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_fn_URLEncode') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_fn_URLEncode
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Split') AND type in (N'FN', N'IF', N'TF', N'FS', N'FT'))
+DROP FUNCTION {databaseOwner}{objectQualifier}DMX_Split
+GO
+
+/******* TRIGGERS *******/
+IF  EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryTriggerDelete'))
+DROP TRIGGER {databaseOwner}{objectQualifier}DMX_EntryTriggerDelete
+GO
+
+IF  EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryTriggerInsert'))
+DROP TRIGGER {databaseOwner}{objectQualifier}DMX_EntryTriggerInsert
+GO
+
+IF  EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryTriggerUpdate'))
+DROP TRIGGER {databaseOwner}{objectQualifier}DMX_EntryTriggerUpdate
+GO
+
+/******* STRUCTURE *******/
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_ApplicationPermissions_Portals') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ApplicationPermissions'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_ApplicationPermissions DROP CONSTRAINT FK_{objectQualifier}DMX_ApplicationPermissions_Portals
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_AttributeEntrytypes_Attributes') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AttributeEntrytypes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_AttributeEntrytypes DROP CONSTRAINT FK_{objectQualifier}DMX_AttributeEntrytypes_Attributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Attributes_Addons') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Attributes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Attributes DROP CONSTRAINT FK_{objectQualifier}DMX_Attributes_Addons
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Attributes_Portals') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Attributes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Attributes DROP CONSTRAINT FK_{objectQualifier}DMX_Attributes_Portals
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_AttributesML_Attributes') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AttributesML'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_AttributesML DROP CONSTRAINT FK_{objectQualifier}DMX_AttributesML_Attributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Categories_Portals') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Categories'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Categories DROP CONSTRAINT FK_{objectQualifier}DMX_Categories_Portals
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_CategoriesML_Categories') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_CategoriesML'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_CategoriesML DROP CONSTRAINT FK_{objectQualifier}DMX_CategoriesML_Categories
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_DirectAccessKeys_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DirectAccessKeys'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_DirectAccessKeys DROP CONSTRAINT FK_{objectQualifier}DMX_DirectAccessKeys_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Entries_Portals') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Entries'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Entries DROP CONSTRAINT FK_{objectQualifier}DMX_Entries_Portals
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_EntriesML_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntriesML'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_EntriesML DROP CONSTRAINT FK_{objectQualifier}DMX_EntriesML_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_EntryAttributes_Attributes') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryAttributes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_EntryAttributes DROP CONSTRAINT FK_{objectQualifier}DMX_EntryAttributes_Attributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_EntryAttributes_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryAttributes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_EntryAttributes DROP CONSTRAINT FK_{objectQualifier}DMX_EntryAttributes_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_EntryCategories_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryCategories'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_EntryCategories DROP CONSTRAINT FK_{objectQualifier}DMX_EntryCategories_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_EntryPermissions_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryPermissions'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_EntryPermissions DROP CONSTRAINT FK_{objectQualifier}DMX_EntryPermissions_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Extensions_Addons') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Extensions'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Extensions DROP CONSTRAINT FK_{objectQualifier}DMX_Extensions_Addons
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Log_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Log'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Log DROP CONSTRAINT FK_{objectQualifier}DMX_Log_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Notifications_Log') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Notifications'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Notifications DROP CONSTRAINT FK_{objectQualifier}DMX_Notifications_Log
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_PermissionEntrytypes_Permissions') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_PermissionEntrytypes'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_PermissionEntrytypes DROP CONSTRAINT FK_{objectQualifier}DMX_PermissionEntrytypes_Permissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_PermissionPermissions_Permissions') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_PermissionPermissions'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_PermissionPermissions DROP CONSTRAINT FK_{objectQualifier}DMX_PermissionPermissions_Permissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Repository_Portals') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Repository'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Repository DROP CONSTRAINT FK_{objectQualifier}DMX_Repository_Portals
+GO
+
+IF  EXISTS (SELECT * FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'{databaseOwner}FK_{objectQualifier}DMX_Subscriptions_Entries') AND parent_object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Subscriptions'))
+ALTER TABLE {databaseOwner}{objectQualifier}DMX_Subscriptions DROP CONSTRAINT FK_{objectQualifier}DMX_Subscriptions_Entries
+GO
+
+/******* TABLES *******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Addons') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Addons
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_ApplicationPermissions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_ApplicationPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AttributeEntrytypes') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_AttributeEntrytypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Attributes') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Attributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_AttributesML') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_AttributesML
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Categories') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Categories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_CategoriesML') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_CategoriesML
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_DirectAccessKeys') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_DirectAccessKeys
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Entries') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Entries
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntriesML') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_EntriesML
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryAttributes') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_EntryAttributes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryCategories') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_EntryCategories
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_EntryPermissions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_EntryPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Extensions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Extensions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Log') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Log
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_LogTypes') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_LogTypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Notifications') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Notifications
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Numbers') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Numbers
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_PermissionEntrytypes') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_PermissionEntrytypes
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_PermissionPermissions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_PermissionPermissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Permissions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Permissions
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Providers') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Providers
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Repository') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Repository
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SearchResults') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_SearchResults
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Settings') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Settings
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_Subscriptions') AND type in (N'U'))
+DROP TABLE {databaseOwner}{objectQualifier}DMX_Subscriptions
+GO
+

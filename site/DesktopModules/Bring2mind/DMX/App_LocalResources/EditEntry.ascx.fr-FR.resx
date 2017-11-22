@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="EditCoreMetaData.WizardStep">
+    <value>Meta Données de Base</value>
+  </data>
+  <data name="Permissions.WizardStep">
+    <value>Autorisations</value>
+  </data>
+  <data name="Upload.WizardStep">
+    <value>charger / choisir l'élément</value>
+  </data>
+  <data name="Categories.WizardStep">
+    <value>Catégories</value>
+  </data>
+  <data name="Custom.WizardStep">
+    <value>Personnalisé</value>
+  </data>
+  <data name="Unify.Text">
+    <value>Unifier les autorisations sur les enfants</value>
+  </data>
+  <data name="NewItem.Text">
+    <value>Nouvel élément</value>
+  </data>
+  <data name="UnknownType.Text">
+    <value>Type inconnu</value>
+  </data>
+  <data name="Error.WizardStep">
+    <value>Erreur</value>
+  </data>
+  <data name="cmdFinish.Text">
+    <value>Terminer</value>
+  </data>
+  <data name="cmdNext.Text">
+    <value>Suivant</value>
+  </data>
+  <data name="cmdPrevious.Text">
+    <value>Précédente</value>
+  </data>
+  <data name="PermissionsOnlyByAdmin.Text">
+    <value>Autorisations uniquement pour les Administrateurs</value>
+  </data>
+  <data name="NoAccess.Text">
+    <value>Vous n'avez pas accès à cette ressource. S'il vous plaît vérifier l'état de votre connexion.</value>
+  </data>
+  <data name="cmdCancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="Approve.Text">
+    <value>Approuver</value>
+  </data>
+  <data name="lblTitle.Text">
+    <value>Edition: {0} ({1})<br />Dossier: {2}</value>
+  </data>
+  <data name="dshCategories.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="dshCoreMetaData.Text">
+    <value>Meta données de base</value>
+  </data>
+  <data name="dshCustomAttributes.Text">
+    <value>Attributs personnalisés</value>
+  </data>
+  <data name="dshPermissions.Text">
+    <value>Autorisations</value>
+  </data>
+</root>

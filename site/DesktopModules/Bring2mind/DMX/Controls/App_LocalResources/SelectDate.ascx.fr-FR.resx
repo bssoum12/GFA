@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Error.ValidTime">
+    <value>ceci n'est pas une heure valide (utilisez un format sur 24h , par exemple 15h30 pour 3h30 de l'après-midi)</value>
+  </data>
+  <data name="lblClear.Text">
+    <value>Effacer</value>
+  </data>
+  <data name="Required.Error">
+    <value>La date est obligatoire</value>
+  </data>
+</root>

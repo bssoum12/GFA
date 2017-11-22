@@ -1,0 +1,688 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Collections.Text">
+    <value>Dossiers</value>
+  </data>
+  <data name="Categories.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="Search.Text">
+    <value>Recherche</value>
+  </data>
+  <data name="MySubscriptions.Text">
+    <value>Mes abonnements</value>
+  </data>
+  <data name="UnknownOperation.Text">
+    <value>Opération inconnue</value>
+  </data>
+  <data name="UnknownAuthor.Text">
+    <value>Auteur inconnu</value>
+  </data>
+  <data name="UnknownDeletedUser.Text">
+    <value>Utilisateur inconnu ou supprimé</value>
+  </data>
+  <data name="LastModification.Text">
+    <value>Dernière modification : [Phrase] par [User] le [Date] à [Time]</value>
+  </data>
+  <data name="LastModificationQuick.Text">
+    <value>Dernière modification le [Date] à [Time].</value>
+  </data>
+  <data name="Collection.Text">
+    <value>Dossier</value>
+  </data>
+  <data name="Approved.Text">
+    <value>Approuvé</value>
+  </data>
+  <data name="Yes.Text">
+    <value>Oui</value>
+  </data>
+  <data name="No.Text">
+    <value>Non</value>
+  </data>
+  <data name="Locked.Text">
+    <value>Verrouillé</value>
+  </data>
+  <data name="Private.Text">
+    <value>Privé</value>
+  </data>
+  <data name="Deleted.Text">
+    <value>Supprimé</value>
+  </data>
+  <data name="EditRoles.Text">
+    <value>Groupes ayant la permission de modifier</value>
+  </data>
+  <data name="CreatedOn.Text">
+    <value>Créé le</value>
+  </data>
+  <data name="CreatedBy.Text">
+    <value>Créé par</value>
+  </data>
+  <data name="Version.Text">
+    <value>Version</value>
+  </data>
+  <data name="Keywords.Text">
+    <value>Mots clés</value>
+  </data>
+  <data name="Remarks.Text">
+    <value>Remarques</value>
+  </data>
+  <data name="UnknownUser.Text">
+    <value>Utilisateur inconnu</value>
+  </data>
+  <data name="LockedBy.Text">
+    <value>Vérouillé par</value>
+  </data>
+  <data name="LastVersion.Text">
+    <value>Dernière version</value>
+  </data>
+  <data name="Description.Text">
+    <value>Description</value>
+  </data>
+  <data name="NoNotificationsSent.Text">
+    <value>Aucun avis envoyé</value>
+  </data>
+  <data name="ViewRoles.Text">
+    <value>Groupes ayant la permission de visualiser</value>
+  </data>
+  <data name="SelectCommand.Text">
+    <value>Sélectionner la commande...</value>
+  </data>
+  <data name="FolderUp.Button">
+    <value>Dossier parent</value>
+  </data>
+  <data name="NewFolder.Button">
+    <value>Nouveau dossier</value>
+  </data>
+  <data name="NewItem.Button">
+    <value>Nouvel élément</value>
+  </data>
+  <data name="Download.Button">
+    <value>Télécharger</value>
+  </data>
+  <data name="Copy.Button">
+    <value>Copier</value>
+  </data>
+  <data name="Cut.Button">
+    <value>Couper</value>
+  </data>
+  <data name="Paste.Button">
+    <value>Coller</value>
+  </data>
+  <data name="Delete.Button">
+    <value>Supprimer</value>
+  </data>
+  <data name="HardDelete.Button">
+    <value>Supprimer définitivement</value>
+  </data>
+  <data name="Undelete.Button">
+    <value>Restaurer</value>
+  </data>
+  <data name="View.Button">
+    <value>Visualiser</value>
+  </data>
+  <data name="Edit.Button">
+    <value>Modifier</value>
+  </data>
+  <data name="RollBack.Button">
+    <value>Retour</value>
+  </data>
+  <data name="Lock.Button">
+    <value>Verrouiller</value>
+  </data>
+  <data name="Unlock.Button">
+    <value>Déverrouiller</value>
+  </data>
+  <data name="Approve.Button">
+    <value>Approuver</value>
+  </data>
+  <data name="Subscribe.Button">
+    <value>M'abonner</value>
+  </data>
+  <data name="Unsubscribe.Button">
+    <value>Me désabonner</value>
+  </data>
+  <data name="RollBackConfirm.Text">
+    <value>Êtes-vous certain de vouloir revenir la version précédente de cet élément ?</value>
+  </data>
+  <data name="DeleteConfirm.Text">
+    <value>Êtes-vous certain de vouloir supprimer cet/ces élément(s) ?</value>
+  </data>
+  <data name="HardDeleteConfirm.Text">
+    <value>Êtes-vous certain de vouloir supprimer DÉFINITIVEMENT cet élément,\nY compris toutes ses versions et tous les éléments qui s'y trouvent ?\n\n ATTENTION : Cette action ne peut être annulée ! </value>
+  </data>
+  <data name="Navbutton.Categories">
+    <value>Catégories</value>
+  </data>
+  <data name="Navbutton.Collections">
+    <value>Dossiers</value>
+  </data>
+  <data name="Navbutton.MySubscriptions">
+    <value>Mes abonnements</value>
+  </data>
+  <data name="Navbutton.Search">
+    <value>Recherche</value>
+  </data>
+  <data name="Command.Details">
+    <value>Détails</value>
+  </data>
+  <data name="Command.Download">
+    <value>Téléchargement</value>
+  </data>
+  <data name="Command.Edit">
+    <value>Modifier</value>
+  </data>
+  <data name="Command.New">
+    <value>Nouveau</value>
+  </data>
+  <data name="Command.Search">
+    <value>Recherche</value>
+  </data>
+  <data name="Command.ViewCategory">
+    <value>Afficher la catégorie</value>
+  </data>
+  <data name="Command.ViewCollection">
+    <value>Afficher le dossier</value>
+  </data>
+  <data name="Command.ViewSubscriptions">
+    <value>Afficher les abonnements</value>
+  </data>
+  <data name="File.Adobe.Acrobat">
+    <value>Fichier PDF</value>
+  </data>
+  <data name="File.Adobe.InDesign">
+    <value>Fichier Indesign</value>
+  </data>
+  <data name="File.Adobe.Photoshop">
+    <value>Fichier Photoshop</value>
+  </data>
+  <data name="File.Autocad.Dwg">
+    <value>Dessin Autocad</value>
+  </data>
+  <data name="File.Avi">
+    <value>Vidéo AVI</value>
+  </data>
+  <data name="File.Bmp">
+    <value>Image BMP</value>
+  </data>
+  <data name="File.Dxf">
+    <value>Image DXF</value>
+  </data>
+  <data name="File.Emf">
+    <value>Image EMF</value>
+  </data>
+  <data name="File.Eps">
+    <value>Image EPS</value>
+  </data>
+  <data name="File.Gif">
+    <value>Image GIF</value>
+  </data>
+  <data name="File.Htm">
+    <value>Fichier HTML</value>
+  </data>
+  <data name="File.Jpg">
+    <value>Image JPEG</value>
+  </data>
+  <data name="File.Microsoft.Excel">
+    <value>Document Excel</value>
+  </data>
+  <data name="File.Microsoft.Infopath">
+    <value>Fichier Infopath</value>
+  </data>
+  <data name="File.Microsoft.Powerpoint">
+    <value>Document Powerpoint</value>
+  </data>
+  <data name="File.Microsoft.Word">
+    <value>Document Word</value>
+  </data>
+  <data name="File.Mpeg">
+    <value>Vidéo MPEG</value>
+  </data>
+  <data name="File.Png">
+    <value>Image PNG</value>
+  </data>
+  <data name="File.Quicktime">
+    <value>Vidéo Quicktime</value>
+  </data>
+  <data name="File.Rar">
+    <value>Fichier RAR</value>
+  </data>
+  <data name="File.Rtf">
+    <value>Document RTF</value>
+  </data>
+  <data name="File.Svg">
+    <value>Image SVG</value>
+  </data>
+  <data name="File.Targa">
+    <value>Image Targa</value>
+  </data>
+  <data name="File.Text">
+    <value>Document Texte</value>
+  </data>
+  <data name="File.Tiff">
+    <value>Image TIFF</value>
+  </data>
+  <data name="File.Ttf">
+    <value>Police TTF</value>
+  </data>
+  <data name="File.Unknown">
+    <value>Fichier inconnu</value>
+  </data>
+  <data name="File.Wav">
+    <value>Fichier WAV</value>
+  </data>
+  <data name="File.Wmf">
+    <value>Image WMF</value>
+  </data>
+  <data name="File.Zip">
+    <value>Fichier ZIP</value>
+  </data>
+  <data name="EntryEdit.Permission">
+    <value>Modifier le contenu</value>
+  </data>
+  <data name="EntryView.Permission">
+    <value>Visualiser le contenu</value>
+  </data>
+  <data name="File.Menu">
+    <value>Fichier</value>
+  </data>
+  <data name="Collection.Type">
+    <value>Dossier</value>
+  </data>
+  <data name="File.Type">
+    <value>Fichier</value>
+  </data>
+  <data name="Hyperlink.Type">
+    <value>Hyperlien</value>
+  </data>
+  <data name="APPROVE.Permission">
+    <value>Approuver</value>
+  </data>
+  <data name="EDIT.Permission">
+    <value>Modifier</value>
+  </data>
+  <data name="VIEW.Permission">
+    <value>Voir</value>
+  </data>
+  <data name="SearchResults.Text">
+    <value>Résultats de la recherche</value>
+  </data>
+  <data name="DetailsPage.Details.Title">
+    <value>Détails</value>
+  </data>
+  <data name="NonApprovedItems.Text">
+    <value>Éléments non approuvés</value>
+  </data>
+  <data name="Subscriptions.Text">
+    <value>Contenu abonnement</value>
+  </data>
+  <data name="NonApprovedOwnedItems.Text">
+    <value>Mes éléments non approuvés</value>
+  </data>
+  <data name="ADD.Permission">
+    <value>Ajouter</value>
+  </data>
+  <data name="LicenseErrorUser.Text">
+    <value>Il semble y avoir un problème avec la licence. Veuillez ouvrir une session en tant qu'hôte afin de corriger la situation.</value>
+  </data>
+  <data name="LicensePortalsExceeded.Text">
+    <value>Le nombre de portails pour cette licence a été dépassé. Il vous permet d'utiliser DMX sur {0}  portails. Merci de supprimer DMX d'au moins l'un des autres portails pour le faire fonctionner à nouveau ou acheter un supplément.</value>
+  </data>
+  <data name="ValidLocalHost.Text">
+    <value>Le module est totalement actif à partir de l'ordinateur hôte local</value>
+  </data>
+  <data name="author.Searchterm">
+    <value>Auteur</value>
+  </data>
+  <data name="contents.Searchterm">
+    <value>Contenu</value>
+  </data>
+  <data name="keywords.Searchterm">
+    <value>Mots clés</value>
+  </data>
+  <data name="remarks.Searchterm">
+    <value>Remarques</value>
+  </data>
+  <data name="title.Searchterm">
+    <value>Titre</value>
+  </data>
+  <data name="version.Searchterm">
+    <value>Version</value>
+  </data>
+  <data name="LicenseActivated.Text">
+    <value>Cette installation est activée.</value>
+  </data>
+  <data name="Number.Error">
+    <value>La valeur doit être un nombre</value>
+  </data>
+  <data name="WholeNumber.Error">
+    <value>La valeur doit être un nombre entier</value>
+  </data>
+  <data name="File.Xml">
+    <value>Fichier XML</value>
+  </data>
+  <data name="Regex.Error">
+    <value>Votre entrée ne correspond pas aux spécifications. Veuillez vérifier le contenu de votre saisie.</value>
+  </data>
+  <data name="File.Microsoft.ExcelX">
+    <value>Feuille Excel</value>
+  </data>
+  <data name="File.Microsoft.PowerpointX">
+    <value>Présentation Powerpoint</value>
+  </data>
+  <data name="File.Microsoft.WordX">
+    <value>Document Word</value>
+  </data>
+  <data name="Expression.Error">
+    <value>Caractères illégaux dans la chaîne</value>
+  </data>
+  <data name="originalfilename.Searchterm">
+    <value>Nom de fichier d'origine</value>
+  </data>
+  <data name="ResourceNotFound.Text">
+    <value>Ressource {0} ne se trouve pas dans le fichier {1}</value>
+  </data>
+  <data name="CORE_APPROVE.Subject">
+    <value>Voici les documents en attente d'approbation</value>
+  </data>
+  <data name="CORE_AUDIT.Subject">
+    <value>Email de vérification des documents</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE.Subject">
+    <value>Les documents ont été approuvés</value>
+  </data>
+  <data name="CORE_SUBSCRIBER.Subject">
+    <value>Notification de modification de Document</value>
+  </data>
+  <data name="CORE_MAILME.Subject">
+    <value>Vos documents demandés</value>
+  </data>
+  <data name="FailedRecipient.Text">
+    <value>Le message n'a pas été livré à l'adresse suivante - {0}</value>
+  </data>
+  <data name="SMTPConfigurationProblem.Text">
+    <value>Il y a un problème avec la configuration de votre serveur SMTP. aucun courrier n'a été envoyé.</value>
+  </data>
+  <data name="Subscribe.Phrase">
+    <value>Abonnés</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE.Subject">
+    <value>Vous avez approuvé les documents</value>
+  </data>
+  <data name="DocumentExchange.Text">
+    <value>Document Exchange</value>
+  </data>
+  <data name="IsApproved.Text">
+    <value>est approuvé</value>
+  </data>
+  <data name="LockedUntil.Text">
+    <value>Verrouillé jusqu'à</value>
+  </data>
+  <data name="ThisItemDeleted.Text">
+    <value>Cet article a été supprimé</value>
+  </data>
+  <data name="ThisItemLocked.Text">
+    <value>Cet article a été verrouillé</value>
+  </data>
+  <data name="ThisItemNotApproved.Text">
+    <value>Cet article n'a pas encore été approuvé</value>
+  </data>
+  <data name="Title.Text">
+    <value>Titre</value>
+  </data>
+  <data name="File.Wma">
+    <value>Fichiers audio de Windows Media Player</value>
+  </data>
+  <data name="File.Wmv">
+    <value>Fichiers video de Windows Media Player</value>
+  </data>
+  <data name="Status.Text">
+    <value>Cette version (nr [VersionNr]) Créée par [User] le [Date] à [Time].</value>
+  </data>
+  <data name="OriginalFilename.Text">
+    <value>Nom de fichier d'origine</value>
+  </data>
+  <data name="Created.Text">
+    <value>Créé</value>
+  </data>
+  <data name="FileSize.Text">
+    <value>Taille du fichier</value>
+  </data>
+  <data name="Hyperlink.Text">
+    <value>Hyperlien</value>
+  </data>
+  <data name="Required.Error">
+    <value>Obligatoires!</value>
+  </data>
+  <data name="Add.Phrase">
+    <value>ajoutée</value>
+  </data>
+  <data name="Approve.Phrase">
+    <value>Approuvé</value>
+  </data>
+  <data name="Delete.Phrase">
+    <value>supprimé</value>
+  </data>
+  <data name="Download.Phrase">
+    <value>téléchargé</value>
+  </data>
+  <data name="Edit.Phrase">
+    <value>Modifié</value>
+  </data>
+  <data name="Import.Phrase">
+    <value>importé</value>
+  </data>
+  <data name="Lock.Phrase">
+    <value>verrouillé</value>
+  </data>
+  <data name="MailMe.Phrase">
+    <value>envoyé par Email</value>
+  </data>
+  <data name="Move.Phrase">
+    <value>déplacé</value>
+  </data>
+  <data name="Rollback.Phrase">
+    <value>annulées</value>
+  </data>
+  <data name="Undelete.Phrase">
+    <value>Restauré</value>
+  </data>
+  <data name="Unlock.Phrase">
+    <value>déverrouillé</value>
+  </data>
+  <data name="Unsubscribe.Phrase">
+    <value>désabonné</value>
+  </data>
+  <data name="Upload.Phrase">
+    <value>téléchargés</value>
+  </data>
+  <data name="Author.Text">
+    <value>Auteur</value>
+  </data>
+  <data name="LastModified.Text">
+    <value>Dernière mise à jour</value>
+  </data>
+  <data name="Log.Text">
+    <value>journal</value>
+  </data>
+  <data name="Permissions.Text">
+    <value>Autorisations</value>
+  </data>
+  <data name="Versions.Text">
+    <value>Versions</value>
+  </data>
+  <data name="RecycleBin.Text">
+    <value>Corbeille</value>
+  </data>
+  <data name="Collection.SyncFolder">
+    <value>Dossier synchronisé</value>
+  </data>
+  <data name="MustUploadFile.Error">
+    <value>Vous devez charger un fichier</value>
+  </data>
+  <data name="MustSpecifyUrl.Error">
+    <value>Vous devez spécifier une URL</value>
+  </data>
+  <data name="Synchronize.Phrase">
+    <value>synchronisé</value>
+  </data>
+  <data name="SyncIn.Phrase">
+    <value>synchronisés et copiés vers Document Exchange</value>
+  </data>
+  <data name="SyncOut.Phrase">
+    <value>synchronisés et copiés sur le disque</value>
+  </data>
+  <data name="ParentChildMove.Error">
+    <value>Vous essayez de déplacer un élément dans un enfant de lui-même.</value>
+  </data>
+  <data name="SyncFolder.Text">
+    <value>Dossier synchronisé</value>
+  </data>
+  <data name="ItemLockedMove.Error">
+    <value>Impossible de déplacer l'élément car il est verrouillé.</value>
+  </data>
+  <data name="NoEditMove.Error">
+    <value>Impossible de déplacer l'élément. Aucune autorisation de modification sur cet élément.</value>
+  </data>
+  <data name="NoParentAddMove.Error">
+    <value>Déplacement non autorisés. Aucune permission d'ajout sur les nouveaux parents.</value>
+  </data>
+  <data name="ViewDialog.HeightOffset">
+    <value>42</value>
+  </data>
+  <data name="ViewDialog.WidthOffset">
+    <value>14</value>
+  </data>
+  <data name="NotificationSent.Text">
+    <value>&lt;br/&gt; Une notification a été envoyée à la liste de courriels suivante:</value>
+  </data>
+  <data name="LicenseExpired.Text">
+    <value>Votre licence a expiré le {0:d}. Vérifiez vos licences sur &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt; votre page sur les licences www.bring2mind.net &lt;/a&gt;. Se connecter avec le compte que vous avez reçu lorsque vous avez acheté le produit.</value>
+  </data>
+  <data name="DMXRoot.Text">
+    <value>&lt;Racine DMX&gt;</value>
+  </data>
+  <data name="LicenseServiceExceeded.Text">
+    <value>Votre période de service pour cette licence a expiré le {0:d}. Vérifiez vos licences sur &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt; votre page sur les licences www.bring2mind.net &lt;/a&gt;. Se connecter avec le compte que vous avez reçu lorsque vous avez acheté le produit.</value>
+  </data>
+  <data name="CORE_APPROVE.Body">
+    <value>&lt;p&gt;Cher [Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;L'actions suivante a été effectuée mais requiert votre approbation:&lt;/p&gt;
+&lt;p&gt;[CORE_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Salutations,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVE_RT1.RepeatTemplate">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+a été  [LogType:Phrase] par [Editor:Displayname] le [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_AUDIT.Body">
+    <value>&lt;p&gt;L'action suivante a été effectuée:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+a été[LogType:Phrase] par [Editor:Displayname] le [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Salutations,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE.Body">
+    <value>&lt;p&gt;Cher[Recipient:Displayname],&lt;/p&gt;&lt;p&gt;le document suivant a été approuvé:&lt;br /&gt;
+&lt;p&gt;[CORE_EDITOR_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Salutation,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_EDITOR_APPROVE_RT1.RepeatTemplate">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE.Body">
+    <value>&lt;p&gt;Cher [Recipient:Displayname],&lt;/p&gt;&lt;p&gt; vous avez approuvé le document suivant:&lt;br /&gt;
+&lt;p&gt;[CORE_EDITOR_APPROVE_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Salutations,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_APPROVER_APPROVE_RT1.RepeatTemplate">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_SUBSCRIBER.Body">
+    <value>&lt;p&gt;Cher[Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;Les actions suivantes ont été effectuées sur les documents que vous suivez:&lt;/p&gt;
+&lt;p&gt;[CORE_SUBSCRIBER_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Salutations,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;[DMX:Portalname]&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_SUBSCRIBER_RT1.RepeatTemplate">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+a été[LogType:Phrase] par[Editor:Displayname] le [Log:Datime]&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_MAILME.Body">
+    <value>&lt;p&gt;Cher[Recipient:Displayname],&lt;/p&gt;
+&lt;p&gt;Vous avez demandés le(s) document(s) suivant(s):&lt;/p&gt;
+&lt;p&gt;[CORE_MAILME_RT1:RepeatTemplate]&lt;/p&gt;
+&lt;p&gt;Veuillez les trouver ci-joint.&lt;/p&gt;
+&lt;p&gt;Salutations,&lt;/p&gt;
+&lt;p&gt;[DNNAdmin:Displayname]&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;[DMX:Portalname]&lt;/strong&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="CORE_MAILME_RT1.RepeatTemplate">
+    <value>&lt;p&gt;&lt;strong&gt;[Entry:Title]&lt;/strong&gt;&lt;br /&gt;
+link: &lt;a href="http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]"&gt;http://[DMX:DefaultPath]/Default.aspx?tabid=[DMX:DefaultDMXTabId]&amp;amp;EntryId=[Entry:EntryId]&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Default.Loading">
+    <value>&lt;table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0"&gt;
+&lt;tr&gt;&lt;td align="center"&gt;&lt;table cellspacing="0" cellpadding="0" border="0"&gt;
+&lt;tr&gt;&lt;td&gt;&lt;img src="{0}DesktopModules/Bring2mind/DMX/images/CA/spinner.gif" width="16" height="16" border="0"&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</value>
+  </data>
+  <data name="ViewDialog.Content">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%"&gt;
+ &lt;tr&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/left.png');filter:alpha(opacity=60);" width="7"&gt;&lt;/td&gt;
+  &lt;td style="vertical-align:top;"&gt;
+   &lt;div style="overflow:auto;width:{2}px;height:{3}px;"&gt;
+{1}
+   &lt;/div&gt;
+  &lt;/td&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/right.png');filter:alpha(opacity=60);" width="7"&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;div class="vw-con-l"&gt;&amp;nbsp;&lt;/div&gt;
+&lt;div class="vw-con-r"&gt;&amp;nbsp;&lt;/div&gt;</value>
+  </data>
+  <data name="ViewDialog.Footer">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%" height="7" style="filter:alpha(opacity=80);"&gt;
+ &lt;tr&gt;
+  &lt;td width="9" height="7" class="ca-dialog-bottom-left-png"&gt;&lt;/td&gt;
+  &lt;td style="background-image:url('{0}DesktopModules/Bring2mind/DMX/images/ca/dialog/bottom-mid.png');"&gt;&lt;img src="{0}images/spacer.gif" alt="" /&gt;&lt;/td&gt;
+  &lt;td width="9" height="7" class="ca-dialog-bottom-right-png"&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="ViewDialog.Header">
+    <value>&lt;table cellpadding="0" cellspacing="0" width="100%" onmousedown="{0}.StartDrag(event);" style="filter:alpha(opacity=60);" height="35"&gt;
+ &lt;tr&gt;
+  &lt;td width="9" height="35" class="ca-dialog-top-left-png"&gt;&lt;/td&gt;
+  &lt;td height="35" style="background-image:url('{1}DesktopModules/Bring2mind/DMX/images/ca/dialog/top-mid.png');height:35px !important;" valign="middle"&gt;&lt;span style="color:White;font-size:15px;font-family:Arial;font-weight:bold;"&gt;{2}&lt;/span&gt;&lt;/td&gt;
+  &lt;td width="40" height="35" valign="top" class="ca-dialog-top-right-png"&gt;&lt;div class="ca-dialog-close-png" style="cursor:default;padding-top:4px;margin-top:4px;" onmousedown="this.className='ca-dialog-close-down-png';" onmouseup="this.className='ca-dialog-close-hover-png';" onclick="{0}.Close();{0}.Dispose();" onmouseover="this.className='ca-dialog-close-hover-png';" onmouseout="this.className='ca-dialog-close-png';" alt="Close" /&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;</value>
+  </data>
+  <data name="LicenseErrorHost.Text">
+    <value>Le module n'a pas été activé ou il y a un problème avec la licence. Si vous avez acheté le produit, vérifiez vos licences sur &lt;a href="http://www.bring2mind.net/Clients/MyLicenses/tabid/132/Default.aspx" target="_blank"&gt; votre page licences sur le site www.bring2mind.netwww.bring2mind.net&lt;/a&gt;(connectez-vous en utilisant le compte que vous avez reçu quand vous avez acheté le produit). Utilisez les détails de votre licence pour activer le module sur la page &lt;a href="[LICENSEURL]"&gt; de licence &lt;/a&gt;.&lt;br /&gt; Si vous essayez le module alors vous avez besoin d'activer le mode d'essai. Aller à &lt;a href="[LICENSEURL]"&gt; la page de licence &lt;/a&gt;Sélectionnez évaluation et clicuez sur activer. Notez que l'activation est également décrit dans le manuel d'installation du module.</value>
+  </data>
+  <data name="DOCADMIN.Permission">
+    <value>Administrateur</value>
+  </data>
+  <data name="WEBDAV.Permission">
+    <value>WebDAV</value>
+  </data>
+  <data name="MAILING.Permission">
+    <value>Poster</value>
+  </data>
+</root>

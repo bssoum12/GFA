@@ -1,0 +1,6 @@
+C:\site\bin\Dashbord.dll
+C:\site\bin\Dashbord.pdb
+C:\site\DesktopModules\Dashbord\obj\Debug\Dashbord.csprojResolveAssemblyReference.cache
+C:\site\DesktopModules\Dashbord\obj\Debug\Dashbord.dll
+C:\site\DesktopModules\Dashbord\obj\Debug\Dashbord.pdb
+C:\site\DesktopModules\Dashbord\obj\Debug\Dashbord.dll.licenses

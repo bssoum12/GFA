@@ -1,0 +1,19 @@
+[if|1][entry:hits][=]0[/if]
+<div class="dnnFormMessage dnnFormValidationSummary">
+ <span>[resx:NoResults]</span>
+</div>
+[endif|1]
+[if|2][entry:hits][>]0[/if]
+<div class="entryItem">
+ <div title="[entry:remarks]" class="icon" style="float:left">
+  [entry:thumbnailoricon32]
+ </div>
+ <div style="float:none" class="details">
+  <div class="link">
+   <a href="[dmxmodule:url]EntryId=[entry:entryid]&Command=Core_Download" title="[entry:remarks]" style="display:[entry:iscollection|none;inline]">[entry:title]</a>
+   <a href="[dmxmodule:url]EntryId=[entry:entryid]" title="[entry:remarks]" style="display:[entry:iscollection|inline;none]">[entry:title]</a>
+  </div>
+  <div class="extract">[entry:Extract]</div>
+ </div>
+</div>
+[endif|2]

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plAction.Help">
+    <value>Cette clé correspond à un événement qui se passe dans Document Exchange</value>
+  </data>
+  <data name="plAction.Text">
+    <value>Action</value>
+  </data>
+  <data name="plAttachFile.Help">
+    <value>Joignez le fichier (si applicable) à la notification</value>
+  </data>
+  <data name="plAttachFile.Text">
+    <value>Joindre un fichier</value>
+  </data>
+  <data name="plCustomSend.Help">
+    <value>Si activé,la notification ne sera pas traitée avec le traitement des notifications automatiques, mais dépendra du code personnalisé pour être envoyé. Cette option est destinée aux e-mails qui doivent être envoyés immédiatement, par exemple.</value>
+  </data>
+  <data name="plCustomSend.Text">
+    <value>Envoi personnalisé</value>
+  </data>
+  <data name="plNotifyApprovers.Help">
+    <value>La notification à envoyer aux approbateurs. Utilise une clé qui est présente dans le fichier de ressources.</value>
+  </data>
+  <data name="plNotifyApprovers.Text">
+    <value>Approbateurs</value>
+  </data>
+  <data name="plNotifyAudit.Help">
+    <value>Cet événement devrait déclencher une notification à l'adresse mail d'Audit.</value>
+  </data>
+  <data name="plNotifyAudit.Text">
+    <value>Vérificateur</value>
+  </data>
+  <data name="plNotifyEditors.Help">
+    <value>La notification à envoyer aux rédacteurs du document.</value>
+  </data>
+  <data name="plNotifyEditors.Text">
+    <value>Rédacteurs</value>
+  </data>
+  <data name="plNotifyOwner.Help">
+    <value>Notification à envoyer au propriétaire du document.</value>
+  </data>
+  <data name="plNotifyOwner.Text">
+    <value>Propriétaire</value>
+  </data>
+  <data name="pNotifySelf.Help">
+    <value>Notification à envoyer à la personne effectuant l'action.</value>
+  </data>
+  <data name="pNotifySelf.Text">
+    <value>Auto</value>
+  </data>
+  <data name="pNotifySubscribers.Help">
+    <value>La notification à envoyer aux abonnés du document.</value>
+  </data>
+  <data name="pNotifySubscribers.Text">
+    <value>Abonnés</value>
+  </data>
+  <data name="plResourceFile.Help">
+    <value>Chemin d'accès au fichier de ressources où les notifications peuvent être trouvés.</value>
+  </data>
+  <data name="plResourceFile.Text">
+    <value>Fichier de ressources</value>
+  </data>
+</root>

@@ -1,0 +1,7 @@
+C:\site\bin\VBFramework.dll
+C:\site\bin\VBFramework.pdb
+C:\site\bin\VBFramework.xml
+C:\site\DesktopModules\VBFramework\obj\Debug\VBFramework.vbprojResolveAssemblyReference.cache
+C:\site\DesktopModules\VBFramework\obj\Debug\VBFramework.dll
+C:\site\DesktopModules\VBFramework\obj\Debug\VBFramework.xml
+C:\site\DesktopModules\VBFramework\obj\Debug\VBFramework.pdb

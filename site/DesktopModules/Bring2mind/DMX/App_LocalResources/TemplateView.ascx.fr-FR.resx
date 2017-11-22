@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="chkShowDeleted.Text">
+    <value>Afficher effacés</value>
+  </data>
+  <data name="cmdEditTemplates.Text">
+    <value>Modifier les modèles</value>
+  </data>
+  <data name="LogAlternateItemTemplate.Text">
+    <value> </value>
+  </data>
+  <data name="VersionAlternateItemTemplate.Text">
+    <value> </value>
+  </data>
+  <data name="DefaultStyles.Text">
+    <value>table.EntryList tr th, table.EntryList tr td
+{
+ padding: 4px 6px 4px 6px;
+}
+table.EntryList tr th
+{
+ font-weight: bold;
+ border-bottom: solid 1px #ddd;
+}
+tr.entryItem
+{
+}
+tr.entryAlternateItem
+{
+ background-color: #E8EAFF;
+}
+.pageButton
+{
+ font-weight: bold;
+ border: solid 1px #666;
+ padding: 2px 6px 2px 6px;
+ margin-right: 10px;
+ text-decoration: none;
+}
+a.pageButton
+{
+ font-weight: bold;
+ cursor: pointer;
+}
+a.pageButton:hover, a.pageButton:active
+{
+ background-color: #666;
+ color: #fff;
+}
+table.EntryMetaData tr td
+{
+ padding: 2px 8px 2px 2px;
+}
+td.mdTitle
+{
+ font-weight: bold;
+}</value>
+  </data>
+  <data name="BreadCrumbTemplate.Text">
+    <value>&amp;nbsp;&amp;gt;&amp;nbsp;&lt;a href="[dmxmodule:url]EntryId=[entry:entryid]"&gt;[entry:title]&lt;/a&gt;</value>
+  </data>
+  <data name="AlternateItemTemplate.Text">
+    <value>&lt;tr class="entryAlternateItem"&gt;
+ &lt;td&gt;
+  [entry:icon16html]
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]"&gt;[entry:title]&lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;[entry:author]&lt;/td&gt;
+ &lt;td&gt;[entry:lastmodified|g]&lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;Command=Core_Download" class="disk_blue-png link" title="[resources:Command.Download]" style="display:[entry:isfile|block;none]"&gt;
+  &lt;/a&gt;
+  &lt;a href="[entry:entry]" target="_blank" class="icon-16-hyperlink-gif link" title="[resources:Hyperlink.Text]" style="display:[entry:ishyperlink|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;Command=Core_Edit" class="document_edit-png link" title="[resources:Command.Edit]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=delete&amp;sel=[entry:entryid]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="document_delete-png link" title="[resources:Delete.Button]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=cuttocb&amp;sel=[entry:entryid]" class="cut-png link" title="[resources:CutX.Text]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=copytocb&amp;sel=[entry:entryid]" class="copy-png link" title="[resources:CopyX.Text]" style="display:block"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td style="display:[query:authenticated|block;none]"&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=subscribe&amp;sel=[entry:entryid]" class="document_heart-png link" title="[resources:SubscribeX.Text]" style="display:[entry:issubscribed|none;block]"&gt;
+  &lt;/a&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=unsubscribe&amp;sel=[entry:entryid]" class="heart_broken-png link" title="[resources:UnSubscribeX.Text]" style="display:[entry:issubscribed|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+&lt;/tr&gt;</value>
+  </data>
+  <data name="CategoryItemTemplate.Text">
+    <value>&lt;a href="[dmxmodule:url]CategoryId=[category:categoryid]" class="CommandButton"&gt;[category:name]&lt;/a&gt;</value>
+  </data>
+  <data name="PagerPageTemplate.Text">
+    <value>&lt;div style="display:[custom:pageiscurrent|none;inline]"&gt;&lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;sort=[query:sort]&amp;so=[query:so]&amp;Page=[custom:page]" class="pageButton"&gt;[custom:page]&lt;/a&gt;&lt;/div&gt;
+&lt;div style="display:[custom:pageiscurrent|inline;none]" class="pageButton"&gt;[custom:page]&lt;/div&gt;</value>
+  </data>
+  <data name="ItemTemplate.Text">
+    <value>&lt;tr class="entryItem"&gt;
+ &lt;td&gt;
+  [entry:icon16html]
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]"&gt;[entry:title]&lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;[entry:author]&lt;/td&gt;
+ &lt;td&gt;[entry:lastmodified|g]&lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;Command=Core_Download" class="disk_blue-png link" title="[resources:Command.Download]" style="display:[entry:isfile|block;none]"&gt;
+  &lt;/a&gt;
+  &lt;a href="[entry:entry]" target="_blank" class="icon-16-hyperlink-gif link" title="[resources:Hyperlink.Text]" style="display:[entry:ishyperlink|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;Command=Core_Edit" class="document_edit-png link" title="[resources:Command.Edit]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=delete&amp;sel=[entry:entryid]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="document_delete-png link" title="[resources:Delete.Button]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=cuttocb&amp;sel=[entry:entryid]" class="cut-png link" title="[resources:CutX.Text]" style="display:[entry:canedit|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=copytocb&amp;sel=[entry:entryid]" class="copy-png link" title="[resources:CopyX.Text]" style="display:block"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+ &lt;td style="display:[query:authenticated|block;none]"&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=subscribe&amp;sel=[entry:entryid]" class="document_heart-png link" title="[resources:SubscribeX.Text]" style="display:[entry:issubscribed|none;block]"&gt;
+  &lt;/a&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:collectionid]&amp;cmd=unsubscribe&amp;sel=[entry:entryid]" class="heart_broken-png link" title="[resources:UnSubscribeX.Text]" style="display:[entry:issubscribed|block;none]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+&lt;/tr&gt;</value>
+  </data>
+  <data name="LogItemTemplate.Text">
+    <value>&lt;tr&gt;
+ &lt;td&gt;[log:datime|g]&lt;/td&gt;
+ &lt;td&gt;[loguser:displayname]&lt;/td&gt;
+ &lt;td&gt;[logtype:phrase]&lt;/td&gt;
+&lt;/tr&gt;</value>
+  </data>
+  <data name="VersionItemTemplate.Text">
+    <value>&lt;tr&gt;
+ &lt;td&gt;[entry:version]&lt;/td&gt;
+ &lt;td&gt;[entry:lastmodified|d]&lt;/td&gt;
+ &lt;td&gt;[entry:title]&lt;/td&gt;
+ &lt;td&gt;[entry:filesizeformatted]&lt;/td&gt;
+ &lt;td&gt;
+  &lt;a href="[dmxmodule:url]EntryId=[entry:entryid]&amp;Command=Core_Download" style="display:[entry:isfile|block;none]" class="disk_blue-png link" title="[resources:Command.Download]"&gt;
+  &lt;/a&gt;
+  &lt;a href="[entry:entry]" style="display:[entry:ishyperlink|block;none]" target="_blank" class="icon-16-hyperlink-gif link" title="[resources:Hyperlink.Text]"&gt;
+  &lt;/a&gt;
+ &lt;/td&gt;
+&lt;/tr&gt;</value>
+  </data>
+  <data name="PageTemplate.Text">
+    <value>&lt;table&gt;
+ &lt;tr&gt;
+  &lt;td style="vertical-align:baseline;padding-right:10px"&gt;
+   [entry:icon32html]
+  &lt;/td&gt;
+  &lt;td style="vertical-align:bottom"&gt;
+   &lt;h1&gt;[entry:title]&lt;/h1&gt;
+  &lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;
+[BreadCrumbs|view]
+&lt;/p&gt;
+
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:new_url]" class="document_new-png link" title="[button:new_text]" style="display:[button:new_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:edit_url]" class="document_edit-png link" title="[button:edit_text]" style="display:[button:edit_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:newversion_url]" class="document_exchange-png link" title="[button:newversion_text]" style="display:[button:newversion_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;display:[button:download_visible|table-cell;none];"&gt;
+ &lt;a href="[button:download_url]" class="disks-png link" title="[button:download_text]" style="display:[entry:iscollection|block;none]"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;display:[button:download_visible|table-cell;none];"&gt;
+ &lt;a href="[button:download_url]" class="disk_blue-png link" title="[button:download_text]" style="display:[entry:iscollection|none;block]"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:subscribe_url]" class="document_heart-png link" title="[button:subscribe_text]" style="display:[button:subscribe_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:unsubscribe_url]" class="heart_broken-png link" title="[button:unsubscribe_text]" style="display:[button:unsubscribe_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:lock_url]" class="document_lock-png link" title="[button:lock_text]" style="display:[button:lock_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:unlock_url]" class="lock_open-png link" title="[button:unlock_text]" style="display:[button:unlock_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:harddelete_url]" onclick="Javascript:return confirm('[resources:HardDeleteConfirm.Text]');" class="document_delete-png link" title="[button:harddelete_text]" style="display:[button:harddelete_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:delete_url]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="document_delete-png link" title="[button:delete_text]" style="display:[button:delete_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:undelete_url]" class="document_into-png link" title="[button:undelete_text]" style="display:[button:undelete_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:import_url]" class="import1-png link" title="[button:import_text]" style="display:[button:import_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:mailme_url]" class="document_attachment-png link" title="[button:mailme_text]" style="display:[button:mailme_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:cut_url]" class="cut-png link" title="[button:cut_text]" style="display:[button:cut_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:copy_url]" class="copy-png link" title="[button:copy_text]" style="display:[button:copy_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="float:left;"&gt;
+ &lt;a href="[button:paste_url]" class="paste-png link" title="[button:paste_text]" style="display:[button:paste_visible|block;none];"&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div style="clear:both;"&gt;
+&lt;/div&gt;
+
+&lt;div class="NormalRed" style="display:[entry:isdeleted|block;none];width:100%;text-align:center;padding:10px;"&gt;[resources:ThisItemDeleted.Text]&lt;/div&gt;
+&lt;div class="NormalRed" style="display:[entry:islocked|block;none];width:100%;text-align:center;padding:10px;"&gt;[resources:ThisItemLocked.Text]&lt;/div&gt;
+&lt;div class="NormalRed" style="display:[entry:isapproved|none;block];width:100%;text-align:center;padding:10px;"&gt;[resources:ThisItemNotApproved.Text]&lt;/div&gt;
+
+&lt;div style="display:[entry:iscollection|none;block]" class="MetaDataContainer"&gt;
+&lt;table&gt;&lt;tr&gt;
+ &lt;td valign="top"&gt;
+&lt;table class="EntryMetaData"&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Author.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:author]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:LastModified.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:LastModified|g]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Version.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:version]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:FileSize.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:filesizeformatted]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Created.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Created|g]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Keywords.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Keywords]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Categories.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Categories]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:OriginalFilename.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:OriginalFileName]&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+ &lt;/td&gt;
+ &lt;td valign="top"&gt;
+&lt;table style="display:[query:isdocadmin|block;none]" class="EntryMetaData"&gt;
+ &lt;tr&gt;
+  &lt;td colspan="2" class="mdTitle"&gt;[resources:Permissions.Text]&lt;/td&gt;
+ &lt;/tr&gt;
+ [entry:permissions]
+&lt;/table&gt;
+ &lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;[entry:remarks]&lt;/p&gt;
+
+&lt;h2&gt;[resources:Versions.Text]&lt;/h2&gt;
+&lt;table class="EntryList"&gt;
+ [Versions-10|view|file;hyperlink]
+&lt;/table&gt;
+&lt;h2&gt;[resources:Log.Text]&lt;/h2&gt;
+&lt;table class="EntryList"&gt;
+ [Log-10|edit;admin|file]
+&lt;/table&gt;
+&lt;/div&gt;
+
+&lt;div style="display:[query:thisistheroot|none;block]"&gt;
+&lt;div style="display:[entry:iscollection|block;none]" class="MetaDataContainer"&gt;
+&lt;table&gt;&lt;tr&gt;
+ &lt;td valign="top"&gt;
+&lt;table class="EntryMetaData"&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:LastModified.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:LastModified|g]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Created.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Created|g]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Keywords.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Keywords]&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+  &lt;td class="mdTitle"&gt;[resources:Categories.Text]&lt;/td&gt;
+  &lt;td&gt;[entry:Categories]&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+ &lt;/td&gt;
+ &lt;td valign="top"&gt;
+&lt;table style="display:[query:isdocadmin|block;none]" class="EntryMetaData"&gt;
+ &lt;tr&gt;
+  &lt;td colspan="2" class="mdTitle"&gt;[resources:Permissions.Text]&lt;/td&gt;
+ &lt;/tr&gt;
+ [entry:permissions]
+&lt;/table&gt;
+ &lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+&lt;p&gt;[entry:remarks]&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div style="display:[entry:iscollection|block;none]"&gt;
+&lt;table cellspacing="0" cellpadding="0" border="0" class="EntryList" &gt;
+ &lt;tr&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+  &lt;th&gt;
+   &lt;a href="[dmxmodule:url]entryid=[entry:entryid]&amp;sort=title&amp;so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]" Class="CommandButton"&gt;[resources:Title.Text]&lt;/a&gt;
+   &lt;span style="display:[query:sort=title|inline;none];margin-left:10px"&gt;
+    &lt;span&gt;&lt;p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;/span&gt;
+   &lt;/span&gt;
+  &lt;/th&gt;
+  &lt;th&gt;
+   &lt;a href="[dmxmodule:url]entryid=[entry:entryid]&amp;sort=author&amp;so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]" Class="CommandButton"&gt;[resources:Author.Text]&lt;/a&gt;
+   &lt;span style="display:[query:sort=author|inline;none];margin-left:10px"&gt;
+    &lt;span&gt;&lt;p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;/span&gt;
+   &lt;/span&gt;
+  &lt;/th&gt;
+  &lt;th&gt;
+   &lt;a href="[dmxmodule:url]entryid=[entry:entryid]&amp;sort=lastmodified&amp;so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]" Class="CommandButton"&gt;[resources:LastModified.Text]&lt;/a&gt;
+   &lt;span style="display:[query:sort=lastmodified|inline;none];margin-left:10px"&gt;
+    &lt;span&gt;&lt;p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline"&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/p&gt;&lt;/span&gt;
+   &lt;/span&gt;
+  &lt;/th&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+  &lt;th&gt;&amp;nbsp;&lt;/th&gt;
+ &lt;/tr&gt;
+[entrylist-10|view|collection]
+&lt;/table&gt;
+&lt;p style="margin-top:20px;"&gt;[pager|view|collection]&lt;/p&gt;
+&lt;/div&gt;</value>
+  </data>
+</root>

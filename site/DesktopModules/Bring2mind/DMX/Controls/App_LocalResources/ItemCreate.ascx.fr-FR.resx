@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="FileUploaded.Text">
+    <value>Un fichier a déjà été téléchargés: {0}</value>
+  </data>
+  <data name="cmdRemoveUploadedFile.Text">
+    <value>Retirer</value>
+  </data>
+</root>

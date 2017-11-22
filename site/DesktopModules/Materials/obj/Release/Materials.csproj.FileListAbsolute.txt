@@ -1,0 +1,5 @@
+C:\site\bin\Materials.dll
+C:\site\bin\Materials.pdb
+C:\site\DesktopModules\Materials\obj\Release\Materials.csprojResolveAssemblyReference.cache
+C:\site\DesktopModules\Materials\obj\Release\Materials.dll
+C:\site\DesktopModules\Materials\obj\Release\Materials.pdb

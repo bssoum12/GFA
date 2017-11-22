@@ -1,0 +1,1 @@
+<%@ Page Language="vb" AutoEventWireup="false" ContentType="text/xml" CodeBehind="DmxRss.aspx.vb" Inherits="Bring2mind.DNN.Modules.DMX.DmxRss" %>

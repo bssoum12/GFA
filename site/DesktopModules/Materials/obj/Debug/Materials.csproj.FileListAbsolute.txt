@@ -1,0 +1,6 @@
+C:\site\bin\Materials.dll
+C:\site\bin\Materials.pdb
+C:\site\DesktopModules\Materials\obj\Debug\Materials.csprojResolveAssemblyReference.cache
+C:\site\DesktopModules\Materials\obj\Debug\Materials.dll
+C:\site\DesktopModules\Materials\obj\Debug\Materials.pdb
+C:\site\DesktopModules\Materials\obj\Debug\Materials.dll.licenses

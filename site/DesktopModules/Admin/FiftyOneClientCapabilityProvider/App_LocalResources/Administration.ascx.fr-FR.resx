@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!---->
+  <note></note>
+  <data name="Activate.Text" version="deprecated">
+    <value xml:space="preserve">Activer</value>
+  </data>
+  <data name="ActivateButtonText.Text">
+    <value xml:space="preserve">Activer</value>
+  </data>
+  <data name="ActivatedMessageHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;p class="{0}"&gt;Mode Premium actif. Merci.&lt;/p&gt;</value>
+  </data>
+  <data name="ActivateInstructionsHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;h3&gt;Activer toutes les fonctionnalités&lt;/h3&gt;&lt;p&gt;Étape 1 - Obtenir une licence 51Degrees.&lt;/p&gt;&lt;br/&gt;&lt;p&gt;Étape 2 - &lt;p&gt;Coller votre clé de licence dans la zone de texte ci-dessous. Sélectionner "Activer" afin d'utiliser cette clé de licence pour ce site web.&lt;/p&gt;&lt;br/&gt;</value>
+  </data>
+  <data name="ActivationDataInvalidHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;La source de données fournie ne contient pas de données valides.&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureCouldNotUpdateConfigHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;L'élement fiftyOne du fichier de configuration '{1}' ne peut être inséré. Vérifiez que le texte suivant est bien présent entre les balises fiftyOne et essayez à nouveau d'activer la clé de licence.&lt;/p&gt;&lt;br/&gt;&lt;span style="margin-left: 0px !important;"&gt;&lt;code style="color: #000000;"&gt;=&lt;/code&gt;&lt;code&gt;&lt;span style="color: #006699;"&gt;&lt;strong&gt;detection&lt;/strong&gt;&lt;/span&gt;&lt;/code&gt;&amp;nbsp;&lt;code style="color: #808080;"&gt;binaryFilePath&lt;/code&gt;&lt;code style="color: #000000;"&gt;=&lt;/code&gt;&lt;code style="color: blue;"&gt;"~/App_Data/51Degrees-Premium.dat"&lt;/code&gt;&lt;code&gt;&lt;span style="color: #000000;"&gt;/&gt;&lt;/span&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureCouldNotWriteDataFileHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Le fichier de données de l'appareil '{1}' n'a pu être sauvegardé. Vérifier que l'utilisateur '{2}' a bien les droits d'écriture ou changer l'emplacement du dossier pour un autre ayant les autorisations adéquates&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureCouldNotWriteLicenceFileHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Le fichier de licence '{1}' ne pouvait pas être enregistré dans le dossier "bin" '{2}'. Créer un fichier texte ayant pour extension ".lic" et coller la clé de licence à l'intérieur puis enregistrer celui-ci dans le dossier "bin".&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureGenericHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Oups, il y a eu un problème lors de l'activation de la clé de licence. Nous ne savons pas pourquoi celle-ci n'a pu être activée. Merci &lt;a href="http://51degrees.mobi/AboutUs/ContactUs.aspx"&gt;de nous contacter&lt;/a&gt; en nous communiquant tous les détails liés à votre site web et nous tenterons de vous aider.&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureHttpHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Nous avons été incapables d'accéder au fichier de lience 51Degrees.mobi pour l'hôte '{1}'. Cela peut être pour l'une des raisons suivantes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Le site web tourne actuellement en mode de confiance "moyenne" et l'attribut &lt;a href="http://msdn.microsoft.com/en-us/library/system.web.configuration.trustsection.originurl(v=VS.80).aspx"&gt;originUrl&lt;/a&gt; du fichier web.config ne permet pas l'accès à l'hôte '{1}'. Changer l'originUrl afin d'inclure '{1}'. Les noms d'hôtes multiples doivent être séparés par le signe |.&lt;/li&gt;&lt;li&gt;Le parefeu web ou un autre parefeu bloque l'accès à l'hôte ou au port SSL 443. Vérifier la configuration du parefeu.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Essayer de nouveau d'activer la clé de licence après avoir effectué ces opérations.&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationFailureInvalidHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;La clé de licence fournie n'est pas valide. Vérifiez celle-ci auprès de votre revendeur.&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationStreamFailureHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Impossible de lire depuis la source de données fournie.&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="ActivationSuccessHtml.Text" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;p&gt;Activation réussie. Cliquer sur le bouton "Actualiser" afin de recharger la page et commencer à utiliser les données Premium. Note: Il peut y avoir un délai lors du redémarrage de l'application.&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="BackButtonDevicesText.Text" xml:space="preserve">
+    <value xml:space="preserve">Autres fournisseurs</value>
+  </data>
+  <data name="BackButtonDeviceText.Text" xml:space="preserve">
+    <value xml:space="preserve">Autres appareils {0}</value>
+  </data>
+  <data name="BackToExplorer.Text" xml:space="preserve">
+    <value xml:space="preserve">Retour à l'explorateur d'appareils</value>
+  </data>
+  <data name="BrowserList.Header">
+    <value xml:space="preserve">Navigateur</value>
+  </data>
+  <data name="ContentList.Header">
+    <value xml:space="preserve">Contenu</value>
+  </data>
+  <data name="DeviceExplorer.Header" xml:space="preserve">
+    <value xml:space="preserve">Explorateur de l'appareil</value>
+  </data>
+  <data name="DeviceExplorerDeviceInstructionsHtml.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">&lt;p&gt;Utiliser les icônes d'aide pour trouver plus d'informations sur la propriété ou la valeur.&lt;/p&gt;</value>
+  </data>
+  <data name="DeviceExplorerModelsInstructionsHtml.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">&lt;p&gt;Sélectionnez un modèle pour afficher ses capacités avec différentes combinaisons de navigateur et de logiciel.&lt;/p&gt;</value>
+  </data>
+  <data name="DeviceExplorerVendorsHtml.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">&lt;p&gt;Sélectionnez un fournisseur de matériel pour afficher les modèles d'appareils qu'ils produisent.&lt;/p&gt;</value>
+  </data>
+  <data name="DeviceSearchRequired.Text">
+    <value xml:space="preserve">Requis</value>
+  </data>
+  <data name="GetLatestData.Text" xml:space="preserve">
+    <value xml:space="preserve">Obtenir les données les plus récentes</value>
+  </data>
+  <data name="Glossary.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Aide &gt; Glossaire</value>
+  </data>
+  <data name="Glossary.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">* Ceci est uniquement inclus dans l'ensembles des données Premium.</value>
+  </data>
+  <data name="HardwareList.Header">
+    <value xml:space="preserve">Matériel</value>
+  </data>
+  <data name="Help.Text" version="deprecated">
+    <value xml:space="preserve">Aide</value>
+  </data>
+  <data name="HelpLink.Text" version="deprecated">
+    <value xml:space="preserve">Aide</value>
+  </data>
+  <data name="Introduction.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Rechercher un appareil</value>
+  </data>
+  <data name="Introduction.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Voici un glossaire des propriétés disponibles par catégorie.</value>
+  </data>
+  <data name="LicenseType_CMS.Text" version="deprecated">
+    <value xml:space="preserve">CMS</value>
+  </data>
+  <data name="LicenseType_Lite.Text" version="deprecated">
+    <value xml:space="preserve">Lite</value>
+  </data>
+  <data name="LicenseType_Premium.Text" version="deprecated">
+    <value xml:space="preserve">Premium</value>
+  </data>
+  <data name="Lite.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Merci d'utiliser les données d'appareils Lite</value>
+  </data>
+  <data name="LiteSearchResults.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Résultats de recherche</value>
+  </data>
+  <data name="LiteSearchResults.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Sélectionnez un fournisseur de matériel pour afficher les modèles d'appareils qu'ils produisent.</value>
+  </data>
+  <data name="LiteUpgrade.Label" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Mise à jour de données Premium :</value>
+  </data>
+  <data name="NoResultsFound.Text" xml:space="preserve">
+    <value xml:space="preserve">Il n'y a aucun résultat trouvé correspondant à votre recherche.</value>
+  </data>
+  <data name="Premium.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Merci d'utiliser les données {0} pour cet appareil</value>
+  </data>
+  <data name="PremiumIntro.Text" xml:space="preserve">
+    <value xml:space="preserve">Les données {0} supportent des milliers d'appareils : consoles de jeu, lecteurs de livres électroniques, téléphones. Chaque appareil est lié à une large palette d’informations (taille d’écran, méthodes de saisie liées au système d’exploitation, navigateur et matériel).</value>
+  </data>
+  <data name="PremiumUploadError.Text" xml:space="preserve">
+    <value xml:space="preserve">Il y avait un problème de chargement de vos données.</value>
+  </data>
+  <data name="PremiumUploadSuccess.Text" xml:space="preserve">
+    <value xml:space="preserve">Données chargées avec succès.</value>
+  </data>
+  <data name="PurchaseInfo.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Vous pouvez acheter votre licence sur</value>
+  </data>
+  <data name="PurchaseInfoEnd.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">, ou mettre à jour votre version vers l'une des &lt;a href="http://store.dotnetnuke.com/home/product-details/dotnetnuke-professional-and-enterprise-edition-subscriptions" target="_blank"&gt;éditions commerciales&lt;/a&gt;.</value>
+  </data>
+  <data name="PurchaseInfoLink.Href" version="deprecated">
+    <value xml:space="preserve">http://store.dotnetnuke.com/home/product-details/premium-mobile-device-data-51degreesmobi</value>
+  </data>
+  <data name="PurchaseInfoLink.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Boutique DotNetNuke</value>
+  </data>
+  <data name="RefreshButtonText.Text" xml:space="preserve">
+    <value xml:space="preserve">ActualiserUsed to reload page after upgrade to premium.
+    Used to reload page after upgrade to premium.</value>
+  </data>
+  <data name="SearchButton.Text" xml:space="preserve">
+    <value xml:space="preserve">Trouver appareil</value>
+  </data>
+  <data name="SearchLite.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Recherche d'agent utilisateur</value>
+  </data>
+  <data name="SearchLite.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Entrer l'agent utilisateur que vous souhaitez utiliser puis cliquer sur Trouver appareil</value>
+  </data>
+  <data name="SearchPremium.Header" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Recherche d'appareil</value>
+  </data>
+  <data name="SearchPremium.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Saisir des termes pour la recherche et appuyer sur le bouton trouver appareil. Les informations concernant : fournisseur de matériel, modèle, nom du dispositif, navigateur et système d'exploitation seront cherchées.</value>
+  </data>
+  <data name="SoftwareList.Header" version="deprecated">
+    <value xml:space="preserve">Logiciel</value>
+  </data>
+  <data name="StatsHtml.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">&lt;div class="{0}"&gt;&lt;span&gt;Version : &lt;b&gt;{1}&lt;/b&gt;&lt;/span&gt; &lt;span&gt;Publiée: &lt;b&gt;{2:d}&lt;/b&gt;&lt;/span&gt; &lt;span&gt;Propriétés: &lt;b&gt;{3}&lt;/b&gt;&lt;/div&gt;</value>
+  </data>
+  <data name="StatsRefreshButton.Text" version="deprecated">
+    <value xml:space="preserve">Actualiser</value>
+  </data>
+  <data name="UpgradePoint1.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Rediriger automatiquement les utilisateurs vers des pages web optimisées, vous permettant de créer des sites distincts pour des tablettes ou des téléphones.</value>
+  </data>
+  <data name="UpgradePoint2.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Améliorer les propriétés liées aux appareils de type tablette/téléphone (taille de l'écran, modèle, OS, méthodes de saisie...)</value>
+  </data>
+  <data name="UpgradePoint3.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Mises à jour hebdomadaires régulières des données d'appareils</value>
+  </data>
+  <data name="UpgradePoint4.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Une option pour installer automatiquement les nouvelles mises à jour.</value>
+  </data>
+  <data name="UploadButtonText.Text">
+    <value xml:space="preserve">Charger</value>
+  </data>
+  <data name="UploadData.Text" xml:space="preserve">
+    <value xml:space="preserve">Charger les données</value>
+  </data>
+  <data name="UploadInstructionsHtml.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">&lt;p&gt;Vous pouvez également charger un fichier de données Premium en utilisant les boutons « Parcourir » et « Télécharger » ci-dessous.&lt;/p&gt;</value>
+  </data>
+  <data name="ValidationFileErrorText.Text" xml:space="preserve">
+    <value xml:space="preserve">Utilisez le bouton Parcourir pour sélectionner un fichier de données Premium à charger.</value>
+  </data>
+  <data name="ValidationRegExErrorText.Text" xml:space="preserve">
+    <value xml:space="preserve">La clé de licence doit uniquement contenir des lettres majuscules ou des chiffres.</value>
+  </data>
+  <data name="ValidationRequiredErrorText.Text" xml:space="preserve">
+    <value xml:space="preserve">Une clé de licence doit être entrée.</value>
+  </data>
+  <data name="ViewLicenseAgreement.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Voir le Contrat de licence</value>
+  </data>
+  <data name="WhyUpgrade.Text" version="deprecated" xml:space="preserve">
+    <value xml:space="preserve">Pourquoi passer en Premium</value>
+  </data>
+  <data name="ControlTitle_.Text" xml:space="preserve">
+    <value>Détection de dispositif</value>
+  </data>
+  <data name="AutoUpdatesEnabled.Text" version="deprecated" xml:space="preserve">
+    <value>Mises à jour automatique activés ?</value>
+  </data>
+  <data name="DeviceDetectionEnabled.Text" version="deprecated" xml:space="preserve">
+    <value>Détection des périphériques activée ?</value>
+  </data>
+  <data name="AutoUpdatesEnabled.Help" version="deprecated" xml:space="preserve">
+    <value>Activer/désactiver la mise à jour automatique des fichiers de données.</value>
+  </data>
+  <data name="DeviceDetectionEnabled.Help" version="deprecated" xml:space="preserve">
+    <value>Activer/désactiver la détection des périphériques.</value>
+  </data>
+  <data name="ManualUpdates.Text" version="deprecated" xml:space="preserve">
+    <value>Mises à jour manuelles :</value>
+  </data>
+  <data name="ShareUsageEnabled.Help" version="deprecated" xml:space="preserve">
+    <value>Activer/désactiver le partage de données d'utilisation avec 51Degrees.</value>
+  </data>
+  <data name="ShareUsageEnabled.Text" version="deprecated" xml:space="preserve">
+    <value>Partage de données activé ?</value>
+  </data>
+  <data name="Activate.Header" xml:space="preserve">
+    <value>Commencer &amp; activer des fonctionnalités</value>
+  </data>
+  <data name="SettingsAutoUpdates.Text" xml:space="preserve">
+    <value>Mises à jour automatique activés ?</value>
+  </data>
+  <data name="SettingsEnabled.Text" xml:space="preserve">
+    <value>Détection des périphériques activée ?</value>
+  </data>
+  <data name="SettingsAutoUpdates.Help" xml:space="preserve">
+    <value>Activer / désactiver la mise à jour automatique du fichier de données de l'appareil. Si activé, le site Web vérifiera régulièrement la présence de nouvelles versions sur 51Degrees et les appliquera automatiquement sans "recycler" le domaine de l'application. Les données améliorées sont nécessaires pour utiliser cette option.</value>
+  </data>
+  <data name="SettingsEnabled.Help" xml:space="preserve">
+    <value>Activer/désactiver la détection des périphériques.</value>
+  </data>
+  <data name="SettingsShareUsage.Help" xml:space="preserve">
+    <value>Activer/désactiver le partage de données d'utilisation avec 51Degrees.</value>
+  </data>
+  <data name="SettingsShareUsage.Text" xml:space="preserve">
+    <value>Partage de données activé ?</value>
+  </data>
+  <data name="Cancel.Action">
+    <value>Annuler</value>
+  </data>
+  <data name="DeviceBrowserUnavailable.Html" xml:space="preserve">
+    <value>&lt;p&gt;Le jeu de données utilisé pour la détection de l'appareil ne contient pas suffisamment d'informations sur les appareils compatibles avec l’onglet d’exploration. &lt;/p&gt;&lt;p&gt; Les appareils disponibles dans les versions améliorées de détection de périphérique peuvent être consultés sur le site web 51Degrees.&lt;/p&gt;</value>
+  </data>
+  <data name="DeviceBrowserUnavailableButton.Action" xml:space="preserve">
+    <value>Explorer les appareils</value>
+  </data>
+  <data name="DeviceBrowserUnavailableButton.Url">
+    <value>https://51degrees.com/resources/device-explorer</value>
+  </data>
+  <data name="Explorer.Header" xml:space="preserve">
+    <value>Explorer les appareils</value>
+  </data>
+  <data name="ManualUpdates.Help" xml:space="preserve">
+    <value>Charger manuellement les nouveaux fichiers de jeu de données d'appareil</value>
+  </data>
+  <data name="NewDevices.Header" xml:space="preserve">
+    <value>Top 5 des nouveaux appareils</value>
+  </data>
+  <data name="Properties.Header" xml:space="preserve">
+    <value>Propriétés disponibles</value>
+  </data>
+  <data name="Refresh.Action" xml:space="preserve">
+    <value>Vider le cache</value>
+  </data>
+  <data name="Settings.Header" xml:space="preserve">
+    <value>Paramètres du module</value>
+  </data>
+  <data name="SettingsConfiguration.Header">
+    <value>Configuration</value>
+  </data>
+  <data name="SettingsDataSetDeviceCombinations.Help" xml:space="preserve">
+    <value>Le nombre de combinaisons d'appareil, système d'exploitation et navigateurs web qui peuvent être détectés par ce site web.</value>
+  </data>
+  <data name="SettingsDataSetDeviceCombinations.Text">
+    <value>Combinaisons</value>
+  </data>
+  <data name="SettingsDataSetHardwareProfiles.Help" xml:space="preserve">
+    <value>Le nombre d'appareils que ce site web peut actuellement détecter.</value>
+  </data>
+  <data name="SettingsDataSetHardwareProfiles.Text">
+    <value>Appareils</value>
+  </data>
+  <data name="SettingsDataSetName.Help" xml:space="preserve">
+    <value>Soit Lite, soit Premium soit Enterprise et ce en fonction de l'ensemble de données 51Degrees activé. Lite est fourni avec la plateforme DNN et Premium avec Evoq. La plateforme DNN peut être mise à jour avec une clé de licence.</value>
+  </data>
+  <data name="SettingsDataSetName.Text">
+    <value>Nom</value>
+  </data>
+  <data name="SettingsDataSetNextUpdate.Help" xml:space="preserve">
+    <value>Lorsque le prochain jeu de données devrait être disponible sur 51Degrees.</value>
+  </data>
+  <data name="SettingsDataSetNextUpdate.Text" xml:space="preserve">
+    <value>Prochaine mise à jour</value>
+  </data>
+  <data name="SettingsDataSetPropertyCount.Help" xml:space="preserve">
+    <value>Le nombre de propriétés disponibles dans le jeu de données actuel.</value>
+  </data>
+  <data name="SettingsDataSetPropertyCount.Text" xml:space="preserve">
+    <value>Nombre de propriétés</value>
+  </data>
+  <data name="SettingsDataSetPublished.Help" xml:space="preserve">
+    <value>Date à laquelle le jeu de données actuel a été publié sur 51Degrees.</value>
+  </data>
+  <data name="SettingsDataSetPublished.Text">
+    <value>Publié</value>
+  </data>
+  <data name="SettingsDataSetVersion.Help" xml:space="preserve">
+    <value>Le format de la version du fichier de données du périphérique.</value>
+  </data>
+  <data name="SettingsDataSetVersion.Text" xml:space="preserve">
+    <value>Format de données</value>
+  </data>
+  <data name="SettingsManualUpload.Header" xml:space="preserve">
+    <value>Charger des données d'appareil</value>
+  </data>
+  <data name="SettingsRefresh.Help" xml:space="preserve">
+    <value>Lorsque la détection de l'appareil est utilisé avec Evoq ou un jeu de données amélioré de 51Degrees, cette option vérifie la présence d'une nouvelle version de données de l'appareil.</value>
+  </data>
+  <data name="SettingsRefresh.Text" xml:space="preserve">
+    <value>Vider le cache</value>
+  </data>
+  <data name="SettingsStats.Header" xml:space="preserve">
+    <value>Informations de données de l'appareil</value>
+  </data>
+  <data name="SettingsUpload.Help" xml:space="preserve">
+    <value>Charger un fichier de données 51Degrees pour une utilisation avec une détection des périphériques. Les nouveaux fichiers de données peuvent être obtenus directement depuis 51Degrees.</value>
+  </data>
+  <data name="SettingsUpload.Text" xml:space="preserve">
+    <value>Chargement manuel</value>
+  </data>
+  <data name="Unavailable.Text">
+    <value>Indisponible</value>
+  </data>
+  <data name="Update.Action" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="GetStarted.Header">
+    <value>Commencer</value>
+  </data>
+  <data name="GetStartedIntro.Html" xml:space="preserve">
+    <value>&lt;p&gt;Le site web responsive côté client (RWD) consiste à envoyer tout le contenu au navigateur et laisser celui-ci redimensionner et ajuster le tout pour le périphérique. 51Degrees offre la possibilité de contrôler le contenu envoyé et ce côté serveur (images différentes,  navigation...) et ce vers différents types d'appareils. Cela réduit le poids de la page, améliore les performances, offre une interface utilisateur optimisée et ce afin d'augmenter globalement l'expérience utilisateur.&lt;/p&gt;&lt;p&gt;Plus de 85% des sociétés "côtées" utilisent la détection de l'appareil, que cela soit dans le e-commerce, les médias, la publicité, les finances et le voyage.&lt;/p&gt;&lt;a href="https://51degrees.com/dnn" title="En savoir plus sur la détection d'appareils avec DNN" class="dnnPrimaryAction" target="_blank"&gt; Études de cas et idées &lt;/a&gt;</value>
+  </data>
+  <data name="SettingsChangeError.Text" xml:space="preserve">
+    <value>Les paramètres de détection de l'appareil ne peuvent pas être modifiés. Vérifiez le fichier 51Degrees.mobi.config pour modifier les permissions puis recyclez le domaine d'application.</value>
+  </data>
+  <data name="SettingsChangeSuccess.Text" xml:space="preserve">
+    <value>Les paramètres de détection de l'appareil ont été mis à jour. Recyclez le domaine d'application pour que celles-ci prennent effet.</value>
+  </data>
+  <data name="SettingsImageOptimiser.Help" xml:space="preserve">
+    <value>Lorsque l'optimiseur d'image ET la détection d'appareil sont activés, DNN n'enverra pas d'images qui sont trop grandes pour l'écran de l'appareil. Des paramètres (query string) peuvent être ajoutés aux URLs des images afin de redimensionner automatiquement celle-ci et améliorer les performances.</value>
+  </data>
+  <data name="SettingsImageOptimiser.Text" xml:space="preserve">
+    <value>Dispositif d'optimisation d'image activé ?</value>
+  </data>
+  <data name="SettingsFactory.Help" xml:space="preserve">
+    <value>Le type de procédé de gestion de données en cours d'utilisation. Stream utilise moins de mémoire mais est plus lent. Mémoire est plus rapide, mais utilise plus de mémoire.</value>
+  </data>
+  <data name="SettingsFactory.Text">
+    <value>Mode</value>
+  </data>
+  <data name="SettingsFileMode.Help" xml:space="preserve">
+    <value>La majeure partie des données d'appareils est stockée dans le système de fichiers. De petites portions sont chargées en mémoire en cas de besoin. Réduit la consommation de mémoire. Lorsque le mode "mémoire" est utilisé alors le fichier de données est chargé dans celle-ci. Le mode "fichier" utilise le moins de mémoire possible.</value>
+  </data>
+  <data name="SettingsFileMode.Text" xml:space="preserve">
+    <value>Mode fichier activé ?</value>
+  </data>
+  <data name="GetStartedButton.Text" xml:space="preserve">
+    <value>Activer les fonctionnalités</value>
+  </data>
+  <data name="GetStartedDetail.Html" xml:space="preserve">
+    <value>&lt;h3&gt;Optimisation d'image&lt;/h3&gt;&lt;p&gt;Permet d'envoyer des images redimensionnées pour la taille de l'écran et ce en fonction des paramètres (query string) ajoutés aux URLs de celles-ci. Par exemple : &lt;span style="font-family: 'Courier New', Courier, monospace; font-weight: bold;"&gt;&lt;img src="Empty.gif" data-src="/image.png?w=auto"/&gt;&lt;/span&gt; ou &lt;a style="font-family: 'Courier New', Courier, monospace; font-weight: bold;" href="/DesktopModules/Admin/FiftyOneClientCapabilityProvider/Images/Optimization.png?w=300" target="_blank"&gt;/DesktopModules/Admin/FiftyOneClientCapabilityProvider/Images/Optimization.png?w=300&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Les images plus grandes que l'écran de l'appareil seront automatiquement rétrécies avant d'être envoyées.&lt;/p&gt;&lt;h3&gt;Détection d'appareil&lt;/h3&gt;&lt;h4&gt;Pour les administrateurs Web&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Conserver le contenu optimisé pour la version "desktop" tel que Flash ou des vidéos grand format sur la même page que le contenu smartphone/tablette.&lt;/li&gt;&lt;li&gt;Utiliser des mega menus pour optimiser la navigation à la souris et au clavier tout en affichant un menu responsive pour les écrans tactiles.&lt;/li&gt;&lt;li&gt;Rediriger les utilisateurs vers des pages optimisées pour smartphone et tablettes.&lt;/li&gt;&lt;li&gt;Améliorer Google Analytics afin d'obtenir des informations sur la taille de l'écran et les méthodes de saisie.&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Pour les développeurs&lt;/h4&gt;&lt;ul&gt;&lt;li&gt;Activer/désactiver du contenu de page basé sur des règles côté serveur. Par example; &lt;span style="font-family: 'Courier New', Courier, monospace; font-weight: bold;"&gt;Request.Browser["IsTablet"]&lt;/span&gt; pour détecter si l'appareil est une tablette.&lt;/li&gt;&lt;li&gt;Accéder aux capacités de l'appareil avec du JavaScript via &lt;span style="font-family: 'Courier New', Courier, monospace; font-weight: bold;"&gt;http://HOSTNAME/51Degrees.features.js&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;</value>
+  </data>
+  <!---->
+</root>

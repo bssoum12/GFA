@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Repair Permissions">
+ <Description>This script attempts to repair any inconsistencies in the DMX permissions for your portal.</Description>
+ <Process>
+  <Run RunType="SQL">
+ <![CDATA[
+
+DECLARE @NrPermissions INT
+SELECT @NrPermissions = (SELECT COUNT(*) FROM  {databaseOwner}{objectQualifier}DMX_Permissions WHERE PortalId=@PortalId);
+
+IF @NrPermissions = 0
+BEGIN
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PermissionId], [RoleId])
+ SELECT MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId FROM  {databaseOwner}{objectQualifier}DMX_Permissions p 
+  JOIN  {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+  WHERE p.PortalId=@PortalId AND p.PermissionKey='VIEW';
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PermissionId], [RoleId])
+ SELECT MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId FROM  {databaseOwner}{objectQualifier}DMX_Permissions p 
+  JOIN  {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+  WHERE p.PortalId=@PortalId AND p.PermissionKey='EDIT';
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PermissionId], [RoleId])
+ SELECT MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId FROM  {databaseOwner}{objectQualifier}DMX_Permissions p 
+  JOIN  {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+  WHERE p.PortalId=@PortalId AND p.PermissionKey='ADD';
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PermissionId], [RoleId])
+ SELECT MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId FROM  {databaseOwner}{objectQualifier}DMX_Permissions p 
+  JOIN  {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+  WHERE p.PortalId=@PortalId AND p.PermissionKey='APPROVE';
+END
+GO
+
+DECLARE @NrViewPermissions INT
+SELECT @NrViewPermissions = (SELECT COUNT(*) FROM  {databaseOwner}{objectQualifier}DMX_Permissions WHERE PortalId=@PortalId AND PermissionKey='VIEW');
+
+IF @NrViewPermissions > 1
+BEGIN
+ -- delete duplicate perms
+ DELETE FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions
+ FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep
+  INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions p ON p.PermissionId=ep.PermissionId
+  INNER JOIN (SELECT MIN(ep1.PermissionId) MinPermId, EntryId, ep1.PortalId, RoleId, UserId, Addon, PermissionKey
+ FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep1
+  INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions p ON p.PermissionId=ep1.PermissionId
+ GROUP BY EntryId, ep1.PortalId, RoleId, UserId, Addon, PermissionKey) perms
+  ON perms.EntryId=ep.EntryId 
+  AND perms.PortalId=ep.PortalId 
+  AND perms.RoleId=ep.RoleId
+  AND perms.UserId=ep.UserId
+  AND perms.Addon=p.Addon
+  AND perms.PermissionKey=p.PermissionKey
+  AND ep.PermissionId <> perms.MinPermId;
+ -- update table to map to lowest permission id
+ UPDATE ep
+ SET PermissionId=perms.MappedTo
+ FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep
+  INNER JOIN 
+ (SELECT *,
+  (SELECT MIN(p.PermissionId)
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions p INNER JOIN
+ (SELECT DISTINCT Addon, PermissionKey, PortalId
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions
+ WHERE PortalId=@PortalId) perm
+  ON p.PermissionKey=perm.PermissionKey
+  AND p.Addon = perm.Addon
+  AND p.PortalId = perm.PortalId
+  AND p.PermissionKey=p2.PermissionKey) AS MappedTo
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions p2
+ WHERE p2.PortalId=@PortalId
+ AND p2.PermissionId NOT IN
+ (SELECT MIN(p.PermissionId)
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions p INNER JOIN
+ (SELECT DISTINCT Addon, PermissionKey, PortalId
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions
+ WHERE PortalId=@PortalId) perm
+  ON p.PermissionKey=perm.PermissionKey
+  AND p.Addon = perm.Addon
+  AND p.PortalId = perm.PortalId
+ GROUP BY p.PermissionKey)) perms
+  ON ep.PermissionId=perms.PermissionId;
+ -- delete old perm perms
+ DELETE FROM {databaseOwner}{objectQualifier}DMX_PermissionPermissions
+ FROM {databaseOwner}{objectQualifier}DMX_PermissionPermissions pp
+ WHERE pp.PermissionId NOT IN (SELECT MIN(PermissionId) MinPermId
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions
+ GROUP BY PermissionKey, PortalId
+ HAVING PortalId=@PortalId);
+ -- delete old perms
+ DELETE FROM {databaseOwner}{objectQualifier}DMX_Permissions
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions p
+ WHERE p.PermissionId NOT IN (SELECT MIN(PermissionId) MinPermId
+ FROM {databaseOwner}{objectQualifier}DMX_Permissions
+ GROUP BY PermissionKey, PortalId
+ HAVING PortalId=@PortalId);
+END
+GO
+
+-- reset per perms
+DELETE FROM {databaseOwner}{objectQualifier}DMX_PermissionPermissions
+WHERE PermissionID IN 
+(SELECT PermissionID FROM {databaseOwner}{objectQualifier}DMX_Permissions p WHERE p.PortalID=@PortalId AND p.Addon='Core')
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='VIEW'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.RegisteredRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='EDIT'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='ADD'
+GO
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_PermissionPermissions ([PortalId], [AllowAccess], [Expires], [PermissionId], [RoleId], [UserId])
+SELECT @PortalId, 1, NULL, MAX(p.PermissionID) PermissionId, MAX(po.AdministratorRoleId) AS RoleId, -10
+FROM {databaseOwner}{objectQualifier}DMX_Permissions p 
+ JOIN {databaseOwner}{objectQualifier}Portals po ON p.PortalId=po.PortalID
+ WHERE p.PortalId=@PortalId AND p.PermissionKey='APPROVE'
+GO
+
+-- remove any foreign permissions
+DELETE FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions
+FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep
+INNER JOIN {databaseOwner}{objectQualifier}DMX_Entries e ON ep.EntryId=e.EntryId
+INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions p ON p.PermissionId=ep.PermissionId
+WHERE p.PortalId<>e.PortalId
+
+-- ensure all entries have admin access
+DECLARE @AdminRoleId INT
+SELECT @AdminRoleId = (SELECT AdministratorRoleId FROM {databaseOwner}{objectQualifier}Portals WHERE PortalId=@PortalId);
+
+INSERT INTO {databaseOwner}{objectQualifier}DMX_EntryPermissions
+ (AllowAccess, EntryId, Expires, PermissionId, PortalId, RoleId, UserId)
+ SELECT 1, e.EntryId, NULL, p.PermissionId, @PortalId, @AdminRoleId, -10
+ FROM {databaseOwner}{objectQualifier}DMX_Entries e, {databaseOwner}{objectQualifier}DMX_Permissions p
+ WHERE 
+  e.PortalId=@PortalId
+  AND NOT EXISTS (SELECT ep.* FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep WHERE ep.PermissionId=p.PermissionId AND ep.EntryId=e.EntryId AND ep.RoleId=@AdminRoleId AND ep.PortalId=@PortalId)
+  AND (p.PermissionKey = 'EDIT' OR p.PermissionKey = 'VIEW' OR (p.PermissionKey = 'ADD' AND e.EntryType LIKE 'Collection%')) AND p.PortalId=@PortalId;
+GO
+
+ ]]></Run>
+  <Run RunType="CODE" Command="RestartApplication">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>
+

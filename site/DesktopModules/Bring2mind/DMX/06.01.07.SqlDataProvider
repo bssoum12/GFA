@@ -1,0 +1,391 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetAllPortalCollections') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAllPortalCollections
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetAllPortalCollections
+ @PortalId INT,
+ @UserId INT,
+ @Locale VARCHAR(10)
+AS
+IF @UserId=-10
+ SELECT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+  e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+  e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+  e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+  ISNULL(el.Title, e.Title) Title
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+  WHERE e.PortalId=@PortalId
+  AND e.EntryType LIKE 'Collection%'
+  ORDER BY Title
+ELSE
+ SELECT DISTINCT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+  e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+  e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+  e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+  ISNULL(el.Title, e.Title) Title
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+  INNER JOIN
+   (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep 
+     INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId AND pt.PermissionKey='VIEW' 
+     LEFT JOIN {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles r ON r.RoleId=ep.RoleId AND r.UserId=@UserId 
+     WHERE (ep.UserId=@UserId OR NOT r.UserId IS NULL OR ep.RoleId=-1 OR (@UserId=-1 AND ep.RoleId=-3)))
+   perm ON perm.EntryId=e.EntryId
+  WHERE e.PortalId=@PortalId
+  AND e.EntryType LIKE 'Collection%'
+  ORDER BY Title
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByFilename') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByFilename
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByFilename
+ @PortalId INT,
+ @UserId INT,
+ @CollectionId INT,
+ @OriginalFileName NVARCHAR(255),
+ @Locale VARCHAR(10)
+AS
+IF @UserId=-10
+SELECT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+ e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+ e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+ e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+ ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+ FROM {databaseOwner}{objectQualifier}DMX_Entries e
+ LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+ WHERE e.PortalId=@PortalId
+ AND e.OriginalFileName=@OriginalFileName
+ AND (e.Version=(SELECT MAX(Version) FROM {databaseOwner}{objectQualifier}DMX_Entries e2 WHERE e2.LastVersionId=e.LastVersionId AND (e2.IsApproved=1 OR e2.Owner=@UserId)))
+ AND (e.CollectionId=@CollectionId OR @CollectionId=-1)
+ELSE
+SELECT DISTINCT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+ e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+ e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+ e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+ ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+ FROM {databaseOwner}{objectQualifier}DMX_Entries e
+ LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+ INNER JOIN
+  (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep 
+    INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId AND pt.PermissionKey='VIEW' 
+    LEFT JOIN {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles r ON r.RoleId=ep.RoleId AND r.UserId=@UserId 
+    WHERE (ep.UserId=@UserId OR NOT r.UserId IS NULL OR ep.RoleId=-1 OR (@UserId=-1 AND ep.RoleId=-3)))
+  perm ON perm.EntryId=e.EntryId
+ WHERE e.PortalId=@PortalId
+ AND e.OriginalFileName=@OriginalFileName
+ AND (e.Version=(SELECT MAX(Version) FROM {databaseOwner}{objectQualifier}DMX_Entries e2 WHERE e2.LastVersionId=e.LastVersionId AND (e2.IsApproved=1 OR e2.Owner=@UserId)))
+ AND (e.CollectionId=@CollectionId OR @CollectionId=-1)
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByTitle') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitle
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitle
+ @PortalId INT,
+ @UserId INT,
+ @Title NVARCHAR(1000),
+ @Locale VARCHAR(10)
+AS
+IF @UserId=-10
+ SELECT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+  e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+  e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+  e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+  ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+  WHERE e.PortalId=@PortalId
+  AND (el.Title=@Title OR (el.Title IS NULL AND e.Title=@Title))
+  AND (e.Version=(SELECT MAX(Version) FROM {databaseOwner}{objectQualifier}DMX_Entries e2 WHERE e2.LastVersionId=e.LastVersionId AND (e2.IsApproved=1 OR e2.Owner=@UserId)))
+ELSE
+ SELECT DISTINCT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+  e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+  e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+  e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+  ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+  INNER JOIN
+   (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep 
+     INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId AND pt.PermissionKey='VIEW' 
+     LEFT JOIN {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles r ON r.RoleId=ep.RoleId AND r.UserId=@UserId 
+     WHERE (ep.UserId=@UserId OR NOT r.UserId IS NULL OR ep.RoleId=-1 OR (@UserId=-1 AND ep.RoleId=-3)))
+   perm ON perm.EntryId=e.EntryId
+  WHERE e.PortalId=@PortalId
+  AND (el.Title=@Title OR (el.Title IS NULL AND e.Title=@Title))
+  AND (e.Version=(SELECT MAX(Version) FROM {databaseOwner}{objectQualifier}DMX_Entries e2 WHERE e2.LastVersionId=e.LastVersionId AND (e2.IsApproved=1 OR e2.Owner=@UserId)))
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_GetEntryByTitleInCollection') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitleInCollection
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_GetEntryByTitleInCollection
+ @PortalId INT,
+ @UserId INT,
+ @CollectionId INT,
+ @Title NVARCHAR(1000),
+ @Locale VARCHAR(10)
+AS
+IF @UserId > -10
+SELECT DISTINCT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+ e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+ e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+ e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+ ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+ FROM {databaseOwner}{objectQualifier}DMX_Entries e
+ LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+ INNER JOIN
+  (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep 
+    INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId AND pt.PermissionKey='VIEW' 
+    LEFT JOIN {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles r ON r.RoleId=ep.RoleId AND r.UserId=@UserId 
+    WHERE (ep.UserId=@UserId OR NOT r.UserId IS NULL OR ep.RoleId=-1 OR (@UserId=-1 AND ep.RoleId=-3)))
+  perm ON perm.EntryId=e.EntryId
+ WHERE e.PortalId=@PortalId
+ AND e.CollectionId=@CollectionId
+ AND (el.Title=@Title OR (el.Title IS NULL AND e.Title=@Title))
+ AND (e.Version=(SELECT MAX(Version) FROM {databaseOwner}{objectQualifier}DMX_Entries e2 WHERE e2.LastVersionId=e.LastVersionId AND (e2.IsApproved=1 OR e2.Owner=@UserId)))
+IF @UserId = -10
+SELECT e.Author, e.CollectionId, e.Deleted, e.Entry, e.EntryId, e.EntryType, e.FileSize, e.Created, e.IsApproved,
+ e.Keywords, e.LastModified, e.LastVersionId, e.LockedBy, e.LockedUntil, e.LockKey, e.MD5Hash, e.OriginalFileName,
+ e.Owner, e.PortalId, e.State, e.Version, e.VersionsToKeep, e.WorkflowId, e.Path, e.PermissionsOnlyByAdmin,
+ e.InheritAttributes, e.StorageProviderID, e.Thumbnail, e.Hidden,
+ ISNULL(el.Title, e.Title) Title, ISNULL(el.Remarks, e.Remarks) Remarks
+ FROM {databaseOwner}{objectQualifier}DMX_Entries e
+ LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntriesML el ON e.EntryId=el.EntryId AND el.Locale=@Locale
+ WHERE e.PortalId=@PortalId
+ AND e.CollectionId=@CollectionId
+ AND (el.Title=@Title OR (el.Title IS NULL AND e.Title=@Title))
+ AND (e.EntryId=e.LastVersionId)
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifyPermissions') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyPermissions
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyPermissions
+ @PortalId Int,
+ @EntryId Int,
+ @UserId INT
+AS
+DECLARE @BasePath VARCHAR(2000)
+SELECT @BasePath = (SELECT [Path] FROM {databaseOwner}{objectQualifier}DMX_Entries WHERE EntryId=@EntryId)
+CREATE TABLE #ToChange 
+ (EntryId INT, [Path] VARCHAR(2000), EntryType nvarchar(150));
+INSERT INTO #ToChange
+ (EntryId, [Path], EntryType)
+SELECT DISTINCT e.EntryId, e.[Path], e.EntryType FROM {databaseOwner}{objectQualifier}DMX_Entries e INNER JOIN
+ (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep 
+   INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId
+   LEFT JOIN {databaseOwner}{objectQualifier}vw_DMX_ActiveUserRoles r ON r.RoleId=ep.RoleId AND r.UserId=@UserId
+   WHERE pt.PermissionKey='EDIT' AND (ep.UserId=@UserId OR NOT r.UserId IS NULL OR ep.RoleId=-1)) perm ON perm.EntryId=e.EntryId
+ WHERE PortalId=@PortalId AND [Path] LIKE @BasePath+'_%';
+CREATE TABLE #NewPerms (
+ [AllowAccess] [bit] NULL,
+ [EntryId] [int] NOT NULL,
+ [Expires] [datetime] NULL,
+ [PermissionId] [int] NOT NULL,
+ [PortalId] [int] NOT NULL,
+ [RoleId] [int] NOT NULL,
+ [UserId] [int] NOT NULL,
+ [EntryType] nvarchar(150))
+INSERT INTO #NewPerms
+ (AllowAccess, EntryId, Expires, PermissionId, PortalId, RoleId, UserId, EntryType)
+SELECT ep.AllowAccess, ep.EntryId, ep.Expires, ep.PermissionId, ep.PortalId, ep.RoleId, ep.UserId, pet.EntryType
+ FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep
+ INNER JOIN {databaseOwner}{objectQualifier}DMX_PermissionEntryTypes pet ON pet.PermissionId=ep.PermissionId
+ WHERE ep.EntryId=@EntryId
+DELETE FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions
+ WHERE EntryId IN (SELECT EntryId FROM #ToChange);
+INSERT INTO {databaseOwner}{objectQualifier}DMX_EntryPermissions
+ (AllowAccess, EntryId, Expires, PermissionId, PortalId, RoleId, UserId)
+ SELECT ep.AllowAccess, tc.EntryId, ep.Expires, ep.PermissionId, ep.PortalId, ep.RoleId, ep.UserId
+  FROM #NewPerms ep
+  INNER JOIN #ToChange tc ON tc.EntryType LIKE ep.EntryType+'%';
+DROP TABLE #NewPerms;
+DROP TABLE #ToChange;
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifyRemovePermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyRemovePermission
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifyRemovePermission
+ @PortalId INT,
+ @UnifyingUserId INT,
+ @CollectionId INT,
+ @PermissionKey NVARCHAR(20)
+AS
+BEGIN
+ DECLARE @Id INT
+ SELECT @Id = MIN(e.EntryId)
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  INNER JOIN
+   (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId
+   LEFT JOIN {databaseOwner}{objectQualifier}UserRoles r ON r.RoleId=ep.RoleId WHERE pt.PermissionKey='EDIT' AND (ep.UserId=@UnifyingUserId OR r.UserId=@UnifyingUserId OR ep.RoleId=-1)) perm
+  ON perm.EntryId=e.EntryId
+  WHERE e.CollectionId=@CollectionId
+ DECLARE @PermissionId INT
+ SELECT @PermissionId = PermissionId FROM {databaseOwner}{objectQualifier}DMX_Permissions WHERE PermissionKey=@PermissionKey AND PortalId=@PortalId
+ DECLARE @AdminRoleId INT
+ SELECT @AdminRoleId=AdministratorRoleId FROM {databaseOwner}{objectQualifier}Portals WHERE PortalId=@PortalId
+ WHILE @Id IS NOT NULL
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions
+  FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep
+   WHERE ep.EntryId=@Id 
+    AND ep.PermissionId=@PermissionId
+    AND NOT (ep.RoleId=@AdminRoleId AND (@PermissionKey='VIEW' OR @PermissionKey='EDIT' OR @PermissionKey='ADD'))
+    AND (@PermissionKey<>'EDIT' OR (SELECT COUNT(*) FROM {databaseOwner}{objectQualifier}UserRoles r WHERE r.UserId=@UnifyingUserId AND r.RoleId=ep.RoleId)=0)
+    AND (@PermissionKey<>'EDIT' OR ep.UserId <> @UnifyingUserId)
+  EXEC {databaseOwner}{objectQualifier}DMX_UnifyRemovePermission @PortalId, @UnifyingUserId, @Id, @PermissionKey
+  SELECT @Id = MIN(e.EntryId)
+   FROM {databaseOwner}{objectQualifier}DMX_Entries e
+   INNER JOIN
+    (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId
+    LEFT JOIN {databaseOwner}{objectQualifier}UserRoles r ON r.RoleId=ep.RoleId WHERE pt.PermissionKey='EDIT' AND (ep.UserId=@UnifyingUserId OR r.UserId=@UnifyingUserId OR ep.RoleId=-1)) perm 
+   ON perm.EntryId=e.EntryId
+   WHERE e.CollectionId=@CollectionId
+   AND e.EntryId>@Id
+ END
+END
+GO
+
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_UnifySetPermission') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifySetPermission
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_UnifySetPermission
+ @PortalId INT,
+ @UnifyingUserId INT,
+ @CollectionId INT,
+ @PermissionKey NVARCHAR(20),
+ @RoleId INT,
+ @UserId INT
+AS
+BEGIN
+ DECLARE @Id INT
+ SELECT @Id = MIN(e.EntryId)
+  FROM {databaseOwner}{objectQualifier}DMX_Entries e
+  INNER JOIN
+   (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId
+   LEFT JOIN {databaseOwner}{objectQualifier}UserRoles r ON r.RoleId=ep.RoleId WHERE pt.PermissionKey='EDIT' AND (ep.UserId=@UnifyingUserId OR r.UserId=@UnifyingUserId OR ep.RoleId=-1)) perm
+  ON perm.EntryId=e.EntryId
+  WHERE e.CollectionId=@CollectionId
+ DECLARE @PermissionId INT
+ SELECT @PermissionId = PermissionId FROM {databaseOwner}{objectQualifier}DMX_Permissions WHERE PermissionKey=@PermissionKey AND PortalId=@PortalId
+ DECLARE @EntryType NVARCHAR(100)
+ WHILE @Id IS NOT NULL
+ BEGIN
+  SELECT @EntryType = EntryType FROM {databaseOwner}{objectQualifier}DMX_Entries WHERE EntryId=@Id
+  IF (SELECT COUNT(*) FROM {databaseOwner}{objectQualifier}DMX_PermissionEntrytypes WHERE PermissionId=@PermissionId AND @EntryType LIKE EntryType+'%') = 1
+  BEGIN
+   IF NOT EXISTS(SELECT * FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions 
+    WHERE [EntryId]=@Id AND [PermissionId]=@PermissionId AND [RoleId]=@RoleId AND [UserId]=@UserId AND [AllowAccess]=1 AND [PortalId]=@PortalId)
+   INSERT INTO {databaseOwner}{objectQualifier}DMX_EntryPermissions ([EntryId], [PermissionId], [RoleId], [UserId], [AllowAccess], [Expires], [PortalId])
+    VALUES (@Id, @PermissionId, @RoleId, @UserId, 1, NULL, @PortalId)
+  END
+  EXEC {databaseOwner}{objectQualifier}DMX_UnifySetPermission @PortalId, @UnifyingUserId, @Id, @PermissionKey, @RoleId, @UserId
+  SELECT @Id = MIN(e.EntryId)
+   FROM {databaseOwner}{objectQualifier}DMX_Entries e
+   INNER JOIN
+    (SELECT ep.EntryId FROM {databaseOwner}{objectQualifier}DMX_EntryPermissions ep INNER JOIN {databaseOwner}{objectQualifier}DMX_Permissions pt ON pt.PermissionId=ep.PermissionId
+    LEFT JOIN {databaseOwner}{objectQualifier}UserRoles r ON r.RoleId=ep.RoleId WHERE pt.PermissionKey='EDIT' AND (ep.UserId=@UnifyingUserId OR r.UserId=@UnifyingUserId OR ep.RoleId=-1)) perm 
+   ON perm.EntryId=e.EntryId
+   WHERE e.CollectionId=@CollectionId
+   AND e.EntryId>@Id
+ END
+END
+GO
+
+/******* Search Performance Tuning *******/
+IF NOT EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_SearchResults') AND name = N'IX_{objectQualifier}DMX_SearchResults_EntryID')
+CREATE NONCLUSTERED INDEX IX_{objectQualifier}DMX_SearchResults_EntryID ON {databaseOwner}{objectQualifier}DMX_SearchResults 
+(
+ [EntryID] ASC
+)WITH (STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF);
+
+IF EXISTS (select * from dbo.sysobjects where id = object_id(N'{objectQualifier}DMX_SearchResultsClean') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_SearchResultsClean
+GO
+
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_SearchResultsClean
+ @SearchId NVARCHAR(50)
+AS
+
+RETRY:
+BEGIN TRANSACTION
+BEGIN TRY
+ DECLARE @TMP TABLE (EntryId INT, [Rank] REAL, Hits INT, Extract NVARCHAR(2000));
+ INSERT INTO @TMP (EntryId, [Rank], Hits, Extract)
+ SELECT EntryId, SUM([Rank]), COUNT(Hits), {databaseOwner}{objectQualifier}DMX_ExtractConcatenate(EntryId, '&lt;br /&gt;')
+ FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+ GROUP BY SearchId, EntryId
+ HAVING SearchId=@SearchId OR SearchId LIKE @SearchId + '-%';
+ 
+ DECLARE @maxRank REAL;
+ SET @maxRank = (SELECT MAX([Rank]) FROM @TMP);
+ IF @maxRank=0
+  SET @maxRank=1;
+
+ UPDATE @TMP
+ SET [Rank] = [Rank]/@maxRank*1000;
+
+ DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+ WHERE SearchId=@SearchId;
+
+ INSERT INTO {databaseOwner}{objectQualifier}DMX_SearchResults
+  (SearchId, EntryId, [Rank], Hits, Extract)
+ SELECT
+  @SearchId, EntryId, [Rank], Hits, Extract
+ FROM @TMP;
+
+ DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+ WHERE SearchId LIKE @SearchId + '-%';
+
+ COMMIT TRANSACTION
+END TRY
+BEGIN CATCH
+ ROLLBACK TRANSACTION
+ IF ERROR_NUMBER() = 1205 -- Deadlock
+ BEGIN
+  WAITFOR DELAY '00:00:00.05'
+  GOTO RETRY
+ END
+END CATCH
+
+GO
+
+

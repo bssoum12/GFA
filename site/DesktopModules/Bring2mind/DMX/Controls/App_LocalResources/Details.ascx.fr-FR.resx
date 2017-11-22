@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="Author.Text">
+    <value>Auteur</value>
+  </data>
+  <data name="Details.Text">
+    <value>Détails</value>
+  </data>
+  <data name="LastModified.Text">
+    <value>Dernière mise à jour</value>
+  </data>
+  <data name="Log.Text">
+    <value>Journal</value>
+  </data>
+  <data name="NotApproved.Text">
+    <value>Non approuvé</value>
+  </data>
+  <data name="Permissions.Text">
+    <value>Autorisations</value>
+  </data>
+  <data name="Versions.Text">
+    <value>Versions</value>
+  </data>
+  <data name="Categories.Text">
+    <value>Catégories</value>
+  </data>
+  <data name="Deleted.Text">
+    <value>Effacé</value>
+  </data>
+  <data name="Keywords.Text">
+    <value>Mots-clés</value>
+  </data>
+  <data name="Locked.Text">
+    <value>Verrouillé</value>
+  </data>
+  <data name="OriginalFileName.Text">
+    <value>Nom du fichier</value>
+  </data>
+  <data name="Remarks.Text">
+    <value>Remarques</value>
+  </data>
+  <data name="Status.Text">
+    <value>Statut</value>
+  </data>
+  <data name="Version.Text">
+    <value>Version</value>
+  </data>
+  <data name="SourceFolder.Text">
+    <value>Dossier source</value>
+  </data>
+  <data name="Resolution.Text">
+    <value>Résolution</value>
+  </data>
+  <data name="Path.Text">
+    <value>Chemin complet</value>
+  </data>
+</root>

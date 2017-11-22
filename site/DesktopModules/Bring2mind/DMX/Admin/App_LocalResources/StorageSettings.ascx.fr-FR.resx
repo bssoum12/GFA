@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ControlTitle_storagesettings.Text">
+    <value>Paramètres du stockage de document Exchange</value>
+  </data>
+  <data name="plStorageProvider.Help">
+    <value>Sélectionnez le lieu de stockage pour DMX. Ceci détermine où les documents seront stockés.</value>
+  </data>
+  <data name="plStorageProvider.Text">
+    <value>Lieu de stockage</value>
+  </data>
+</root>

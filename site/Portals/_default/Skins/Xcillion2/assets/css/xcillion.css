@@ -1,0 +1,178 @@
+﻿@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'),local('OpenSans-Light'),url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTegdm0LZdjqr5-oayXSOefg.woff2) format('woff2'),url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'),local('OpenSans'),url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'),local('OpenSans-Bold'),url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2'),url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
+html, li, p { font-size: 16px; }
+body {
+    background: [CSST:body-background-color];
+    color: [CSST:body-text-color];
+    font-size: 13px;
+}
+
+.CommandButton, .Head, .Normal, .NormalBold, .NormalDisabled, .NormalRed, .NormalTextBox, 
+.SubHead, .SubSubHead, a:hover, a:link, a:visited, body, h1, h2, h3, h4, h5, h6, input, 
+table, td, th { font-family: [CSST:font-name]; }
+
+.SubHead { color: [CSST:sub-header-color]; }
+strong { color: [CSST:body-text-color]; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: [CSST:header-colors];
+    line-height: 1.3em;
+}
+
+
+@media screen and (min-width:570px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:620px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:680px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width:720px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:800px) {
+    html {
+        font-size: 19px;
+    }
+}
+
+@media screen and (min-width:860px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:920px) {
+    html {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+
+.searchInputContainer input { background: [CSST:search-input-container]; }
+
+.searchInputContainer input::-webkit-input-placeholder,
+.searchInputContainer input:-moz-placeholder,
+.searchInputContainer input::-moz-placeholder,
+.searchInputContainer input:-ms-input-placeholder {
+    color: [CSS:search-input-placedholder];
+}
+
+    
+
+#search-action, .SearchButton, .search-toggle-icon {
+    background-color: [CSST:search-button-background];   
+    font-family: [CSST:font-name];
+    font-size: 22px;
+}
+
+#search-top { background: [CSST:search-top]; }
+
+
+
+#search-top input { background: [CSST:search-input-bg]; font-size: 1.2em; }
+
+#search-top a.SearchButton { background-color: #e0dfdf; }
+
+#login .loginGroup a, #login .registerGroup a { color: #fff; }
+
+#login .loginGroup a:hover, #login .registerGroup a:hover { background: #d7d7d7; color: #333; }
+
+#login .loginGroup a:active, #login .registerGroup a:active { color: #333; }
+
+#login .registerGroup li:first-child:hover { border-left: #222; }
+
+#login .registerGroup a span { background: #3b96b6; color: #fff; }
+
+#login .registerGroup a img { background: #333; }
+
+#login .userNotifications { border-left: 1px solid #ccc; border-right: 1px solid #ccc; }
+
+
+
+
+#topHeader { background: [CSST:top-footer-background]; }
+
+header { background: [CSST:header-bg-color]; border-bottom: 1px solid #91AFCA; }
+
+#mainHeader-border { background: #8fb299; }
+
+
+
+#breadcrumb { font-family: [CSST:font-name]; border-color: #ccc; }
+
+#breadcrumb a { color: #626262; }
+
+#breadcrumb a:first-child { font-family: [CSST:font-name]; color: #7b7d82; }
+
+main {  background: [CSST:content-bg-color]; border: 1px solid #ececec; }
+
+footer .footer-above { background-color: [CSST:footer-bg-color]; border-top: 25px solid [CSST:footer-top-color]; }
+
+footer .footer-above h2, footer .footer-above p { color: [CSST:footer-color]; }
+
+footer .footer-below, footer .terms-priv a:link, footer .terms-priv a:visited { color: [CSST:footer-color]; }
+
+
+footer .footer-below { background-color: [CSST:top-footer-background]; }
+
+
+footer .links-list ul li a:active, footer .links-list ul li a:link, 
+footer .links-list ul li a:visited { color: [CSST:footer-color]; }
+
+footer .links-list ul li a:hover { color: [CSST:footer-hover-color]; }
+
+footer .links-list ul li a:before {  border-left: 3px solid [CSST:top-footer-background]; }
+
+
+
+.contactus a:link { color: [CSST:footer-color]; }
+
+.contactus a:active, .contactus a:hover { color: [CSST:footer-hover-color]; }
+
+
+.DNNContainer_Boxed h2 .TitleBoxed { border: 1px solid #7b7878; }
+

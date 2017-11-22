@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="plName.Text">
+    <value>Nom</value>
+  </data>
+  <data name="plType.Text">
+    <value>Type</value>
+  </data>
+  <data name="plType.Help">
+    <value>Choisissez quelle sorte de type de données est stocké dans cet attribut</value>
+  </data>
+  <data name="plAppliesTo.Text">
+    <value>S'applique à</value>
+  </data>
+  <data name="cmdAdd.Text">
+    <value>Ajouter</value>
+  </data>
+  <data name="ControlTitle_attributes.Text">
+    <value>Attributs personnalisés</value>
+  </data>
+  <data name="plValues.Text">
+    <value>Personnalisé</value>
+  </data>
+  <data name="plValues.Help">
+    <value>Pour le type de sélection, vous pouvez spécifier une liste de valeurs séparées par des points virgules. Pour un type 'string', vous pouvez spécifier une expression régulière.</value>
+  </data>
+  <data name="plRequired.Text">
+    <value>Obligatoire</value>
+  </data>
+  <data name="plRequired.Help">
+    <value>Si l'attribut est requis,l'utilisateur ne peut pas charger / modifier une entrée, sans préciser la valeur de l'attribut</value>
+  </data>
+  <data name="chkRequired.Text">
+    <value>Oui</value>
+  </data>
+  <data name="plResourceFile.Text">
+    <value>Fichier de ressources</value>
+  </data>
+  <data name="plControlToLoad.Text">
+    <value>Contrôle à Charger</value>
+  </data>
+  <data name="plControlToLoad.Help">
+    <value>le fichier Ascx à charger dans l'écran d'édition pour éditer cet attribut. Laisser vide pour utiliser les contrôles d'édition par défaut.</value>
+  </data>
+  <data name="optString.Text">
+    <value>Chaine de caractères</value>
+  </data>
+  <data name="optInteger.Text">
+    <value>Entier</value>
+  </data>
+  <data name="optDouble.Text">
+    <value>Virgule flottante</value>
+  </data>
+  <data name="optDate.Text">
+    <value>Date</value>
+  </data>
+  <data name="optSelect.Text">
+    <value>Sélectionnez</value>
+  </data>
+  <data name="ControlToLoad.Heading">
+    <value>Contrôle à charger</value>
+  </data>
+  <data name="EntryTypes.Heading">
+    <value>Types d'entrée</value>
+  </data>
+  <data name="Name.Heading">
+    <value>Nom</value>
+  </data>
+  <data name="Required.Heading">
+    <value>Obligatoire</value>
+  </data>
+  <data name="ResourceFile.Heading">
+    <value>Fichier de ressources</value>
+  </data>
+  <data name="Values.Heading">
+    <value>Personnalisé</value>
+  </data>
+  <data name="ValueType.Heading">
+    <value>Type</value>
+  </data>
+  <data name="EditAttribute.Text">
+    <value>Modifier un attribut</value>
+  </data>
+  <data name="revName.Error">
+    <value>S'il vous plaît, utilisez uniquement des caractères alphanumériques</value>
+  </data>
+  <data name="reqName.Error">
+    <value>Obligatoire</value>
+  </data>
+  <data name="plName.Help">
+    <value>Nom à afficher pour cet attribut</value>
+  </data>
+  <data name="plAppliesTo.Help">
+    <value>Si cet attribut s'applique à un type spécifique, vous pouvez spécifier une liste délimitée par des points virgule ici. Sinon laisser vide.</value>
+  </data>
+  <data name="plResourceFile.Help">
+    <value>Fichier de ressources, où la description et l'explication de cet attribut peuvent être trouvées</value>
+  </data>
+  <data name="lblName.Text">
+    <value>Nom</value>
+  </data>
+  <data name="lblRequired.Text">
+    <value>Obligatoires</value>
+  </data>
+  <data name="lblValueType.Text">
+    <value>Type</value>
+  </data>
+  <data name="optCustom.Text">
+    <value>Personnalisé</value>
+  </data>
+  <data name="plInherit.Help">
+    <value>Les attributs sont hérités du dossier parent. Si désactivé les attributs seront copiés ici et vous pouvez les modifier. Note: cette action ne peut être annulée!</value>
+  </data>
+  <data name="plInherit.Text">
+    <value>attributs hérités</value>
+  </data>
+  <data name="RemoveInherit.Confirm">
+    <value>Êtes-vous sûr de vouloir supprimer l'héritage? Cela ne pourra pas être annulé!</value>
+  </data>
+  <data name="ScopeAll.Text">
+    <value>Tous les attributs du portail</value>
+  </data>
+  <data name="ScopeCollection.Text">
+    <value>Attributs pour {0}</value>
+  </data>
+  <data name="lblInherited.Text">
+    <value>non hérité</value>
+  </data>
+  <data name="optBoolean.Text">
+    <value>Booléen</value>
+  </data>
+  <data name="lblKey.Text">
+    <value>Clé</value>
+  </data>
+  <data name="Delete.Confirm">
+    <value>Etes-vous sûr de vouloir supprimer cet attribut?</value>
+  </data>
+</root>

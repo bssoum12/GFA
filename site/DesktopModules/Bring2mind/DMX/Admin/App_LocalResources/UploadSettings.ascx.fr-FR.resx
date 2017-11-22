@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="ControlTitle_uploadsettings.Text">
+    <value>Paramétres de téléchargement de Document Exchange</value>
+  </data>
+  <data name="plUploadProvider.Help">
+    <value>Sélectionnez le fournisseur de téléchargement à utiliser. Cela représente le contrôle de téléchargement que des utilisateurs verront lors du téléchargement de contenu.</value>
+  </data>
+  <data name="plUploadProvider.Text">
+    <value>Fournisseur de téléchargement</value>
+  </data>
+</root>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="nav_Recyclebin.Text">
+    <value>Corbeille</value>
+  </data>
+  <data name="recyclebin_Actions.Text">
+    <value>Actions</value>
+  </data>
+  <data name="recyclebin_CancelConfirm.Text">
+    <value>Non</value>
+  </data>
+  <data name="recyclebin_Delete.Text">
+    <value>Supprimer</value>
+  </data>
+  <data name="recyclebin_DeleteConfirm.Text">
+    <value>Oui</value>
+  </data>
+  <data name="recyclebin_DeletedDate.Text">
+    <value>Date</value>
+  </data>
+  <data name="recyclebin_EmptyRecycleBin.Text" xml:space="preserve">
+    <value>Vider définitivement la corbeille</value>
+  </data>
+  <data name="recyclebin_EmptyRecycleBinConfirm.Text" xml:space="preserve">
+    <value>Voulez-vous vider la corbeille ?</value>
+  </data>
+  <data name="recyclebin_Modules.Text">
+    <value>Modules</value>
+  </data>
+  <data name="recyclebin_ModuleTitle.Text" xml:space="preserve">
+    <value>Titre du module</value>
+  </data>
+  <data name="recyclebin_NoConfirm.Text">
+    <value>Non</value>
+  </data>
+  <data name="recyclebin_NoItems.Text" xml:space="preserve">
+    <value>La corbeille est actuellement vide</value>
+  </data>
+  <data name="recyclebin_NoModules.Text" xml:space="preserve">
+    <value>Pas de module dans la corbeille</value>
+  </data>
+  <data name="recyclebin_NoPages.Text" xml:space="preserve">
+    <value>Aucune page dans la corbeille</value>
+  </data>
+  <data name="recyclebin_Page.Text">
+    <value>Page</value>
+  </data>
+  <data name="recyclebin_Pages.Text">
+    <value>Pages</value>
+  </data>
+  <data name="recyclebin_RemoveModuleConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer ce module.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RemoveModulesConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer les modules sélectionnés.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RemovePageConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer cette page.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RemovePagesConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer les pages sélectionnées.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_Restore.Text">
+    <value>Rétablir</value>
+  </data>
+  <data name="recyclebin_RestoreModuleConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer ce module.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RestoreModulesConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer les modules sélectionnés.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RestorePageConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer cette page.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RestorePageInvalid.Text" xml:space="preserve">
+    <value>Vous devez restaurer la page parente avant toute chose.</value>
+  </data>
+  <data name="recyclebin_RestorePagesConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer les pages sélectionnées.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RestorePagesInvalid.Text" xml:space="preserve">
+    <value>Vous devez sélectionner la ou les page(s) parente(s) de la/des page(s) sélectionnée(s).</value>
+  </data>
+  <data name="recyclebin_Title.Text">
+    <value>Corbeille</value>
+  </data>
+  <data name="recyclebin_UnableToSelectAllModules.Text" xml:space="preserve">
+    <value>Impossible de supprimer/restaurer de manière permanente un module dont la page associée est dans la corbeille.</value>
+  </data>
+  <data name="recyclebin_YesConfirm.Text">
+    <value>Oui</value>
+  </data>
+  <data name="Service_RemoveTabError.Text" xml:space="preserve">
+    <value>Impossible de supprimer la page {0}, ses sous-pages doivent être supprimées en premier.&lt;br&gt;</value>
+  </data>
+  <data name="Service_RemoveTabModuleError.Text" xml:space="preserve">
+    <value>Erreur lros de la suppression de la page :&lt;br&gt;{0}</value>
+  </data>
+  <data name="Service_RestoreModuleError.Text" xml:space="preserve">
+    <value>Erreur lors de la restauration du module {0} sur la page {1}. Page supprimée.</value>
+  </data>
+  <data name="Service_RestoreTabError.Text" xml:space="preserve">
+    <value>La page {0} ne pourra être restaurée qu'une fois la page parente restaurée.&lt;br&gt;</value>
+  </data>
+  <data name="Service_RestoreTabModuleError.Text" xml:space="preserve">
+    <value>Erreur lors de la restauration de la page :&lt;br&gt;{0}</value>
+  </data>
+  <data name="recyclebin_Users.Text">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="recyclebin_Username.Text" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="recyclebin_UserDisplayName.Text" xml:space="preserve">
+    <value>Nom complet</value>
+  </data>
+  <data name="recyclebin_NoUsers.Text" xml:space="preserve">
+    <value>Aucun utilisateur dans la corbeille</value>
+  </data>
+  <data name="recyclebin_RestoreUserConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer cet utilisateur.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RestoreUsersConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez restaurer les utilisateurs sélectionnés.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RemoveUserConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer cet utilisateur.&lt;/p&gt;</value>
+  </data>
+  <data name="recyclebin_RemoveUsersConfirm.Text" xml:space="preserve">
+    <value>&lt;p&gt;Veuillez confirmer que vous souhaitez supprimer les utilisateurs sélectionnés.&lt;/p&gt;</value>
+  </data>
+  <data name="Service_RemoveUserError.Text" xml:space="preserve">
+    <value>Erreur lors de la  suppression de l'utilisateur :&lt;br/&gt;{0}</value>
+  </data>
+  <data name="Service_EmptyRecycleBinError.Text" xml:space="preserve">
+    <value>Certains éléments n’étaient pas supprimés.</value>
+  </data>
+  <data name="Service_RestoreUserError.Text" xml:space="preserve">
+    <value>Erreur lors de la restauration de l'utilisateur.</value>
+  </data>
+  <!---->
+</root>

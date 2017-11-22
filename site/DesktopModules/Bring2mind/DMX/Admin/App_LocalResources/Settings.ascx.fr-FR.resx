@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="plStartup.Help">
+    <value>Quel écran sera présenté au visiteur lors de sa première visite sur cette page? Laissez vide pour le contrôle par défaut.</value>
+  </data>
+  <data name="plShowCollectionsButton.Text">
+    <value>Afficher les dossiers</value>
+  </data>
+  <data name="plShowCollectionsButton.Help">
+    <value>Afficher les dossiers dans la vue principale</value>
+  </data>
+  <data name="plShowCategoriesButton.Text">
+    <value>Afficher les catégories</value>
+  </data>
+  <data name="plShowCategoriesButton.Help">
+    <value>Afficher les catégories dans la vue principale</value>
+  </data>
+  <data name="plShowSearchButton.Text">
+    <value>Afficher la Recherche</value>
+  </data>
+  <data name="plShowSearchButton.Help">
+    <value>Afficher la recherche dans le menu et les résultats de recherche dans la fenêtre principale</value>
+  </data>
+  <data name="plShowMySubscriptionsButton.Text">
+    <value>Afficher mes abonnements</value>
+  </data>
+  <data name="plShowMySubscriptionsButton.Help">
+    <value>Voir «Mes abonnements» dans la vue principale (lorsque l'utilisateur est connecté)</value>
+  </data>
+  <data name="plMenu.Help">
+    <value>Spécifiez le menu à utiliser dans cette instance de DMX</value>
+  </data>
+  <data name="plMenu.Text">
+    <value>Menu</value>
+  </data>
+  <data name="plOverrideControlToLoad.Help">
+    <value>Si activé, le ControlToLoad dicté par la requête sera remplacée par la valeur spécifiée dans l'écran de démarrage ci-dessus</value>
+  </data>
+  <data name="plOverrideControlToLoad.Text">
+    <value>remplacement ControlToLoad</value>
+  </data>
+  <data name="plRootCat.Help">
+    <value>Le cas échéant, la catégorie racine pour cette instance de module sera celle spécifiée. Laissez sur «Catégories» pour afficher toutes les catégories</value>
+  </data>
+  <data name="plRootCat.Text">
+    <value>Catégorie Racine</value>
+  </data>
+  <data name="plRootColl.Text">
+    <value>Dossier racine pour le module</value>
+  </data>
+  <data name="plRootColl.Help">
+    <value>Vous pouvez spécifier que ce module considérera ce dossier comme le répertoire racine. On ne peut pas naviguer plus haut que ce dossier.</value>
+  </data>
+  <data name="ControlTitle_options.Text">
+    <value>Options du module Document Exchange</value>
+  </data>
+  <data name="plStartup.Text">
+    <value>Afficher l'écran par défaut</value>
+  </data>
+  <data name="plDefaultEditPane.Help">
+    <value>Quel contrôle doit être utilisé lorsque les utilisateurs de modifier le contenu? Laisser tel quel pour le contrôle par défaut.</value>
+  </data>
+  <data name="plDefaultEditPane.Text">
+    <value>Ecran d'édition par défaut</value>
+  </data>
+  <data name="plRootPattern.Text">
+    <value>Modèle Racine</value>
+  </data>
+  <data name="ControlTitle_settings.Text">
+    <value>Paramétres du module Document Exchange</value>
+  </data>
+  <data name="plDefaultSortOrder.Help">
+    <value>Spécifiez l'ordre de tri par défaut pour DMX. Par défaut est 'IsCollection DESC, titre ".</value>
+  </data>
+  <data name="plDefaultSortOrder.Text">
+    <value>Ordre de tri par défaut</value>
+  </data>
+  <data name="plAutoAddAddPermission.Text">
+    <value>Ajouter l'autorisation d'ajout</value>
+  </data>
+  <data name="plAutoAddViewPermission.Text">
+    <value>Ajouter l'autorisation de visualisation</value>
+  </data>
+  <data name="plAutoCreateRoot.Text">
+    <value>Création automatique</value>
+  </data>
+  <data name="plAutoAddSubscription.Text">
+    <value>Ajouter un abonnement</value>
+  </data>
+  <data name="plAutoInheritPermission.Text">
+    <value>Auto Héritage des autorisations</value>
+  </data>
+  <data name="plAutoAddAddPermission.Help">
+    <value>Si activé l'utilisateur actuel obtiendra  automatiquement l'autorisation d'ajout à ce dossier</value>
+  </data>
+  <data name="plAutoAddSubscription.Help">
+    <value>Si activé, l'utilisateur actuel sera automatiquement abonné à ce dossier</value>
+  </data>
+  <data name="plAutoAddViewPermission.Help">
+    <value>Si activé l'utilisateur actuel obtiendra  automatiquement l'autorisation de visualisation à ce dossier</value>
+  </data>
+  <data name="plAutoCreateRoot.Help">
+    <value>Si activé, le dossier sera créé s'il n'existe pas déjà</value>
+  </data>
+  <data name="plAutoInheritPermission.Help">
+    <value>Si activé, les autorisations du dossier parent seront héritées. Sinon, seuls les administrateurs seront en mesure de visualiser et modifier le contenu, ainsi que toutes les autres sélectionnées ici</value>
+  </data>
+  <data name="RootPattern.Text">
+    <value>Modèle racine flexible</value>
+  </data>
+  <data name="plLimitCategoriesToCollection.Help">
+    <value>Si activé, seuls seront affichés les documents  relatifs à des catégories qui relèvent de la racine DMX du module courant</value>
+  </data>
+  <data name="plLimitCategoriesToCollection.Text">
+    <value>Limiter les Catégories au dossier</value>
+  </data>
+  <data name="scrEditEntry.Text">
+    <value>Assistant édition</value>
+  </data>
+  <data name="scrEditEntryPB.Text">
+    <value>Simple écran d'édition</value>
+  </data>
+  <data name="scrSearch.Text">
+    <value>Controle des Résultats de la recherche</value>
+  </data>
+  <data name="scrTemplateView.Text">
+    <value>Vue Modèle</value>
+  </data>
+  <data name="NoneSpecified.Text">
+    <value>&lt;par Défaut&gt;</value>
+  </data>
+  <data name="plRootPattern.Help">
+    <value>Modèle de dossier à ajouter après le dossier racine. Si ce dossier n'existe pas, il sera créé. Utilisez des anti-slachs pour les sous-dossiers et évitez les caractères illégaux comme les arobases. Notez que vous pouvez utiliser des &lt;strong&gt; jetons (Token) &lt;/strong&gt;. Par exemple, si vous ajoutez [User:Username] le nom de l'utilisateur actuel sera inséré.</value>
+  </data>
+  <data name="scrViewCollection.Text">
+    <value>Ajax UI (2 panneaux)</value>
+  </data>
+  <data name="scrViewThreePanel.Text">
+    <value>Ajax UI (3 Panel)</value>
+  </data>
+</root>

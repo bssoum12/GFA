@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+ <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+ <xsl:param name="IsDocAdmin" />
+ <xsl:param name="IsAdmin" />
+ <xsl:param name="AppPerms" />
+ <xsl:template match="Request">
+    <SiteMap>
+      <item Value="Search4">
+       <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Search4.Text']/value"/></xsl:attribute>
+       <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Search4.ToolTip']/value"/></xsl:attribute>
+       <xsl:attribute name="ClientSideCommand">clearSearch();Dialog2.Show();</xsl:attribute>
+      </item>
+      <xsl:if test="$IsDocAdmin='True' or $IsAdmin='True'">
+       <item Value="Menu5" Enabled="True">
+        <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Menu5.Text']/value"/></xsl:attribute>
+        <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Menu5.ToolTip']/value"/></xsl:attribute>
+        <xsl:if test="$IsDocAdmin='True'">
+         <item Value="Categories5" IconCssClass="menu-cabinet_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Categories5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Categories5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Categories&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="Attributes5" IconCssClass="menu-form_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Attributes5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Attributes5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Attributes&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminRssSettings5" IconCssClass="menu-rss_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminRssSettings5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminRssSettings5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=RssSettings&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="Notifications5" IconCssClass="menu-mail_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Notifications5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Notifications5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Notifications&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="Extensions5" IconCssClass="menu-product_finished_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Extensions5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Extensions5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Extensions&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="FileTypes5" IconCssClass="menu-product_finished_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='FileTypes5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='FileTypes5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=FileTypes&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="RunScript5" IconCssClass="menu-script_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='RunScript5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='RunScript5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=RunScript&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminAddonSettings5" IconCssClass="menu-application_modules_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminAddonSettings5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminAddonSettings5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=AddonSettings&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="EmptyRecycleBin4" IconCssClass="menu-recycle-png"  Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='EmptyRecycleBin4.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='EmptyRecycleBin4.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./Host/@Scheme" />://<xsl:value-of select="./dmxportal/@portalalias" />/DesktopModules/Bring2mind/DMX/Admin/RunScriptExecute.aspx?PortalId=<xsl:value-of select="./dmxportal/@portalid" />&amp;TabId=<xsl:value-of select="./TabId" />&amp;ModuleId=<xsl:value-of select="./DMXModule/@ModuleId" />&amp;Script=EmptyRecycleBin</xsl:attribute>
+         </item>
+         <item Value="Recover5" IconCssClass="menu-recycle_bin_reload_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='Recover5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='Recover5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Recover&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+        </xsl:if>
+        <xsl:if test="$IsAdmin='True'">
+         <item LookId="BreakItem"/>
+         <item Value="AdminMainOptions5" IconCssClass="menu-boolean_field_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminMainOptions5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminMainOptions5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=MainOptions&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminSearchSettings5" IconCssClass="menu-zoom_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminSearchSettings5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminSearchSettings5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=SearchSettings&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminStorageSettings5" IconCssClass="menu-safety_box_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminStorageSettings5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminStorageSettings5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=StorageSettings&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminUploadSettings5" IconCssClass="menu-world_upload_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminUploadSettings5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminUploadSettings5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=UploadSettings&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminDNNFolderProvider5" IconCssClass="menu-dnn-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminDNNFolderProvider5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminDNNFolderProvider5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=AddToDnn&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+        </xsl:if>
+        <xsl:if test="./UserInfo/@IsSuperUser='True'">
+         <item LookId="BreakItem"/>
+         <item Value="AdminGetHelp5" IconCssClass="menu-help_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminGetHelp5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminGetHelp5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=GetHelp&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminLanguages5" IconCssClass="menu-world_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminLanguages5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminLanguages5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=Languages&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+         <item Value="AdminLicense5" IconCssClass="menu-serial_number_16-png" Enabled="True">
+          <xsl:attribute name="Text"><xsl:value-of select="./root/data[@name='AdminLicense5.Text']/value"/></xsl:attribute>
+          <xsl:attribute name="ToolTip"><xsl:value-of select="./root/data[@name='AdminLicense5.ToolTip']/value"/></xsl:attribute>
+          <xsl:attribute name="NavigateUrl"><xsl:value-of select="./TabUrl"/><xsl:value-of select="./TabUrl/@Connector"/>ctl=License&amp;mid=<xsl:value-of select="./DMXModule/@ModuleId"/></xsl:attribute>
+         </item>
+        </xsl:if>
+       </item>
+      </xsl:if>
+    </SiteMap>
+ </xsl:template>
+</xsl:stylesheet>

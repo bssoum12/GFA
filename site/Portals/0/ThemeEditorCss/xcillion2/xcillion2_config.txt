@@ -1,0 +1,223 @@
+[
+  {
+    "ItemName": "Background colors",
+    "ItemLabel": "Background color",
+    "ItemDefault": "",
+    "ItemValue": "",
+    "ItemType": "header",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "body-background-color",
+    "ItemLabel": "Body background color",
+    "ItemDefault": "#f0f0f0",
+    "ItemValue": "#f0f0f0",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "top-footer-background",
+    "ItemLabel": "Top and Footer background",
+    "ItemDefault": "#383838",
+    "ItemValue": "#383838",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "header-bg-color",
+    "ItemLabel": "Header background color",
+    "ItemDefault": "#ffffff",
+    "ItemValue": "#ffffff",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "content-bg-color",
+    "ItemLabel": "Content background",
+    "ItemDefault": "#ffffff",
+    "ItemValue": "#ffffff",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "footer-top-color",
+    "ItemLabel": "Footer top background",
+    "ItemDefault": "#7ca0c0",
+    "ItemValue": "#7ca0c0",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "footer-bg-color",
+    "ItemLabel": "Footer background",
+    "ItemDefault": "#292929",
+    "ItemValue": "#292929",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+
+  {
+    "ItemName": "fonts-foreground",
+    "ItemLabel": "Fonts & colors",
+    "ItemDefault": "",
+    "ItemValue": "",
+    "ItemType": "header",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "font-name",
+    "ItemLabel": "Font family",
+    "ItemDefault": "'Open Sans',Arial,Helvetica,sans-serif",
+    "ItemValue": "'Open Sans',Arial,Helvetica,sans-serif",
+    "ItemType": "select",
+    "ItemOptions": [
+      {
+        "OptionText": "Open Sans, Arial, Helvetica",
+        "OptionValue": "'Open Sans',Arial,Helvetica,sans-serif"
+      },
+      {
+        "OptionText": "Roboto",
+        "OptionValue": "'Roboto', sans-serif"
+      },
+      {
+        "OptionText": "Open Sans Condensed",
+        "OptionValue": "'Open Sans Condensed', sans-serif"
+      },
+      {
+        "OptionText": "Coming Soon",
+        "OptionValue": "'Coming Soon', cursive"
+      },
+      {
+        "OptionText": "Ranga",
+        "OptionValue": "'Ranga', cursive"
+      },
+      {
+        "OptionText": "Griffy",
+        "OptionValue": "'Griffy', cursive"
+      }
+    ]
+  },
+  {
+    "ItemName": "font-size",
+    "ItemLabel": "Font size",
+    "ItemDefault": "16px",
+    "ItemValue": "16px",
+    "ItemType": "select",
+    "ItemOptions": [
+      {
+        "OptionText": "11px",
+        "OptionValue": "11px"
+      },
+      {
+        "OptionText": "12px",
+        "OptionValue": "12px"
+      },
+      {
+        "OptionText": "14px",
+        "OptionValue": "14px"
+      },
+      {
+        "OptionText": "16px",
+        "OptionValue": "16px"
+      },
+      {
+        "OptionText": "18px",
+        "OptionValue": "18px"
+      },
+      {
+        "OptionText": "24px",
+        "OptionValue": "24px"
+      },
+      {
+        "OptionText": "28px",
+        "OptionValue": "28px"
+      }
+    ]
+  },
+  {
+    "ItemName": "body-text-color",
+    "ItemLabel": "Body text color",
+    "ItemDefault": "#333333",
+    "ItemValue": "#333333",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "sub-header-color",
+    "ItemLabel": "Sub header text color",
+    "ItemDefault": "#000000",
+    "ItemValue": "#000000",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "header-colors",
+    "ItemLabel": "Header colors",
+    "ItemDefault": "#020202",
+    "ItemValue": "#020202",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "footer-color",
+    "ItemLabel": "Footer color",
+    "ItemDefault": "#ffffff",
+    "ItemValue": "#ffffff",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "footer-hover-color",
+    "ItemLabel": "Footer hover color",
+    "ItemDefault": "#7ca0c0",
+    "ItemValue": "#7ca0c0",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+
+  {
+    "ItemName": "search-box-colors",
+    "ItemLabel": "Search box color",
+    "ItemDefault": "",
+    "ItemValue": "",
+    "ItemType": "header",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "search-input-container",
+    "ItemLabel": "Search input container",
+    "ItemDefault": "#dcddd8",
+    "ItemValue": "#dcddd8",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "search-input-placedholder",
+    "ItemLabel": "Search input placeholder",
+    "ItemDefault": "#818181",
+    "ItemValue": "#818181",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "search-button-background",
+    "ItemLabel": "Search button background",
+    "ItemDefault": "#c3c1c1",
+    "ItemValue": "#c3c1c1",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  },
+  {
+    "ItemName": "search-input-bg",
+    "ItemLabel": "Search input background",
+    "ItemDefault": "#ffffff",
+    "ItemValue": "#ffffff",
+    "ItemType": "color-picker",
+    "ItemOptions": []
+  }
+
+
+
+
+
+]

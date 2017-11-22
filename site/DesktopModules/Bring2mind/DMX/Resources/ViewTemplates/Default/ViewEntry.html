@@ -1,0 +1,105 @@
+<ul class="dmx-breadcrumb" style="padding: 7px 14px">
+ [subtemplate|BreadCrumb.html|breadcrumbs]
+</ul>
+
+<div class="dmx-btn-toolbar">
+ <div class="dmx-btn-group">
+  [if|1][button:newversion_visible][/if]<a href="[button:newversion_url]" class="dmx-btn" title="[button:newversion_text]"><i class="menu-document_new-png dmxmenu"></i></a>[endif|1]
+  [if|2][button:edit_visible][/if]<a href="[button:edit_url]" class="dmx-btn" title="[button:edit_text]"><i class="menu-document_edit-png dmxmenu"></i></a>[endif|2]
+  [if|3][button:subscribe_visible][/if]<a href="[button:subscribe_url]" class="dmx-btn" title="[button:subscribe_text]"><i class="menu-document_heart-png dmxmenu"></i></a>[endif|3]
+  [if|4][button:unsubscribe_visible][/if]<a href="[button:unsubscribe_url]" class="dmx-btn" title="[button:unsubscribe_text]"><i class="menu-heart_broken-png dmxmenu"></i></a>[endif|4]
+  [if|5][button:lock_visible][/if]<a href="[button:lock_url]" class="dmx-btn" title="[button:lock_text]"><i class="menu-document_lock-png dmxmenu"></i></a>[endif|5]
+  [if|6][button:unlock_visible][/if]<a href="[button:unlock_url]" class="dmx-btn" title="[button:unlock_text]"><i class="menu-lock_open-png dmxmenu"></i></a>[endif|6]
+  [if|7][button:harddelete_visible][/if]<a href="[button:harddelete_url]" onclick="Javascript:return confirm('[resources:HardDeleteConfirm.Text]');" class="dmx-btn" title="[button:harddelete_text]"><i class="menu-document_delete-png dmxmenu"></i></a>[endif|7]
+  [if|8][button:delete_visible][/if]<a href="[button:delete_url]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="dmx-btn" title="[button:delete_text]"><i class="menu-document_delete-png dmxmenu"></i></a>[endif|8]
+  [if|9][button:undelete_visible][/if]<a href="[button:undelete_url]" class="dmx-btn" title="[button:undelete_text]"><i class="menu-document_into-png dmxmenu"></i></a>[endif|9]
+  [if|10][button:import_visible][/if]<a href="[button:import_url]" class="dmx-btn" title="[button:import_text]"><i class="menu-import1-png dmxmenu"></i></a>[endif|10]
+  [if|11][button:mailme_visible][/if]<a href="[button:mailme_url]" class="dmx-btn" title="[button:mailme_text]"><i class="menu-document_attachment-png dmxmenu"></i></a>[endif|11]
+  [if|12][button:cut_visible][/if]<a href="[button:cut_url]" class="dmx-btn" title="[button:cut_text]"><i class="menu-cut-png dmxmenu"></i></a>[endif|12]
+  [if|13][button:copy_visible][/if]<a href="[button:copy_url]" class="dmx-btn" title="[button:copy_text]"><i class="menu-copy-png dmxmenu"></i></a>[endif|13]
+  [if|14][button:paste_visible][/if]<a href="[button:paste_url]" class="dmx-btn" title="[button:paste_text]"><i class="menu-paste-png dmxmenu"></i></a>[endif|14]
+  <a href="[button:download_url]" class="dmx-btn" title="[button:download_text]"><i class="menu-disk_blue-png dmxmenu"></i></a>
+ </div>
+</div>
+
+<div class="dmx-row-fluid" style="padding-top:20px;">
+ <div class="dmx-span1">
+ </div>
+ <div class="dmx-span11">
+  <h1>[entry:title]</h1>
+ </div>
+</div>
+
+<div class="dmx-alert dmx-alert-error" style="display:[entry:isdeleted|block;none];width:100%;text-align:center;padding:10px;">[resources:ThisItemDeleted.Text]</div>
+<div class="dmx-alert" style="display:[entry:islocked|block;none];width:100%;text-align:center;padding:10px;">[resources:ThisItemLocked.Text]</div>
+<div class="dmx-alert" style="display:[entry:isapproved|none;block];width:100%;text-align:center;padding:10px;">[resources:ThisItemNotApproved.Text]</div>
+
+<div class="dmx-row-fluid" style="padding:20px 0px 20px">
+ <div class="dmx-span4">
+<table class="EntryMetaData">
+ <tr>
+  <td class="mdTitle">[resources:Author.Text]</td>
+  <td>[entry:author]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:LastModified.Text]</td>
+  <td>[entry:LastModified|g]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Version.Text]</td>
+  <td>[entry:version]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:FileSize.Text]</td>
+  <td>[entry:filesizeformatted]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Created.Text]</td>
+  <td>[entry:Created|g]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Keywords.Text]</td>
+  <td>[entry:Keywords]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Categories.Text]</td>
+  <td>[entry:Categories]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:OriginalFilename.Text]</td>
+  <td>[entry:OriginalFileName]</td>
+ </tr>
+</table>
+ </div>
+ <div class="dmx-span4">
+<table style="display:[query:isdocadmin|block;none]" class="EntryMetaData">
+ <tr>
+  <td colspan="2" class="mdTitle">[resources:Permissions.Text]</td>
+ </tr>
+ [entry:permissions]
+</table>
+ </div>
+ <div class="dmx-span4">
+<p>[entry:remarks]</p>
+ </div>
+</div>
+
+<div class="dmx-row-fluid" style="padding:20px 0px 20px">
+ <div class="dmx-span6">
+<h2>[resources:Versions.Text]</h2>
+<table class="dmx-table dmx-table-striped dmx-table-condensed">
+ <tbody>
+ [subtemplate|Version.html|versions|pagesize=10,entrytypes=file;hyperlink]
+ </tbody>
+</table>
+ </div>
+ <div class="dmx-span6" style="display:[query:isdocadmin|block;none]">
+<h2>[resources:Log.Text]</h2>
+<table class="dmx-table table-striped table-condensed">
+ <tbody>
+ [subtemplate|LogItem.html|log|pagesize=10,permission=docadmin,entrytypes=file]
+ </tbody>
+</table>
+ </div>
+</div>
+

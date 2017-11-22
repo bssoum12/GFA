@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdCancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="cmdSend.Text">
+    <value>Envoyer</value>
+  </data>
+  <data name="ControlTitle.Text">
+    <value>Document de messagerie (s)</value>
+  </data>
+  <data name="dshEmail.Text">
+    <value>Email</value>
+  </data>
+  <data name="dshOptions.Text">
+    <value>Options</value>
+  </data>
+  <data name="dshSendTo.Text">
+    <value>Destinataires</value>
+  </data>
+  <data name="dshSendWhat.Text">
+    <value>Envoi</value>
+  </data>
+  <data name="optAttachment.Text">
+    <value>Pièce jointe</value>
+  </data>
+  <data name="optLink.Text">
+    <value>Lien</value>
+  </data>
+  <data name="plAvailability.Help">
+    <value>Sélectionnez jusqu'à quand le lien restera actif pour les bénéficiaires</value>
+  </data>
+  <data name="plAvailability.Text">
+    <value>Disponibilité</value>
+  </data>
+  <data name="plBody.Help">
+    <value>Corps de l'email. Notez que vous pouvez utiliser des jetons standards de DotNetNuke (TOKEN) tel que [user:firstname] , mais notez que si vous utilisez la saisie libre des adresses email, alors qu'aucun utilisateur n'est connu, les jetons d'utilisateur seront vide.</value>
+  </data>
+  <data name="plBody.Text">
+    <value>Corps de l'email</value>
+  </data>
+  <data name="plCCMe.Help">
+    <value>Envoyez une copie de l'e-mail à mon adresse email</value>
+  </data>
+  <data name="plCCMe.Text">
+    <value>Copie pour moi</value>
+  </data>
+  <data name="plDocumentList.Help">
+    <value>Liste des documents stockés dans DMX que vous avez sélectionnés pour l'envoi au(x) destinataire(s)</value>
+  </data>
+  <data name="plDocumentList.Text">
+    <value>Liste des documents</value>
+  </data>
+  <data name="plDownloads.Help">
+    <value>Sélectionnez le nombre maximum de téléchargements que le destinataire peut effectuer par document</value>
+  </data>
+  <data name="plDownloads.Text">
+    <value>Téléchargements</value>
+  </data>
+  <data name="plSendMethod.Help">
+    <value>Sélectionnez la façon dont vous souhaitez envoyer ces documents. En tant que "pièce jointe" signifie que les destinataires reçoivent un e-mail (de taille importante) avec les documents réellement joints. En tant que "lien" signifie que les bénéficiaires reçoivent des liens ajoutés au bas de l'email qui leur permet de télécharger le document directement à partir de DMX contournant toute sécurité.</value>
+  </data>
+  <data name="plSendMethod.Text">
+    <value>Méthode</value>
+  </data>
+  <data name="plSendTo.Help">
+    <value>Sélectionnez l’expéditeur de l'email. En option, vous pouvez sélectionner les comptes utilisateur de ce site ou les rôles de sécurité.</value>
+  </data>
+  <data name="plSendTo.Text">
+    <value>Envoyer à</value>
+  </data>
+  <data name="plSubject.Help">
+    <value>Objet du courriel</value>
+  </data>
+  <data name="plSubject.Text">
+    <value>Objet</value>
+  </data>
+  <data name="ToTabFree.Text">
+    <value>Adresses</value>
+  </data>
+  <data name="ToTabRoles.Text">
+    <value>Rôles</value>
+  </data>
+  <data name="ToTabUsers.Text">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="WholeNumber.Error">
+    <value>Nombre entier non-valide!</value>
+  </data>
+  <data name="cmdAddUser.Text">
+    <value>Ajouter</value>
+  </data>
+  <data name="cmdRemoveUser.Text">
+    <value>Retirer</value>
+  </data>
+  <data name="lblUsername.Text">
+    <value>Nom d'utilisateur:</value>
+  </data>
+  <data name="NoDocs.Text">
+    <value>Aucun document valide à envoyer n'a été trouvé</value>
+  </data>
+  <data name="NoMethod.Text">
+    <value>Aucune méthode d'envoi a été sélectionnée par l'administrateur. S'il vous plaît contactez votre administrateur modifier ce paramétrage.</value>
+  </data>
+  <data name="NoPermission.Text">
+    <value>Vous n'avez pas la permission d'envoyer des emails avec ce système. S'il vous plaît vérifier le statut de votre connexion et / ou contactez votre administrateur.</value>
+  </data>
+  <data name="NoPortalAdmin.Text">
+    <value>Aucun administrateur du portail n'a été trouvé comme expéditeur</value>
+  </data>
+  <data name="Required.Error">
+    <value>Obligatoires!</value>
+  </data>
+  <data name="UserNotFound.Text">
+    <value>Utilisateur {0} non trouvé. Vous devez utiliser les noms d'utilisateurs.</value>
+  </data>
+  <data name="plReplaceTokens.Help">
+    <value>Si activé, les jetons tels que [user:firstname] seront remplacés par leurs valeurs respectives. Notez que les informations utilisateur spécifique ne peut être remplacées pour les destinataires en adresse email libre mais uniquement pour les destinataires sélectionnés qui sont enregistrés dans les utilisateurs et les rôles.</value>
+  </data>
+  <data name="plReplaceTokens.Text">
+    <value>Remplacer les jetons</value>
+  </data>
+</root>

@@ -1,0 +1,10 @@
+C:\aquafish\bin\Framework.dll
+C:\aquafish\bin\Framework.pdb
+C:\aquafish\DesktopModules\Framework\obj\Release\Framework.csprojResolveAssemblyReference.cache
+C:\aquafish\DesktopModules\Framework\obj\Release\Framework.dll
+C:\aquafish\DesktopModules\Framework\obj\Release\Framework.pdb
+C:\site\bin\Framework.dll
+C:\site\bin\Framework.pdb
+C:\site\DesktopModules\Framework\obj\Release\Framework.csprojResolveAssemblyReference.cache
+C:\site\DesktopModules\Framework\obj\Release\Framework.dll
+C:\site\DesktopModules\Framework\obj\Release\Framework.pdb

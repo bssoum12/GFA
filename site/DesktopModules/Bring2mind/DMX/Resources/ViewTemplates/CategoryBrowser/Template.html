@@ -1,0 +1,36 @@
+<p>
+[subtemplate|BreadCrumb.html|breadcrumbs|categoryview=1]
+</p>
+<p>
+[subtemplate|CatLink.html|categorylist]
+</p>
+
+<table cellspacing="0" cellpadding="0" border="0" class="EntryList">
+ <tr>
+  <th>&nbsp;</th>
+  <th>
+   <a href="[dmxmodule:url]CategoryId=[query:currentcategoryid]&sort=title&so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]">[resources:Title.Text]</a>
+   <span style="display:[query:sort=title|inline;none];margin-left:10px">
+    <span><p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline">&nbsp;&nbsp;&nbsp;&nbsp;</p></span>
+   </span>
+  </th>
+  <th>
+   <a href="[dmxmodule:url]CategoryId=[query:currentcategoryid]&sort=author&so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]">[resources:Author.Text]</a>
+   <span style="display:[query:sort=author|inline;none];margin-left:10px">
+    <span><p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline">&nbsp;&nbsp;&nbsp;&nbsp;</p></span>
+   </span>
+  </th>
+  <th>
+   <a href="[dmxmodule:url]CategoryId=[query:currentcategoryid]&sort=lastmodified&so=[query:!so|desc;][query:so=asc|desc;][query:so=desc|asc;]">[resources:LastModified.Text]</a>
+   <span style="display:[query:sort=lastmodified|inline;none];margin-left:10px">
+    <span><p class="[query:so=desc|icon-16-navigate_up-png;icon-16-navigate_down-png] inline">&nbsp;&nbsp;&nbsp;&nbsp;</p></span>
+   </span>
+  </th>
+  <th>&nbsp;</th>
+ [if|1][query:authenticated][/if]
+  <th>&nbsp;</th>
+ [endif|1]
+ </tr>
+[subtemplate|Entry.html|entrylist|pagesize=10,categoryview=1]
+</table>
+<p style="margin-top:20px;">[subtemplate|Pager.html|pager|pagesize=10]</p>

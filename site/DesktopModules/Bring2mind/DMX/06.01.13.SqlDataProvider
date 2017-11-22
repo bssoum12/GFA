@@ -1,0 +1,76 @@
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'{databaseOwner}{objectQualifier}DMX_LimitSearch') AND type in (N'P', N'PC'))
+DROP PROCEDURE {databaseOwner}{objectQualifier}DMX_LimitSearch
+GO
+
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE {databaseOwner}{objectQualifier}DMX_LimitSearch
+ @PortalId Int,
+ @SearchId nvarchar(50),
+ @CollectionId Int,
+ @CategoryId INT,
+ @OnlyLastVersion BIT,
+ @HideDeleted BIT,
+ @OnlyApproved BIT,
+ @NrHits INT,
+ @MaxSearchResults INT
+AS
+BEGIN
+ IF @CollectionId > -1
+ BEGIN
+  DECLARE @entrypath VARCHAR(4000)
+  SET @entrypath = (SELECT [Path] 
+   FROM {databaseOwner}{objectQualifier}DMX_Entries
+   WHERE EntryId = @CollectionId);
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+   FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   INNER JOIN {databaseOwner}{objectQualifier}DMX_Entries e ON sr.EntryId=e.EntryId
+   WHERE NOT e.[Path] LIKE @entrypath+'%';
+ END
+ IF @OnlyLastVersion = 1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+   FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   INNER JOIN {databaseOwner}{objectQualifier}DMX_Entries e ON sr.EntryId=e.EntryId
+   WHERE NOT e.LastVersionId = e.EntryId;
+ END
+ IF @HideDeleted = 1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+   FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   INNER JOIN {databaseOwner}{objectQualifier}DMX_Entries e ON sr.EntryId=e.EntryId
+   WHERE e.Deleted = 1;
+ END
+ IF @OnlyApproved = 1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+   FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   INNER JOIN {databaseOwner}{objectQualifier}DMX_Entries e ON sr.EntryId=e.EntryId
+   WHERE e.IsApproved = 0;
+ END
+ IF @NrHits > 1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+  WHERE SearchId=@SearchId
+   AND Hits < @NrHits;
+ END
+ IF @CategoryId > -1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+  FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   LEFT JOIN {databaseOwner}{objectQualifier}DMX_EntryCategories ec ON ec.EntryId=sr.EntryId AND ec.CategoryId=@CategoryId
+  WHERE ec.EntryId IS NULL
+ END
+ IF @MaxSearchResults > -1
+ BEGIN
+  DELETE FROM {databaseOwner}{objectQualifier}DMX_SearchResults
+  FROM {databaseOwner}{objectQualifier}DMX_SearchResults sr
+   INNER JOIN (SELECT *, ROW_NUMBER() OVER (ORDER BY Hits DESC) y
+        FROM {databaseOwner}{objectQualifier}DMX_SearchResults) x ON x.SearchId=sr.SearchId AND x.EntryId=sr.EntryId
+  WHERE x.y > @MaxSearchResults
+ END
+END
+GO
+

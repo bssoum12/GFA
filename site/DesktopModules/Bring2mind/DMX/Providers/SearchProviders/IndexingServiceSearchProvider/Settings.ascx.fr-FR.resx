@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdDropServer.Text">
+    <value>Dissocier</value>
+  </data>
+  <data name="cmdLinkServer.Text">
+    <value>Associer</value>
+  </data>
+  <data name="plIndexCatalog.Help">
+    <value>Entrez le nom du catalogue que vous avez créé pour indexer le contenu de ce portail</value>
+  </data>
+  <data name="plIndexCatalog.Text">
+    <value>Catalogue d'indexation</value>
+  </data>
+  <data name="lblHelp.Text">
+    <value>This screen 'attaches' a 'linked server' in SQL. The name of the catalog you've created is used for this. Note that to attach a server you need SA privileges in SQL Server. So in this case, the DNN installation needs SA privileges. Alternatively you can attach the server by hand in SQL yourself by executing the following statement:&lt;br /&gt;EXEC sp_addlinkedserver 'MYCAT', 'Index Server', 'MSIDXS', 'MYCAT'&lt;br /&gt;Where MYCAT is your catalog. Similarly you can drop an attached server by hand using:&lt;br /&gt;EXEC sp_dropserver 'MYCAT'&lt;br /&gt;Read the search manual for more information and screenshots.</value>
+  </data>
+</root>

@@ -1,0 +1,22 @@
+IF NOT EXISTS (SELECT * FROM {databaseOwner}{objectQualifier}DMX_Providers WHERE ProviderName='JsUploadProvider')
+INSERT INTO {databaseOwner}{objectQualifier}DMX_Providers (Provider, ProviderName, ProviderType)
+VALUES ('Bring2mind.DNN.Modules.DMX.Services.Upload.JsUploadProvider.JsUploadProvider, BRING2MIND.DNN.MODULES.DMX', 'JsUploadProvider', 3);
+GO
+
+DELETE FROM {databaseOwner}{objectQualifier}DMX_Providers
+WHERE ProviderName IN ('CAUploadProvider', 'SLUploadProvider', 'SilverlightUploadProvider')
+GO
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Settings
+SET SettingValue='JsUploadProvider'
+WHERE SettingName='UploadProvider'
+GO
+
+DELETE FROM {databaseOwner}{objectQualifier}ModuleControls
+WHERE ControlSrc='DesktopModules/Bring2mind/DMX/Admin/WebConfig.ascx'
+GO
+
+UPDATE {databaseOwner}{objectQualifier}DMX_Extensions
+SET ControlToLoad='Bring2mind/DMX/API/Entries/Download'
+WHERE ControlToLoad='Bring2mind/DMX/Download.aspx'
+GO

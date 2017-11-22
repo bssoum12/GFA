@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="AdminLocked.Text">
+    <value>Le chemin est en dehors du répertoire portail. Vous n'avez pas la permission de changer cela. Contactez l'hôte de changer cette liaison.</value>
+  </data>
+  <data name="InvalidPath.Error">
+    <value>Ce chemin n'est pas valide. S'il vous plaît utilisez un chemin qui commence par '{0} "</value>
+  </data>
+  <data name="lblAdminOnly.Text">
+    <value>Ces paramètres ne peuvent être ajustés que par les administrateurs</value>
+  </data>
+  <data name="optCopyBothWays.Text">
+    <value>Copier dans les deux sens</value>
+  </data>
+  <data name="optDMXLeading.Text">
+    <value>le dossier DMX est maitre</value>
+  </data>
+  <data name="optNoResolution.Text">
+    <value>Aucune résolution</value>
+  </data>
+  <data name="optSourceLeading.Text">
+    <value>le dossier Source est maitre</value>
+  </data>
+  <data name="plConflict.Text">
+    <value>Résolution des conflits</value>
+  </data>
+  <data name="plSyncPath.Text">
+    <value>Chemin synchronisé</value>
+  </data>
+  <data name="lblWarning.Text">
+    <value>AVERTISSEMENT: &lt;b&gt;La synchronisation ne s'adapte pas bien&lt;/b&gt;. Le temps de synchronisation dépend de la quantité de fichiers à vérifier, du temps qu'il faut au serveur pour récupérer un fichier depuis l'emplacement source (latence du réseau) et des performances du serveur. L'utilisation de cette fonction sur un très grand référentiels peut conduire à des résultats inattendus. &lt;b&gt; A utiliser avec parcimonie &lt;/b&gt;. L'importation s'adapte mieux car il n'a pas besoin de comparer des fichiers et (car il supprime le fichier source) il a moins de fichiers à parcourir. N'utilisez la synchronisation (copie dans les deux sens / DMX leader / Source leader)que si vous en avez réellement besoin.</value>
+  </data>
+  <data name="optExport.Text">
+    <value>Exporter</value>
+  </data>
+  <data name="optImport.Text">
+    <value>Importer</value>
+  </data>
+  <data name="plConflict.Help">
+    <value>Dans le cas où (1) la source et la copie DMX du même document ont été modifiées depuis la dernière synchronisation ou (2) il y a un document absent d'un coté ou de l'autre, précisez ce qui doit être effectué:; &lt;br/&gt;
+&lt;ul&gt;
+ &lt;li&gt; Importer: copier le document de la source vers DMX (en le remplacent et le cas échéant le supprimant de la source. Dans ce cas, seuls les documents de la source sont examinés.&lt;/li&gt;
+ &lt;li&gt; Exporter: Copier le document de DMX vers la source (en le remplacent et le cas échéant en le supprimant de DMX. Dans ce cas, seuls les documents de DMX sont examinés. &lt;/li&gt;
+ &lt;li&gt; Copier dans les deux sens: Copie les documents (nouveaux / modifiés) de DMX vers la Source et vice versa. Les documents qui ont été modifiés des deux cotés sont exclus.&lt;/li&gt;
+ &lt;li&gt; le dossier DMX est maitre. Copie les documents (nouveaux / modifiés) de DMX vers la source. Écrase tout changement effectué dans la source &lt;/li&gt;
+ &lt;li&gt; le dossier source est maitre: Copie les documents (nouveaux / modifiés) de la source vers DMX. Écrase tout changement effectué dans DMX &lt;/li&gt;
+ &lt;li&gt; Aucune résolution: Ne fait aucune action si le document est présent à la fois dans la source et dans DMX, sinon, effectue une copie.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="plSyncPath.Help">
+    <value>Précisez le chemin (UNC) du répertoire avec lequel ce dossier devra être synchronisé. REMARQUE: le profil sous lequel travaille le processus asp.net (par défaut SERVICE RESEAU) doit avoir les droits de contrôle total sur ce répertoire. Remarque supplémentaire: le compte SERVICE RESEAU sous Windows est un compte local et n'est pas reconnu sur un autre serveur sans dispositions spéciales.</value>
+  </data>
+</root>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCreateUser.Text" xml:space="preserve">
+    <value>Ajouter un utilisateur</value>
+  </data>
+  <data name="lblContributions.Text" xml:space="preserve">
+    <value>&lt;strong&gt;{0}&lt;/strong&gt; Total des contributions</value>
+  </data>
+  <data name="lblEngagement.Text">
+    <value>Engagement</value>
+  </data>
+  <data name="lblExperience.Text">
+    <value>Expérience</value>
+  </data>
+  <data name="lblInfluenece.Text">
+    <value>Influence</value>
+  </data>
+  <data name="lblLastActive.Text" xml:space="preserve">
+    <value>Dernière activité :</value>
+  </data>
+  <data name="lblRank.Text">
+    <value>Rang</value>
+  </data>
+  <data name="lblReputation.Text">
+    <value>Réputation</value>
+  </data>
+  <data name="lblTimeOnSite.Text" xml:space="preserve">
+    <value>Temps passé sur le site :</value>
+  </data>
+  <data name="LoginAsUser.Text" xml:space="preserve">
+    <value>Se connecter en tant que cet utilisateur</value>
+  </data>
+  <data name="nav_Users.Text">
+    <value>Utilisateurs</value>
+  </data>
+  <data name="RecentActivity.Text" xml:space="preserve">
+    <value>Activité récente</value>
+  </data>
+  <data name="RecentActivityPagingSummaryText.Text" xml:space="preserve">
+    <value>Affichage de {0}-{1} sur {2} entrées</value>
+  </data>
+  <data name="ShowUserActivity.title" xml:space="preserve">
+    <value>Activité de l’utilisateur</value>
+  </data>
+  <data name="usersPageSizeOptionText.Text" xml:space="preserve">
+    <value>{0} utilisateurs par page</value>
+  </data>
+  <data name="usersSummaryText.Text" xml:space="preserve">
+    <value>Affichage de {0}-{1} sur {2} entrées</value>
+  </data>
+  <data name="ViewAssets.Text" xml:space="preserve">
+    <value>Voir les assets</value>
+  </data>
+  <data name="err_NoUserFolder.Text" xml:space="preserve">
+    <value>{0} n'est propriétaire d'aucun asset.</value>
+  </data>
+  <data name="CannotFindScoringActionDefinition.Text" xml:space="preserve">
+    <value>Impossible de trouver une définition d'action de notation</value>
+  </data>
+  <data name="NegativeExperiencePoints.Text" xml:space="preserve">
+    <value>Les points d’expérience ne peuvent pas être négatifs</value>
+  </data>
+  <data name="ReputationGreaterThanExperience.Text" xml:space="preserve">
+    <value>Les points de réputation ne peuvent pas être plus élevés que l’expérience</value>
+  </data>
+  <data name="Cancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="editPoints.Text" xml:space="preserve">
+    <value>Modifier les points</value>
+  </data>
+  <data name="lblNotes.Text">
+    <value>Notes</value>
+  </data>
+  <data name="Save.Text">
+    <value>Enregistrer</value>
+  </data>
+  <!---->
+</root>

@@ -1,0 +1,4016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="mActivateConfirm.Text" xml:space="preserve">
+    <value>Etes vous sûr ?</value>
+  </data>
+  <data name="mCannotAddDocument.Text" xml:space="preserve">
+    <value>Vous n\'avez pas de droit d\'ajout de document !</value>
+  </data>
+  <data name="mCannotAssignResources.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit d\'affecter des ressources !</value>
+  </data>
+  <data name="mCannotDeleteDocument.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit de supprimer des documents !</value>
+  </data>
+  <data name="mCannotEditAvancement.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit de modifier l\'avancement du document !</value>
+  </data>
+  <data name="mCannotEditDocument.Text" xml:space="preserve">
+    <value>Vous n\'avez pas de droit de modification sur ce document !</value>
+  </data>
+  <data name="mCannotEditRevision.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit de modifier la révision du document !</value>
+  </data>
+  <data name="mDeleteConfirm.Text" xml:space="preserve">
+    <value>Etes vous sûr de vouloir supprimer cet article ?</value>
+  </data>
+  <data name="mLockedDocument.Text" xml:space="preserve">
+    <value>Le document est vérrouillé par {0} !</value>
+  </data>
+  <data name="mNoFile.Text" xml:space="preserve">
+    <value>Aucun fichier n\'a été affecté à ce document !</value>
+  </data>
+  <data name="mSelectDoc.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un document!</value>
+  </data>
+  <data name="mSelectProject.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un projet !</value>
+  </data>
+  <data name="mTreeAlreayExist.Text" xml:space="preserve">
+    <value>Arboresence déja crée.</value>
+  </data>
+  <data name="mTreeCreationConfirm.Text" xml:space="preserve">
+    <value>Voulez-vous vraiment créer l\'aborescence ?</value>
+  </data>
+  <data name="mTreeCreationSuccess.Text" xml:space="preserve">
+    <value>Arboresence ajoutée avec succès.</value>
+  </data>
+  <data name="mAlreayLockedDocument.Text" xml:space="preserve">
+    <value>Le document est déja vérrouillé par {0}, voulez-vous comme même télécharger le document (cette version pourra devenir périmée) ?</value>
+  </data>
+  <data name="mCannotViewDocument.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit de visualiser ce document !</value>
+  </data>
+  <data name="mDeleteDocumentError.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas supprimer ce document car il est lié à un ou plusieurs pointages !</value>
+  </data>
+  <data name="mNoPreview.Text" xml:space="preserve">
+    <value>Aperçu non disponible !</value>
+  </data>
+  <data name="mSelectDiscipline.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une discipline !</value>
+  </data>
+  <data name="tAddDCR.Text" xml:space="preserve">
+    <value>Ajout DCR</value>
+  </data>
+  <data name="tAddDocument.Text" xml:space="preserve">
+    <value>Ajouter document</value>
+  </data>
+  <data name="tAdminTask.Text" xml:space="preserve">
+    <value>Tâches adminstratives</value>
+  </data>
+  <data name="tAssignedUsers.Text" xml:space="preserve">
+    <value>Utilisateurs affectés</value>
+  </data>
+  <data name="tAssignPermissions.Text" xml:space="preserve">
+    <value>Affectation permissions</value>
+  </data>
+  <data name="tAvancements.Text" xml:space="preserve">
+    <value>Avancement</value>
+  </data>
+  <data name="tDocumentDetails.Text" xml:space="preserve">
+    <value>Détails du document</value>
+  </data>
+  <data name="tDocumentLog.Text" xml:space="preserve">
+    <value>Historique des modifications</value>
+  </data>
+  <data name="mnEditMaterial.Text" xml:space="preserve">
+    <value>Assistant de modification article</value>
+  </data>
+  <data name="tEditPCQP.Text" xml:space="preserve">
+    <value>Mise à jour PCQP</value>
+  </data>
+  <data name="tFileDetails.Text" xml:space="preserve">
+    <value>Détails du fichier</value>
+  </data>
+  <data name="tImportDCR.Text" xml:space="preserve">
+    <value>Import DCR</value>
+  </data>
+  <data name="tImportPCQP.Text" xml:space="preserve">
+    <value>Import PCQP</value>
+  </data>
+  <data name="tProjectDetails.Text" xml:space="preserve">
+    <value>Détails du projet</value>
+  </data>
+  <data name="tRevisions.Text" xml:space="preserve">
+    <value>Révisions</value>
+  </data>
+  <data name="tUsersRoles.Text" xml:space="preserve">
+    <value>Utilisateurs et rôles</value>
+  </data>
+  <data name="hAvancement.Text" xml:space="preserve">
+    <value>Avancement</value>
+  </data>
+  <data name="hDescription.Text" xml:space="preserve">
+    <value>Désignation</value>
+  </data>
+  <data name="hDiscipline.Text" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="hCode.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="hModificationDate.Text" xml:space="preserve">
+    <value>Date modification</value>
+  </data>
+  <data name="hModifiedBy.Text" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="hProjet.Text" xml:space="preserve">
+    <value>Projet</value>
+  </data>
+  <data name="hRevision.Text" xml:space="preserve">
+    <value>Révision</value>
+  </data>
+  <data name="hStatus.Text" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="hStep.Text" xml:space="preserve">
+    <value>Etape</value>
+  </data>
+  <data name="hType.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="hVersion.Text" xml:space="preserve">
+    <value>Version interne</value>
+  </data>
+  <data name="mCancel.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="mCommandClearFilter.Text" xml:space="preserve">
+    <value>Annuler le filtre</value>
+  </data>
+  <data name="mCommandUpdate.Text" xml:space="preserve">
+    <value>Mettre a jour</value>
+  </data>
+  <data name="mEmptyDataRow.Text" xml:space="preserve">
+    <value>Pas de document</value>
+  </data>
+  <data name="mGroupContinuedOnNextPage.Text" xml:space="preserve">
+    <value>(la suite dans la page suivante)</value>
+  </data>
+  <data name="mGroupPanel.Text" xml:space="preserve">
+    <value>Groupement</value>
+  </data>
+  <data name="mPagerSummaryAllText.Text" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} Documents)</value>
+  </data>
+  <data name="mPagerSummaryText.Text" xml:space="preserve">
+    <value>Page {0} sur {1} ({2} Documents)</value>
+  </data>
+  <data name="tAssigningUsers.Text" xml:space="preserve">
+    <value>Affectation ressources</value>
+  </data>
+  <data name="tEditParameters.Text" xml:space="preserve">
+    <value>Paramètrages</value>
+  </data>
+  <data name="tListeEtude.Text" xml:space="preserve">
+    <value>Liste des documents etude</value>
+  </data>
+  <data name="mnActivate.Text" xml:space="preserve">
+    <value>Activer&amp;Désactiver</value>
+  </data>
+  <data name="mnAdd.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="mnAdminActions.Text" xml:space="preserve">
+    <value>Admin actions</value>
+  </data>
+  <data name="mnCreateTree.Text" xml:space="preserve">
+    <value>Créer arborescence</value>
+  </data>
+  <data name="mnDelete.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="mnEdit.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="mnExpandTree.Text" xml:space="preserve">
+    <value>Développer l'arborescence</value>
+  </data>
+  <data name="mnExportExcel.Text" xml:space="preserve">
+    <value>Export Excel</value>
+  </data>
+  <data name="mnExportPDF.Text" xml:space="preserve">
+    <value>Export PDF</value>
+  </data>
+  <data name="mnHistory.Text" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="mnResources.Text" xml:space="preserve">
+    <value>Ressources</value>
+  </data>
+  <data name="mnRevision.Text" xml:space="preserve">
+    <value>Révisions</value>
+  </data>
+  <data name="mCannotAccessUI.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit d\'accèder à cette interface !</value>
+  </data>
+  <data name="mCannotDoAction.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit d\'effectuer cette opération !</value>
+  </data>
+  <data name="mnActions.Text" xml:space="preserve">
+    <value>Actions</value>
+  </data>
+  <data name="mnAdministration.Text" xml:space="preserve">
+    <value>Administration</value>
+  </data>
+  <data name="mnDocument.Text" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="mnEditDCR.Text" xml:space="preserve">
+    <value>Gestion DCR</value>
+  </data>
+  <data name="mnEdition.Text" xml:space="preserve">
+    <value>Edition</value>
+  </data>
+  <data name="mnFile.Text" xml:space="preserve">
+    <value>Fichier</value>
+  </data>
+  <data name="mnRoles.Text" xml:space="preserve">
+    <value>Rôles</value>
+  </data>
+  <data name="mnSuivi.Text" xml:space="preserve">
+    <value>Suivi</value>
+  </data>
+  <data name="mnProjectAP.Text" xml:space="preserve">
+    <value>Projets AP</value>
+  </data>
+  <data name="mnProjectAR.Text" xml:space="preserve">
+    <value>Projets AR</value>
+  </data>
+  <data name="mnSecurity.Text" xml:space="preserve">
+    <value>Sécurité</value>
+  </data>
+  <data name="gvwCmdCancel.Text" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="gvwCmdClearFilter.Text" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="gvwCmdDelete.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="gvwCmdEdit.Text" xml:space="preserve">
+    <value>Édition</value>
+  </data>
+  <data name="gvwCmdNew.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="gvwCmdSelect.Text" xml:space="preserve">
+    <value>Sélectionner</value>
+  </data>
+  <data name="gvwCmdUpdate.Text" xml:space="preserve">
+    <value>Mettre à jour</value>
+  </data>
+  <data name="gvwConfirmDelete.Text" xml:space="preserve">
+    <value>Confirmer la suppression?</value>
+  </data>
+  <data name="gvwEmptyDataRow.Text" xml:space="preserve">
+    <value>Aucune donnée à afficher</value>
+  </data>
+  <data name="gvwGroupContinuedOnNextPage.Text" xml:space="preserve">
+    <value>(Suite à la page suivante)</value>
+  </data>
+  <data name="hCodeWBS.Text" xml:space="preserve">
+    <value>Code WBS</value>
+  </data>
+  <data name="hDate.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="hCreated.Text" xml:space="preserve">
+    <value>Date création</value>
+  </data>
+  <data name="hCreator.Text" xml:space="preserve">
+    <value>Crée par</value>
+  </data>
+  <data name="hRemainingDays.Text" xml:space="preserve">
+    <value>Reste à réaliser (j)</value>
+  </data>
+  <data name="hRemainingHours.Text" xml:space="preserve">
+    <value>Reste à réaliser (h)</value>
+  </data>
+  <data name="lbActualEndDate.Text" xml:space="preserve">
+    <value>Date fin rèelle</value>
+  </data>
+  <data name="lbActualStartDate.Text" xml:space="preserve">
+    <value>Date début rèelle</value>
+  </data>
+  <data name="lbClear.Text" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="lbDCR.Text" xml:space="preserve">
+    <value>DCR</value>
+  </data>
+  <data name="lbDeleteDCR.Text" xml:space="preserve">
+    <value>Effacer DCR</value>
+  </data>
+  <data name="lbDocAdded.Text" xml:space="preserve">
+    <value>Le document a été ajouté avec succès.</value>
+  </data>
+  <data name="lbDocName.Text" xml:space="preserve">
+    <value>Nom Document</value>
+  </data>
+  <data name="lbDocType.Text" xml:space="preserve">
+    <value>Type Document</value>
+  </data>
+  <data name="lbEmptyField.Text" xml:space="preserve">
+    <value>Champ vide !</value>
+  </data>
+  <data name="lbEngineerHoursNb.Text" xml:space="preserve">
+    <value>Nb. heures ingénieurs</value>
+  </data>
+  <data name="lbErrorDateDiff.Text" xml:space="preserve">
+    <value>Erreur : date début supérieur à la date de fin !</value>
+  </data>
+  <data name="lbPlannedEndDate.Text" xml:space="preserve">
+    <value>Date fin prévue</value>
+  </data>
+  <data name="lbPlannedStartDate.Text" xml:space="preserve">
+    <value>Date dèbut prévue</value>
+  </data>
+  <data name="lbProjeteursHoursNb.Text" xml:space="preserve">
+    <value>Nb. heures projeteurs</value>
+  </data>
+  <data name="lbSelectWBS.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un WBS !</value>
+  </data>
+  <data name="lbTreeWBS.Text" xml:space="preserve">
+    <value>Arbre des WBS</value>
+  </data>
+  <data name="lbTypeEtude.Text" xml:space="preserve">
+    <value>Type Etude</value>
+  </data>
+  <data name="lbValidate.Text" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="lbWBS.Text" xml:space="preserve">
+    <value>WBS</value>
+  </data>
+  <data name="lbWeight.Text" xml:space="preserve">
+    <value>Poids</value>
+  </data>
+  <data name="mCannotEditLockedDoc.Text" xml:space="preserve">
+    <value>Le document est vérrouillé par {0}, vous n'avez pas le droit de le modifier !</value>
+  </data>
+  <data name="mDecision.Text" xml:space="preserve">
+    <value>Décision</value>
+  </data>
+  <data name="mDocumentAlreadyExist.Text" xml:space="preserve">
+    <value>Ce document existe déjà!</value>
+  </data>
+  <data name="mFileInserted.Text" xml:space="preserve">
+    <value>Fichier inséré avec succès</value>
+  </data>
+  <data name="mFileInsertionError.Text" xml:space="preserve">
+    <value>Erreur lors de l'insértion du fichier dans la base !</value>
+  </data>
+  <data name="mInsertFile.Text" xml:space="preserve">
+    <value>Veuillez insérer le fichier physique ! </value>
+  </data>
+  <data name="mRunningWorkflow.Text" xml:space="preserve">
+    <value>Avancement du workflow</value>
+  </data>
+  <data name="gvwPagerSummaryAllText.Text" xml:space="preserve">
+    <value>Pages: {0} - {1} ({2} éléments)</value>
+  </data>
+  <data name="gvwPagerSummaryText.Text" xml:space="preserve">
+    <value>Page {0} sur {1} ({2} éléments)</value>
+  </data>
+  <data name="lbAddNewProgressRate.Text" xml:space="preserve">
+    <value>Ajouter un nouvel avancement</value>
+  </data>
+  <data name="lbAddNewRevision.Text" xml:space="preserve">
+    <value>Ajouter une révision</value>
+  </data>
+  <data name="gvwGroupPanel.Text" xml:space="preserve">
+    <value>Faites glisser une entête de colonne ici pour grouper par cette colonne</value>
+  </data>
+  <data name="hDocEmis.Text" xml:space="preserve">
+    <value>Liste des documents emis</value>
+  </data>
+  <data name="hRemark.Text" xml:space="preserve">
+    <value>Remarque</value>
+  </data>
+  <data name="hTitle.Text" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="hUser.Text" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="lbDateDebut1.Text" xml:space="preserve">
+    <value>Date début 1</value>
+  </data>
+  <data name="lbDateDebut2.Text" xml:space="preserve">
+    <value>Date début 2</value>
+  </data>
+  <data name="lbDateFin1.Text" xml:space="preserve">
+    <value>Date fin 1</value>
+  </data>
+  <data name="lbDateFin2.Text" xml:space="preserve">
+    <value>Date fin 2</value>
+  </data>
+  <data name="lbDates.Text" xml:space="preserve">
+    <value>Dates</value>
+  </data>
+  <data name="lbRefAP.Text" xml:space="preserve">
+    <value>Réf AP</value>
+  </data>
+  <data name="lbRefProjet.Text" xml:space="preserve">
+    <value>Réf. Projet</value>
+  </data>
+  <data name="lbStatus.Text" xml:space="preserve">
+    <value>Etat</value>
+  </data>
+  <data name="lbTechDetails.Text" xml:space="preserve">
+    <value>Détails techniques</value>
+  </data>
+  <data name="tDisplayName.Text" xml:space="preserve">
+    <value>Nom et Prénom</value>
+  </data>
+  <data name="mnAction.Text" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="lbAddStep.Text" xml:space="preserve">
+    <value>Ajouter une étape</value>
+  </data>
+  <data name="lbSelectUser.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un utilisateur !</value>
+  </data>
+  <data name="lbSuccesOp.Text" xml:space="preserve">
+    <value>Opération effectuée avec succès !</value>
+  </data>
+  <data name="mAddDocument.Text" xml:space="preserve">
+    <value>Ajouter un document</value>
+  </data>
+  <data name="tProgressByStep.Text" xml:space="preserve">
+    <value>Paramètrage de l&amp;#39;avancement par étape workflow</value>
+  </data>
+  <data name="lbBeginDate.Text" xml:space="preserve">
+    <value>Date début</value>
+  </data>
+  <data name="lbClose.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="lbDepartment.Text" xml:space="preserve">
+    <value>Département</value>
+  </data>
+  <data name="lbEndDate.Text" xml:space="preserve">
+    <value>Date fin</value>
+  </data>
+  <data name="lbName.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lbSave.Text" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="lbDeletePCQP.Text" xml:space="preserve">
+    <value>Suppression PCQP</value>
+  </data>
+  <data name="lbDesignation.Text" xml:space="preserve">
+    <value>Désignation</value>
+  </data>
+  <data name="lbExcelColumn.Text" xml:space="preserve">
+    <value>Colonne Excel</value>
+  </data>
+  <data name="lbImport.Text" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="lbIncludeFile.Text" xml:space="preserve">
+    <value>Inclure le fichier</value>
+  </data>
+  <data name="lbManageAccess.Text" xml:space="preserve">
+    <value>Gestion d'accès</value>
+  </data>
+  <data name="lbPermission.Text" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="lbReinitWorkflkow.Text" xml:space="preserve">
+    <value>Réinitialisation du Workflow</value>
+  </data>
+  <data name="lbTotalHoursNb.Text" xml:space="preserve">
+    <value>Nb. heures total</value>
+  </data>
+  <data name="lbUpload.Text" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="mCreateProjectForImport.Text" xml:space="preserve">
+    <value>Veuillez créer le projet &lt;{0}&gt; puis procéder à l'import du DCR.</value>
+  </data>
+  <data name="mnCollapseTree.Text" xml:space="preserve">
+    <value>Réduire l'arborescence</value>
+  </data>
+  <data name="mnResource.Text" xml:space="preserve">
+    <value>Ressource</value>
+  </data>
+  <data name="mnRole.Text" xml:space="preserve">
+    <value>Rôle</value>
+  </data>
+  <data name="mnView.Text" xml:space="preserve">
+    <value>Vue</value>
+  </data>
+  <data name="mSelectFile.Text" xml:space="preserve">
+    <value>Veuillez choisir un fichier.</value>
+  </data>
+  <data name="tEditProjectPCQP.Text" xml:space="preserve">
+    <value>Mise à jour du PCQP du projet {0}</value>
+  </data>
+  <data name="mCannotEditParam.Text" xml:space="preserve">
+    <value>Vous n\'avez pas le droit d\'accèder à l\'interface de paramètrage !</value>
+  </data>
+  <data name="lbAddComment.Text" xml:space="preserve">
+    <value>Ajout commentaire</value>
+  </data>
+  <data name="lbComment.Text" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="lbEnterNumber.Text" xml:space="preserve">
+    <value>Il faut saisir un chiffre !</value>
+  </data>
+  <data name="lbHistComment.Text" xml:space="preserve">
+    <value>Historique des commentaires</value>
+  </data>
+  <data name="lbMaxSizeError.Text" xml:space="preserve">
+    <value>Vous avez dépassé la taille maximale de 1 Géga octets !</value>
+  </data>
+  <data name="lbResponsable.Text" xml:space="preserve">
+    <value>Responsable</value>
+  </data>
+  <data name="lbSend.Text" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="mEnterComment.Text" xml:space="preserve">
+    <value>Veuillez saisir votre commentaire !</value>
+  </data>
+  <data name="mSelectDecision.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une décision !</value>
+  </data>
+  <data name="mSuccessDocModification.Text" xml:space="preserve">
+    <value>Le document a été modifié avec succès !</value>
+  </data>
+  <data name="tComments.Text" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="lbEditProjects.Text" xml:space="preserve">
+    <value>Mise à jour des projets</value>
+  </data>
+  <data name="lbDCRAlreayExist.Text" xml:space="preserve">
+    <value>Le DCR existe déjà !</value>
+  </data>
+  <data name="lbEditAP.Text" xml:space="preserve">
+    <value>Mise à jour des AP</value>
+  </data>
+  <data name="lbProjectAlreayHasDCR.Text" xml:space="preserve">
+    <value>The project already has a DCR !</value>
+  </data>
+  <data name="lbRefOA.Text" xml:space="preserve">
+    <value>Ref OA</value>
+  </data>
+  <data name="mRunningWorkflow" xml:space="preserve">
+    <value />
+  </data>
+  <data name="mnDashboard.Text" xml:space="preserve">
+    <value>Tableau de bord</value>
+  </data>
+  <data name="mnPrint.Text" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="tDocByStatus.Text" xml:space="preserve">
+    <value>Répartition des documents par statut ({0})</value>
+  </data>
+  <data name="tDocByStep.Text" xml:space="preserve">
+    <value>Répartition des documents par étape ({0})</value>
+  </data>
+  <data name="tDocByStepAndDiscipline.Text" xml:space="preserve">
+    <value>Répartition des documents par étape et par discipline ({0})</value>
+  </data>
+  <data name="tNbHoursByDiscipline.Text" xml:space="preserve">
+    <value>Nombre d'heures par discipline ({0})</value>
+  </data>
+  <data name="tPlannedHours.Text" xml:space="preserve">
+    <value>Heures planifiées</value>
+  </data>
+  <data name="tPointedHours.Text" xml:space="preserve">
+    <value>Heures pointées</value>
+  </data>
+  <data name="lbReports.Text" xml:space="preserve">
+    <value>Rapports</value>
+  </data>
+  <data name="mLicenseDateProblem.Text" xml:space="preserve">
+    <value>License expirée, vérifier votre date système !</value>
+  </data>
+  <data name="mLicenseExpired.Text" xml:space="preserve">
+    <value>License expirée !</value>
+  </data>
+  <data name="tNotificationsCategories.Text" xml:space="preserve">
+    <value>Categories de notification</value>
+  </data>
+  <data name="tNotificationsCategoriesUsers.Text" xml:space="preserve">
+    <value>Affectation des utilisateurs aux categories de notification</value>
+  </data>
+  <data name="mModuleTitle.Text" xml:space="preserve">
+    <value>Integrated Industrial Procurement System </value>
+  </data>
+  <data name="lbTous.Text" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="addSpec.Text" xml:space="preserve">
+    <value>Nouvelle famille</value>
+  </data>
+  <data name="addSpecGrp.Text" xml:space="preserve">
+    <value>Ajouter un groupe de famille</value>
+  </data>
+  <data name="btnClosePop.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="DeleteMsg.Text" xml:space="preserve">
+    <value>Êtes vous sûr de vouloir supprimer cette famille?</value>
+  </data>
+  <data name="deleteSpec.Text" xml:space="preserve">
+    <value>Supprimer une famille</value>
+  </data>
+  <data name="deleteSpecErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette famille.</value>
+  </data>
+  <data name="Designation.Text" xml:space="preserve">
+    <value>Nom famille</value>
+  </data>
+  <data name="editSpec.Text" xml:space="preserve">
+    <value>Modifier une famille</value>
+  </data>
+  <data name="lbAssignToDiscipline.Text" xml:space="preserve">
+    <value>Affecter des familles à une discipline</value>
+  </data>
+  <data name="lbBtnFilter.Text" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="lbCmbDisciplineErr.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une discipline.</value>
+  </data>
+  <data name="lbDisciplineUI.Text" xml:space="preserve">
+    <value>Sélectionner une discipline</value>
+  </data>
+  <data name="lbMSAssignSuccess.Text" xml:space="preserve">
+    <value>Affectation des familles à la discipline a été faite avec succès</value>
+  </data>
+  <data name="lbTreeListMSErr.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une ou plusieurs familles</value>
+  </data>
+  <data name="MsgAlert.Text" xml:space="preserve">
+    <value>Aucune famille n\'est sélectionné.</value>
+  </data>
+  <data name="pupAlertHeader.Text" xml:space="preserve">
+    <value>Affectation de famille à une discipline</value>
+  </data>
+  <data name="hProperty.Text" xml:space="preserve">
+    <value>Propriété</value>
+  </data>
+  <data name="hSpecifications.Text" xml:space="preserve">
+    <value>Familles</value>
+  </data>
+  <data name="hUnit.Text" xml:space="preserve">
+    <value>Unité de mesure</value>
+  </data>
+  <data name="hValue.Text" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="hDisciplines.Text" xml:space="preserve">
+    <value>Disciplines</value>
+  </data>
+  <data name="hMaterialsList.Text" xml:space="preserve">
+    <value>Liste des articles</value>
+  </data>
+  <data name="lbAdvancedSearch.Text" xml:space="preserve">
+    <value>Recherche avancée</value>
+  </data>
+  <data name="chartMaterialsByDiscipline.Text" xml:space="preserve">
+    <value>Articles par disciplines</value>
+  </data>
+  <data name="chartMaterialsBySpecifications.Text" xml:space="preserve">
+    <value>Articles par familles</value>
+  </data>
+  <data name="chartSpecificationsByDisciplines.Text" xml:space="preserve">
+    <value>Familles par disciplines</value>
+  </data>
+  <data name="mnDuplicate.Text" xml:space="preserve">
+    <value>Dupliquer article</value>
+  </data>
+  <data name="hDocList.Text" xml:space="preserve">
+    <value>Liste des documents</value>
+  </data>
+  <data name="hAbreviation.Text" xml:space="preserve">
+    <value>Abréviation</value>
+  </data>
+  <data name="hAddArticle.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="hAddSpec.Text" xml:space="preserve">
+    <value>Nouvelle  famille</value>
+  </data>
+  <data name="hAffecterUniteMesure.Text" xml:space="preserve">
+    <value>Affectation Unité de mesure</value>
+  </data>
+  <data name="hCommentaire.Text" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="hDesignation.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hDocumentCode.Text" xml:space="preserve">
+    <value>Code document</value>
+  </data>
+  <data name="hFamilies.Text" xml:space="preserve">
+    <value>Familles</value>
+  </data>
+  <data name="hFamilyUnit.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="hFormula.Text" xml:space="preserve">
+    <value>Formule</value>
+  </data>
+  <data name="hMeasureUnit.Text" xml:space="preserve">
+    <value>Unité de mesure</value>
+  </data>
+  <data name="hProgressPerDay.Text" xml:space="preserve">
+    <value>Avancement par date</value>
+  </data>
+  <data name="hProgressRate.Text" xml:space="preserve">
+    <value>Taux d'avancement</value>
+  </data>
+  <data name="hProperties.Text" xml:space="preserve">
+    <value>Propiétés</value>
+  </data>
+  <data name="hSelectAll.Text" xml:space="preserve">
+    <value>Sélectionner tout</value>
+  </data>
+  <data name="hSuccessAddArticle.Text" xml:space="preserve">
+    <value>Article ajouté avec succès.</value>
+  </data>
+  <data name="hSystemMeasure.Text" xml:space="preserve">
+    <value>Système de mesure</value>
+  </data>
+  <data name="htFrom.Text" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="hTo.Text" xml:space="preserve">
+    <value>à</value>
+  </data>
+  <data name="hUnSelectAll.Text" xml:space="preserve">
+    <value>Désélectionner tout</value>
+  </data>
+  <data name="hValeur.Text" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="lblCode.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblCommentaire.Text" xml:space="preserve">
+    <value>Commentraire</value>
+  </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblFamille.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="lblNorm.Text" xml:space="preserve">
+    <value>Norme</value>
+  </data>
+  <data name="mAddNewMeasureSystem.Text" xml:space="preserve">
+    <value>Nouveau système de mesure</value>
+  </data>
+  <data name="mAddNewMeasureUnit.Text" xml:space="preserve">
+    <value>Nouvelle unité de mesure</value>
+  </data>
+  <data name="mAddNewMeasureUnitFormula.Text" xml:space="preserve">
+    <value>Nouvelle formule de conversion</value>
+  </data>
+  <data name="mAddNewNorm.Text" xml:space="preserve">
+    <value>Nouvelle norme</value>
+  </data>
+  <data name="mAddNewProperties.Text" xml:space="preserve">
+    <value>Nouvelle propriété</value>
+  </data>
+  <data name="mAddNewUnitFamilies.Text" xml:space="preserve">
+    <value>Nouvelle famille d'unité</value>
+  </data>
+  <data name="mDownload.Text" xml:space="preserve">
+    <value>Télécharger</value>
+  </data>
+  <data name="tMeasureUnit.Text" xml:space="preserve">
+    <value>Gestion des unités de mesure</value>
+  </data>
+  <data name="tMeasureUnitFormula.Text" xml:space="preserve">
+    <value>Gestion des formules de conversion</value>
+  </data>
+  <data name="tNorm.Text" xml:space="preserve">
+    <value>Gestion des normes</value>
+  </data>
+  <data name="tProperties.Text" xml:space="preserve">
+    <value>Gestion des propriétés</value>
+  </data>
+  <data name="tUnitFamilies.Text" xml:space="preserve">
+    <value>Gestion des familles d\'unité</value>
+  </data>
+  <data name="lbUploadedFiles.Text" xml:space="preserve">
+    <value>Fichiers téléchargés</value>
+  </data>
+  <data name="hFrom.Text" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="mErrorOccured.Text" xml:space="preserve">
+    <value>Un problème est survenu !</value>
+  </data>
+  <data name="mnAffectations.Text" xml:space="preserve">
+    <value>Affectations</value>
+  </data>
+  <data name="mnFormules.Text" xml:space="preserve">
+    <value>Formules</value>
+  </data>
+  <data name="mnMaterials.Text" xml:space="preserve">
+    <value>Articles</value>
+  </data>
+  <data name="mnMeasureSystems.Text" xml:space="preserve">
+    <value>Systèmes de mesures</value>
+  </data>
+  <data name="mnMeasureUnits.Text" xml:space="preserve">
+    <value>Unités de mesures</value>
+  </data>
+  <data name="mnNormes.Text" xml:space="preserve">
+    <value>Normes</value>
+  </data>
+  <data name="mnProperties.Text" xml:space="preserve">
+    <value>Propriétés</value>
+  </data>
+  <data name="mnUnitFamilies.Text" xml:space="preserve">
+    <value>Familles d\'unités</value>
+  </data>
+  <data name="mSelectMaterial.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un article !</value>
+  </data>
+  <data name="hSuppliers.Text" xml:space="preserve">
+    <value>Fournisseurs</value>
+  </data>
+  <data name="all.Text" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="hContactName.Text" xml:space="preserve">
+    <value>Raison sociale</value>
+  </data>
+  <data name="hLibePays.Text" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="lbAddSpecToSupplier.Text" xml:space="preserve">
+    <value>Affecter un fournisseur à une famille</value>
+  </data>
+  <data name="lbAssignS2SErr.Text" xml:space="preserve">
+    <value>Une erreur s'est produite lors de l'opération.</value>
+  </data>
+  <data name="lbAssignS2SSuccess.Text" xml:space="preserve">
+    <value>Affectation réussi.</value>
+  </data>
+  <data name="lbMatSpecFilterMsg.Text" xml:space="preserve">
+    <value>Aucune condition de filtre. s\'il vous plaît chercher une famille avant.</value>
+  </data>
+  <data name="lbPupS2SHeader.Text" xml:space="preserve">
+    <value>Affectation de fournisseur à une famille</value>
+  </data>
+  <data name="lbSpecUI.Text" xml:space="preserve">
+    <value>Sélectionner une famille.</value>
+  </data>
+  <data name="lbSupplierUI.Text" xml:space="preserve">
+    <value>Sélectionner un fournisseur</value>
+  </data>
+  <data name="mnAssignToDisciplines.Text" xml:space="preserve">
+    <value>Groupement par disiciplines</value>
+  </data>
+  <data name="mnAssignToSuppliers.Text" xml:space="preserve">
+    <value>Groupement par fournisseurs</value>
+  </data>
+  <data name="gvwAllItemText.Text" xml:space="preserve">
+    <value>Taille de la page</value>
+  </data>
+  <data name="lbAddNewGroupSpecMsg.Text" xml:space="preserve">
+    <value>Groupe de famille ajouté.</value>
+  </data>
+  <data name="lbAddNewGroupSpecUI.Text" xml:space="preserve">
+    <value>Ajouter un groupe de famille</value>
+  </data>
+  <data name="lbAddNewSpec.Text" xml:space="preserve">
+    <value>Famille ajoutée.</value>
+  </data>
+  <data name="lbApply.Text" xml:space="preserve">
+    <value>Appliquer</value>
+  </data>
+  <data name="lbAssignDisToSpec.Text" xml:space="preserve">
+    <value>Affecter une discipline à la famille suivante :</value>
+  </data>
+  <data name="lbAssignSupplierToSpec.Text" xml:space="preserve">
+    <value>Affecter des fournisseurs à la famille suivant :</value>
+  </data>
+  <data name="lbLibGroupSpec.Text" xml:space="preserve">
+    <value>Nom du groupe</value>
+  </data>
+  <data name="mnAssignToDiscipline.Text" xml:space="preserve">
+    <value>Affecter à une discipline</value>
+  </data>
+  <data name="mnAssignToSupplier.Text" xml:space="preserve">
+    <value>Affecter à un fournisseur</value>
+  </data>
+  <data name="lbUpdateSpecSuccess.Text" xml:space="preserve">
+    <value>Famille modifiée</value>
+  </data>
+  <data name="mnAddMaterial.Text" xml:space="preserve">
+    <value>Ajouter article</value>
+  </data>
+  <data name="lbAddSpecToProperties.Text" xml:space="preserve">
+    <value>Affecter des propriétés à une famille.</value>
+  </data>
+  <data name="lbPupSpecPropHeader.Text" xml:space="preserve">
+    <value>Affectation de propriétés à une famille.</value>
+  </data>
+  <data name="mAssignOnlyChidren.Text" xml:space="preserve">
+    <value>L\'affectation est limitée aux familles du plus bas niveau !</value>
+  </data>
+  <data name="mnAssignProperties.Text" xml:space="preserve">
+    <value>Affecter des propriétés</value>
+  </data>
+  <data name="mnDeleteMaterial.Text" xml:space="preserve">
+    <value>Supprimer article</value>
+  </data>
+  <data name="mnEitProperties.Text" xml:space="preserve">
+    <value>Modifier propriétés</value>
+  </data>
+  <data name="mnPropertiesAssignment.Text" xml:space="preserve">
+    <value>Propriétés des familles</value>
+  </data>
+  <data name="hGroup.Text" xml:space="preserve">
+    <value>Groupe</value>
+  </data>
+  <data name="mnAssignNorms.Text" xml:space="preserve">
+    <value>Groupement par familles</value>
+  </data>
+  <data name="mnAssignPropertiesToNorm.Text" xml:space="preserve">
+    <value>Propriétés des normes</value>
+  </data>
+  <data name="mnPropertiesGroup.Text" xml:space="preserve">
+    <value>Groupes de propriétés</value>
+  </data>
+  <data name="lbAddSpecToNormes.Text" xml:space="preserve">
+    <value>Affecter une ou plusieurs normes à une famille</value>
+  </data>
+  <data name="lbCmbNormErr.Text" xml:space="preserve">
+    <value>Aucune norme n'est sélectionnée</value>
+  </data>
+  <data name="lbCmbPropertyErr" xml:space="preserve">
+    <value>Aucune propriété n'est sélectionnée.</value>
+  </data>
+  <data name="lbPupSpecNormesHeader.Text" xml:space="preserve">
+    <value>Affectation de normes à une famille</value>
+  </data>
+  <data name="mAddNewParentPropertiesGrp.Text" xml:space="preserve">
+    <value>Nouveau groupe de propriétés</value>
+  </data>
+  <data name="mAddNewPropertiesGrp.Text" xml:space="preserve">
+    <value>Nouveau sous groupe de propriétés</value>
+  </data>
+  <data name="deleteGrpPropertyErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer ce groupe</value>
+  </data>
+  <data name="mnAddSpec.Text" xml:space="preserve">
+    <value>Ajouter une famille</value>
+  </data>
+  <data name="mnAssignToNorms.Text" xml:space="preserve">
+    <value>Affecter à des normes</value>
+  </data>
+  <data name="mAddNewSupplier.Text" xml:space="preserve">
+    <value>Nouveau fournisseur</value>
+  </data>
+  <data name="hGrpProperties.Text" xml:space="preserve">
+    <value>Groupe de propriétés</value>
+  </data>
+  <data name="tMeasureSystem.Text" xml:space="preserve">
+    <value>Gestion des systèmes de mesures</value>
+  </data>
+  <data name="AddProperties.Text" xml:space="preserve">
+    <value>Ajouter propriété</value>
+  </data>
+  <data name="hEditArticle.Text" xml:space="preserve">
+    <value>Modifier Article</value>
+  </data>
+  <data name="hFormula" xml:space="preserve">
+    <value>Formule</value>
+  </data>
+  <data name="hNom.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="hSuccessEditArticle.Text" xml:space="preserve">
+    <value>Modification effectuée avec succès.</value>
+  </data>
+  <data name="hSuccessSaveProperties.Text" xml:space="preserve">
+    <value>Propriétés enregistrer avec succès.</value>
+  </data>
+  <data name="mAddProperties.Text" xml:space="preserve">
+    <value>Ajouter propriété</value>
+  </data>
+  <data name="mCodeUnique.Text" xml:space="preserve">
+    <value>Le code article doit ètre unique.</value>
+  </data>
+  <data name="mSelectArticle.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un article !</value>
+  </data>
+  <data name="tAddMaterials.Text" xml:space="preserve">
+    <value>Ajouter Article</value>
+  </data>
+  <data name="tEditDocument.Text" xml:space="preserve">
+    <value>Modifier document</value>
+  </data>
+  <data name="tEditMaterials.Text" xml:space="preserve">
+    <value>Edit article</value>
+  </data>
+  <data name="hFormat.Text" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="lbNoPropertyGrp.Text" xml:space="preserve">
+    <value>(Non affecté)</value>
+  </data>
+  <data name="mnNormRequirements.Text" xml:space="preserve">
+    <value>Exigences des normes</value>
+  </data>
+  <data name="mnParameters.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="deletePropertyErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette propriété</value>
+  </data>
+  <data name="hValMax.Text" xml:space="preserve">
+    <value>Valeur maximale</value>
+  </data>
+  <data name="hValMin.text" xml:space="preserve">
+    <value>Valeur minimale</value>
+  </data>
+  <data name="lbDefProperty.Text" xml:space="preserve">
+    <value>Définir l'intervalle de tolérance des propriétes de la norme : {0}</value>
+  </data>
+  <data name="lbDeleteNormErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette norme.</value>
+  </data>
+  <data name="lbDeleteNormMsg.Text" xml:space="preserve">
+    <value>La norme suivante {0} va être supprimer</value>
+  </data>
+  <data name="lbDeletePropertyGrpMsg.Text" xml:space="preserve">
+    <value>Le groupe de propriété suivant {0} va être supprimer.</value>
+  </data>
+  <data name="lbDeletePropertyMsg.Text" xml:space="preserve">
+    <value>La propriété suivante {0} va être supprimer.</value>
+  </data>
+  <data name="lbDeleteSpecMsg.Text" xml:space="preserve">
+    <value>La famille suivante {0} va être supprimer.</value>
+  </data>
+  <data name="lbDeleteSupplierErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer ce fournisseur.</value>
+  </data>
+  <data name="lbDeleteSupplierMsg.Text" xml:space="preserve">
+    <value>Le fournisseur suivant {0} va être supprimer.</value>
+  </data>
+  <data name="lbGroupPropertiesMgr.Text" xml:space="preserve">
+    <value>Gestion des groups de proprietés</value>
+  </data>
+  <data name="lbLibMissing.Text" xml:space="preserve">
+    <value>Veuillez entrer une valeur.</value>
+  </data>
+  <data name="lbSpecificationMgr.Text" xml:space="preserve">
+    <value>Gestion des familles</value>
+  </data>
+  <data name="lbSupplierMgr.Text" xml:space="preserve">
+    <value>Gestion des fournisseurs</value>
+  </data>
+  <data name="mDeleteProperty.Text" xml:space="preserve">
+    <value>Supprimer une propriété</value>
+  </data>
+  <data name="mSelectNorm.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une norme !</value>
+  </data>
+  <data name="msgErrMax.Text" xml:space="preserve">
+    <value>La valeur maximale de l\'intervalle est inférieur à la valeur minimale.</value>
+  </data>
+  <data name="msgErrMin.Text" xml:space="preserve">
+    <value>La valeur minimale de l\'intervalle est supérieur à la valeur maximale.</value>
+  </data>
+  <data name="mnValidateMaterial.Text" xml:space="preserve">
+    <value>Valider article</value>
+  </data>
+  <data name="PlusProperties.Text" xml:space="preserve">
+    <value>Plus de propriétés</value>
+  </data>
+  <data name="lbSelect.Text" xml:space="preserve">
+    <value>Sélectionner</value>
+  </data>
+  <data name="mExisteCode.Text" xml:space="preserve">
+    <value>Le code article existe déja, veuillez choisir un autre.</value>
+  </data>
+  <data name="lbDeleteCaseErr.Text" xml:space="preserve">
+    <value>Impossible de supprimer ce cas d\'utilisation.</value>
+  </data>
+  <data name="lbListCaseFileAttachment.Text" xml:space="preserve">
+    <value>Liste des piéces jointes du cas d'utilisation : {0}</value>
+  </data>
+  <data name="lbListStdFileAttachment.Text" xml:space="preserve">
+    <value>Liste des piéces jointes de la norme : {0}</value>
+  </data>
+  <data name="lbParentStandard.Text" xml:space="preserve">
+    <value>Norme parente</value>
+  </data>
+  <data name="tDeleteStd.Text" xml:space="preserve">
+    <value>Suppression de norme.</value>
+  </data>
+  <data name="hNormTitle.Text" xml:space="preserve">
+    <value>Norme</value>
+  </data>
+  <data name="lbUseCaseList.Text" xml:space="preserve">
+    <value>Liste des cas d\'utilisation de la norme : {0}</value>
+  </data>
+  <data name="mConfirmDelete.Text" xml:space="preserve">
+    <value>Voulez-vous vraiment supprimer définitivement ce fichier de l\'application?</value>
+  </data>
+  <data name="mnuAddCase.Text" xml:space="preserve">
+    <value>Nouveau cas d\'utilisation</value>
+  </data>
+  <data name="mnuCases.Text" xml:space="preserve">
+    <value>Cas d\'utilisation</value>
+  </data>
+  <data name="mnuDeleteCase.Text" xml:space="preserve">
+    <value>Supprimer cas d\'utilisation {0}</value>
+  </data>
+  <data name="mnuEditCase.Text" xml:space="preserve">
+    <value>Modifier cas d\'utilisation</value>
+  </data>
+  <data name="InvalidOpErr.Text" xml:space="preserve">
+    <value>La borne supérieure est inférieure à la borne inférieure</value>
+  </data>
+  <data name="lbCases.Text" xml:space="preserve">
+    <value>Cas d'utilisation :</value>
+  </data>
+  <data name="lbConfirme.Text" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="lbFilter.Text" xml:space="preserve">
+    <value>Filtrer :</value>
+  </data>
+  <data name="lbMatrixTab.Text" xml:space="preserve">
+    <value>Définir les dépendances</value>
+  </data>
+  <data name="lbMatrixTabHeader.Text" xml:space="preserve">
+    <value>Définir une propriété en fonction d'autres propriétés</value>
+  </data>
+  <data name="lbNewRange.Text" xml:space="preserve">
+    <value>Nouvelle exigence technique</value>
+  </data>
+  <data name="lbNewStep.Text" xml:space="preserve">
+    <value>Nouvel ensemble de valeurs</value>
+  </data>
+  <data name="lbParFamille.Text" xml:space="preserve">
+    <value>Par Famille</value>
+  </data>
+  <data name="lbParNorm.Text" xml:space="preserve">
+    <value>Par Norme</value>
+  </data>
+  <data name="lbPropFct.Text" xml:space="preserve">
+    <value>Fonction de propriétés</value>
+  </data>
+  <data name="lbRangeTab.Text" xml:space="preserve">
+    <value>Intervalle de tolérance</value>
+  </data>
+  <data name="lbRangeTabHeader.Text" xml:space="preserve">
+    <value>Definir les proprietes techniques et leur intervalle de tolérance</value>
+  </data>
+  <data name="lbSelectGrpProperty.Text" xml:space="preserve">
+    <value>Séléctionner un groupe de propriétés</value>
+  </data>
+  <data name="lbSelectMeasureUnit.Text" xml:space="preserve">
+    <value>Séléctionner une unité de mesure</value>
+  </data>
+  <data name="lbSelectProperty.Text" xml:space="preserve">
+    <value>Séléctionner une propriété</value>
+  </data>
+  <data name="lbStepTab.Text" xml:space="preserve">
+    <value>Ensemble de valeurs </value>
+  </data>
+  <data name="lbStepTabHeader.Text" xml:space="preserve">
+    <value>Définir les propriétés technique et leur ensemble de valeurs</value>
+  </data>
+  <data name="lbTabDepend.Text" xml:space="preserve">
+    <value>Gestion des dépendances</value>
+  </data>
+  <data name="NullCustomErr.Text" xml:space="preserve">
+    <value>Vérifiez que les champs sont correctement remplis</value>
+  </data>
+  <data name="ValueSet.Text" xml:space="preserve">
+    <value>Ensemble de valeurs</value>
+  </data>
+  <data name="mCodeVide.Text" xml:space="preserve">
+    <value>Le champ code ne doit pas être vide .</value>
+  </data>
+  <data name="lbGlobalValidation.Text" xml:space="preserve">
+    <value>Toutes les normes</value>
+  </data>
+  <data name="lbGrdMatPropTitle.Text" xml:space="preserve">
+    <value>Liste des propriétés article : {0}</value>
+  </data>
+  <data name="lbIsOptional.Text" xml:space="preserve">
+    <value>L'exigence est-t-elle optionnelle?</value>
+  </data>
+  <data name="lblValValidation1.Text" xml:space="preserve">
+    <value>* Veuillez respecter l'un des format suivant : 1 / 1.5 / 1,5 / 0.15 10En / 1.5en</value>
+  </data>
+  <data name="lblValValidation2.Text" xml:space="preserve">
+    <value>Les nombre doivent être séparer par ";" et respectent l'un des format suivant : 1 / 1.5 / 1,5 / 0.15 10en / 1.5En</value>
+  </data>
+  <data name="lbMaterialValidationTitle.Text" xml:space="preserve">
+    <value>Validation de l'article : {0}</value>
+  </data>
+  <data name="lbMsgCheckRange.Text" xml:space="preserve">
+    <value>Cette propriété est définie comme étant une exigence. Veuillez respecter l\'intervalle suivant [{0} , {1}]</value>
+  </data>
+  <data name="lbMsgCheckStep.Text" xml:space="preserve">
+    <value>Cette propriété est définie comme étant une exigence. Veuillez utiliser l\'une des valeurs suivante {0}</value>
+  </data>
+  <data name="lbPartialValidation.Text" xml:space="preserve">
+    <value>Validation partielle de l'article.</value>
+  </data>
+  <data name="lbRequirementType1.Text" xml:space="preserve">
+    <value>Requise</value>
+  </data>
+  <data name="lbRequirementType2.Text" xml:space="preserve">
+    <value>Recommandé</value>
+  </data>
+  <data name="lbSelectUseCase.Text" xml:space="preserve">
+    <value>Veuillez séléctionner un cas d\'utilisation</value>
+  </data>
+  <data name="hSoftwareSpecification.Text" xml:space="preserve">
+    <value>Famille des logiciels techniques</value>
+  </data>
+  <data name="hTechnicalSoftware.Text" xml:space="preserve">
+    <value>Logiciel</value>
+  </data>
+  <data name="mnSoftwareSpecification.Text" xml:space="preserve">
+    <value>Familles des logiciels techniques</value>
+  </data>
+  <data name="mnTechnicalSoftware.Text" xml:space="preserve">
+    <value>Logiciels techniques</value>
+  </data>
+  <data name="mnCorrespSpec.Text" xml:space="preserve">
+    <value>Correspondance des familles</value>
+  </data>
+  <data name="hCorrespSpec.Text" xml:space="preserve">
+    <value>Correspondance des familles</value>
+  </data>
+  <data name="lbMoreDetail.Text" xml:space="preserve">
+    <value>Plus de détails</value>
+  </data>
+  <data name="hIsValid.Text" xml:space="preserve">
+    <value>Validité</value>
+  </data>
+  <data name="lbValidationPropDetai1.Text" xml:space="preserve">
+    <value>La propriété {0} ne respecte pas l'intervalle {1} spécifié par l'exigence définie dans la norme suivante {2} sous le cas d'utilisation suivant {3}.</value>
+  </data>
+  <data name="lbValidationPropDetai2.Text" xml:space="preserve">
+    <value>La propriété {0} ne respecte pas l'ensemble de valeurs {1} spécifié par l'exigence définie dans la norme suivante {2} sous le cas d'utilisation suivant {3}.</value>
+  </data>
+  <data name="lbValidationPropDetai3.Text" xml:space="preserve">
+    <value>La propriété {0} ne respecte pas les dépendances spécifiées par l'exigence définie dans la norme suivante {1} sous le cas d'utilisation suivant {2}.</value>
+  </data>
+  <data name="lbValidationPropDetai4.Text" xml:space="preserve">
+    <value>La propriété {0} respecte l'exigence définie par la norme suivante {1} sous le cas d'utilisation suivant {2}.</value>
+  </data>
+  <data name="lbListReq.Text" xml:space="preserve">
+    <value>Liste des exigences</value>
+  </data>
+  <data name="lbValidationPropDetai5.Text" xml:space="preserve">
+    <value>L'article ne définit aucune propriété qui correspond à cette exigence : {0}</value>
+  </data>
+  <data name="hSoft.Text" xml:space="preserve">
+    <value>Logiciel</value>
+  </data>
+  <data name="hSpecMaterials.Text" xml:space="preserve">
+    <value>Famille Article</value>
+  </data>
+  <data name="hSpecSoft.Text" xml:space="preserve">
+    <value>Famille logiciel</value>
+  </data>
+  <data name="hSuccessAddCorresp.Text" xml:space="preserve">
+    <value>Correspondance enregistrée avec succès.</value>
+  </data>
+  <data name="mhasCorresp.Text" xml:space="preserve">
+    <value>Cette famille logiciel contient déja une correspondance.</value>
+  </data>
+  <data name="mnDataSheet.Text" xml:space="preserve">
+    <value>Listes de matériel</value>
+  </data>
+  <data name="mnLog.Text" xml:space="preserve">
+    <value>Journal</value>
+  </data>
+  <data name="mnPrerequisites.Text" xml:space="preserve">
+    <value>Spécifications</value>
+  </data>
+  <data name="mnReview.Text" xml:space="preserve">
+    <value>Réviser</value>
+  </data>
+  <data name="mnRevisions.Text" xml:space="preserve">
+    <value>Historiques des révisions</value>
+  </data>
+  <data name="mnTransactions.Text" xml:space="preserve">
+    <value>Consultation</value>
+  </data>
+  <data name="hApprouvedby.Text" xml:space="preserve">
+    <value>Approuvé par</value>
+  </data>
+  <data name="hCheckedby.Text" xml:space="preserve">
+    <value>Vérifié par</value>
+  </data>
+  <data name="hPreparedby.Text" xml:space="preserve">
+    <value>Préparé par</value>
+  </data>
+  <data name="mnAddDataSheet.Text" xml:space="preserve">
+    <value>Assistant de création de la liste de matériel</value>
+  </data>
+  <data name="mnEditDataSheet.Text" xml:space="preserve">
+    <value>Assistant de modification de la liste de matériel</value>
+  </data>
+  <data name="hQuantite.Text" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="hName.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="hDatasheetStatus.Text" xml:space="preserve">
+    <value>Etat liste de matériel</value>
+  </data>
+  <data name="mSelectDatasheet.Text" xml:space="preserve">
+    <value>S\'il vous plaît sélectionner une liste de matériel!</value>
+  </data>
+  <data name="lbCodeDoc.Text" xml:space="preserve">
+    <value>&lt;strong&gt;Code document : &lt;/strong&gt;{0}</value>
+  </data>
+  <data name="lbListPrerequis.Text" xml:space="preserve">
+    <value>Liste des spécifications</value>
+  </data>
+  <data name="lbDescriptionTitle.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lbPrerequisAttachement.Text" xml:space="preserve">
+    <value>Liste des piéces jointes spécifications : {0}</value>
+  </data>
+  <data name="mnAddRevDataSheet.Text" xml:space="preserve">
+    <value>Assistant de révision de liste de matériel</value>
+  </data>
+  <data name="mnRevDataSheet.Text" xml:space="preserve">
+    <value>Historiques des révisions</value>
+  </data>
+  <data name="LogDatasheet_Add.Text" xml:space="preserve">
+    <value>Ajouter liste de matériel.</value>
+  </data>
+  <data name="LogDatasheet_Delete.Text" xml:space="preserve">
+    <value>Supprimer liste de matériel.</value>
+  </data>
+  <data name="LogDatasheet_Edit.Text" xml:space="preserve">
+    <value>Modifier liste de matériel.</value>
+  </data>
+  <data name="LogDatasheet_Rev.Text" xml:space="preserve">
+    <value>Révisier liste de matériel.</value>
+  </data>
+  <data name="mnLogDataSheet.Text" xml:space="preserve">
+    <value>Journal d\'évènement</value>
+  </data>
+  <data name="mMaterialsAlreayExiste.Text" xml:space="preserve">
+    <value>Un article ayant les mêmes propriétés avec des valeurs identiques existe déja !</value>
+  </data>
+  <data name="NoParamExiste.Text" xml:space="preserve">
+    <value>Veuillez vérifier la liste des états de liste de matériel.</value>
+  </data>
+  <data name="confDelDatasheet.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette liste de matériel ? </value>
+  </data>
+  <data name="hSelectStatus.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un etat.</value>
+  </data>
+  <data name="hRequiredTitle.Text" xml:space="preserve">
+    <value>Le champ Titre est obligatoire !</value>
+  </data>
+  <data name="mnAddPrerequiste.Text" xml:space="preserve">
+    <value>Assistant de création de la spécification</value>
+  </data>
+  <data name="mnEditPrerequisite.Text" xml:space="preserve">
+    <value>Assistant de modification de la spécification</value>
+  </data>
+  <data name="mSelectPrerequisite.Text" xml:space="preserve">
+    <value>S\'il vous plaît choisissez une spécification!</value>
+  </data>
+  <data name="mExisteSpecification.Text" xml:space="preserve">
+    <value>Cette famille existe déja .</value>
+  </data>
+  <data name="mSelectSpecification.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une famille !</value>
+  </data>
+  <data name="mAttachements.Text" xml:space="preserve">
+    <value>Pièces Jointes</value>
+  </data>
+  <data name="confDelPrerequisite.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette spécification?</value>
+  </data>
+  <data name="hDocTechnique.Text" xml:space="preserve">
+    <value>Document Technique</value>
+  </data>
+  <data name="hDisciplineHelp.Text" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="hNormTitleHelp.Text" xml:space="preserve">
+    <value>Norme</value>
+  </data>
+  <data name="hSpecificationsHelp.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="lblDescriptionHelp.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="mFinish.Text" xml:space="preserve">
+    <value>Terminer</value>
+  </data>
+  <data name="mNext.Text" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="hDescriptionAttach.Text" xml:space="preserve">
+    <value>File description</value>
+  </data>
+  <data name="hNameAttach.Text" xml:space="preserve">
+    <value>Nom du fichier</value>
+  </data>
+  <data name="lblCases.Text" xml:space="preserve">
+    <value>Cas d'utilisation</value>
+  </data>
+  <data name="lblCases_help.Text" xml:space="preserve">
+    <value>Cas d'utilisation</value>
+  </data>
+  <data name="lblCode_help.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="lblDescription_help.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblDiscipline_help.Text" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="lblFamille_help.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="lblFilter_help" xml:space="preserve">
+    <value>Filtrer</value>
+  </data>
+  <data name="lblName.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lblName_help.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="lblNorm_help.Text" xml:space="preserve">
+    <value>Norme</value>
+  </data>
+  <data name="lblCodeDocument_help.Text" xml:space="preserve">
+    <value>Document Technique</value>
+  </data>
+  <data name="lblProjet_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un projet !</value>
+  </data>
+  <data name="lblTitle_help.Text" xml:space="preserve">
+    <value>Veuillez saisir le titre.</value>
+  </data>
+  <data name="lblCodeDocument.Text" xml:space="preserve">
+    <value>Document Technique</value>
+  </data>
+  <data name="lblDiscipline.Text" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="lblSpecification.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Titre</value>
+  </data>
+  <data name="mDefault.Text" xml:space="preserve">
+    <value>Par Défaut</value>
+  </data>
+  <data name="mGenerate.Text" xml:space="preserve">
+    <value>Générer</value>
+  </data>
+  <data name="lblFilter.Text" xml:space="preserve">
+    <value>Filtrer par</value>
+  </data>
+  <data name="lblSociete.Text" xml:space="preserve">
+    <value>Société</value>
+  </data>
+  <data name="htitleDataSheet.Text" xml:space="preserve">
+    <value>Listes de matériel</value>
+  </data>
+  <data name="errAnnulation.Text" xml:space="preserve">
+    <value>Une erreur s\'est produite lors de l'annulation.</value>
+  </data>
+  <data name="hListeNormes.Text" xml:space="preserve">
+    <value>Liste des normes de la famille :</value>
+  </data>
+  <data name="hListeSpec.Text" xml:space="preserve">
+    <value>Liste des familles</value>
+  </data>
+  <data name="mnAddMaterials.Text" xml:space="preserve">
+    <value>Assistant de création article</value>
+  </data>
+  <data name="tDataSheet.Text" xml:space="preserve">
+    <value>Liste de matériel</value>
+  </data>
+  <data name="tpAddPrerequis.Text" xml:space="preserve">
+    <value>Ajouter spécification</value>
+  </data>
+  <data name="tpDeleteDatasheet.Text" xml:space="preserve">
+    <value>Supprimer liste de matériel</value>
+  </data>
+  <data name="tpDeletePrerequis.Text" xml:space="preserve">
+    <value>Supprimer spécification</value>
+  </data>
+  <data name="tpEditDatasheet.Text" xml:space="preserve">
+    <value>Modification liste de matériel</value>
+  </data>
+  <data name="tpEditPrerequis.Text" xml:space="preserve">
+    <value>Modifier spécification</value>
+  </data>
+  <data name="tpReviewDatasheet.Text" xml:space="preserve">
+    <value>Réviser liste de matériel</value>
+  </data>
+  <data name="mAddMaterial.Text" xml:space="preserve">
+    <value>Ajouter article</value>
+  </data>
+  <data name="tpAddDatasheet.Text" xml:space="preserve">
+    <value>Ajouter liste de matériel</value>
+  </data>
+  <data name="tpPrerequisites.Text" xml:space="preserve">
+    <value>Spécifications documents</value>
+  </data>
+  <data name="mGenerated.Text" xml:space="preserve">
+    <value>Généré</value>
+  </data>
+  <data name="mIntroDatasheet1.Text" xml:space="preserve">
+    <value>Etape 1 : Définition générale de la liste de matériel </value>
+  </data>
+  <data name="mIntroDatasheet2.Text" xml:space="preserve">
+    <value>Etape 2 : Définition de la liste des articles</value>
+  </data>
+  <data name="mIntroMaterial1.Text" xml:space="preserve">
+    <value>Etape 1 : Définition générale de l\'article </value>
+  </data>
+  <data name="mIntroMaterial2.Text" xml:space="preserve">
+    <value>Etape 2 : Définition des propriétés de l\'article</value>
+  </data>
+  <data name="mSelect.Text" xml:space="preserve">
+    <value>Ajouter les lignes sélectionnés</value>
+  </data>
+  <data name="mIntroMaterial_Details1.Text" xml:space="preserve">
+    <value>Veuillez spécifier les attribut générale de l\'article.</value>
+  </data>
+  <data name="mIntroMaterial_Details2.Text" xml:space="preserve">
+    <value>Veuillez définir les différentes propriétés de l\'article.</value>
+  </data>
+  <data name="mIntroDatasheet_Details1.Text" xml:space="preserve">
+    <value>Veuillez spécifier les attributs généraux de la liste de matériel.</value>
+  </data>
+  <data name="mIntroDatasheet_Details2.Text" xml:space="preserve">
+    <value>Veuillez définir les divers articles et leurs quantitées.</value>
+  </data>
+  <data name="mIntroPrerequis1.Text" xml:space="preserve">
+    <value>Etape 1 : Définition générale de la spécification</value>
+  </data>
+  <data name="mIntroPrerequis2.Text" xml:space="preserve">
+    <value>Etape 2 : Définition des familles et des normes de la spécification</value>
+  </data>
+  <data name="mIntroPrerequis_Details1.Text" xml:space="preserve">
+    <value>Veuillez choisir le projet, le document technique et saisir un titre pour la spécification</value>
+  </data>
+  <data name="mIntroPrerequis_Details2.Text" xml:space="preserve">
+    <value>Veuillez définir les divers familles et normes. </value>
+  </data>
+  <data name="mIntroPrerequis3.Text" xml:space="preserve">
+    <value>Etape 3 : Rattachement des fichiers référence.</value>
+  </data>
+  <data name="mIntroPrerequis_Details3.Text" xml:space="preserve">
+    <value>Veuillez rattacher les fichiers référence pour cette spécification.</value>
+  </data>
+  <data name="lblAbbreviation.Text" xml:space="preserve">
+    <value>Abréviation</value>
+  </data>
+  <data name="mnMatchingCorresp.Text" xml:space="preserve">
+    <value>Correspondance des familles</value>
+  </data>
+  <data name="hListeFichesTechniques.Text" xml:space="preserve">
+    <value>Listes de matériel</value>
+  </data>
+  <data name="hListeConsultation.Text" xml:space="preserve">
+    <value>Liste des consultations</value>
+  </data>
+  <data name="mIntroConsultation1.Text" xml:space="preserve">
+    <value>Étape 1: Définition générale de la consultation</value>
+  </data>
+  <data name="mIntroConsultation2.Text" xml:space="preserve">
+    <value>Etape 2: Définition des articles</value>
+  </data>
+  <data name="mIntroConsultation3.Text" xml:space="preserve">
+    <value>Etape 3: Choix des fournisseurs</value>
+  </data>
+  <data name="mIntroConsultation4.Text" xml:space="preserve">
+    <value>Etape 4: Choix des documents techniques</value>
+  </data>
+  <data name="mIntroConsultation_Details1.Text" xml:space="preserve">
+    <value>Veuillez choisir le projet et spécifier un titre et une description pour la consultation.</value>
+  </data>
+  <data name="mIntroConsultation_Details2.Text" xml:space="preserve">
+    <value>Veuillez choisir les articles pour la consultation.</value>
+  </data>
+  <data name="mIntroConsultation_Details3.Text" xml:space="preserve">
+    <value>Veuillez choisir la liste des fournisseurs</value>
+  </data>
+  <data name="mIntroConsultation_Details4.Text" xml:space="preserve">
+    <value>Veuillez joindre les fichiers que vous souhaitez envoyer avec la consultation.</value>
+  </data>
+  <data name="mnAddConsultation.Text" xml:space="preserve">
+    <value>Assistant d\'ajout consultation</value>
+  </data>
+  <data name="confDelConsultation.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette consultation ?</value>
+  </data>
+  <data name="lblDatasheet.Text" xml:space="preserve">
+    <value>Liste de matériel</value>
+  </data>
+  <data name="lblDatasheet_help.Text" xml:space="preserve">
+    <value>Liste de matériel</value>
+  </data>
+  <data name="mSelectConsultationMaterials.Text" xml:space="preserve">
+    <value>Liste des articles choisi pour la consultation</value>
+  </data>
+  <data name="mListMaterials.Text" xml:space="preserve">
+    <value>Liste des articles</value>
+  </data>
+  <data name="mListSuppliers.Text" xml:space="preserve">
+    <value>Liste des fournisseurs</value>
+  </data>
+  <data name="hEmail.Text" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="mAddConsultation.Text" xml:space="preserve">
+    <value>Ajouter consultation</value>
+  </data>
+  <data name="mCommande.Text" xml:space="preserve">
+    <value>Commandes</value>
+  </data>
+  <data name="mConsultation.Text" xml:space="preserve">
+    <value>Consultation</value>
+  </data>
+  <data name="mnAddCommande.Text" xml:space="preserve">
+    <value>Ajouter commande</value>
+  </data>
+  <data name="mnDeleteCommande.Text" xml:space="preserve">
+    <value>Supprimer command</value>
+  </data>
+  <data name="mnDeleteConsultation.Text" xml:space="preserve">
+    <value>Supprimer consultation</value>
+  </data>
+  <data name="mnEditCommande.Text" xml:space="preserve">
+    <value>Modifier commande</value>
+  </data>
+  <data name="mnEditConsultation.Text" xml:space="preserve">
+    <value>Modifier consultation</value>
+  </data>
+  <data name="tpCommande.Text" xml:space="preserve">
+    <value>Commande</value>
+  </data>
+  <data name="tpConsultation.Text" xml:space="preserve">
+    <value>Consultation</value>
+  </data>
+  <data name="mEditConsultation.Text" xml:space="preserve">
+    <value>Assistant de modification consultation</value>
+  </data>
+  <data name="mSelectConsultation.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une consultation !</value>
+  </data>
+  <data name="confDelCommand.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette commande ? </value>
+  </data>
+  <data name="mSelectCommand.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une commande !</value>
+  </data>
+  <data name="mnAddCommand.Text" xml:space="preserve">
+    <value>Assistant d\'ajout d\'une commande</value>
+  </data>
+  <data name="mnEditCommand.Text" xml:space="preserve">
+    <value>Assistant de modification d\'une commande</value>
+  </data>
+  <data name="mIntroCommand1.Text" xml:space="preserve">
+    <value>Étape 1: Définition des propriétés générales de la commande</value>
+  </data>
+  <data name="mIntroCommand2.Text" xml:space="preserve">
+    <value>Etape 2: Définition des articles</value>
+  </data>
+  <data name="mIntroCommand_Details1.Text" xml:space="preserve">
+    <value>Veuillez spécifier les propriètes générales de la commande.</value>
+  </data>
+  <data name="mIntroCommand_Details2.Text" xml:space="preserve">
+    <value>Veuillez choisir les articles pour la commande.</value>
+  </data>
+  <data name="lblDelivery.Text" xml:space="preserve">
+    <value>Date de livraison</value>
+  </data>
+  <data name="lblDeliveryPlace.Text" xml:space="preserve">
+    <value>Lieu de livraison</value>
+  </data>
+  <data name="lblDeliveryPlace_help.Text" xml:space="preserve">
+    <value>Lieu de livraison</value>
+  </data>
+  <data name="lblDelivery_help.Text" xml:space="preserve">
+    <value>Délai de livraison</value>
+  </data>
+  <data name="lblMethodPayment.Text" xml:space="preserve">
+    <value>Mode de paiement</value>
+  </data>
+  <data name="lblMethodPayment_help.Text" xml:space="preserve">
+    <value>Mode de paiement</value>
+  </data>
+  <data name="lblNRef.Text" xml:space="preserve">
+    <value>N/Ref</value>
+  </data>
+  <data name="lblNRef_help.Text" xml:space="preserve">
+    <value>N/Ref</value>
+  </data>
+  <data name="lblSupplier.Text" xml:space="preserve">
+    <value>Fournisseur</value>
+  </data>
+  <data name="lblSupplier_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le fournisseur.</value>
+  </data>
+  <data name="lblVRef.Text" xml:space="preserve">
+    <value>V/Ref</value>
+  </data>
+  <data name="lblVRef_help.Text" xml:space="preserve">
+    <value>V/Ref</value>
+  </data>
+  <data name="hUnitPrice.Text" xml:space="preserve">
+    <value>Prix Unitaire</value>
+  </data>
+  <data name="mListeCommande.Text" xml:space="preserve">
+    <value>Liste des commandes</value>
+  </data>
+  <data name="hReference.Text" xml:space="preserve">
+    <value>Référence</value>
+  </data>
+  <data name="hSupplier.Text" xml:space="preserve">
+    <value>Fournisseur</value>
+  </data>
+  <data name="hTotalAmount.Text" xml:space="preserve">
+    <value>Montant total</value>
+  </data>
+  <data name="mnitFamilies.Text" xml:space="preserve">
+    <value>Familles d'unités</value>
+  </data>
+  <data name="mSelectLigneCommande.Text" xml:space="preserve">
+    <value>Ajouter les articles sélectionnés à la commande</value>
+  </data>
+  <data name="hCommandStatus.Text" xml:space="preserve">
+    <value>Etat des commandes</value>
+  </data>
+  <data name="hAdresse.Text" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="hCatAppro.Text" xml:space="preserve">
+    <value>Catégorie d'approvisionnement</value>
+  </data>
+  <data name="hCodePostal.Text" xml:space="preserve">
+    <value>Code Postal</value>
+  </data>
+  <data name="hDeliveryDetails.Text" xml:space="preserve">
+    <value>Détails de la livraison</value>
+  </data>
+  <data name="hDemandeur.Text" xml:space="preserve">
+    <value>Demandeur</value>
+  </data>
+  <data name="hFax.Text" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="hMontantHT.Text" xml:space="preserve">
+    <value>Montant HT</value>
+  </data>
+  <data name="hRemise.Text" xml:space="preserve">
+    <value>Remise</value>
+  </data>
+  <data name="hSocieteFacturation.Text" xml:space="preserve">
+    <value>À la charge de</value>
+  </data>
+  <data name="hSupplierDetails.Text" xml:space="preserve">
+    <value>Détails  Fournisseur</value>
+  </data>
+  <data name="hTel.Text" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="hVille.Text" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="hWebsite.Text" xml:space="preserve">
+    <value>Site web</value>
+  </data>
+  <data name="mnCommandStatus.Text" xml:space="preserve">
+    <value>Etat de la commande</value>
+  </data>
+  <data name="mnApprovisionnement.Text" xml:space="preserve">
+    <value>Approvisionnement</value>
+  </data>
+  <data name="mnFichesTechniques.Text" xml:space="preserve">
+    <value>Listes de matériel</value>
+  </data>
+  <data name="hConsultationStatus.Text" xml:space="preserve">
+    <value>Etat de consultations</value>
+  </data>
+  <data name="mnSendToSuppliers.Text" xml:space="preserve">
+    <value>Envoyer aux fournisseurs</value>
+  </data>
+  <data name="tpSendToSuppliers.Text" xml:space="preserve">
+    <value>Envoyer la consultation aux fournisseurs.</value>
+  </data>
+  <data name="mnLogSendConsultation.Text" xml:space="preserve">
+    <value>Journal des mail envoyés</value>
+  </data>
+  <data name="tpLogSendConsultation.Text" xml:space="preserve">
+    <value>Journal des consultations envoyées aux fournisseurs</value>
+  </data>
+  <data name="hSendBy.Text" xml:space="preserve">
+    <value>Envoyé par </value>
+  </data>
+  <data name="hConsultation.Text" xml:space="preserve">
+    <value>Consultation</value>
+  </data>
+  <data name="hDateExpiration.Text" xml:space="preserve">
+    <value>Date d'expiration</value>
+  </data>
+  <data name="hDateExpiration_help.Text" xml:space="preserve">
+    <value>Veuillez saisir la date d'expiration.</value>
+  </data>
+  <data name="hDemandeur_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le demandeur.</value>
+  </data>
+  <data name="hDescription_help.Text" xml:space="preserve">
+    <value>Veuillez saisir une description.</value>
+  </data>
+  <data name="hDevise.Text" xml:space="preserve">
+    <value>Devise</value>
+  </data>
+  <data name="hDevise_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la devise de la commande !</value>
+  </data>
+  <data name="hProjet_help.Text" xml:space="preserve">
+    <value>Veuillez choisir un projet.</value>
+  </data>
+  <data name="lblAlacharge.Text" xml:space="preserve">
+    <value>À la charge de</value>
+  </data>
+  <data name="lblAlacharge_help.Text" xml:space="preserve">
+    <value>Veuillez choisir la société.</value>
+  </data>
+  <data name="lblDepot.Text" xml:space="preserve">
+    <value>Magasin</value>
+  </data>
+  <data name="lblModePaiement.Text" xml:space="preserve">
+    <value>Mode de paiement</value>
+  </data>
+  <data name="lblModePaiement_help.Text" xml:space="preserve">
+    <value>Veuillez choisir le mode de paiement.</value>
+  </data>
+  <data name="lblNumero.Text" xml:space="preserve">
+    <value>Numéro</value>
+  </data>
+  <data name="lblSite.Text" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="lblSource.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="lblSource_help.Text" xml:space="preserve">
+    <value>Veuillez spécifier la source.</value>
+  </data>
+  <data name="mAttestation.Text" xml:space="preserve">
+    <value>Attestation d'exonération</value>
+  </data>
+  <data name="mGeneralInformation.Text" xml:space="preserve">
+    <value>Informations Générales</value>
+  </data>
+  <data name="mLivraison.Text" xml:space="preserve">
+    <value>Livraison</value>
+  </data>
+  <data name="mStock.Text" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="hDemandeAchat.Text" xml:space="preserve">
+    <value>Demande d\'achat</value>
+  </data>
+  <data name="mnFilterby.Text" xml:space="preserve">
+    <value>Filtrer par</value>
+  </data>
+  <data name="hArticle.Text" xml:space="preserve">
+    <value>Article</value>
+  </data>
+  <data name="hArticle_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un article.</value>
+  </data>
+  <data name="hCatApp.Text" xml:space="preserve">
+    <value>Catégorie Appro</value>
+  </data>
+  <data name="hCatApp_help.Text" xml:space="preserve">
+    <value>Veuillez choisir la catégorie d'approvisionnement.</value>
+  </data>
+  <data name="hPrixUnitaire.Text" xml:space="preserve">
+    <value>Prix unitaire</value>
+  </data>
+  <data name="hPrixUnitaire_help.Text" xml:space="preserve">
+    <value>Veuillez saisir le prix unitaire.</value>
+  </data>
+  <data name="hQuantity.Text" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="hQuantity_help.Text" xml:space="preserve">
+    <value>Veuillez saisir la quantité.</value>
+  </data>
+  <data name="hRemise_help.Text" xml:space="preserve">
+    <value>Veuillez saisir la remise.</value>
+  </data>
+  <data name="hUnit_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une unité.</value>
+  </data>
+  <data name="mChoixArticle.Text" xml:space="preserve">
+    <value>Choix des articles</value>
+  </data>
+  <data name="gvwCustomizationWindowCaption.Text" xml:space="preserve">
+    <value>Sélecteur de champs</value>
+  </data>
+  <data name="mnEmplacement.Text" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="mnAssignSuppliers.Text" xml:space="preserve">
+    <value>Affecter les fournisseurs sélectionnés aux articles choisi.</value>
+  </data>
+  <data name="tpAssignSuppliers.Text" xml:space="preserve">
+    <value>Affecter les fournisseurs aux articles choisi.</value>
+  </data>
+  <data name="mnEchecEnvoi.Text" xml:space="preserve">
+    <value>Échec envoi.</value>
+  </data>
+  <data name="mnSuccesEnvoi.Text" xml:space="preserve">
+    <value>Envoi effectué avec succès.</value>
+  </data>
+  <data name="popAddCommand.Text" xml:space="preserve">
+    <value>Ajout Commande</value>
+  </data>
+  <data name="popAddConsultation.Text" xml:space="preserve">
+    <value>Ajout Consultation</value>
+  </data>
+  <data name="popAddDataSheet.Text" xml:space="preserve">
+    <value>Ajout liste de matériel</value>
+  </data>
+  <data name="popAddMeasureSystem.Text" xml:space="preserve">
+    <value>Gestion système de mesure</value>
+  </data>
+  <data name="popAddMeasureUnit.Text" xml:space="preserve">
+    <value>Gestion unité de mesure</value>
+  </data>
+  <data name="popAddPrerequiste.Text" xml:space="preserve">
+    <value>Ajout Spécification</value>
+  </data>
+  <data name="popAddUnitFamiles.Text" xml:space="preserve">
+    <value>Gestion Familles d'unité</value>
+  </data>
+  <data name="popAjoutArticle.Text" xml:space="preserve">
+    <value>Ajout Article</value>
+  </data>
+  <data name="popEditArticle.Text" xml:space="preserve">
+    <value>Modification Article</value>
+  </data>
+  <data name="popEditConsultation.Text" xml:space="preserve">
+    <value>Modification Consultation</value>
+  </data>
+  <data name="popEditDatatsheet.Text" xml:space="preserve">
+    <value>Modification liste de matériel</value>
+  </data>
+  <data name="popEditPrerequisite.Text" xml:space="preserve">
+    <value>Modification Spécification</value>
+  </data>
+  <data name="mnDetailsMaterial.Text" xml:space="preserve">
+    <value>Détails Article</value>
+  </data>
+  <data name="mnDetails.Text" xml:space="preserve">
+    <value>Détails</value>
+  </data>
+  <data name="mnListProperties.Text" xml:space="preserve">
+    <value>Liste des propriétés</value>
+  </data>
+  <data name="mnAddSelectMaterial.Text" xml:space="preserve">
+    <value>Ajouter les articles sélectionnés</value>
+  </data>
+  <data name="mnAddSupplier.Text" xml:space="preserve">
+    <value>Ajouter les fournisseurs sélectionnés</value>
+  </data>
+  <data name="mCommenter.Text" xml:space="preserve">
+    <value>Commenter</value>
+  </data>
+  <data name="AddGridPurchaseServises.Text" xml:space="preserve">
+    <value>définir une unité organisationnel comme service d\'achat</value>
+  </data>
+  <data name="hIdUnite.Text" xml:space="preserve">
+    <value>Unité Organisation</value>
+  </data>
+  <data name="mDuplicateValueError.Text" xml:space="preserve">
+    <value>Valeur déja inserrée !</value>
+  </data>
+  <data name="hISelectdUnite.Text" xml:space="preserve">
+    <value>Définir une unité comme service achat</value>
+  </data>
+  <data name="mnServiceAchat.Text" xml:space="preserve">
+    <value>Service Achat</value>
+  </data>
+  <data name="mUnite.Text" xml:space="preserve">
+    <value>Veuillez sélectionner unité organisationnel !</value>
+  </data>
+  <data name="gvwID_Priority.Text" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="Response_DueForDate.Text" xml:space="preserve">
+    <value>Délai prévu</value>
+  </data>
+  <data name="labDecisions.Text" xml:space="preserve">
+    <value>Decisions</value>
+  </data>
+  <data name="confDelPurchaseRequest.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette demande d\'achat?</value>
+  </data>
+  <data name="mnAddPurchaseRequest.Text" xml:space="preserve">
+    <value>Assistant d\'ajout d\'une demande d\'achat</value>
+  </data>
+  <data name="mnDeletePurchaseRequest.Text" xml:space="preserve">
+    <value>Supprimer demande d\'achat</value>
+  </data>
+  <data name="mnEditPurchaseRequest.Text" xml:space="preserve">
+    <value>Assistant de modification d\'une demande d\'achat</value>
+  </data>
+  <data name="mnPurchaseRequest.Text" xml:space="preserve">
+    <value>Demande d'achat</value>
+  </data>
+  <data name="mSelectPurchaseResquest.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une demande d\'achat!</value>
+  </data>
+  <data name="tpAddPurchaseRequest.Text" xml:space="preserve">
+    <value>Ajouter une demande d'achat</value>
+  </data>
+  <data name="tpDeletePruchaseRequest.Text" xml:space="preserve">
+    <value>Supprimer la demande d'achat</value>
+  </data>
+  <data name="tpEditPurchaseRequest.Text" xml:space="preserve">
+    <value>Modifier la demande d'achat</value>
+  </data>
+  <data name="mnCounting.Text" xml:space="preserve">
+    <value>Offres</value>
+  </data>
+  <data name="tpAddCounting.Text" xml:space="preserve">
+    <value>Ajouter Offre</value>
+  </data>
+  <data name="tpDeleteCounting.Text" xml:space="preserve">
+    <value>Supprimer Offre</value>
+  </data>
+  <data name="tpEditCounting.Text" xml:space="preserve">
+    <value>Modifier Offre</value>
+  </data>
+  <data name="hDestinataire.Text" xml:space="preserve">
+    <value>Destinataire</value>
+  </data>
+  <data name="hObservations.Text" xml:space="preserve">
+    <value>Observation</value>
+  </data>
+  <data name="Hdemande.Text" xml:space="preserve">
+    <value>Demande acquisition</value>
+  </data>
+  <data name="mnClearFields.Text" xml:space="preserve">
+    <value>Effacer les champs</value>
+  </data>
+  <data name="mnAnd.Text" xml:space="preserve">
+    <value>et</value>
+  </data>
+  <data name="mnFullTextSearch.Text" xml:space="preserve">
+    <value>Recherche plein text (nom, description, famille, discipline, propriétés)</value>
+  </data>
+  <data name="mnValueBetween.Text" xml:space="preserve">
+    <value>Valeur entre</value>
+  </data>
+  <data name="mnSearch.Text" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="mnSearchbyDiscipline.Text" xml:space="preserve">
+    <value>Recherche par discipline, famille et norme</value>
+  </data>
+  <data name="mnSearchTitle.Text" xml:space="preserve">
+    <value>Liste des articles &lt;br /&gt;Résultat de recherche selon les critères suivants : {0}</value>
+  </data>
+  <data name="mnSearchTitle_DisciplineNorm.Text" xml:space="preserve">
+    <value>Liste des articles &lt;br /&gt;Résultat de recherche selon les critères suivants : Discipline : {0} , Famille : {1} , Norme : {2}</value>
+  </data>
+  <data name="hTypePurchase.Text" xml:space="preserve">
+    <value>Type de demande d\'achat</value>
+  </data>
+  <data name="tPurchaseRequestType.Text" xml:space="preserve">
+    <value>Type de demande d'achat</value>
+  </data>
+  <data name="popAddPurchaseRequest.Text" xml:space="preserve">
+    <value>Ajout demande d'achat</value>
+  </data>
+  <data name="mIntroPurchase1.Text" xml:space="preserve">
+    <value>Etape 1: Définir les propriétés générales de la demande d\'achat</value>
+  </data>
+  <data name="mIntroPurchase2.Text" xml:space="preserve">
+    <value>Etape 2: Définir les articles</value>
+  </data>
+  <data name="mIntroPurchase_Details1.Text" xml:space="preserve">
+    <value>Veuillez spécifier les propriétés générales de la demande d\'achat.</value>
+  </data>
+  <data name="mIntroPurchase_Details2.Text" xml:space="preserve">
+    <value>Veuillez choisir les articles pour la demande d\'achat.</value>
+  </data>
+  <data name="hDestinataire_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le destinataire.</value>
+  </data>
+  <data name="hObservations_help.Text" xml:space="preserve">
+    <value>Veuillez entrer vos observations.</value>
+  </data>
+  <data name="hReference_help.Text" xml:space="preserve">
+    <value>Veuillez entrer la référence de la demande.</value>
+  </data>
+  <data name="hType_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le type de la demande.</value>
+  </data>
+  <data name="hProcessingTime.Text" xml:space="preserve">
+    <value>Délais (j)</value>
+  </data>
+  <data name="mSelectLignePurchase.Text" xml:space="preserve">
+    <value>Ajouter les articles sélectionnés</value>
+  </data>
+  <data name="mValueNotNumber.Text" xml:space="preserve">
+    <value>Cette valeur n\'est pas valide, vous devez spécifier un nombre!</value>
+  </data>
+  <data name="popEditPurchaseRequest.Text" xml:space="preserve">
+    <value>Modification demande d'achat </value>
+  </data>
+  <data name="hAcquisition.Text" xml:space="preserve">
+    <value>Demande d'aquisition</value>
+  </data>
+  <data name="hAcquisition_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner les demandes d'acquisition.</value>
+  </data>
+  <data name="hDatePrevus.Text" xml:space="preserve">
+    <value>Date prévus</value>
+  </data>
+  <data name="mListAcquisition.Text" xml:space="preserve">
+    <value>Liste des demandes d'acquisition</value>
+  </data>
+  <data name="lblConsultation_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la consultation.</value>
+  </data>
+  <data name="hConsultationDetails.Text" xml:space="preserve">
+    <value>Détails de la consultation</value>
+  </data>
+  <data name="mnAddOffer.Text" xml:space="preserve">
+    <value>Ajouter Offre</value>
+  </data>
+  <data name="popAddOffer.Text" xml:space="preserve">
+    <value>Ajout Offre</value>
+  </data>
+  <data name="lbMoreDetailSupplier.Text" xml:space="preserve">
+    <value>Plus détails fournisseur</value>
+  </data>
+  <data name="mListOffers.Text" xml:space="preserve">
+    <value>Liste des offres</value>
+  </data>
+  <data name="hAvailableQuantity.Text" xml:space="preserve">
+    <value>Qte disponible</value>
+  </data>
+  <data name="hEquivalent.Text" xml:space="preserve">
+    <value>Article équivalent</value>
+  </data>
+  <data name="hRequestedQuantity.Text" xml:space="preserve">
+    <value>Qte demandée</value>
+  </data>
+  <data name="hTVA.Text" xml:space="preserve">
+    <value>TVA</value>
+  </data>
+  <data name="mnEditOffer.Text" xml:space="preserve">
+    <value>Modifier Offre</value>
+  </data>
+  <data name="mSelectOffer.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une offre !</value>
+  </data>
+  <data name="popEditOffer.Text" xml:space="preserve">
+    <value>Modifier Offre</value>
+  </data>
+  <data name="mnPurchaseRequest_help.Text" xml:space="preserve">
+    <value>Demande d'achat</value>
+  </data>
+  <data name="mnFrom.Text" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="mnTo.Text" xml:space="preserve">
+    <value>à </value>
+  </data>
+  <data name="confDelOffre.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cet offre ? </value>
+  </data>
+  <data name="lblOffre.Text" xml:space="preserve">
+    <value>Offres</value>
+  </data>
+  <data name="lblOffre_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner les offres  !</value>
+  </data>
+  <data name="tvariousFees.Text" xml:space="preserve">
+    <value>Frais divers</value>
+  </data>
+  <data name="succesDeleteFees.Text" xml:space="preserve">
+    <value>La suppression a été  effectuée avec succés</value>
+  </data>
+  <data name="ConfirmDeleteFees.Text" xml:space="preserve">
+    <value>Vous voulez vraiment supprimer ce frais ?</value>
+  </data>
+  <data name="msgSelectFees.Text" xml:space="preserve">
+    <value>Veuillez séléctionner un frais</value>
+  </data>
+  <data name="addFees.Text" xml:space="preserve">
+    <value>Ajouter frais divers</value>
+  </data>
+  <data name="editFees.Text" xml:space="preserve">
+    <value>Modifier frais divers</value>
+  </data>
+  <data name="FailedDeleteFees.Text" xml:space="preserve">
+    <value>Le frais est déja utilisée ,veuillez séléctionner un autre frais</value>
+  </data>
+  <data name="FailededitFees.Text" xml:space="preserve">
+    <value>Erreur lors de la modification</value>
+  </data>
+  <data name="msgSuccesAdd.Text" xml:space="preserve">
+    <value>Votre ajout a été effectuée avec succés</value>
+  </data>
+  <data name="msgSuccesEdit.Text" xml:space="preserve">
+    <value>Votre modification a été effectuée avec succés</value>
+  </data>
+  <data name="lblEcorsCategory.Text" xml:space="preserve">
+    <value>Catégorie de transaction</value>
+  </data>
+  <data name="tAffect.Text" xml:space="preserve">
+    <value>Affecter</value>
+  </data>
+  <data name="tAssignCat.Text" xml:space="preserve">
+    <value>Catégories des familles</value>
+  </data>
+  <data name="Deletefailled.Text" xml:space="preserve">
+    <value>Erreur lors de la suppression</value>
+  </data>
+  <data name="DeleteValidation.Text" xml:space="preserve">
+    <value>La suppression a été  effectuée avec succés</value>
+  </data>
+  <data name="msbConfirmationAffectation.Text" xml:space="preserve">
+    <value>Voulez vous vraiment supprimer cette affectation?</value>
+  </data>
+  <data name="t_assign.Text" xml:space="preserve">
+    <value>Catégories des familles</value>
+  </data>
+  <data name="mIntroCommand3.Text" xml:space="preserve">
+    <value>Etape 3 : Définition des frais divers</value>
+  </data>
+  <data name="mIntroCommand_Details3.Text" xml:space="preserve">
+    <value>Veuillez spécifier les frais divers de la commande.</value>
+  </data>
+  <data name="lblFrais.Text" xml:space="preserve">
+    <value>Documents et frais</value>
+  </data>
+  <data name="lblFrais_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le frais ou document que vous voulez ajouter.</value>
+  </data>
+  <data name="lblValeurFees.Text" xml:space="preserve">
+    <value>Valeur</value>
+  </data>
+  <data name="lblValueFees_help.Text" xml:space="preserve">
+    <value>Veuillez spécifier la valeur du frais à ajouter.</value>
+  </data>
+  <data name="mSelectFees.Text" xml:space="preserve">
+    <value>Sélection des documents et frais</value>
+  </data>
+  <data name="popupAssignment.Text" xml:space="preserve">
+    <value>Définition des catégories de transactions des familles d\'articles</value>
+  </data>
+  <data name="popupEditAssignment.Text" xml:space="preserve">
+    <value>Modification catégorie famille</value>
+  </data>
+  <data name="t_Frais.Text" xml:space="preserve">
+    <value>Frais divers</value>
+  </data>
+  <data name="categorie.Text" xml:space="preserve">
+    <value>Categorie</value>
+  </data>
+  <data name="FailedSelectionCat.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une seule catégorie et réessayer l\'opération</value>
+  </data>
+  <data name="FailedAdd.Text" xml:space="preserve">
+    <value>Erreur lors de l\'ajout</value>
+  </data>
+  <data name="mListeOffresParfournisseur.Text" xml:space="preserve">
+    <value>Liste des offres par fournisseurs</value>
+  </data>
+  <data name="mnCommercialEvaluation.Text" xml:space="preserve">
+    <value>Dép. Commerciale</value>
+  </data>
+  <data name="mnTechnicalEvaluation.Text" xml:space="preserve">
+    <value>Dép. Technique</value>
+  </data>
+  <data name="msgFailedSelectionCat.Text" xml:space="preserve">
+    <value>Cette famille est déja affectée à cette catégorie dans ce projet.</value>
+  </data>
+  <data name="hDepCommercial.Text" xml:space="preserve">
+    <value>Dép. Commerciale</value>
+  </data>
+  <data name="hDepTechnique.Text" xml:space="preserve">
+    <value>Dép. Technique</value>
+  </data>
+  <data name="mAddFeesToOrder.Text" xml:space="preserve">
+    <value>Ajouter ce frais à  la commande</value>
+  </data>
+  <data name="mPrevious.Text" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="mRefOffre.Text" xml:space="preserve">
+    <value>Réf. Offre</value>
+  </data>
+  <data name="ObligFees.Text" xml:space="preserve">
+    <value>Veuillez inserer les champs et réassayer l\'opération</value>
+  </data>
+  <data name="hRefOffre.Text" xml:space="preserve">
+    <value>Réf. Offre</value>
+  </data>
+  <data name="mnComment.Text" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="mNBComment.Text" xml:space="preserve">
+    <value>Remarque: Vous ne pouvez pas modifier ou supprimer le commentaire après la confirmation.</value>
+  </data>
+  <data name="mWriteComment.Text" xml:space="preserve">
+    <value>Écrivez votre commentaire</value>
+  </data>
+  <data name="hDeviseLocal.Text" xml:space="preserve">
+    <value>Devise locale</value>
+  </data>
+  <data name="hListeFrais.Text" xml:space="preserve">
+    <value>Liste des frais</value>
+  </data>
+  <data name="hTauxChange.Text" xml:space="preserve">
+    <value>Taux de change</value>
+  </data>
+  <data name="storageCondition.Text" xml:space="preserve">
+    <value>Conditions de stockage</value>
+  </data>
+  <data name="errorSelection.Text" xml:space="preserve">
+    <value>Veuillez sélectionnez une condition de stockage</value>
+  </data>
+  <data name="msbConfirmationStorage.Text" xml:space="preserve">
+    <value>Voulez vous vraiment supprimer cette condition de stockage?</value>
+  </data>
+  <data name="popupEditStorageCondition.Text" xml:space="preserve">
+    <value>Modifier condition de stockage</value>
+  </data>
+  <data name="popupStorageCondition.Text" xml:space="preserve">
+    <value>Ajouter condition de stockage</value>
+  </data>
+  <data name="FailedSelectionStorageCondition.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une condition de stockage  et réessayer l\'opération</value>
+  </data>
+  <data name="lblParent.Text" xml:space="preserve">
+    <value>Parent</value>
+  </data>
+  <data name="mnEvaluationHistory.Text" xml:space="preserve">
+    <value>Historique des évaluations</value>
+  </data>
+  <data name="mSentConsultationToSupplier.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas ajouter une offre, vu que l\'état de consultation est :</value>
+  </data>
+  <data name="hCE.Text" xml:space="preserve">
+    <value>D.C.</value>
+  </data>
+  <data name="hTE.Text" xml:space="preserve">
+    <value>D.T.</value>
+  </data>
+  <data name="mHistorique.Text" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="mOn.Text" xml:space="preserve">
+    <value>Le</value>
+  </data>
+  <data name="mVersionModifiedby.Text" xml:space="preserve">
+    <value>Version modifié par</value>
+  </data>
+  <data name="tpCommercialEvaluationHistory.Text" xml:space="preserve">
+    <value>Historique évaluation commerciale</value>
+  </data>
+  <data name="tpTechnicalEvaluationHistory.Text" xml:space="preserve">
+    <value>Historique évaluation technique</value>
+  </data>
+  <data name="hEvaluationHistory.Text" xml:space="preserve">
+    <value>Historique dépouillement</value>
+  </data>
+  <data name="popupEditStorageConditionSpect.Text" xml:space="preserve">
+    <value>Modifier affectation</value>
+  </data>
+  <data name="popupStorageConditionSpec.Text" xml:space="preserve">
+    <value>Affecter condition de stockage</value>
+  </data>
+  <data name="msgFailedSelectionCondSpec.Text" xml:space="preserve">
+    <value>Veuillez séléctionner une affectation et réassayer l\'opération</value>
+  </data>
+  <data name="TilteAssignCondSpec.Text" xml:space="preserve">
+    <value>Liste des conditions de storage</value>
+  </data>
+  <data name="TilteAssignCondSpecification.Text" xml:space="preserve">
+    <value>Liste des affectations</value>
+  </data>
+  <data name="ExistCondSpec.Text" xml:space="preserve">
+    <value>Cette affectation existe déja </value>
+  </data>
+  <data name="assignStorageConditionToSpec.Text" xml:space="preserve">
+    <value>Affecter famille aux conditions de stockage</value>
+  </data>
+  <data name="ExistCondSpecParent.Text" xml:space="preserve">
+    <value>Cette condiction de stockage est déja affecté au parent</value>
+  </data>
+  <data name="mnClose.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="mSelectMaterials.Text" xml:space="preserve">
+    <value>Ajouter les articles sélectionnés</value>
+  </data>
+  <data name="mExtranetUrl.Text" xml:space="preserve">
+    <value>&lt;br /&gt; Pour saisir votre offre, veuillez remplir le formulaire suivant : &lt;a href=\"{0}\" &gt;Lien&lt;/a&gt; &lt;br /&gt;</value>
+  </data>
+  <data name="hPurchaseStatus.Text" xml:space="preserve">
+    <value>Etat des demandes d\'achat</value>
+  </data>
+  <data name="msgUsedCondition.Text" xml:space="preserve">
+    <value>Cette condition de stockage est déja utilisé, vous ne pouvez pas la supprimer</value>
+  </data>
+  <data name="mCantedittechnicalevaluation.Text" xml:space="preserve">
+    <value>Vous ne pouvez plus modifier le dépouillement technique de cette consultation !</value>
+  </data>
+  <data name="hDescriptionAttach_help.Text" xml:space="preserve">
+    <value>Spécifier la description du rattachement</value>
+  </data>
+  <data name="hNameAttach_help.Text" xml:space="preserve">
+    <value>Spécifier le nom du rattachement</value>
+  </data>
+  <data name="hNature.Text" xml:space="preserve">
+    <value>Nature</value>
+  </data>
+  <data name="assignSpecCond.Text" xml:space="preserve">
+    <value>Affectation familles aux conditions</value>
+  </data>
+  <data name="hNumerotationDocument.Text" xml:space="preserve">
+    <value>Numérotation documents</value>
+  </data>
+  <data name="lblObservations.Text" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="lblObservations_help.Text" xml:space="preserve">
+    <value>Veuillez entrer vos observations</value>
+  </data>
+  <data name="lblReference.Text" xml:space="preserve">
+    <value>Référence</value>
+  </data>
+  <data name="lblReference_help.Text" xml:space="preserve">
+    <value>Veuillez entrer la référence.</value>
+  </data>
+  <data name="lblSubject.Text" xml:space="preserve">
+    <value>Objet</value>
+  </data>
+  <data name="lbSubject_help.Text" xml:space="preserve">
+    <value>Veuillez entrer l'objet.</value>
+  </data>
+  <data name="lbSaveAndSend.Text" xml:space="preserve">
+    <value>Enregistrer et envoyer</value>
+  </data>
+  <data name="mIntroPurchase3.Text" xml:space="preserve">
+    <value>Etape 4: Choix des fichiers à joindre.</value>
+  </data>
+  <data name="mIntroPurchase_Details3.Text" xml:space="preserve">
+    <value>Veuillez joindre les fichiers que vous souhaitez envoyer avec la demande.</value>
+  </data>
+  <data name="LabValidateurTrans.Text" xml:space="preserve">
+    <value>Validateur</value>
+  </data>
+  <data name="hTypeDocument.Text" xml:space="preserve">
+    <value>Type des documents</value>
+  </data>
+  <data name="mAttachementsAcquisition.Text" xml:space="preserve">
+    <value>Pièces jointes des demandes d\'acquisitions</value>
+  </data>
+  <data name="mIntroDatasheet3.Text" xml:space="preserve">
+    <value>Etape 3: Choix des documents.</value>
+  </data>
+  <data name="mIntroDatasheet_Details3.Text" xml:space="preserve">
+    <value>Veuillez joindre les fichiers que vous souhaitez envoyer avec la liste de matériel.</value>
+  </data>
+  <data name="AffectSpect.Text" xml:space="preserve">
+    <value>Définir des conditions de stockage</value>
+  </data>
+  <data name="DeleteAssign.Text" xml:space="preserve">
+    <value>Supprimer une affectation</value>
+  </data>
+  <data name="lblRacine.Text" xml:space="preserve">
+    <value>Cette condition est un noeud racine</value>
+  </data>
+  <data name="mnCommentaire.Text" xml:space="preserve">
+    <value>Commentaire</value>
+  </data>
+  <data name="mConfirmer.Text" xml:space="preserve">
+    <value>Confirmer</value>
+  </data>
+  <data name="hExecAdresse.Text" xml:space="preserve">
+    <value>Lieu d'exécution</value>
+  </data>
+  <data name="hExecAdresse_help.Text" xml:space="preserve">
+    <value>Veuillez entrer le lieu d'exécution.</value>
+  </data>
+  <data name="hLivAdresse.Text" xml:space="preserve">
+    <value>Lieu de livraison</value>
+  </data>
+  <data name="hLivAdresse_help.Text" xml:space="preserve">
+    <value>Veuillez entrer le lieu de livraison.</value>
+  </data>
+  <data name="hRequestedDocument.Text" xml:space="preserve">
+    <value>Documents requis</value>
+  </data>
+  <data name="DocumentRequisTitle.Text" xml:space="preserve">
+    <value>Liste des documents requis</value>
+  </data>
+  <data name="addRequestedDoc.Text" xml:space="preserve">
+    <value>Ajouter document requis</value>
+  </data>
+  <data name="editRequestedDoc.Text" xml:space="preserve">
+    <value>Modifier document requis</value>
+  </data>
+  <data name="msgSelectRequestedDoc.Text" xml:space="preserve">
+    <value>Veuillez séléctionner un document</value>
+  </data>
+  <data name="ConfirmDeleteRequestedDoc.Text" xml:space="preserve">
+    <value>Vous voulez vraiment supprimer ce document ?</value>
+  </data>
+  <data name="FailedDeleteRequestedDoc.Text" xml:space="preserve">
+    <value>Le document est déja utilisée ,veuillez séléctionner un autre document</value>
+  </data>
+  <data name="hRequestedDocumentType.Text" xml:space="preserve">
+    <value>Type des documents réquis</value>
+  </data>
+  <data name="TypeDocumentRequisTitle.Text" xml:space="preserve">
+    <value>Liste des types des documents requis</value>
+  </data>
+  <data name="addRequestedDocType.Text" xml:space="preserve">
+    <value>Ajouter type document requis</value>
+  </data>
+  <data name="ConfirmDeleteRequestedDocType.Text" xml:space="preserve">
+    <value>Vous voulez vraiment supprimer ce type de document ?</value>
+  </data>
+  <data name="editRequestedDocType.Text" xml:space="preserve">
+    <value>Modifier type document requis</value>
+  </data>
+  <data name="msgSelectRequestedDocType.Text" xml:space="preserve">
+    <value>Veuillez séléctionner un type de document</value>
+  </data>
+  <data name="hDemandesAchats.Text" xml:space="preserve">
+    <value>Demandes d'achat</value>
+  </data>
+  <data name="hDemandesAchats_help.Text" xml:space="preserve">
+    <value>Liste des demandes d'achat</value>
+  </data>
+  <data name="hPaymentDetails.Text" xml:space="preserve">
+    <value>Détails de paiement</value>
+  </data>
+  <data name="hPaymentDetails_help.Text" xml:space="preserve">
+    <value>Veuillez entrer les détails de paiement</value>
+  </data>
+  <data name="hSupplierOfferCode.Text" xml:space="preserve">
+    <value>Réf. fournisseur</value>
+  </data>
+  <data name="RefSource.Text" xml:space="preserve">
+    <value>Réf. Source</value>
+  </data>
+  <data name="hSuppliersConsult.Text" xml:space="preserve">
+    <value>Fournisseurs à consulter</value>
+  </data>
+  <data name="hSuppliersConsult_help.Text" xml:space="preserve">
+    <value>Veuillez entrer la liste des fournisseurs à consulter.</value>
+  </data>
+  <data name="CliquerIci.Text" xml:space="preserve">
+    <value>Cliquez ici</value>
+  </data>
+  <data name="HasSuppliersTConsult.Text" xml:space="preserve">
+    <value>Pour voir la liste des fournisseurs à consulter.</value>
+  </data>
+  <data name="msgFailedEditExist.Text" xml:space="preserve">
+    <value>Ce document existe déja ,veuillez ajouter un autre document</value>
+  </data>
+  <data name="msgFailedEditExistTypeDoc.Text" xml:space="preserve">
+    <value>Ce type de document existe déja ,veuillez ajouter un autre type</value>
+  </data>
+  <data name="mAttachementsPruchase.Text" xml:space="preserve">
+    <value>Pièces jointes des demandes d\'achats</value>
+  </data>
+  <data name="hRefPurchase.Text" xml:space="preserve">
+    <value>Réf. Demande d'achat</value>
+  </data>
+  <data name="lblDocument.Text" xml:space="preserve">
+    <value>Document</value>
+  </data>
+  <data name="lblDocumentQuatity.Text" xml:space="preserve">
+    <value>Quantité</value>
+  </data>
+  <data name="lblDocumentQuatity_help.Text" xml:space="preserve">
+    <value>Veuillez entrer le quantité.</value>
+  </data>
+  <data name="lblDocumentType.Text" xml:space="preserve">
+    <value>Type de document</value>
+  </data>
+  <data name="lblDocumentType_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le type du document.</value>
+  </data>
+  <data name="lblDocument_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un document.</value>
+  </data>
+  <data name="lblTypeDocument.Text" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="mAddDocumentToPurchase.Text" xml:space="preserve">
+    <value>Ajouter ce document à la demande</value>
+  </data>
+  <data name="mIntroPurchase4.Text" xml:space="preserve">
+    <value>Etape 3: Choix des documents.</value>
+  </data>
+  <data name="mIntroPurchase_Details4.Text" xml:space="preserve">
+    <value>Veuillez choisir les documents demandés.</value>
+  </data>
+  <data name="mListeDocument.Text" xml:space="preserve">
+    <value>Liste des documents à fournir</value>
+  </data>
+  <data name="mSelectDocument.Text" xml:space="preserve">
+    <value>Sélection des documents</value>
+  </data>
+  <data name="hDeliveryMethod.Text" xml:space="preserve">
+    <value>Mode de livraison</value>
+  </data>
+  <data name="hgaranteeperiod.Text" xml:space="preserve">
+    <value>Période de garantie (mois)</value>
+  </data>
+  <data name="hIncoterms.Text" xml:space="preserve">
+    <value>Incoterms</value>
+  </data>
+  <data name="hPaymentDelais.Text" xml:space="preserve">
+    <value>Délais de paiement</value>
+  </data>
+  <data name="hPaymentDelais_help.Text" xml:space="preserve">
+    <value>Veuillez entrer le délais de paiement.</value>
+  </data>
+  <data name="mAddVariousFeesToConsultation.Text" xml:space="preserve">
+    <value>Ajouter les éléments sélectionnés</value>
+  </data>
+  <data name="mIntroConsultation5.Text" xml:space="preserve">
+    <value>Choix des documents et frais divers</value>
+  </data>
+  <data name="mIntroConsultation_Details5.Text" xml:space="preserve">
+    <value>Veuillez spécifier les documents et les frais divers.</value>
+  </data>
+  <data name="mDescription.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hDelais.Text" xml:space="preserve">
+    <value>Délais (j)</value>
+  </data>
+  <data name="mAlreadyAddedOffer.Text" xml:space="preserve">
+    <value>Vous avez déja répondu à cette consultation !</value>
+  </data>
+  <data name="mErrorInvalidAccount.Text" xml:space="preserve">
+    <value>Le compte avec lequel vous authentifié n'est pas autorisé à effectuer cette opération. Veuillez fournir un compte fournisseur !</value>
+  </data>
+  <data name="hDelais_Help.Text" xml:space="preserve">
+    <value>Veuillez entrer le délais.</value>
+  </data>
+  <data name="hdecision.Text" xml:space="preserve">
+    <value>Décision</value>
+  </data>
+  <data name="lbFailedOp.Text" xml:space="preserve">
+    <value>Opération a échoué!</value>
+  </data>
+  <data name="mnOffreRetenu.Text" xml:space="preserve">
+    <value>Offre retenu</value>
+  </data>
+  <data name="mObservationDep.Text" xml:space="preserve">
+    <value>Observations</value>
+  </data>
+  <data name="hPersonToNotify.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="mnAddNotif.Text" xml:space="preserve">
+    <value>Ajout Notification</value>
+  </data>
+  <data name="mnEditNotif.Text" xml:space="preserve">
+    <value>Modifier Notification</value>
+  </data>
+  <data name="mnSelectNotif.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une notification !</value>
+  </data>
+  <data name="hRequestedTime.Text" xml:space="preserve">
+    <value>Délais souhaité (j)</value>
+  </data>
+  <data name="lbUnit.Text" xml:space="preserve">
+    <value>Unité</value>
+  </data>
+  <data name="hDocumentAndFees.Text" xml:space="preserve">
+    <value>Liste des documents et frais</value>
+  </data>
+  <data name="hAvailableUnit.Text" xml:space="preserve">
+    <value>Unité proposée</value>
+  </data>
+  <data name="hRequestedUnit.Text" xml:space="preserve">
+    <value>Unité demandée</value>
+  </data>
+  <data name="hEmploye.Text" xml:space="preserve">
+    <value>Employé</value>
+  </data>
+  <data name="hEtape.Text" xml:space="preserve">
+    <value>Etape processus</value>
+  </data>
+  <data name="hFonction.Text" xml:space="preserve">
+    <value>Fonction</value>
+  </data>
+  <data name="hManageNotif.Text" xml:space="preserve">
+    <value>Notifications</value>
+  </data>
+  <data name="hTVA_help.Text" xml:space="preserve">
+    <value>Veuillez saisir la valeur de la TVA.</value>
+  </data>
+  <data name="mhIExiste.Text" xml:space="preserve">
+    <value>Existe déja</value>
+  </data>
+  <data name="mhINotExiste.Text" xml:space="preserve">
+    <value>Ajoutée avec succès</value>
+  </data>
+  <data name="lbDocType_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le type de document.</value>
+  </data>
+  <data name="lbFonction.Text" xml:space="preserve">
+    <value>Fonction</value>
+  </data>
+  <data name="lbFonction_help.Text" xml:space="preserve">
+    <value>Veuillez choisir la liste des fonctions</value>
+  </data>
+  <data name="lblDocType.Text" xml:space="preserve">
+    <value>Type document</value>
+  </data>
+  <data name="lbProcessKey.Text" xml:space="preserve">
+    <value>Etape</value>
+  </data>
+  <data name="lbProcessKey_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une étape.</value>
+  </data>
+  <data name="mselectfunction.Text" xml:space="preserve">
+    <value>Sélection des fonctions</value>
+  </data>
+  <data name="hEmploye_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la liste des employés à  notifier.</value>
+  </data>
+  <data name="hFonction_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la liste des fonctions à  notifier.</value>
+  </data>
+  <data name="mDatasheet.Text" xml:space="preserve">
+    <value>Liste de matériel</value>
+  </data>
+  <data name="mOthers.Text" xml:space="preserve">
+    <value>Autres</value>
+  </data>
+  <data name="hByEmployee.Text" xml:space="preserve">
+    <value>Par employé</value>
+  </data>
+  <data name="hByFunction.Text" xml:space="preserve">
+    <value>Par fonction</value>
+  </data>
+  <data name="hEmployeesToNotify.Text" xml:space="preserve">
+    <value>Liste des employés à notifier</value>
+  </data>
+  <data name="hFunctionsToNotify.Text" xml:space="preserve">
+    <value>Liste des fonctions à notifier</value>
+  </data>
+  <data name="hMatricule.Text" xml:space="preserve">
+    <value>Matricule</value>
+  </data>
+  <data name="mnValidCommand.Text" xml:space="preserve">
+    <value>Validation Commande</value>
+  </data>
+  <data name="mValid.Text" xml:space="preserve">
+    <value>Valider</value>
+  </data>
+  <data name="mCommentsHistory.Text" xml:space="preserve">
+    <value>Historique de validation</value>
+  </data>
+  <data name="mConfirmAndSend.Text" xml:space="preserve">
+    <value>Confirmer et envoyer pour validation</value>
+  </data>
+  <data name="hValidBudget.Text" xml:space="preserve">
+    <value>Validation par rapport au budget</value>
+  </data>
+  <data name="mErrorAuthorised.Text" xml:space="preserve">
+    <value>Vous n\'êtes pas autorisé à effectuer cette opération.</value>
+  </data>
+  <data name="mnotauthorisedEdit.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas modifier la commande à cette étape.</value>
+  </data>
+  <data name="mnotauthorisedValid.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas valider la commande à cette étape.</value>
+  </data>
+  <data name="confDelInvoice.Text" xml:space="preserve">
+    <value>Voulez-vous supprimer cette facture ? </value>
+  </data>
+  <data name="mListeFacture.Text" xml:space="preserve">
+    <value>Liste des factures</value>
+  </data>
+  <data name="mnAddInvoice.Text" xml:space="preserve">
+    <value>Assistant de création de facture</value>
+  </data>
+  <data name="mnEditInvoice.Text" xml:space="preserve">
+    <value>Assistant de modification facture</value>
+  </data>
+  <data name="mnInvoice.Text" xml:space="preserve">
+    <value>Factures</value>
+  </data>
+  <data name="mSelectInvoice.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une facture !</value>
+  </data>
+  <data name="tpAddInvoice.Text" xml:space="preserve">
+    <value>Ajouter facture</value>
+  </data>
+  <data name="tpDeleteInvoice.Text" xml:space="preserve">
+    <value>Supprimer facture</value>
+  </data>
+  <data name="tpEditInvoice.Text" xml:space="preserve">
+    <value>Modifier facture</value>
+  </data>
+  <data name="mApprobateur.Text" xml:space="preserve">
+    <value>Approbateur</value>
+  </data>
+  <data name="mCommentairedatesortie.Text" xml:space="preserve">
+    <value>Commentaire de date de sortie</value>
+  </data>
+  <data name="mConditionspaiement.Text" xml:space="preserve">
+    <value>Conditions de paiement</value>
+  </data>
+  <data name="mDateEcheance.Text" xml:space="preserve">
+    <value>Date d\'échéance</value>
+  </data>
+  <data name="mDatesortiepaiements.Text" xml:space="preserve">
+    <value>Date sortie des paiements</value>
+  </data>
+  <data name="mIDpaiement.Text" xml:space="preserve">
+    <value>ID paiement</value>
+  </data>
+  <data name="mMontanthorstaxecal.Text" xml:space="preserve">
+    <value>Montant hors taxe calculé</value>
+  </data>
+  <data name="mMontantreelhorstaxe.Text" xml:space="preserve">
+    <value>Montant réel hors taxe</value>
+  </data>
+  <data name="mMontantreeltaxe.Text" xml:space="preserve">
+    <value>Montant réel de la taxe</value>
+  </data>
+  <data name="mMontanttaxecal.Text" xml:space="preserve">
+    <value>Montant de la taxe calculé</value>
+  </data>
+  <data name="mListCommande.Text" xml:space="preserve">
+    <value>Liste des commandes</value>
+  </data>
+  <data name="mPaiement.Text" xml:space="preserve">
+    <value>Paiement</value>
+  </data>
+  <data name="mMontantHT.Text" xml:space="preserve">
+    <value>Montant hors taxe</value>
+  </data>
+  <data name="mMontantTVA.Text" xml:space="preserve">
+    <value>Montant de la taxe</value>
+  </data>
+  <data name="lbBrand_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la marque de l'article !</value>
+  </data>
+  <data name="mDeleteBrandError.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette marque, elle est référencée dans un ou plusieurs articles !</value>
+  </data>
+  <data name="mnBrand.Text" xml:space="preserve">
+    <value>Marque</value>
+  </data>
+  <data name="mnBrands.Text" xml:space="preserve">
+    <value>Marques</value>
+  </data>
+  <data name="mSelectBrand.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une marque !</value>
+  </data>
+  <data name="popAddBrand.Text" xml:space="preserve">
+    <value>Gestion des marques</value>
+  </data>
+  <data name="hTotal.Text" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="hCategorie.Text" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="hDeviseBudget.Text" xml:space="preserve">
+    <value>Devise Budget</value>
+  </data>
+  <data name="hEcart.Text" xml:space="preserve">
+    <value>Ecart</value>
+  </data>
+  <data name="hMontantBudget.Text" xml:space="preserve">
+    <value>Montant budget</value>
+  </data>
+  <data name="mnPrintPage.Text" xml:space="preserve">
+    <value>Imprimer cette page</value>
+  </data>
+  <data name="mRefuse.Text" xml:space="preserve">
+    <value>Refuser</value>
+  </data>
+  <data name="mnShow.Text" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="hInvoiceStatus.Text" xml:space="preserve">
+    <value>Etat des factures</value>
+  </data>
+  <data name="hPaymentTerms.Text" xml:space="preserve">
+    <value>Conditions de paiement</value>
+  </data>
+  <data name="hCommand.Text" xml:space="preserve">
+    <value>Commande</value>
+  </data>
+  <data name="mMontantreelhorstaxefraisdivers.Text" xml:space="preserve">
+    <value>Montant réel hors taxe des frais divers</value>
+  </data>
+  <data name="hCategoryAmount.Text" xml:space="preserve">
+    <value>Montant catégorie</value>
+  </data>
+  <data name="mBudgetDepasser.Text" xml:space="preserve">
+    <value>Vous avez dépassé le budget et vous allez provoquer une révision de budget, voulez-vous confirmer ?</value>
+  </data>
+  <data name="mAutrevalidation.Text" xml:space="preserve">
+    <value>Cette commande a été validée par une autre personne.</value>
+  </data>
+  <data name="mCanceledCommandAlert.Text" xml:space="preserve">
+    <value>Cette commande a été annulée !</value>
+  </data>
+  <data name="mRequiredField.Text" xml:space="preserve">
+    <value>Ce champs est obligatoire !</value>
+  </data>
+  <data name="mBudgetNegativ.Text" xml:space="preserve">
+    <value>Vous avez dépassé le budget, voulez-vous confirmer ?</value>
+  </data>
+  <data name="mBudgetNull.Text" xml:space="preserve">
+    <value>Votre budget n\'est pas encore défini, voulez-vous confirmer la demande d\'achat ? </value>
+  </data>
+  <data name="mnPurchase.Text" xml:space="preserve">
+    <value>Demande d\'achat</value>
+  </data>
+  <data name="mOffre.Text" xml:space="preserve">
+    <value>Offre</value>
+  </data>
+  <data name="confCancelCommand.Text" xml:space="preserve">
+    <value>Voulez-vous annuler cette commande ? </value>
+  </data>
+  <data name="mAlreadyCanceled.Text" xml:space="preserve">
+    <value>Cette commande est déja annulée !</value>
+  </data>
+  <data name="mCannotCancelCommand.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler la commande à l\'étape actuelle !</value>
+  </data>
+  <data name="mPurchaseRequestCreated.Text" xml:space="preserve">
+    <value>La demande d\'achat a été crée avec succès. Sa référence est </value>
+  </data>
+  <data name="mCommandCreated.Text" xml:space="preserve">
+    <value>La commande a été crée avec succès. Sa référence est </value>
+  </data>
+  <data name="mConsultationCreated.Text" xml:space="preserve">
+    <value>La consultation a été crée avec succès. Sa référence est </value>
+  </data>
+  <data name="mDatasheetCreated.Text" xml:space="preserve">
+    <value>La liste de matériel a été crée avec succès. Sa référence est </value>
+  </data>
+  <data name="mInvoiceCreated.Text" xml:space="preserve">
+    <value>La facture a été crée avec succès. Sa référence est</value>
+  </data>
+  <data name="mOfferCreated.Text" xml:space="preserve">
+    <value>L\'offre a été ajouté avec succès. Sa référence est </value>
+  </data>
+  <data name="mPrerequisiteCreated.Text" xml:space="preserve">
+    <value>La spécification a été ajouté avec succès. Sa référence est </value>
+  </data>
+  <data name="mnAcquisitionRequest.Text" xml:space="preserve">
+    <value>Demande d\'acquisition</value>
+  </data>
+  <data name="mCantvalidateoffer.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas retenir cet offre, le dépouillement commercial n\'est pas encore effectué.</value>
+  </data>
+  <data name="confCancelPurchaseRequest.Text" xml:space="preserve">
+    <value>Voulez-vous annuler cette demande d\'achat ? </value>
+  </data>
+  <data name="mAlreadyCanceledPurchaseRequest.Text" xml:space="preserve">
+    <value>Cette demande d\'achat est déja annulée !</value>
+  </data>
+  <data name="mCanceledPurchaseRequestAlert.Text" xml:space="preserve">
+    <value>Cette demande d\'achat a été annulée !</value>
+  </data>
+  <data name="mCannotCancelPurchaseRequest.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas annuler la demande d\'achat à l\'étape actuelle !</value>
+  </data>
+  <data name="hRefDatasheet.Text" xml:space="preserve">
+    <value>Réf. Liste de matériel</value>
+  </data>
+  <data name="mnSearchBySupplier.Text" xml:space="preserve">
+    <value>Recherche par fournisseur et marque</value>
+  </data>
+  <data name="mnSearchTitle_SupplierBrand.Text" xml:space="preserve">
+    <value>Liste des articles &lt;br /&gt;Résultat de recherche selon les critères suivants : Fournisseur : {0} , Marque : {1}</value>
+  </data>
+  <data name="lbInactiveUserError.Text" xml:space="preserve">
+    <value>You have been inactive in this application for more than 20 minutes, Please refresh page and re-enter the form!</value>
+  </data>
+  <data name="mConfirmAndGeneratePurchaseRequest.Text" xml:space="preserve">
+    <value>Confirmer et générer une demande d'achat</value>
+  </data>
+  <data name="mFailedsent.Text" xml:space="preserve">
+    <value>Échec d'envoie.</value>
+  </data>
+  <data name="mMailDontExist.Text" xml:space="preserve">
+    <value>L'email du fournisseur n'existe pas dans la base de contacts.</value>
+  </data>
+  <data name="mSuccessfullysent.Text" xml:space="preserve">
+    <value>Envoyé avec succès.</value>
+  </data>
+  <data name="mAlreadyExistError.Text" xml:space="preserve">
+    <value>Cet élément existe déja !</value>
+  </data>
+  <data name="mDeleteError.Text" xml:space="preserve">
+    <value>Suppression impossible, valeur déja utilisée !</value>
+  </data>
+  <data name="lblRootStandard.Text" xml:space="preserve">
+    <value>Cette norme est un noeud racine</value>
+  </data>
+  <data name="mIntroCommand4.Text" xml:space="preserve">
+    <value>Etape 4 : Résumé des totaux et saisie de la remise sur total</value>
+  </data>
+  <data name="mIntroCommand_Details4.Text" xml:space="preserve">
+    <value>Veuillez spécifier la remise sur total de la commande.</value>
+  </data>
+  <data name="mDiscountNumber.Text" xml:space="preserve">
+    <value>Remise sur total</value>
+  </data>
+  <data name="mDiscountPercent.Text" xml:space="preserve">
+    <value>Remise sur total en %</value>
+  </data>
+  <data name="mMHTA.Text" xml:space="preserve">
+    <value>Montant hors taxe des articles</value>
+  </data>
+  <data name="mMHTF.Text" xml:space="preserve">
+    <value>Montant hors taxe des frais divers</value>
+  </data>
+  <data name="mMRTTC.Text" xml:space="preserve">
+    <value>Montant total final</value>
+  </data>
+  <data name="mMTA.Text" xml:space="preserve">
+    <value>Montant de la taxe des articles</value>
+  </data>
+  <data name="mMTF.Text" xml:space="preserve">
+    <value>Montant de la taxe des frais divers</value>
+  </data>
+  <data name="mnSynchronization.Text" xml:space="preserve">
+    <value>Synchronisation</value>
+  </data>
+  <data name="mnSyncSettings.Text" xml:space="preserve">
+    <value>Paramètres</value>
+  </data>
+  <data name="hTotals.Text" xml:space="preserve">
+    <value>Totaux</value>
+  </data>
+  <data name="mConfirmDatasheetRevision.Text" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir créer une nouvelle version de cette liste de matériel ?</value>
+  </data>
+  <data name="mMontantTotalHT.Text" xml:space="preserve">
+    <value>Montant total hors taxe</value>
+  </data>
+  <data name="mMontantTotalTVA.Text" xml:space="preserve">
+    <value>Montant total de la taxe</value>
+  </data>
+  <data name="mMTTC.Text" xml:space="preserve">
+    <value>Montant total (TTC)</value>
+  </data>
+  <data name="hDateEcheance.Text" xml:space="preserve">
+    <value>Date d'échéance</value>
+  </data>
+  <data name="mBankAccount.Text" xml:space="preserve">
+    <value>Compte bancaire</value>
+  </data>
+  <data name="mIntroInvoice1.Text" xml:space="preserve">
+    <value>Étape 1: Définition des propriétés générales de la facture</value>
+  </data>
+  <data name="mIntroInvoice2.Text" xml:space="preserve">
+    <value>Etape 2: Définition des articles</value>
+  </data>
+  <data name="mIntroInvoice3.Text" xml:space="preserve">
+    <value>Etape 3 : Définition des frais divers</value>
+  </data>
+  <data name="mIntroInvoice_Details1.Text" xml:space="preserve">
+    <value>Veuillez spécifier les propriètes générales de la facture.</value>
+  </data>
+  <data name="mIntroInvoice_Details2.Text" xml:space="preserve">
+    <value>Veuillez choisir les articles pour la facture.</value>
+  </data>
+  <data name="mIntroInvoice_Details3.Text" xml:space="preserve">
+    <value>Veuillez spécifier les frais divers de la facture.</value>
+  </data>
+  <data name="mNone.Text" xml:space="preserve">
+    <value>Aucune</value>
+  </data>
+  <data name="mTaxGroup.Text" xml:space="preserve">
+    <value>Groupe de taxe</value>
+  </data>
+  <data name="lblCommandes.Text" xml:space="preserve">
+    <value>Commandes</value>
+  </data>
+  <data name="lblCommandes_help.Text" xml:space="preserve">
+    <value>Liste des commandes</value>
+  </data>
+  <data name="mSelectLigneInvoice.Text" xml:space="preserve">
+    <value>Ajouter les articles sélectionnés à la facture</value>
+  </data>
+  <data name="mInvoiceEdited.Text" xml:space="preserve">
+    <value>The invoice has been modified successfully. His reference is</value>
+  </data>
+  <data name="hRefCommand.Text" xml:space="preserve">
+    <value>Réf. Commandes</value>
+  </data>
+  <data name="hPaymentSchedules.Text" xml:space="preserve">
+    <value>Echéances de paiement</value>
+  </data>
+  <data name="mDeletePaymentSchedulesError.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette échéance de paiement, elle est référencée dans un ou plusieurs objets !</value>
+  </data>
+  <data name="mSelectPaymentSchedules.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une échéance !</value>
+  </data>
+  <data name="hAmount.Text" xml:space="preserve">
+    <value>Montant</value>
+  </data>
+  <data name="hPaymentSchedulesLines.Text" xml:space="preserve">
+    <value>Lignes de paiement</value>
+  </data>
+  <data name="hPercent.Text" xml:space="preserve">
+    <value>Pourcentage</value>
+  </data>
+  <data name="mCannotDeleteOffer.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas supprimer cette offre !</value>
+  </data>
+  <data name="mCannotEditOffer.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas modifier cette offre !</value>
+  </data>
+  <data name="mCodeAlreadyExistError.Text" xml:space="preserve">
+    <value>Un élement avec le même code existe déja !</value>
+  </data>
+  <data name="mCodeRequiredError.Text" xml:space="preserve">
+    <value>Le champs code est obligatoire !</value>
+  </data>
+  <data name="mDesignationRequiredError.Text" xml:space="preserve">
+    <value>Le champs désignation est obligatoire !</value>
+  </data>
+  <data name="mNameRequiredError.Text" xml:space="preserve">
+    <value>Le champs nom est obligatoire !</value>
+  </data>
+  <data name="mnConsultationAndOffers.Text" xml:space="preserve">
+    <value>Consultations &amp; Offres</value>
+  </data>
+  <data name="mTypeRequiredError.Text" xml:space="preserve">
+    <value>Le champs type est obligatoire !</value>
+  </data>
+  <data name="hAssetGroup.Text" xml:space="preserve">
+    <value>Groupe Immo.</value>
+  </data>
+  <data name="hNumOfDays.Text" xml:space="preserve">
+    <value>Nb de jours</value>
+  </data>
+  <data name="hNumOfMonths.Text" xml:space="preserve">
+    <value>Nb de mois</value>
+  </data>
+  <data name="hPaymDay.Text" xml:space="preserve">
+    <value>Jour de paiement</value>
+  </data>
+  <data name="hMonthDay.Text" xml:space="preserve">
+    <value>Jour du mois</value>
+  </data>
+  <data name="hMonth.Text" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="hPaymentDay.Text" xml:space="preserve">
+    <value>Jour de paiement</value>
+  </data>
+  <data name="hPaymentDayLines.Text" xml:space="preserve">
+    <value>Lignes de jours de paiement</value>
+  </data>
+  <data name="hWeek.Text" xml:space="preserve">
+    <value>Semaine</value>
+  </data>
+  <data name="mSelectPaymentDay.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un jour de paiement !</value>
+  </data>
+  <data name="hNone.Text" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="hWeekDay.Text" xml:space="preserve">
+    <value>Jour de la semaine</value>
+  </data>
+  <data name="mSelectLine.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une ligne !</value>
+  </data>
+  <data name="mIntroInvoice4.Text" xml:space="preserve">
+    <value>Etape 4 : Rattachement des fichiers référence</value>
+  </data>
+  <data name="mIntroInvoice_Details4.Text" xml:space="preserve">
+    <value>Veuillez joindre les fichiers que vous souhaitez envoyer avec la facture.</value>
+  </data>
+  <data name="hTaxExemptOrderNumber.Text" xml:space="preserve">
+    <value>BC H.T.V.A.N°</value>
+  </data>
+  <data name="lbIsExemptOrder.Text" xml:space="preserve">
+    <value>Cette commande est exonérée</value>
+  </data>
+  <data name="hTaxCode.Text" xml:space="preserve">
+    <value>Code de taxe</value>
+  </data>
+  <data name="hTaxGroupLines.Text" xml:space="preserve">
+    <value>Lignes de taxes</value>
+  </data>
+  <data name="hTaxGroups.Text" xml:space="preserve">
+    <value>Groupes de taxes</value>
+  </data>
+  <data name="lblOriginalMethodPayment.Text" xml:space="preserve">
+    <value>Mode d'origine</value>
+  </data>
+  <data name="mBankAccountRequired.Text" xml:space="preserve">
+    <value>Le champs compte bancaire est obligatoire !</value>
+  </data>
+  <data name="mBankModeAlreadyExistError.Text" xml:space="preserve">
+    <value>Un élement avec le même mode d'origine et le même compte bancaire existe déja !</value>
+  </data>
+  <data name="mCertificateNumber.Text" xml:space="preserve">
+    <value>Numéro attestation</value>
+  </data>
+  <data name="mExemption.Text" xml:space="preserve">
+    <value>Exonération</value>
+  </data>
+  <data name="mIncludeBankData.Text" xml:space="preserve">
+    <value>Inclure données compte</value>
+  </data>
+  <data name="mnVarious.Text" xml:space="preserve">
+    <value>Divers</value>
+  </data>
+  <data name="mOriginalModeRequired.Text" xml:space="preserve">
+    <value>Le champs mode d'origine est obligatoire !</value>
+  </data>
+  <data name="mSupplierBankAccount.Text" xml:space="preserve">
+    <value>Compte bancaire fournisseur</value>
+  </data>
+  <data name="mTaxCodeRequiredError.Text" xml:space="preserve">
+    <value>Le champs code taxe est obligatoire !</value>
+  </data>
+  <data name="hErrMsg.Text" xml:space="preserve">
+    <value>Message d'erreur</value>
+  </data>
+  <data name="lblIdentif.Text" xml:space="preserve">
+    <value>Identifiant</value>
+  </data>
+  <data name="lblNone.Text" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="mnObject.Text" xml:space="preserve">
+    <value>Objet</value>
+  </data>
+  <data name="mnSoftware.Text" xml:space="preserve">
+    <value>Logiciel</value>
+  </data>
+  <data name="mnAlreadyApprovedInvoice.Text" xml:space="preserve">
+    <value>Cette facture est déja validée !</value>
+  </data>
+  <data name="mnCannotEditApprovedInvoice.Text" xml:space="preserve">
+    <value>Cette facture est validée. Vous ne pouvez pas la modifier !</value>
+  </data>
+  <data name="hDeliveredQuantity.Text" xml:space="preserve">
+    <value>Qté livrée</value>
+  </data>
+  <data name="hDeliveryDocuments.Text" xml:space="preserve">
+    <value>Réf. Bons de livraison</value>
+  </data>
+  <data name="hInvoicedQuantity.Text" xml:space="preserve">
+    <value>Qté facturée</value>
+  </data>
+  <data name="hOrderedQuantity.Text" xml:space="preserve">
+    <value>Qté commandée</value>
+  </data>
+  <data name="hRounding.Text" xml:space="preserve">
+    <value>Arrondissement</value>
+  </data>
+  <data name="hStockEntryRef.Text" xml:space="preserve">
+    <value>Réf. Bons d'entrées</value>
+  </data>
+  <data name="hSupplierInvoiceRef.Text" xml:space="preserve">
+    <value>Réf. facture fournisseur</value>
+  </data>
+  <data name="hTotalsAndRounding.Text" xml:space="preserve">
+    <value>Totaux et arrondissement</value>
+  </data>
+  <data name="mConfirmValid.Text" xml:space="preserve">
+    <value>Confirmer la validation ?</value>
+  </data>
+  <data name="mnValidInvoice.Text" xml:space="preserve">
+    <value>Validation facture</value>
+  </data>
+  <data name="mBonEntree.Text" xml:space="preserve">
+    <value>Bon d'entrée</value>
+  </data>
+  <data name="mIntroInvoice5.Text" xml:space="preserve">
+    <value>Etape 5 : Résumé des totaux et saisie de l\'arrondissement </value>
+  </data>
+  <data name="mIntroInvoice_Details5.Text" xml:space="preserve">
+    <value>Veuillez spécifier l\'arrondissement .</value>
+  </data>
+  <data name="hMaterialTaxGroup.Text" xml:space="preserve">
+    <value>Groupe de taxe article</value>
+  </data>
+  <data name="hSupplierTaxGroup.Text" xml:space="preserve">
+    <value>Groupe de taxe fournisseur</value>
+  </data>
+  <data name="hTaxes.Text" xml:space="preserve">
+    <value>Taxes</value>
+  </data>
+  <data name="lbInterface.Text" xml:space="preserve">
+    <value>Interface</value>
+  </data>
+  <data name="mTaxCombinationAlreadyExistError.Text" xml:space="preserve">
+    <value>Cette combinaison de taxes existe déja !</value>
+  </data>
+  <data name="hInvoice.Text" xml:space="preserve">
+    <value>Facture</value>
+  </data>
+  <data name="hExtranetUsers.Text" xml:space="preserve">
+    <value>Utilisateurs extranet</value>
+  </data>
+  <data name="hMatching.Text" xml:space="preserve">
+    <value>Correspondance</value>
+  </data>
+  <data name="hMatchingHelp.Text" xml:space="preserve">
+    <value>Correspondance avec les articles de logiciels externes</value>
+  </data>
+  <data name="hMatchingTable.Text" xml:space="preserve">
+    <value>Table des correspondances</value>
+  </data>
+  <data name="hMaterialsMatching.Text" xml:space="preserve">
+    <value>Correspondance des articles</value>
+  </data>
+  <data name="hSoftCode.Text" xml:space="preserve">
+    <value>Code logiciel</value>
+  </data>
+  <data name="lbShowAllProperties.Text" xml:space="preserve">
+    <value>Afficher toutes les propriétés</value>
+  </data>
+  <data name="mMatchingError.Text" xml:space="preserve">
+    <value>Une erreur s'est produite lors de l'ajout de l'équivalent de l'article {0} dans le logiciel {1} !</value>
+  </data>
+  <data name="mMatchingExist.Text" xml:space="preserve">
+    <value>L'équivalent de l'article {0} dans le logiciel {1} existe déja !</value>
+  </data>
+  <data name="mSelectSoftware.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un logiciel !</value>
+  </data>
+  <data name="hSpecification.Text" xml:space="preserve">
+    <value>Famille</value>
+  </data>
+  <data name="tAssignedCategroies.Text" xml:space="preserve">
+    <value>Liste des catégories affectées</value>
+  </data>
+  <data name="hFirstName.Text" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="hLastName.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="hPersonList.Text" xml:space="preserve">
+    <value>Liste des personnes à contacter</value>
+  </data>
+  <data name="hUserName.Text" xml:space="preserve">
+    <value>Nom d'utilisateur</value>
+  </data>
+  <data name="lbContact.Text" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="lbCreateUsers.Text" xml:space="preserve">
+    <value>Créer les comptes utilisateurs</value>
+  </data>
+  <data name="lbSelectContact.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la personne à contacter !</value>
+  </data>
+  <data name="lbUserAlreadyExist.Text" xml:space="preserve">
+    <value>Utilisateur existe déja !</value>
+  </data>
+  <data name="mAlreadyUsedMaterialDeleteError.Text" xml:space="preserve">
+    <value>Cet article est déja utilisé, vous ne pouvez pas le supprimer !</value>
+  </data>
+  <data name="mPurchaseRequestInUse.Text" xml:space="preserve">
+    <value>Impossible de supprimer cette demande d\'achat ! Elle est utilisé dans une ou plusieurs consultations !</value>
+  </data>
+  <data name="LabNomOrg.Text" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="LabValidateur.Text" xml:space="preserve">
+    <value>Validateur</value>
+  </data>
+  <data name="mIncludeSendEmailsToSuppliers.Text" xml:space="preserve">
+    <value>Autoriser l'envoi par email aux fournisseurs sélectionnés.</value>
+  </data>
+  <data name="lbValidity.Text" xml:space="preserve">
+    <value>Validité</value>
+  </data>
+  <data name="mFillRequiredFields.Text" xml:space="preserve">
+    <value>Veuillez remplir les champs obligatoires !</value>
+  </data>
+  <data name="mSupplierAlreadyAddedOffer.Text" xml:space="preserve">
+    <value>Le fournisseur {0} a déja répondu à cette consultation !</value>
+  </data>
+  <data name="mCannotDeleteOrderedOffer.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas supprimer cette offre, elle est déja utilisée dans une commande !</value>
+  </data>
+  <data name="mnPendingOffers.Text" xml:space="preserve">
+    <value>Offres en cours</value>
+  </data>
+  <data name="mPending.Text" xml:space="preserve">
+    <value>En cours</value>
+  </data>
+  <data name="mSent.Text" xml:space="preserve">
+    <value>Envoyé</value>
+  </data>
+  <data name="lbNoOffer.Text" xml:space="preserve">
+    <value>Aucune offre</value>
+  </data>
+  <data name="lbPendingOffer.Text" xml:space="preserve">
+    <value>Offre en cours</value>
+  </data>
+  <data name="lbSentOffer.Text" xml:space="preserve">
+    <value>Offre envoyée</value>
+  </data>
+  <data name="mCreateUserError.Text" xml:space="preserve">
+    <value>Un problème est survenu lors de la création de l'utilisateur : </value>
+  </data>
+  <data name="mCreateUserPwdQuestion.Text" xml:space="preserve">
+    <value>Quel est votre nom d'utilisateur ?</value>
+  </data>
+  <data name="hNumberingMask.Text" xml:space="preserve">
+    <value>Masque</value>
+  </data>
+  <data name="mAlreadyHasMask.Text" xml:space="preserve">
+    <value>La société sélectionnée possède déja un masque de numérotation pour le document sélectionné !</value>
+  </data>
+  <data name="mDeleteBasicSettingError.Text" xml:space="preserve">
+    <value>Ce paramètre est un paramètre de base de l\'application ! Il est impossible de le supprimer !</value>
+  </data>
+  <data name="hMaterialsMenToNotify.Text" xml:space="preserve">
+    <value>Responsables articles</value>
+  </data>
+  <data name="hManageResponsableMaterials.Text" xml:space="preserve">
+    <value>Gestion responsable articles</value>
+  </data>
+  <data name="mnAddRespTSNotif.Text" xml:space="preserve">
+    <value>Ajout des responsables articles</value>
+  </data>
+  <data name="hMaterialsMenFunctionsList.Text" xml:space="preserve">
+    <value>Liste des fonctions responsables</value>
+  </data>
+  <data name="hMaterialsMenList.Text" xml:space="preserve">
+    <value>Liste des employés responsables</value>
+  </data>
+  <data name="hSelectMaterialsMen.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un ou plusieurs employés !</value>
+  </data>
+  <data name="hSelectMaterialsMenFunctions.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une ou plusieurs fonctions !</value>
+  </data>
+  <data name="msgAlreadyAssignedMultipleSpec.Text" xml:space="preserve">
+    <value>Une ou plusieurs famille sont déja affectées à cette catégorie dans ce projet.</value>
+  </data>
+  <data name="mCanceledDatasheetAlert.Text" xml:space="preserve">
+    <value>Cette liste de matériel a été annulée !</value>
+  </data>
+  <data name="mnotauthorisedSendDatasheet.Text" xml:space="preserve">
+    <value>Cette liste de matériel a été validée et envoyée pour achat. Vous devez lancer une révision pour pouvoir modifier la demande et relancer le processus de validation.</value>
+  </data>
+  <data name="mnotauthorisedValidDatasheet.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas valider la liste de matériel à cette étape.</value>
+  </data>
+  <data name="mnValidDatasheet.Text" xml:space="preserve">
+    <value>Validation liste de matériel</value>
+  </data>
+  <data name="mnotauthorisedRev.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas réviser la liste de matériel à cette étape.</value>
+  </data>
+  <data name="mnotauthorisedRevDatasheet.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas réviser la liste de matériel à cette étape.</value>
+  </data>
+  <data name="mnotauthorisedEditDatasheet.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas modifier la liste de matériel à cette étape.</value>
+  </data>
+  <data name="mIntroDatasheet3_WF.Text" xml:space="preserve">
+    <value>Etape 3: Choix des documents et validation</value>
+  </data>
+  <data name="mIntroDatasheet_Details3_WF.Text" xml:space="preserve">
+    <value>Veuillez joindre les fichiers que vous souhaitez envoyer avec la liste de matériel puis la valider.</value>
+  </data>
+  <data name="mValidation.Text" xml:space="preserve">
+    <value>Validation</value>
+  </data>
+  <data name="hCreditNote.Text" xml:space="preserve">
+    <value>Avoir</value>
+  </data>
+  <data name="mTitleGridStock.Text" xml:space="preserve">
+    <value>Aperçu du stock</value>
+  </data>
+  <data name="hDeviseLocale_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la devise locale !</value>
+  </data>
+  <data name="hTauxChange_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner le taux de change !</value>
+  </data>
+  <data name="lbContactPerson.Text" xml:space="preserve">
+    <value>Personne à contacter</value>
+  </data>
+  <data name="lbContactPerson_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un contact fournisseur.</value>
+  </data>
+  <data name="mSelectSupplier.Text" xml:space="preserve">
+    <value>Veuillez sélectionner un fournisseur !</value>
+  </data>
+  <data name="mUpdateBudget.Text" xml:space="preserve">
+    <value>Révision budget</value>
+  </data>
+  <data name="mValidateCommand_BudgetInProgress.Text" xml:space="preserve">
+    <value>Impossible de valider cette commande. Une révision budgétaire liée à cette commande est en cours de validation. Vous recevrez une notification dés que cette opération prends fin !</value>
+  </data>
+  <data name="mValidateCommand_BudgetNotOk.Text" xml:space="preserve">
+    <value>Une révision budgétaire liée à cette commande a été refusée.</value>
+  </data>
+  <data name="mValidateCommand_BudgetPb.Text" xml:space="preserve">
+    <value>Vous êtes sur le point de valider une commande qui présente un dépassement budgétaire, voulez-vous confirmer ?</value>
+  </data>
+  <data name="mValidateCommand_BudgetCreated.Text" xml:space="preserve">
+    <value>Une révision budgétaire a été lancée, vous recevrez une notification pour poursuivre le traitement de votre commande dés que cette révision sera validée !</value>
+  </data>
+  <data name="mAddMaterialsLimit.Text" xml:space="preserve">
+    <value>On ne peut ajouter des articles que sur les familles du plus bas niveau !</value>
+  </data>
+  <data name="hPurpose.Text" xml:space="preserve">
+    <value>Objectif</value>
+  </data>
+  <data name="hPurpose_help.Text" xml:space="preserve">
+    <value>Veuillez spécifier l'objectif de la demande d'achat.</value>
+  </data>
+  <data name="lbForConsultation.Text" xml:space="preserve">
+    <value>Pour consultation</value>
+  </data>
+  <data name="lbForPurchase.Text" xml:space="preserve">
+    <value>Pour achat</value>
+  </data>
+  <data name="mConsultationMessage.Text" xml:space="preserve">
+    <value>Dans le cadre du projet …. Nous vous prions de nous donner votre meilleure offre de prix pour les
+équipements suivants…&lt;/br&gt;
+Selon les data Sheet et spécification ci-joint&lt;/br&gt;
+Merci daccuser réception de notre consultation et de nous répondre dans les plus brefs délais.&lt;/br&gt;
+Cordialement&lt;/br&gt;
+Nom du contact EPPM&lt;/br&gt;
+Email&lt;/br&gt;
+Site Web&lt;/br&gt;
+Fonction</value>
+  </data>
+  <data name="mTemplate.Text" xml:space="preserve">
+    <value>Modèle</value>
+  </data>
+  <data name="lbSelectMessageTemplate.Text" xml:space="preserve">
+    <value>Choisir un modèle</value>
+  </data>
+  <data name="hEnd.Text" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="mnFinance.Text" xml:space="preserve">
+    <value>Finance</value>
+  </data>
+  <data name="mSelectPurchaseRequest.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une demande d\'achat !</value>
+  </data>
+  <data name="mBudgetMaterialsUndefined.Text" xml:space="preserve">
+    <value>Aucun budget n\'est définis pour un ou plusierus articles de votre demande, voulez-vous confirmer la demande d\'achat ?</value>
+  </data>
+  <data name="mCannotReinitEvaluation.Text" xml:space="preserve">
+    <value>Impossible de ré-initialiser le dépouillement. L\'état de la consultation est</value>
+  </data>
+  <data name="mCantvalidateofferMaterial.Text" xml:space="preserve">
+    <value>Vous ne pouvez pas retenir cet article de l\'offre, le dépouillement commercial n\'est pas encore effectué.</value>
+  </data>
+  <data name="mConfirmAllOfferMaterialsValidation.Text" xml:space="preserve">
+    <value>Voulez-vous vraiement retenir cette offre avec tous ses articles. Cette opération annullera toute validation déja existante?</value>
+  </data>
+  <data name="mReinitEvaluation.Text" xml:space="preserve">
+    <value>Ré-Initialiser dépouillement</value>
+  </data>
+  <data name="lbShowPurchaseAttachments.Text" xml:space="preserve">
+    <value>Affichier les pièces jointes de la demande d'achat</value>
+  </data>
+  <data name="mCannotEditPurchaseRequest.Text" xml:space="preserve">
+    <value>Vous ne pouvez plus modifier cette demande d\'achat. Une ou plusieurs consultations liées à cette demande ont subit un dépouillement ou sont en cours de passation de commande !</value>
+  </data>
+  <data name="mGeneral.Text" xml:space="preserve">
+    <value>Général</value>
+  </data>
+  <data name="hEvaluationCurrencies.Text" xml:space="preserve">
+    <value>Devises de dépouillement</value>
+  </data>
+  <data name="hRate.Text" xml:space="preserve">
+    <value>Taux</value>
+  </data>
+  <data name="hTargetCurrency.Text" xml:space="preserve">
+    <value>Devise cible</value>
+  </data>
+  <data name="mAlreadyExistsCurrency.Text" xml:space="preserve">
+    <value>Cette devise existe déja !</value>
+  </data>
+  <data name="mCannotEditConsultation.Text" xml:space="preserve">
+    <value>Vous ne pouvez plus modifier cette consultation. Elle est déja {0} !</value>
+  </data>
+  <data name="mReInitRateTable.Text" xml:space="preserve">
+    <value>Le changement de la devsie ré-initialise la table des taux de change, voulez-vous confirmer ?</value>
+  </data>
+  <data name="hDeviseConsultation_help.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la devise de la consultation.</value>
+  </data>
+  <data name="mAddFeesToInvoice.Text" xml:space="preserve">
+    <value>Ajouter ce frais à  la facture</value>
+  </data>
+  <data name="mSelectCurrency.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la devise cible !</value>
+  </data>
+  <data name="hVersions.Text" xml:space="preserve">
+    <value>Versions</value>
+  </data>
+  <data name="mOfferHistory.Text" xml:space="preserve">
+    <value>Historique offre</value>
+  </data>
+  <data name="mSelectVersion.Text" xml:space="preserve">
+    <value>Veuillez sélectionner la version de l'offre à afficher</value>
+  </data>
+  <data name="mVersion.Text" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="hRespectPlanning.Text" xml:space="preserve">
+    <value>Planifiée ?</value>
+  </data>
+  <data name="lbCharts.Text" xml:space="preserve">
+    <value>Graphes</value>
+  </data>
+  <data name="lbDeliveries.Text" xml:space="preserve">
+    <value>Livraisons</value>
+  </data>
+  <data name="lbEvents.Text" xml:space="preserve">
+    <value>Événements</value>
+  </data>
+  <data name="lbNumber.Text" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="lbOrdersNumber.Text" xml:space="preserve">
+    <value>Nombre de commandes</value>
+  </data>
+  <data name="lbPurchases.Text" xml:space="preserve">
+    <value>Achats</value>
+  </data>
+  <data name="lbQuarter.Text" xml:space="preserve">
+    <value>Trimèstre</value>
+  </data>
+  <data name="lbSupplier.Text" xml:space="preserve">
+    <value>Fournisseur</value>
+  </data>
+  <data name="lbSupplyVolume.Text" xml:space="preserve">
+    <value>Volume d'approvisionnement</value>
+  </data>
+  <data name="lbTables.Text" xml:space="preserve">
+    <value>Tableaux</value>
+  </data>
+  <data name="lbTopSpendByFamilies.Text" xml:space="preserve">
+    <value>Top dépenses par familles d'articles</value>
+  </data>
+  <data name="lbTopSpendByProjects.Text" xml:space="preserve">
+    <value>Top dépenses par projets</value>
+  </data>
+  <data name="lbTopSpendBySuppliers.Text" xml:space="preserve">
+    <value>Top 10 fournisseurs</value>
+  </data>
+  <data name="lbYear.Text" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="mNo.Text" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="mYes.Text" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+  <data name="hOperator.Text" xml:space="preserve">
+    <value>Opérateur</value>
+  </data>
+  <data name="lbMaterialsNb.Text" xml:space="preserve">
+    <value>Nombre d'articles</value>
+  </data>
+  <data name="lbTopBrandsByMaterialsNb.Text" xml:space="preserve">
+    <value>Top 10 articles par marques</value>
+  </data>
+  <data name="lbTopDisciplinesByMaterialsNb.Text" xml:space="preserve">
+    <value>Top 10 disciplines par nombre d'articles</value>
+  </data>
+  <data name="lbTopFamiliesByMaterialsNb.Text" xml:space="preserve">
+    <value>Top 10 familles par nombre d'articles</value>
+  </data>
+  <data name="lbTopOperatorsByMaterialsNb.Text" xml:space="preserve">
+    <value>Top 10 opérateurs</value>
+  </data>
+  <data name="lbDeleted.Text" xml:space="preserve">
+    <value>Supprimée</value>
+  </data>
+  <data name="mCorrespondingMaterial.Text" xml:space="preserve">
+    <value>Article correspondant</value>
+  </data>
+  <data name="mOriginalMaterial.Text" xml:space="preserve">
+    <value>Article original</value>
+  </data>
+  <data name="hEquivalentMaterials.Text" xml:space="preserve">
+    <value>Articles équivalents</value>
+  </data>
+  <data name="mEquivalentMaterialCode.Text" xml:space="preserve">
+    <value>Code article équivalent</value>
+  </data>
+  <data name="mEquivalentMaterialName.Text" xml:space="preserve">
+    <value>Nom article équivalent</value>
+  </data>
+  <data name="mOriginalMaterialCode.Text" xml:space="preserve">
+    <value>Code article original</value>
+  </data>
+  <data name="mOriginalMaterialName.Text" xml:space="preserve">
+    <value>Nom article original</value>
+  </data>
+  <data name="mNotCreatedEquivalentMaterial.Text" xml:space="preserve">
+    <value>L'article équivalent proposé par le fournisseur n'est pas encore défini au niveau de la base de IIPS. Veuillez contacter le responsable des articles !</value>
+  </data>
+  <data name="mWarning.Text" xml:space="preserve">
+    <value>Avertissement</value>
+  </data>
+  <data name="mnShowChart.Text" xml:space="preserve">
+    <value>Afficher le graphe : </value>
+  </data>
+  <data name="lbEprocSupply.Text" xml:space="preserve">
+    <value>Achats via e-procurement</value>
+  </data>
+  <data name="lbEprocSupplyVolume.Text" xml:space="preserve">
+    <value>Volume e-procurement</value>
+  </data>
+  <data name="lbTotalSupplyVolume.Text" xml:space="preserve">
+    <value>Volume total</value>
+  </data>
+  <data name="mnMaterialsDatabase.Text" xml:space="preserve">
+    <value>Base des articles</value>
+  </data>
+  <data name="mUndefinedSupplierMaterial.Text" xml:space="preserve">
+    <value>Aucun fournisseur associé à cette famille</value>
+  </data>
+  <data name="mSelectCategory.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une catégorie !</value>
+  </data>
+  <data name="lbMaterialFamily.Text" xml:space="preserve">
+    <value>Familles d'articles</value>
+  </data>
+  <data name="hSelectCategory.Text" xml:space="preserve">
+    <value>Sélection de la catégorie de transaction</value>
+  </data>
+  <data name="hSelectFamilies.Text" xml:space="preserve">
+    <value>Sélection des familles d'articles</value>
+  </data>
+  <data name="lbSearchCategory.Text" xml:space="preserve">
+    <value>Rechercher une catgéorie</value>
+  </data>
+  <data name="lbSearchFamily.Text" xml:space="preserve">
+    <value>Rechercher une famille</value>
+  </data>
+  <data name="hSelectProject.Text" xml:space="preserve">
+    <value>Sélection du projet</value>
+  </data>
+  <data name="hSelectNewCategory.Text" xml:space="preserve">
+    <value>Sélection de la nouvelle catégorie de transaction</value>
+  </data>
+  <data name="hSelectUnSelectAll.Text" xml:space="preserve">
+    <value>Sélectionner \ Désélectionner tout</value>
+  </data>
+  <data name="lbOldCategory.Text" xml:space="preserve">
+    <value>Ancienne catégorie</value>
+  </data>
+  <data name="mnEditCategorie.Text" xml:space="preserve">
+    <value>Modifier catégorie de transaction</value>
+  </data>
+  <data name="mnEditFamilies.Text" xml:space="preserve">
+    <value>Modifier familles d\'articles</value>
+  </data>
+  <data name="msgConfirmDeleteCategAssign.Text" xml:space="preserve">
+    <value>Confirmer la suppression de toutes les familles affectées sur cette catégorie ?</value>
+  </data>
+  <data name="msgConfirmDeleteProjectAssign.Text" xml:space="preserve">
+    <value>Confirmer la suppression de toutes les affectations relatives à ce projet ?</value>
+  </data>
+  <data name="msgSelectCategoryOrSepc.Text" xml:space="preserve">
+    <value>Veuillez sélectionner une catégorie ou une famille !</value>
+  </data>
+  <data name="lblEtatAchat.Text" xml:space="preserve">
+    <value>Etat (Achat) </value>
+  </data>
+  <data name="lblEtatAchat_help.Text" xml:space="preserve">
+    <value>Etat (Achat)</value>
+  </data>
+  <data name="lblEtatVente.Text" xml:space="preserve">
+    <value>Etat (Vente) </value>
+  </data>
+  <data name="lblEtatVente_help.Text" xml:space="preserve">
+    <value>Etat (Vente) </value>
+  </data>
+  <data name="lblLimitstock.Text" xml:space="preserve">
+    <value>Limite stock pour alerte</value>
+  </data>
+  <data name="lblLimitstock_help.Text" xml:space="preserve">
+    <value>Limite stock pour alerte</value>
+  </data>
+  <data name="lblSotkcdesire.Text" xml:space="preserve">
+    <value>Stock désiré optimal</value>
+  </data>
+  <data name="lblSotkcdesire_help.Text" xml:space="preserve">
+    <value>Stock désiré optimal</value>
+  </data>
+  <data name="lblCodedouane.Text" xml:space="preserve">
+    <value>Code douane</value>
+  </data>
+  <data name="lblCodedouane_help.Text" xml:space="preserve">
+    <value>Code douane</value>
+  </data>
+  <data name="lblpaysorigine.Text" xml:space="preserve">
+    <value>Pays d\'origine</value>
+  </data>
+  <data name="lblpaysorigine_help.Text" xml:space="preserve">
+    <value>Pays d\'origine</value>
+  </data>
+</root>

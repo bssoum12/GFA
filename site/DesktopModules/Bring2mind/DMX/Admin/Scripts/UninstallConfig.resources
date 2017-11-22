@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="host" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Remove Config">
+ <Description>This script will remove DMX installed items from web.config so that you can uninstall the module. Note that this removes the WebDAV and Upload capabilities.</Description>
+ <Process>
+  <Run RunType="CODE" Command="UninstallConfig">Bring2mind.DNN.Modules.DMX.Framework.ModuleController, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

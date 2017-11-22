@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="admin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Rename Extensions">
+ <Description>This script will rename the extensions of all stored files in the current portal to '.resources'. This improves security of your file storage as '.resources' files will not be served by your IIS to a client.</Description>
+ <Process>
+  <Run RunType="CODE" Command="RenameExtensions">Bring2mind.DNN.Modules.DMX.Services.Storage.FileStorageProvider.FileStorageScripts, BRING2MIND.DNN.MODULES.DMX</Run>
+ </Process>
+</Script>

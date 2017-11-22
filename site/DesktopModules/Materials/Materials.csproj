@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{187FB8A9-CC88-451D-9F4C-A48A5DE00102}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VD.Modules.Materials</RootNamespace>
+    <AssemblyName>Materials</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1.Web, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DotNetNuke, Version=7.0.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\DotNetNuke.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationBlocks.Data, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\Microsoft.ApplicationBlocks.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBrandCtrl.ascx.cs">
+      <DependentUpon>AddBrandCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddBrandCtrl.ascx.designer.cs">
+      <DependentUpon>AddBrandCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCaseDetails.ascx.cs">
+      <DependentUpon>AddCaseDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCaseDetails.ascx.designer.cs">
+      <DependentUpon>AddCaseDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomProperties.ascx.cs">
+      <DependentUpon>AddCustomProperties.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCustomProperties.ascx.designer.cs">
+      <DependentUpon>AddCustomProperties.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMaterialDetails.ascx.cs">
+      <DependentUpon>AddMaterialDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMaterialDetails.ascx.designer.cs">
+      <DependentUpon>AddMaterialDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMaterials.ascx.cs">
+      <DependentUpon>AddMaterials.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMaterials.ascx.designer.cs">
+      <DependentUpon>AddMaterials.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMeasureSystemCtrl.ascx.cs">
+      <DependentUpon>AddMeasureSystemCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMeasureSystemCtrl.ascx.designer.cs">
+      <DependentUpon>AddMeasureSystemCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddMeasureUnitCtrl.ascx.cs">
+      <DependentUpon>AddMeasureUnitCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddMeasureUnitCtrl.ascx.designer.cs">
+      <DependentUpon>AddMeasureUnitCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewGroupSpec.ascx.cs">
+      <DependentUpon>AddNewGroupSpec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewGroupSpec.ascx.designer.cs">
+      <DependentUpon>AddNewGroupSpec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewSpec.ascx.cs">
+      <DependentUpon>AddNewSpec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewSpec.ascx.designer.cs">
+      <DependentUpon>AddNewSpec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStandardDetails.ascx.cs">
+      <DependentUpon>AddStandardDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStandardDetails.ascx.designer.cs">
+      <DependentUpon>AddStandardDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AddUnitFamiliesCtrl.ascx.cs">
+      <DependentUpon>AddUnitFamiliesCtrl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddUnitFamiliesCtrl.ascx.designer.cs">
+      <DependentUpon>AddUnitFamiliesCtrl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignDiscipline.ascx.cs">
+      <DependentUpon>AssignDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignDiscipline.ascx.designer.cs">
+      <DependentUpon>AssignDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignNormToSpec.ascx.cs">
+      <DependentUpon>AssignNormToSpec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignNormToSpec.ascx.designer.cs">
+      <DependentUpon>AssignNormToSpec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignPropertiesToSpec.ascx.cs">
+      <DependentUpon>AssignPropertiesToSpec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignPropertiesToSpec.ascx.designer.cs">
+      <DependentUpon>AssignPropertiesToSpec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignSpecToDiscipline.ascx.cs">
+      <DependentUpon>AssignSpecToDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignSpecToDiscipline.ascx.designer.cs">
+      <DependentUpon>AssignSpecToDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignSpecToSupplier.ascx.cs">
+      <DependentUpon>AssignSpecToSupplier.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignSpecToSupplier.ascx.designer.cs">
+      <DependentUpon>AssignSpecToSupplier.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AssignSupplier.ascx.cs">
+      <DependentUpon>AssignSupplier.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssignSupplier.ascx.designer.cs">
+      <DependentUpon>AssignSupplier.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartMaterialsByDiscipline.ascx.cs">
+      <DependentUpon>ChartMaterialsByDiscipline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartMaterialsByDiscipline.ascx.designer.cs">
+      <DependentUpon>ChartMaterialsByDiscipline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartMaterialsBySpecifications.ascx.cs">
+      <DependentUpon>ChartMaterialsBySpecifications.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartMaterialsBySpecifications.ascx.designer.cs">
+      <DependentUpon>ChartMaterialsBySpecifications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ChartSpecificationsByDisciplines.ascx.cs">
+      <DependentUpon>ChartSpecificationsByDisciplines.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChartSpecificationsByDisciplines.ascx.designer.cs">
+      <DependentUpon>ChartSpecificationsByDisciplines.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FeatureController.cs" />
+    <Compile Include="ConfigUI.ascx.cs">
+      <DependentUpon>ConfigUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfigUI.ascx.designer.cs">
+      <DependentUpon>ConfigUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DataProvider.cs" />
+    <Compile Include="EditMaterials.ascx.cs">
+      <DependentUpon>EditMaterials.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditMaterials.ascx.designer.cs">
+      <DependentUpon>EditMaterials.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadControl.aspx.cs">
+      <DependentUpon>LoadControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoadControl.aspx.designer.cs">
+      <DependentUpon>LoadControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSpec.ascx.cs">
+      <DependentUpon>ManageSpec.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageSpec.ascx.designer.cs">
+      <DependentUpon>ManageSpec.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialsModuleBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MaterialsModuleSettingsBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit.ascx.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit.ascx.designer.cs">
+      <DependentUpon>Edit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Add_TS_Discipline_Responsable.ascx.cs">
+      <DependentUpon>Param_Add_TS_Discipline_Responsable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Add_TS_Discipline_Responsable.ascx.designer.cs">
+      <DependentUpon>Param_Add_TS_Discipline_Responsable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Brands.ascx.cs">
+      <DependentUpon>Param_Brands.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Brands.ascx.designer.cs">
+      <DependentUpon>Param_Brands.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_GroupProperties.ascx.cs">
+      <DependentUpon>Param_GroupProperties.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_GroupProperties.ascx.designer.cs">
+      <DependentUpon>Param_GroupProperties.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_MeasureSystem.ascx.cs">
+      <DependentUpon>Param_MeasureSystem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_MeasureSystem.ascx.designer.cs">
+      <DependentUpon>Param_MeasureSystem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_MeasureUnit.ascx.cs">
+      <DependentUpon>Param_MeasureUnit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_MeasureUnit.ascx.designer.cs">
+      <DependentUpon>Param_MeasureUnit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_MeasureUnitFormula.ascx.cs">
+      <DependentUpon>Param_MeasureUnitFormula.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_MeasureUnitFormula.ascx.designer.cs">
+      <DependentUpon>Param_MeasureUnitFormula.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Norm.ascx.cs">
+      <DependentUpon>Param_Norm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Norm.ascx.designer.cs">
+      <DependentUpon>Param_Norm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Properties.ascx.cs">
+      <DependentUpon>Param_Properties.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Properties.ascx.designer.cs">
+      <DependentUpon>Param_Properties.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_SoftwareSpecification.ascx.cs">
+      <DependentUpon>Param_SoftwareSpecification.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_SoftwareSpecification.ascx.designer.cs">
+      <DependentUpon>Param_SoftwareSpecification.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_Standard.ascx.cs">
+      <DependentUpon>Param_Standard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_Standard.ascx.designer.cs">
+      <DependentUpon>Param_Standard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_StdProperties.ascx.cs">
+      <DependentUpon>Param_StdProperties.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_StdProperties.ascx.designer.cs">
+      <DependentUpon>Param_StdProperties.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_StdPropertyRange.ascx.cs">
+      <DependentUpon>Param_StdPropertyRange.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_StdPropertyRange.ascx.designer.cs">
+      <DependentUpon>Param_StdPropertyRange.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_StorageConditions.ascx.cs">
+      <DependentUpon>Param_StorageConditions.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_StorageConditions.ascx.designer.cs">
+      <DependentUpon>Param_StorageConditions.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_TechnicalSoftware.ascx.cs">
+      <DependentUpon>Param_TechnicalSoftware.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_TechnicalSoftware.ascx.designer.cs">
+      <DependentUpon>Param_TechnicalSoftware.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_TechnicalSoftware_Discipline_Responsable.ascx.cs">
+      <DependentUpon>Param_TechnicalSoftware_Discipline_Responsable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_TechnicalSoftware_Discipline_Responsable.ascx.designer.cs">
+      <DependentUpon>Param_TechnicalSoftware_Discipline_Responsable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Param_UnitFamilies.ascx.cs">
+      <DependentUpon>Param_UnitFamilies.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Param_UnitFamilies.ascx.designer.cs">
+      <DependentUpon>Param_UnitFamilies.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DataProviders\SqlDataProvider\SqlDataProvider.cs" />
+    <Compile Include="SearchUI.ascx.cs">
+      <DependentUpon>SearchUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchUI.ascx.designer.cs">
+      <DependentUpon>SearchUI.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.ascx.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Settings.ascx.designer.cs">
+      <DependentUpon>Settings.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ShowAttachedFile.ascx.cs">
+      <DependentUpon>ShowAttachedFile.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ShowAttachedFile.ascx.designer.cs">
+      <DependentUpon>ShowAttachedFile.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="View.ascx.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View.ascx.designer.cs">
+      <DependentUpon>View.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUI.ascx.cs">
+      <DependentUpon>ViewUI.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUI.ascx.designer.cs">
+      <DependentUpon>ViewUI.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddBrandCtrl.ascx" />
+    <Content Include="AddCaseDetails.ascx" />
+    <Content Include="AddCustomProperties.ascx" />
+    <Content Include="AddMaterialDetails.ascx" />
+    <Content Include="AddMaterials.ascx" />
+    <Content Include="AddMeasureSystemCtrl.ascx" />
+    <Content Include="AddMeasureUnitCtrl.ascx" />
+    <Content Include="AddNewGroupSpec.ascx" />
+    <Content Include="AddNewSpec.ascx" />
+    <Content Include="AddStandardDetails.ascx" />
+    <Content Include="AddUnitFamiliesCtrl.ascx" />
+    <Content Include="AssignDiscipline.ascx" />
+    <Content Include="AssignNormToSpec.ascx" />
+    <Content Include="AssignPropertiesToSpec.ascx" />
+    <Content Include="AssignSpecToDiscipline.ascx" />
+    <Content Include="AssignSpecToSupplier.ascx" />
+    <Content Include="AssignSupplier.ascx" />
+    <Content Include="ChartMaterialsByDiscipline.ascx" />
+    <Content Include="ChartMaterialsBySpecifications.ascx" />
+    <Content Include="ChartSpecificationsByDisciplines.ascx" />
+    <Content Include="ConfigUI.ascx" />
+    <Content Include="CustomSS.css" />
+    <Content Include="Documentation\Documentation.css" />
+    <Content Include="Documentation\Documentation.html" />
+    <Content Include="Edit.ascx" />
+    <Content Include="EditMaterials.ascx" />
+    <Content Include="Helper.js" />
+    <Content Include="License.txt" />
+    <Content Include="LoadControl.aspx" />
+    <Content Include="ManageSpec.ascx" />
+    <Content Include="module.css" />
+    <Content Include="Param_Add_TS_Discipline_Responsable.ascx" />
+    <Content Include="Param_Brands.ascx" />
+    <Content Include="Param_GroupProperties.ascx" />
+    <Content Include="Param_MeasureSystem.ascx" />
+    <Content Include="Param_MeasureUnit.ascx" />
+    <Content Include="Param_MeasureUnitFormula.ascx" />
+    <Content Include="Param_Norm.ascx" />
+    <Content Include="Param_Properties.ascx" />
+    <Content Include="Param_SoftwareSpecification.ascx" />
+    <Content Include="Param_Standard.ascx" />
+    <Content Include="Param_StdProperties.ascx" />
+    <Content Include="Param_StdPropertyRange.ascx" />
+    <Content Include="Param_StorageConditions.ascx" />
+    <Content Include="Param_TechnicalSoftware.ascx" />
+    <Content Include="Param_TechnicalSoftware_Discipline_Responsable.ascx" />
+    <Content Include="Param_UnitFamilies.ascx" />
+    <Content Include="ReleaseNotes.txt" />
+    <Content Include="SearchUI.ascx" />
+    <Content Include="Settings.ascx" />
+    <Content Include="ShowAttachedFile.ascx" />
+    <Content Include="View.ascx" />
+    <Content Include="ViewUI.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Materials.dnn" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BuildScripts\ModulePackage.targets" />
+    <Content Include="BuildScripts\MSBuild.Community.Tasks.Targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\View.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\Edit.ascx.resx" />
+    <Content Include="App_LocalResources\Settings.ascx.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Providers\DataProviders\SqlDataProvider\00.00.01.SqlDataProvider" />
+    <Content Include="Providers\DataProviders\SqlDataProvider\Uninstall.SqlDataProvider" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Projects\DataLayer\DataLayer.csproj">
+      <Project>{f628640d-9ada-4d68-b594-2e9a5241a285}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Projects\GlobalAPI\GlobalAPI.csproj">
+      <Project>{91475f92-391a-45db-904a-510074732a68}</Project>
+      <Name>GlobalAPI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{aa36ca63-7ce7-4860-a16d-b5e0b27f5db5}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VBFramework\VBFramework.vbproj">
+      <Project>{279c5c96-5031-407a-919c-ef50fd06454d}</Project>
+      <Name>VBFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_LocalResources\View.ascx.fr-FR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>
+          </DevelopmentServerVPath>
+          <IISUrl>http://localhost/desktopmodules/Materials</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+    <Extension>zip</Extension>
+    <DNNFileName>Materials</DNNFileName>
+    <PackageName>Materials</PackageName>
+    <MSBuildCommunityTasksPath>$(SolutionDir)\BuildScripts</MSBuildCommunityTasksPath>
+  </PropertyGroup>
+  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Target Name="AfterBuild" DependsOnTargets="PackageModule">
+  </Target>
+</Project>

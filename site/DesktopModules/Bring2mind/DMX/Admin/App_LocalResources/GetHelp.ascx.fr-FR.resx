@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="ControlTitle_gethelp.Text">
+    <value>Obtenir de l'aide sur Document Echange</value>
+  </data>
+  <data name="lblLicenseExpired.Error">
+    <value>Votre contrat de support avec nous a expiré. S'il vous plaît renouveler votre licence si vous voulez continuer à bénéficier de notre support.</value>
+  </data>
+  <data name="lblNotActivated.Error">
+    <value>Document  Exchange n'a pas été activé. Merci de l'activer avant toute demande. Notez que le support est uniquement disponible pour les versions sous licence de Document Exchange.</value>
+  </data>
+  <data name="lblSend.Text">
+    <value>Un email sera envoyé au support de Bring2mind avec les détails pertinents. Pour cela, la fonction d'envoi de courriel de DotNetNuke est utilisée. Assurez-vous que vous avez correctement défini les paramètres SMTP de sorte que le message soit envoyé. Notez que vous pouvez vérifier ci-dessous ce qui est inclus dans le message et vous pouvez spécifier l'adresse courriel de retour à laquelle vous êtes joignable à ce sujet.</value>
+  </data>
+  <data name="lblStep1.Text">
+    <value>Etape 1. Décrire le problème</value>
+  </data>
+  <data name="lblStep2.Text">
+    <value>Etape 2. Sélectionnez les éléments à inclure</value>
+  </data>
+  <data name="lblStep3.Text">
+    <value>Étape 3. Créer un compte Host pour un support à distance</value>
+  </data>
+  <data name="lblStep4.Text">
+    <value>Étape 4. Envoyer</value>
+  </data>
+  <data name="lblTrialLicense.Error">
+    <value>Ceci est une licence d'essai. Pour obtenir de l'aide, rendez-vous sur des forums de Bring2mind et postez vos questions. Une fois que vous avez une licence valide, vous pouvez nous contacter directement en utilisant cet écran.</value>
+  </data>
+  <data name="plBody.Help">
+    <value>Ce texte sera envoyé dans le corps de l'email</value>
+  </data>
+  <data name="plBody.Text">
+    <value>Description du problème</value>
+  </data>
+  <data name="plCreateHost.Help">
+    <value>Créer un compte host pour l'équipe de support Bring2mind</value>
+  </data>
+  <data name="plCreateHost.Text">
+    <value>Créer un compte host</value>
+  </data>
+  <data name="plEventLog.Help">
+    <value>Les dernières entrées du journal des événements</value>
+  </data>
+  <data name="plEventLog.Text">
+    <value>journal des événements</value>
+  </data>
+  <data name="plEventsEnd.Help">
+    <value>Inclure tous les éléments du journal des événements jusqu'à maintenant</value>
+  </data>
+  <data name="plEventsEnd.Text">
+    <value>Fin</value>
+  </data>
+  <data name="plEventsOnlyBring2mind.Help">
+    <value>Envoyer uniquement les événements qui ont "bring2mind" dans la trace de la pile d'erreur (c'est à dire qui ont été créés par un programme bring2mind)</value>
+  </data>
+  <data name="plEventsOnlyBring2mind.Text">
+    <value>Bring2mind uniquement</value>
+  </data>
+  <data name="plEventsStart.Help">
+    <value>Démarrer le journal des événements à partir de maintenant</value>
+  </data>
+  <data name="plEventsStart.Text">
+    <value>Démarrer</value>
+  </data>
+  <data name="plFileSystem.Help">
+    <value>Informations sur le système de fichier et aperçu des DLL installées.</value>
+  </data>
+  <data name="plFileSystem.Text">
+    <value>système de fichier</value>
+  </data>
+  <data name="plGenUsageInfo.Help">
+    <value>Statistiques générales d'usage telle que le nombre de portails, de modules, d' utilisateurs, la tailles des table SQL, etc</value>
+  </data>
+  <data name="plGenUsageInfo.Text">
+    <value>Infos générales d'usage</value>
+  </data>
+  <data name="plHostInfo.Help">
+    <value>Paramètres du compte Host, modules installés, calendrier</value>
+  </data>
+  <data name="plHostInfo.Text">
+    <value>Infos Host</value>
+  </data>
+  <data name="plHostTimeout.Help">
+    <value>Le compte Host sera désactivé à cette date. Notez qu'il ne sera pas supprimé, mais simplement éteint afin que nul ne puisse se connecter en utilisant ce compte après cette date.</value>
+  </data>
+  <data name="plHostTimeout.Text">
+    <value>Expire au</value>
+  </data>
+  <data name="plNrEvents.Help">
+    <value>Nombre maximum d'événements à inclure</value>
+  </data>
+  <data name="plNrEvents.Text">
+    <value>Nbre Max d'événements</value>
+  </data>
+  <data name="plServerInfo.Help">
+    <value>Informations sur l'OS et Base de Données de cette installation</value>
+  </data>
+  <data name="plServerInfo.Text">
+    <value>Infos serveur</value>
+  </data>
+  <data name="plWebConfig.Help">
+    <value>Les fichiers de configuration comme le web.config. Nous prenons soins de supprimer toute information sensible telle que que les chaînes de connexion.</value>
+  </data>
+  <data name="plWebConfig.Text">
+    <value>Fichiers de configuration</value>
+  </data>
+  <data name="plReturnEmail.Help">
+    <value>Adresse e-mail où nous pouvons vous joindre</value>
+  </data>
+  <data name="plReturnEmail.Text">
+    <value>Email Retour</value>
+  </data>
+  <data name="plSend.Help">
+    <value>Envoyer l'e-mail (vous en obtiendrez une copie)</value>
+  </data>
+  <data name="plSend.Text">
+    <value>Envoyer</value>
+  </data>
+  <data name="plViewInfo.Help">
+    <value>Téléchargement des fichiers avec des détails qui seront envoyés à Bring2mind</value>
+  </data>
+  <data name="plViewInfo.Text">
+    <value>Voir l 'info</value>
+  </data>
+  <data name="cmdSend.Text">
+    <value>Envoyer</value>
+  </data>
+  <data name="cmdView.Text">
+    <value>Télécharger</value>
+  </data>
+  <data name="plUrl.Help">
+    <value>URL où on peut trouver sur ce site</value>
+  </data>
+  <data name="plUrl.Text">
+    <value>Url</value>
+  </data>
+  <data name="lblCreateHostAccount.Text">
+    <value>Vous pouvez éventuellement créer un compte hôte pour que le personnel de support de chez Bring2mind puissent accéder à distance à votre installation de DNN. Notez que ce n'est &lt;b&gt; pas obligatoire  &lt;/b&gt;. Aussi, si votre installation n'est pas connecté à Internet, il n'est pas possible pour nous d'utiliser cette fonction. Vous pouvez passer cette étape. Si vous optez pour créer un compte pour nous accueillir, il sera créé comme «host_bring2mind" sur votre installation. Un mot de passe sera généré, chiffré en utilisant notre propre clé et nous sera adressé afin que nous le décodions. Nous avons fait de notre mieux pour que ce process soit aussi sécurisé que possible. Notez que ce mécanisme est beaucoup plus sûr que de nous adresser vos propres informations de connexion de compte Host!</value>
+  </data>
+</root>

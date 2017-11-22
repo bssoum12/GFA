@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdRun.Text">
+    <value>Exécuter</value>
+  </data>
+  <data name="ControlTitle_runscript.Text">
+    <value>Exécuter le script</value>
+  </data>
+  <data name="cmdCancel.Text">
+    <value>Annuler</value>
+  </data>
+  <data name="ModuleHelp.Text">
+    <value>Exécuter un script pour modifier DMX</value>
+  </data>
+  <data name="ControlTitle.Text">
+    <value>Choisir ci-dessous un script à lancer </value>
+  </data>
+</root>

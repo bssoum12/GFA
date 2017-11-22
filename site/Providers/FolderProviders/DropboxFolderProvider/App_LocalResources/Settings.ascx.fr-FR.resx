@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!---->
+  <note></note>
+  <data name="plAccessKeyId.Text" xml:space="preserve">
+    <value>Clé de l'application</value>
+  </data>
+  <data name="plSecretAccessKey.Text" xml:space="preserve">
+    <value>Secret de l'application</value>
+  </data>
+  <data name="valAccessKeyId.ErrorMessage" xml:space="preserve">
+    <value>La clé de l'application est requise.</value>
+  </data>
+  <data name="valSecretAccessKey.ErrorMessage" xml:space="preserve">
+    <value>Le secret de l'application est requis.</value>
+  </data>
+  <data name="plAccessKeyId.Help" xml:space="preserve">
+    <value>Entrer la clé de l'application.</value>
+  </data>
+  <data name="plSecretAccessKey.Help" xml:space="preserve">
+    <value>Entrer le secret de l'application.</value>
+  </data>
+  <data name="MultipleFolderMappingsWithSameSettings.ErrorMessage" xml:space="preserve">
+    <value>Il ya un autre "FolderMapping" utilisant les mêmes paramètres. Veuillez entrer d'autres paramètres pour un nouveau mappage.</value>
+  </data>
+  <data name="plDirectLink.Help" xml:space="preserve">
+    <value>Si cette case est cochée, les chemins de fichiers pointeront vers le chemin distant, sinon le chemin "LinkClick" sera utilisé.</value>
+  </data>
+  <data name="plDirectLink.Text" xml:space="preserve">
+    <value>Utiliser un lien direct</value>
+  </data>
+  <data name="plParentFolder.Help" xml:space="preserve">
+    <value>Entrez le nom d'un dossier Dropbox si vous souhaitez mapper ce fournisseur de dossier vers un dossier spécifique, par exemple entrez "Documents" ou "Documents/Entreprise" pour mapper ce dossier ou sous-dossier.&lt;br /&gt;Remarque : Laissez vide pour mapper le dossier racine de Box.</value>
+  </data>
+  <data name="plParentFolder.Text" xml:space="preserve">
+    <value>Dossier parent Dropbox</value>
+  </data>
+  <data name="ParentFolder.ErrorMessage" xml:space="preserve">
+    <value>Syntaxe incorrecte du dossier parent.</value>
+  </data>
+  <data name="DropAuthentication0.ErrorMessage" xml:space="preserve">
+    <value>Paramètres des dossiers enregistrés avec succès.</value>
+  </data>
+  <data name="DropAuthentication1.ErrorMessage" xml:space="preserve">
+    <value>Erreur d'authentification Dropbox, veuillez entrer des informations correctes et essayer à nouveau.</value>
+  </data>
+  <data name="DropAuthentication2.ErrorMessage" xml:space="preserve">
+    <value>Le dossier parent n'existe pas, veuillez fournir des informations correctes et essayer à nouveau.</value>
+  </data>
+  <data name="TestConnection.Text" xml:space="preserve">
+    <value>Tester la connexion</value>
+  </data>
+  <!---->
+</root>

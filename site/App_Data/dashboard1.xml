@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Materials Dashboard" Alignment="Left" />
+  <DataSources>
+    <SqlDataSource ComponentName="DataSource1">
+      <Name>Materials_DashboardGetMaterialsNumberByYear</Name>
+      <Connection Name="erpConnectionString" FromAppConfig="true" />
+      <Query Type="StoredProcQuery" Name="Materials_DashboardGetMaterialsNumberByYear">
+        <ProcName>Materials_DashboardGetMaterialsNumberByYear</ProcName>
+      </Query>
+      <ConnectionOptions CloseConnection="true" CommandTimeout="0" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Gauge ComponentName="gaugeDashboardItem1" Name="Total Produits /Services" DataSource="DataSource1" DataMember="Materials_DashboardGetMaterialsNumberByYear" ViewType="CircularThreeFourth">
+      <DataItems>
+        <Measure DataMember="Nb" DefaultId="DataItem0" />
+      </DataItems>
+      <GaugeElement Name=" ">
+        <ActualValue DefaultId="DataItem0" />
+        <AbsoluteVariationNumericFormat FormatType="Number" Precision="0" />
+        <PercentVariationNumericFormat FormatType="Percent" />
+        <PercentOfTargetNumericFormat FormatType="Percent" />
+      </GaugeElement>
+    </Gauge>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Weight="100">
+      <LayoutItem DashboardItem="gaugeDashboardItem1" Weight="100" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

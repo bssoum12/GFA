@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Script Permission="docadmin" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\Script.xsd" Title="Empty Recycle Bin">
+ <Description>Empty the recycle bin of the portal, i.e. hard delete all deleted items.</Description>
+ <Process>
+  <Run RunType="CODE" Command="EmptyRecycleBin">Bring2mind.DNN.Modules.DMX.Services.Scripts.Scripts, BRING2MIND.DNN.MODULES.DMX.CORE</Run>
+ </Process>
+</Script>

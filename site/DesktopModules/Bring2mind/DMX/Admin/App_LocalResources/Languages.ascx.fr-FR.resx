@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="cmdDownload.Text">
+    <value>Télécharger et Installer</value>
+  </data>
+  <data name="cmdReturn.Text">
+    <value>Retour</value>
+  </data>
+  <data name="ModuleHelp.Text">
+    <value>&lt;p&gt; Sélectionnez la langue dont vous souhaitez télécharger des packs dans le menu déroulant. Cela va interroger la base Bring2mind pour trouver des packs de langue adaptés à votre installation. Le résultat est une liste de packs pour les différents articles que vous avez installé sur votre système. Cela inclura  très probablement ce module, mais également des liens vers des packs de langue pour les extensions de DMX ou d'autres logiciels que nous concevons. La liste des résultats montre également le taux de finalisation de ces packs et quand ils ont été travaillés pour la dernière fois. En option, des liens peuvent être ajoutés vers des producteurs tiers des packs de langue. &lt;/p&gt; C'est à vous de décider à partir de ces informations quel est le pack qui vous conviendra le mieux. Naturellement, il est préférable de prendre les packs les plus complets et les plus récemment travaillés. Sélectionnez les packs que vous souhaitez et cliquez sur &lt;b&gt; Télécharger et installer &lt;/b&gt;. cela récupérera les packs et les installera dans votre installation de DotNetNuke..&lt;/p&gt; &lt;p&gt; Si vous rencontrez des difficultés, cela peut être dû au fait que soit votre serveur ne peut pas se connecter à Internet ou soit parce que le serveur n'autorise pas l'installation DNN à contacter notre serveur pour  récupérer les packs de langue. Dans ce cas vous pouvez toujours cliquer sur &lt;a href="http://www.bring2mind.net/DesktopModules/DNNEurope/LocalizationEditor/RequestPack.aspx?Object=Bring2mind%5CDMX"&gt;ce lien&lt;/a&gt;. Téléchargez les packs à partir d'ici, puis installez les packs langue en utilisant la méthode habituelle dans DNN.&lt;/p&gt;</value>
+  </data>
+  <data name="ControlTitle_languages.Text">
+    <value>Traduction</value>
+  </data>
+  <data name="plLocale.Help">
+    <value>Sélectionnez le lieux parmi les paramètres régionaux disponibles sur ce site pour trouver le pack correspondant.</value>
+  </data>
+  <data name="plLocale.Text">
+    <value>Région</value>
+  </data>
+</root>

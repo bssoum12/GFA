@@ -1,0 +1,130 @@
+<table>
+ <tr>
+  <td style="vertical-align:baseline;padding-right:10px">
+   [entry:icon32html]
+  </td>
+  <td style="vertical-align:bottom">
+   <h1>[entry:title]</h1>
+  </td>
+ </tr>
+</table>
+<p>
+[subtemplate|BreadCrumb.html|breadcrumbs]
+</p>
+<div style="float:left;">
+ <a href="[button:new_url]" class="document_new-png link" title="[button:new_text]" style="display:[button:new_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:edit_url]" class="document_edit-png link" title="[button:edit_text]" style="display:[button:edit_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:newversion_url]" class="document_exchange-png link" title="[button:newversion_text]" style="display:[button:newversion_visible|block;none];"></a>
+</div>
+<div style="float:left;display:[button:download_visible|table-cell;none];">
+ <a href="[button:download_url]" class="disks-png link" title="[button:download_text]" style="display:[entry:iscollection|block;none]"></a>
+</div>
+<div style="float:left;display:[button:download_visible|table-cell;none];">
+ <a href="[button:download_url]" class="disk_blue-png link" title="[button:download_text]" style="display:[entry:iscollection|none;block]"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:subscribe_url]" class="document_heart-png link" title="[button:subscribe_text]" style="display:[button:subscribe_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:unsubscribe_url]" class="heart_broken-png link" title="[button:unsubscribe_text]" style="display:[button:unsubscribe_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:lock_url]" class="document_lock-png link" title="[button:lock_text]" style="display:[button:lock_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:unlock_url]" class="lock_open-png link" title="[button:unlock_text]" style="display:[button:unlock_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:harddelete_url]" onclick="Javascript:return confirm('[resources:HardDeleteConfirm.Text]');" class="document_delete-png link" title="[button:harddelete_text]" style="display:[button:harddelete_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:delete_url]" onclick="Javascript:return confirm('[resources:DeleteConfirm.Text]');" class="document_delete-png link" title="[button:delete_text]" style="display:[button:delete_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:undelete_url]" class="document_into-png link" title="[button:undelete_text]" style="display:[button:undelete_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:import_url]" class="import1-png link" title="[button:import_text]" style="display:[button:import_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:mailme_url]" class="document_attachment-png link" title="[button:mailme_text]" style="display:[button:mailme_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:cut_url]" class="cut-png link" title="[button:cut_text]" style="display:[button:cut_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:copy_url]" class="copy-png link" title="[button:copy_text]" style="display:[button:copy_visible|block;none];"></a>
+</div>
+<div style="float:left;">
+ <a href="[button:paste_url]" class="paste-png link" title="[button:paste_text]" style="display:[button:paste_visible|block;none];"></a>
+</div>
+<div style="clear:both;">
+</div>
+
+<div class="NormalRed" style="display:[entry:isdeleted|block;none];width:100%;text-align:center;padding:10px;">[resources:ThisItemDeleted.Text]</div>
+<div class="NormalRed" style="display:[entry:islocked|block;none];width:100%;text-align:center;padding:10px;">[resources:ThisItemLocked.Text]</div>
+<div class="NormalRed" style="display:[entry:isapproved|none;block];width:100%;text-align:center;padding:10px;">[resources:ThisItemNotApproved.Text]</div>
+
+<div class="MetaDataContainer">
+<table><tr>
+ <td valign="top">
+<table class="EntryMetaData">
+ <tr>
+  <td class="mdTitle">[resources:Author.Text]</td>
+  <td>[entry:author]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:LastModified.Text]</td>
+  <td>[entry:LastModified|g]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Version.Text]</td>
+  <td>[entry:version]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:FileSize.Text]</td>
+  <td>[entry:filesizeformatted]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Created.Text]</td>
+  <td>[entry:Created|g]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Keywords.Text]</td>
+  <td>[entry:Keywords]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:Categories.Text]</td>
+  <td>[entry:Categories]</td>
+ </tr>
+ <tr>
+  <td class="mdTitle">[resources:OriginalFilename.Text]</td>
+  <td>[entry:OriginalFileName]</td>
+ </tr>
+</table>
+ </td>
+ <td valign="top">
+<table style="display:[query:isdocadmin|block;none]" class="EntryMetaData">
+ <tr>
+  <td colspan="2" class="mdTitle">[resources:Permissions.Text]</td>
+ </tr>
+ [entry:permissions]
+</table>
+ </td>
+</tr></table>
+<p>[entry:remarks]</p>
+
+<h2>[resources:Versions.Text]</h2>
+<table class="EntryList">
+ [subtemplate|Version.html|versions|pagesize=10,entrytypes=file;hyperlink]
+</table>
+<h2>[resources:Log.Text]</h2>
+<table class="EntryList">
+ [subtemplate|Log.html|log|pagesize=10,permission=docadmin,entrytypes=file]
+</table>
+</div>
+
