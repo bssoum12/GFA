@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.5, 17.75" name="Framework">
+  <DataContextMoniker Name="/FrameworkDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a8966d1d-effc-4f53-994a-8ece64cf41aa" absoluteBounds="3, 1.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_SuggestMatSpec" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1ad4776-50f7-4ee5-84ba-efa9eefe8303" absoluteBounds="3.0149999999999997, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="824c5cd3-79c1-48ef-a0cb-732c7fb32a8c" absoluteBounds="6.5, 2.625, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_SuggestMaterials" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17baffb3-fe22-41f9-99a7-a6ec897b1e06" absoluteBounds="6.5150000000000006, 3.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bc9530fc-fcbd-4821-91d3-d0c518df469b" absoluteBounds="5.875, 1.125, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_SuggestAll" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80f936f2-4563-44ef-854a-922f1f32f093" absoluteBounds="5.8900000000000006, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3464ad6c-9453-4c71-91a0-97375308c885" absoluteBounds="9.25, 8.625, 2, 6.1938297526041666">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5cb64da9-ddfb-467e-b096-e329c6e27118" absoluteBounds="9.265, 9.085, 1.9700000000000002, 5.6338297526041661" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88bdc850-d84b-4587-9058-6c35e8c87c18" absoluteBounds="6.5, 8.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_Currencies" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1c8bf544-f51b-4c3f-baaa-c7d038a3dafb" absoluteBounds="6.515, 8.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3f4440a-6b60-4021-8627-beac86e2bf61" absoluteBounds="9.25, 5.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_CurrenciesML" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f44b9f7d-d599-4377-b312-167f1991dd20" absoluteBounds="9.265, 6.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eaa8f722-cbbf-4801-a2b6-e8c5387c9258" absoluteBounds="3.5, 11, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_Departements" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f89a5dc9-5166-4051-8327-fba2831013c7" absoluteBounds="3.515, 11.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13f391df-27d8-4b73-b552-6b553f716749" absoluteBounds="6.25, 11.375, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_DepartementsML" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9d4aa5f-406a-4652-896c-213e358338f6" absoluteBounds="6.265, 11.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83a949e2-88a0-4a27-9c62-1ddc428022c1" absoluteBounds="6.5, 13.875, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_FormesJuridiques" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3caf2a04-9f51-4df1-8171-c0e82f6f9e68" absoluteBounds="6.515, 14.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="be3a33d6-24d2-4748-b1fc-eb507ed7b178" absoluteBounds="9.25, 16.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_FormesJuridiquesML" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c10069c3-142e-4c19-95bd-4f859bfa67c4" absoluteBounds="9.265, 16.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6113da0f-e6d9-4c2b-855a-b3ceb8c96305" absoluteBounds="0.75, 3.75, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_Log" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8f7874bb-d863-4b4d-8292-05aa4c99a3e2" absoluteBounds="0.765, 4.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74fb0f8d-672b-49dc-981b-6397371c563a" absoluteBounds="0.75, 10.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_Pays" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5c543e6-ed43-411c-aeff-3efa07a6ad52" absoluteBounds="0.765, 10.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bf57ae9e-b1a6-4033-b12b-f1fafc1ef96c" absoluteBounds="3.5, 8.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/FrameworkDataContext/Framework_PaysML" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee0740e2-e69f-4910-afbd-11df9c6cb8db" absoluteBounds="3.515, 9.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.95923076923077 : 14.8188297526042); (9.95923076923077 : 15.0688297526042); (10.5546153846154 : 15.0688297526042); (10.5546153846154 : 14.8188297526042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Company/Framework_Company_Framework_Company" />
+      <nodes>
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 9.35179768880208); (9.25 : 9.35179768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Currencies/Framework_Currencies_Framework_Company" />
+      <nodes>
+        <classShapeMoniker Id="88bdc850-d84b-4587-9058-6c35e8c87c18" />
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 8.5); (7.5 : 6.31814697265625); (9.25 : 6.31814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Currencies/Framework_Currencies_Framework_CurrenciesML" />
+      <nodes>
+        <classShapeMoniker Id="88bdc850-d84b-4587-9058-6c35e8c87c18" />
+        <classShapeMoniker Id="c3f4440a-6b60-4021-8627-beac86e2bf61" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.9896468098958); (9.25 : 12.9896468098958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Departements/Framework_Departements_Framework_Company" />
+      <nodes>
+        <classShapeMoniker Id="eaa8f722-cbbf-4801-a2b6-e8c5387c9258" />
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.0681469726562); (6.25 : 12.0681469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Departements/Framework_Departements_Framework_DepartementsML" />
+      <nodes>
+        <classShapeMoniker Id="eaa8f722-cbbf-4801-a2b6-e8c5387c9258" />
+        <classShapeMoniker Id="13f391df-27d8-4b73-b552-6b553f716749" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 14.3469148763021); (9.25 : 14.3469148763021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_FormesJuridiques/Framework_FormesJuridiques_Framework_Company" />
+      <nodes>
+        <classShapeMoniker Id="83a949e2-88a0-4a27-9c62-1ddc428022c1" />
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 15.8381982421875); (7.5 : 16.8181469726563); (9.25 : 16.8181469726563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_FormesJuridiques/Framework_FormesJuridiques_Framework_FormesJuridiquesML" />
+      <nodes>
+        <classShapeMoniker Id="83a949e2-88a0-4a27-9c62-1ddc428022c1" />
+        <classShapeMoniker Id="be3a33d6-24d2-4748-b1fc-eb507ed7b178" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.6306469726562); (9.25 : 10.6306469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Pays/Framework_Pays_Framework_Company" />
+      <nodes>
+        <classShapeMoniker Id="74fb0f8d-672b-49dc-981b-6397371c563a" />
+        <classShapeMoniker Id="3464ad6c-9453-4c71-91a0-97375308c885" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 11.4142976888021); (3.5 : 11.4142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Pays/Framework_Pays_Framework_Departements" />
+      <nodes>
+        <classShapeMoniker Id="74fb0f8d-672b-49dc-981b-6397371c563a" />
+        <classShapeMoniker Id="eaa8f722-cbbf-4801-a2b6-e8c5387c9258" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 10.25); (1.75 : 9.5624995); (3.5 : 9.5624995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/FrameworkDataContext/Framework_Pays/Framework_Pays_Framework_PaysML" />
+      <nodes>
+        <classShapeMoniker Id="74fb0f8d-672b-49dc-981b-6397371c563a" />
+        <classShapeMoniker Id="bf57ae9e-b1a6-4033-b12b-f1fafc1ef96c" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="erp" Class="FrameworkDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Framework_SuggestMatSpec" Member="Framework_SuggestMatSpec">
+    <Type Name="Framework_SuggestMatSpec">
+      <Column Name="ContactID" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_SuggestMaterials" Member="Framework_SuggestMaterials">
+    <Type Name="Framework_SuggestMaterials">
+      <Column Name="SearchID" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SearchText" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_SuggestAll" Member="Framework_SuggestAll">
+    <Type Name="Framework_SuggestAll">
+      <Column Name="ContactID" Type="System.String" DbType="NVarChar(35)" CanBeNull="true" />
+      <Column Name="ContactName" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_Company" Member="Framework_Company">
+    <Type Name="Framework_Company">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RaisonSociale" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Abbr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_Mere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Etat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CodePostal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Pays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Departement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SiteWeb" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MatriculeFiscal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodeDouane" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumTVA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Assujetti" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ID_FormeJuridique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Capital" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_DevisePrincipale" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Framework_Company_Framework_Company" Member="Framework_Company2" ThisKey="ID" OtherKey="ID_Mere" Type="Framework_Company" />
+      <Association Name="Framework_Company_Framework_Company" Member="Framework_Company1" ThisKey="ID_Mere" OtherKey="ID" Type="Framework_Company" IsForeignKey="true" />
+      <Association Name="Framework_Currencies_Framework_Company" Member="Framework_Currencies" ThisKey="ID_DevisePrincipale" OtherKey="code_iso" Type="Framework_Currencies" IsForeignKey="true" />
+      <Association Name="Framework_Departements_Framework_Company" Member="Framework_Departements" ThisKey="ID_Departement" OtherKey="ID" Type="Framework_Departements" IsForeignKey="true" />
+      <Association Name="Framework_FormesJuridiques_Framework_Company" Member="Framework_FormesJuridiques" ThisKey="ID_FormeJuridique" OtherKey="ID" Type="Framework_FormesJuridiques" IsForeignKey="true" />
+      <Association Name="Framework_Pays_Framework_Company" Member="Framework_Pays" ThisKey="ID_Pays" OtherKey="ID" Type="Framework_Pays" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_Currencies" Member="Framework_Currencies">
+    <Type Name="Framework_Currencies">
+      <Column Name="code_iso" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="label" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="unicode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Framework_Currencies_Framework_Company" Member="Framework_Company" ThisKey="code_iso" OtherKey="ID_DevisePrincipale" Type="Framework_Company" />
+      <Association Name="Framework_Currencies_Framework_CurrenciesML" Member="Framework_CurrenciesML" ThisKey="code_iso" OtherKey="code_iso" Type="Framework_CurrenciesML" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_CurrenciesML" Member="Framework_CurrenciesML">
+    <Type Name="Framework_CurrenciesML">
+      <Column Name="code_iso" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="locale" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="label" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Association Name="Framework_Currencies_Framework_CurrenciesML" Member="Framework_Currencies" ThisKey="code_iso" OtherKey="code_iso" Type="Framework_Currencies" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_Departements" Member="Framework_Departements">
+    <Type Name="Framework_Departements">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Pays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Framework_Departements_Framework_Company" Member="Framework_Company" ThisKey="ID" OtherKey="ID_Departement" Type="Framework_Company" />
+      <Association Name="Framework_Departements_Framework_DepartementsML" Member="Framework_DepartementsML" ThisKey="ID" OtherKey="ID_Departement" Type="Framework_DepartementsML" />
+      <Association Name="Framework_Pays_Framework_Departements" Member="Framework_Pays" ThisKey="ID_Pays" OtherKey="ID" Type="Framework_Pays" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_DepartementsML" Member="Framework_DepartementsML">
+    <Type Name="Framework_DepartementsML">
+      <Column Name="ID_Departement" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Framework_Departements_Framework_DepartementsML" Member="Framework_Departements" ThisKey="ID_Departement" OtherKey="ID" Type="Framework_Departements" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_FormesJuridiques" Member="Framework_FormesJuridiques">
+    <Type Name="Framework_FormesJuridiques">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Framework_FormesJuridiques_Framework_Company" Member="Framework_Company" ThisKey="ID" OtherKey="ID_FormeJuridique" Type="Framework_Company" />
+      <Association Name="Framework_FormesJuridiques_Framework_FormesJuridiquesML" Member="Framework_FormesJuridiquesML" ThisKey="ID" OtherKey="ID_FormesJuridiques" Type="Framework_FormesJuridiquesML" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_FormesJuridiquesML" Member="Framework_FormesJuridiquesML">
+    <Type Name="Framework_FormesJuridiquesML">
+      <Column Name="ID_FormesJuridiques" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Framework_FormesJuridiques_Framework_FormesJuridiquesML" Member="Framework_FormesJuridiques" ThisKey="ID_FormesJuridiques" OtherKey="ID" Type="Framework_FormesJuridiques" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_Log" Member="Framework_Log">
+    <Type Name="Framework_Log">
+      <Column Name="Message" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Source" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_Pays" Member="Framework_Pays">
+    <Type Name="Framework_Pays">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Libelle" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsActive" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Framework_Pays_Framework_Company" Member="Framework_Company" ThisKey="ID" OtherKey="ID_Pays" Type="Framework_Company" />
+      <Association Name="Framework_Pays_Framework_Departements" Member="Framework_Departements" ThisKey="ID" OtherKey="ID_Pays" Type="Framework_Departements" />
+      <Association Name="Framework_Pays_Framework_PaysML" Member="Framework_PaysML" ThisKey="ID" OtherKey="ID_Pays" Type="Framework_PaysML" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Framework_PaysML" Member="Framework_PaysML">
+    <Type Name="Framework_PaysML">
+      <Column Name="ID_Pays" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Libelle" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Framework_Pays_Framework_PaysML" Member="Framework_Pays" ThisKey="ID_Pays" OtherKey="ID" Type="Framework_Pays" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

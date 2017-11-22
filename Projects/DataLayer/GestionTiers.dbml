@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="erp" Class="GestionTiersDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Tiers_Activites" Member="Tiers_Activites">
+    <Type Name="Tiers_Activites">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tiers_Activites_Tiers_Tiers" Member="Tiers_Tiers" ThisKey="ID" OtherKey="ID_Activite" Type="Tiers_Tiers" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tiers_Tiers" Member="Tiers_Tiers">
+    <Type Name="Tiers_Tiers">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RaisonSociale" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Abbr" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_Mere" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Etat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsClient" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsSupplier" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CodeClient" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodeSupplier" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Codebarre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CodePostal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Pays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Departement" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SiteWeb" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Telephone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MatriculeFiscal" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CodeDouane" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BAN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NumTVA" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Assujetti" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ID_Type" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_FormeJuridique" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Capital" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ID_Devise" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="logo" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Activite" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tiers_Tiers_Tiers_Tiers" Member="Tiers_Tiers2" ThisKey="ID" OtherKey="ID_Mere" Type="Tiers_Tiers" />
+      <Association Name="Tiers_Activites_Tiers_Tiers" Member="Tiers_Activites" ThisKey="ID_Activite" OtherKey="ID" Type="Tiers_Activites" IsForeignKey="true" />
+      <Association Name="Tiers_Tiers_Tiers_Tiers" Member="Tiers_Tiers1" ThisKey="ID_Mere" OtherKey="ID" Type="Tiers_Tiers" IsForeignKey="true" />
+      <Association Name="Tiers_Types_Tiers_Tiers" Member="Tiers_Types" ThisKey="ID_Type" OtherKey="ID" Type="Tiers_Types" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tiers_Types" Member="Tiers_Types">
+    <Type Name="Tiers_Types">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Tiers_Types_Tiers_Tiers" Member="Tiers_Tiers" ThisKey="ID" OtherKey="ID_Type" Type="Tiers_Tiers" />
+    </Type>
+  </Table>
+</Database>

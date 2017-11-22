@@ -1,0 +1,6 @@
+C:\Projects\DataLayer\bin\Debug\DataLayer.dll
+C:\Projects\DataLayer\bin\Debug\DataLayer.pdb
+C:\Projects\DataLayer\obj\Debug\DataLayer.dll
+C:\Projects\DataLayer\obj\Debug\DataLayer.pdb
+C:\Projects\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Projects\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache

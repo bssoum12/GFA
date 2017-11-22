@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="erp" Class="MaterialsDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.Materials_Brands" Member="Materials_Brands">
+    <Type Name="Materials_Brands">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Brands_Materials_BrandsML" Member="Materials_BrandsML" ThisKey="ID" OtherKey="ID" Type="Materials_BrandsML" />
+      <Association Name="Materials_Brands_Materials_Materials" Member="Materials_Materials" ThisKey="ID" OtherKey="ID_Brand" Type="Materials_Materials" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_BrandsML" Member="Materials_BrandsML">
+    <Type Name="Materials_BrandsML">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Materials_Brands_Materials_BrandsML" Member="Materials_Brands" ThisKey="ID" OtherKey="ID" Type="Materials_Brands" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Materials_Norm" Member="Materials_Materials_Norm">
+    <Type Name="Materials_Materials_Norm">
+      <Column Name="ID_Materials" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_Norm" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Materials_Norm_Materials_Materials_Norm" Member="Materials_Norm" ThisKey="ID_Norm" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+      <Association Name="Materials_Materials_Materials_Materials_Norm" Member="Materials_Materials" ThisKey="ID_Materials" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Materials_Properties" Member="Materials_Materials_Properties">
+    <Type Name="Materials_Materials_Properties">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_Articles" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Valeur" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MeasureUnit_Materials_Materials_Properties" Member="Materials_MeasureUnit" ThisKey="ID_UniteMeasure" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+      <Association Name="Materials_Properties_Materials_Materials_Properties" Member="Materials_Properties" ThisKey="ID_Properties" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+      <Association Name="Materials_Materials_Materials_Materials_Properties" Member="Materials_Materials" ThisKey="ID_Articles" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MaterialsML" Member="Materials_MaterialsML">
+    <Type Name="Materials_MaterialsML">
+      <Column Name="MaterialsID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Materials_Materials_MaterialsML" Member="Materials_Materials" ThisKey="MaterialsID" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MaterialsSpecifications" Member="Materials_MaterialsSpecifications">
+    <Type Name="Materials_MaterialsSpecifications">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications" Member="Materials_MaterialsSpecifications2" ThisKey="ID" OtherKey="Id_Parent" Type="Materials_MaterialsSpecifications" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications_Norm" Member="Materials_MaterialsSpecifications_Norm" ThisKey="ID" OtherKey="ID_MaterialsSpecification" Type="Materials_MaterialsSpecifications_Norm" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecificationsML" Member="Materials_MaterialsSpecificationsML" ThisKey="ID" OtherKey="ID" Type="Materials_MaterialsSpecificationsML" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specification_Properties" Member="Materials_Specification_Properties" ThisKey="ID" OtherKey="Id_Specification" Type="Materials_Specification_Properties" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specification_SoftwareSpecifcation" Member="Materials_Specification_SoftwareSpecifcation" ThisKey="ID" OtherKey="ID_MaterialsSpecifications" Type="Materials_Specification_SoftwareSpecifcation" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specifications_StorageConditions" Member="Materials_Specifications_StorageConditions" ThisKey="ID" OtherKey="ID_MaterialsSpecification" Type="Materials_Specifications_StorageConditions" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Supplier_MaterialsSpecifications" Member="Materials_Supplier_MaterialsSpecifications" ThisKey="ID" OtherKey="IDMatSpec" Type="Materials_Supplier_MaterialsSpecifications" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications_Discipline" Member="Materials_MaterialsSpecifications_Discipline" ThisKey="ID" OtherKey="ID_MaterialsSpecifications" Type="Materials_MaterialsSpecifications_Discipline" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Materials" Member="Materials_Materials" ThisKey="ID" OtherKey="ID_MaterialsSpecifications" Type="Materials_Materials" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications" Member="Materials_MaterialsSpecifications1" ThisKey="Id_Parent" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MaterialsSpecifications_Norm" Member="Materials_MaterialsSpecifications_Norm">
+    <Type Name="Materials_MaterialsSpecifications_Norm">
+      <Column Name="ID_MaterialsSpecification" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_Norm" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications_Norm" Member="Materials_MaterialsSpecifications" ThisKey="ID_MaterialsSpecification" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+      <Association Name="Materials_Norm_Materials_MaterialsSpecifications_Norm" Member="Materials_Norm" ThisKey="ID_Norm" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MaterialsSpecificationsML" Member="Materials_MaterialsSpecificationsML">
+    <Type Name="Materials_MaterialsSpecificationsML">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Lang" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecificationsML" Member="Materials_MaterialsSpecifications" ThisKey="ID" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MeasureSystem" Member="Materials_MeasureSystem">
+    <Type Name="Materials_MeasureSystem">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="Materials_MeasureSystem_Materials_MeasureSystemML" Member="Materials_MeasureSystemML" ThisKey="ID" OtherKey="MeasureSystemID" Type="Materials_MeasureSystemML" />
+      <Association Name="Materials_MeasureSystem_Materials_MeasureUnit" Member="Materials_MeasureUnit" ThisKey="ID" OtherKey="ID_SystemMeasure" Type="Materials_MeasureUnit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MeasureSystemML" Member="Materials_MeasureSystemML">
+    <Type Name="Materials_MeasureSystemML">
+      <Column Name="MeasureSystemID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_MeasureSystem_Materials_MeasureSystemML" Member="Materials_MeasureSystem" ThisKey="MeasureSystemID" OtherKey="ID" Type="Materials_MeasureSystem" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_UnitFamiliesML" Member="Materials_UnitFamiliesML">
+    <Type Name="Materials_UnitFamiliesML">
+      <Column Name="UnitFamiliesID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_UnitFamilies_Materials_UnitFamiliesML" Member="Materials_UnitFamilies" ThisKey="UnitFamiliesID" OtherKey="ID" Type="Materials_UnitFamilies" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MeasureUnit" Member="Materials_MeasureUnit">
+    <Type Name="Materials_MeasureUnit">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_SystemMeasure" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_FamilyUnites" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Abreviation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MeasureUnit_Materials_Materials_Properties" Member="Materials_Materials_Properties" ThisKey="ID" OtherKey="ID_UniteMeasure" Type="Materials_Materials_Properties" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitFormula" Member="Materials_MeasureUnitFormula" ThisKey="ID" OtherKey="ID_UniteMeasure" Type="Materials_MeasureUnitFormula" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitFormula1" Member="Materials_MeasureUnitFormula1" ThisKey="ID" OtherKey="ID_UniteMeasure_To" Type="Materials_MeasureUnitFormula" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitML" Member="Materials_MeasureUnitML" ThisKey="ID" OtherKey="MeasureUnitID" Type="Materials_MeasureUnitML" />
+      <Association Name="Materials_MeasureUnit_Materials_Norm_Cases_Properties" Member="Materials_Norm_Cases_Properties" ThisKey="ID" OtherKey="ID_UniteMeasure" Type="Materials_Norm_Cases_Properties" />
+      <Association Name="Materials_MeasureUnit_Materials_Properties_MeasureUnit" Member="Materials_Properties_MeasureUnit" ThisKey="ID" OtherKey="ID_UniteMeasure" Type="Materials_Properties_MeasureUnit" />
+      <Association Name="Materials_MeasureUnit_Materials_MatrixRequirement" Member="Materials_MatrixRequirement" ThisKey="ID" OtherKey="ID_UniteMeasure" Type="Materials_MatrixRequirement" />
+      <Association Name="Materials_MeasureSystem_Materials_MeasureUnit" Member="Materials_MeasureSystem" ThisKey="ID_SystemMeasure" OtherKey="ID" Type="Materials_MeasureSystem" IsForeignKey="true" />
+      <Association Name="Materials_UnitFamilies_Materials_MeasureUnit" Member="Materials_UnitFamilies" ThisKey="ID_FamilyUnites" OtherKey="ID" Type="Materials_UnitFamilies" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MeasureUnitFormula" Member="Materials_MeasureUnitFormula">
+    <Type Name="Materials_MeasureUnitFormula">
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_UniteMeasure_To" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Formula" Type="System.String" DbType="VarChar(256)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitFormula" Member="Materials_MeasureUnit" ThisKey="ID_UniteMeasure" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitFormula1" Member="Materials_MeasureUnit1" ThisKey="ID_UniteMeasure_To" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MeasureUnitML" Member="Materials_MeasureUnitML">
+    <Type Name="Materials_MeasureUnitML">
+      <Column Name="MeasureUnitID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MeasureUnit_Materials_MeasureUnitML" Member="Materials_MeasureUnit" ThisKey="MeasureUnitID" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm" Member="Materials_Norm">
+    <Type Name="Materials_Norm">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ParentID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DescriptionHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Norm_Materials_Materials_Norm" Member="Materials_Materials_Norm" ThisKey="ID" OtherKey="ID_Norm" Type="Materials_Materials_Norm" />
+      <Association Name="Materials_Norm_Materials_MaterialsSpecifications_Norm" Member="Materials_MaterialsSpecifications_Norm" ThisKey="ID" OtherKey="ID_Norm" Type="Materials_MaterialsSpecifications_Norm" />
+      <Association Name="Materials_Norm_Materials_Norm" Member="Materials_Norm2" ThisKey="ID" OtherKey="ParentID" Type="Materials_Norm" />
+      <Association Name="Materials_Norm_Materials_Norm_Attachement_KB" Member="Materials_Norm_Attachement_KB" ThisKey="ID" OtherKey="NormID" Type="Materials_Norm_Attachement_KB" />
+      <Association Name="Materials_Norm_Materials_Norm_Cases" Member="Materials_Norm_Cases" ThisKey="ID" OtherKey="IDNorm" Type="Materials_Norm_Cases" />
+      <Association Name="Materials_Norm_Materials_Norm_Properties" Member="Materials_Norm_Properties" ThisKey="ID" OtherKey="ID_Norm" Type="Materials_Norm_Properties" />
+      <Association Name="Materials_Norm_Materials_NormML" Member="Materials_NormML" ThisKey="ID" OtherKey="NormID" Type="Materials_NormML" />
+      <Association Name="Materials_Norm_Materials_Norm_Cases1" Member="Materials_Norm_Cases1" ThisKey="ID" OtherKey="IDNorm" Type="Materials_Norm_Cases1" />
+      <Association Name="Materials_Norm_Materials_Norm" Member="Materials_Norm1" ThisKey="ParentID" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm_Attachement_KB" Member="Materials_Norm_Attachement_KB">
+    <Type Name="Materials_Norm_Attachement_KB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NormID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Link" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_Norm_Materials_Norm_Attachement_KB" Member="Materials_Norm" ThisKey="NormID" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm_Cases" Member="Materials_Norm_Cases">
+    <Type Name="Materials_Norm_Cases">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNorm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_Norm_Cases_Materials_Norm_Cases_Properties" Member="Materials_Norm_Cases_Properties" ThisKey="ID" OtherKey="IDNC" Type="Materials_Norm_Cases_Properties" />
+      <Association Name="Materials_Norm_Materials_Norm_Cases" Member="Materials_Norm" ThisKey="IDNorm" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm_Cases_Properties" Member="Materials_Norm_Cases_Properties">
+    <Type Name="Materials_Norm_Cases_Properties">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDNC" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValMax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ValMin" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RequirementType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValueSet" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IsOptional" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Materials_Norm_Cases_Properties_Materials_MatrixRequirement" Member="Materials_MatrixRequirement" ThisKey="ID" OtherKey="IDNCP" Type="Materials_MatrixRequirement" />
+      <Association Name="Materials_MeasureUnit_Materials_Norm_Cases_Properties" Member="Materials_MeasureUnit" ThisKey="ID_UniteMeasure" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+      <Association Name="Materials_Norm_Cases_Materials_Norm_Cases_Properties" Member="Materials_Norm_Cases" ThisKey="IDNC" OtherKey="ID" Type="Materials_Norm_Cases" IsForeignKey="true" />
+      <Association Name="Materials_Properties_Materials_Norm_Cases_Properties" Member="Materials_Properties" ThisKey="ID_Properties" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm_Properties" Member="Materials_Norm_Properties">
+    <Type Name="Materials_Norm_Properties">
+      <Column Name="ID_Norm" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ValMin" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ValMax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Materials_Norm_Materials_Norm_Properties" Member="Materials_Norm" ThisKey="ID_Norm" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+      <Association Name="Materials_Properties_Materials_Norm_Properties" Member="Materials_Properties" ThisKey="ID_Properties" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_NormML" Member="Materials_NormML">
+    <Type Name="Materials_NormML">
+      <Column Name="NormID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DescriptionHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Norm_Materials_NormML" Member="Materials_Norm" ThisKey="NormID" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Properties" Member="Materials_Properties">
+    <Type Name="Materials_Properties">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Format" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Association Name="Materials_Properties_Materials_Materials_Properties" Member="Materials_Materials_Properties" ThisKey="ID" OtherKey="ID_Properties" Type="Materials_Materials_Properties" />
+      <Association Name="Materials_Properties_Materials_Norm_Cases_Properties" Member="Materials_Norm_Cases_Properties" ThisKey="ID" OtherKey="ID_Properties" Type="Materials_Norm_Cases_Properties" />
+      <Association Name="Materials_Properties_Materials_Norm_Properties" Member="Materials_Norm_Properties" ThisKey="ID" OtherKey="ID_Properties" Type="Materials_Norm_Properties" />
+      <Association Name="Materials_Properties_Materials_Properties_MeasureUnit" Member="Materials_Properties_MeasureUnit" ThisKey="ID" OtherKey="ID_Properties" Type="Materials_Properties_MeasureUnit" />
+      <Association Name="Materials_Properties_Materials_PropertiesML" Member="Materials_PropertiesML" ThisKey="ID" OtherKey="PropertiesID" Type="Materials_PropertiesML" />
+      <Association Name="Materials_Properties_Materials_Specification_Properties" Member="Materials_Specification_Properties" ThisKey="ID" OtherKey="Id_Properties" Type="Materials_Specification_Properties" />
+      <Association Name="Materials_Properties_Materials_MatrixRequirement" Member="Materials_MatrixRequirement" ThisKey="ID" OtherKey="IDProperty" Type="Materials_MatrixRequirement" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties" Member="Materials_Properties_Groups" ThisKey="GroupId" OtherKey="ID" Type="Materials_Properties_Groups" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Properties_Groups" Member="Materials_Properties_Groups">
+    <Type Name="Materials_Properties_Groups">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties" Member="Materials_Properties" ThisKey="ID" OtherKey="GroupId" Type="Materials_Properties" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties_Groups" Member="Materials_Properties_Groups2" ThisKey="ID" OtherKey="ParentId" Type="Materials_Properties_Groups" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties_GroupsML" Member="Materials_Properties_GroupsML" ThisKey="ID" OtherKey="ID" Type="Materials_Properties_GroupsML" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties_Groups" Member="Materials_Properties_Groups1" ThisKey="ParentId" OtherKey="ID" Type="Materials_Properties_Groups" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Properties_GroupsML" Member="Materials_Properties_GroupsML">
+    <Type Name="Materials_Properties_GroupsML">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Properties_Groups_Materials_Properties_GroupsML" Member="Materials_Properties_Groups" ThisKey="ID" OtherKey="ID" Type="Materials_Properties_Groups" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Properties_MeasureUnit" Member="Materials_Properties_MeasureUnit">
+    <Type Name="Materials_Properties_MeasureUnit">
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Properties_Materials_Properties_MeasureUnit" Member="Materials_Properties" ThisKey="ID_Properties" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+      <Association Name="Materials_MeasureUnit_Materials_Properties_MeasureUnit" Member="Materials_MeasureUnit" ThisKey="ID_UniteMeasure" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_PropertiesML" Member="Materials_PropertiesML">
+    <Type Name="Materials_PropertiesML">
+      <Column Name="PropertiesID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Properties_Materials_PropertiesML" Member="Materials_Properties" ThisKey="PropertiesID" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Settings" Member="Materials_Settings">
+    <Type Name="Materials_Settings">
+      <Column Name="SettingName" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SettingValue" Type="System.String" DbType="NVarChar(2000)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_SoftwareMaterials" Member="Materials_SoftwareMaterials">
+    <Type Name="Materials_SoftwareMaterials">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SoftwareCode" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_TechnicalSoftwares" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Materials" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsDeleted" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_Materials_Materials_SoftwareMaterials" Member="Materials_Materials" ThisKey="ID_Materials" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_SoftwareSpecification" Member="Materials_SoftwareSpecification">
+    <Type Name="Materials_SoftwareSpecification">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_TechnicalSoftwares" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_SoftwareSpecification_Materials_Specification_SoftwareSpecifcation" Member="Materials_Specification_SoftwareSpecifcation" ThisKey="ID" OtherKey="ID_SoftwaresSpecifications" Type="Materials_Specification_SoftwareSpecifcation" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Specification_Properties" Member="Materials_Specification_Properties">
+    <Type Name="Materials_Specification_Properties">
+      <Column Name="Id_Specification" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Id_Properties" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specification_Properties" Member="Materials_MaterialsSpecifications" ThisKey="Id_Specification" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+      <Association Name="Materials_Properties_Materials_Specification_Properties" Member="Materials_Properties" ThisKey="Id_Properties" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Specification_SoftwareSpecifcation" Member="Materials_Specification_SoftwareSpecifcation">
+    <Type Name="Materials_Specification_SoftwareSpecifcation">
+      <Column Name="ID_MaterialsSpecifications" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_SoftwaresSpecifications" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specification_SoftwareSpecifcation" Member="Materials_MaterialsSpecifications" ThisKey="ID_MaterialsSpecifications" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+      <Association Name="Materials_SoftwareSpecification_Materials_Specification_SoftwareSpecifcation" Member="Materials_SoftwareSpecification" ThisKey="ID_SoftwaresSpecifications" OtherKey="ID" Type="Materials_SoftwareSpecification" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Specifications_StorageConditions" Member="Materials_Specifications_StorageConditions">
+    <Type Name="Materials_Specifications_StorageConditions">
+      <Column Name="ID_MaterialsSpecification" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_StorageCondition" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Specifications_StorageConditions" Member="Materials_MaterialsSpecifications" ThisKey="ID_MaterialsSpecification" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+      <Association Name="Materials_StorageConditions_Materials_Specifications_StorageConditions" Member="Materials_StorageConditions" ThisKey="ID_StorageCondition" OtherKey="ID" Type="Materials_StorageConditions" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_StorageConditions" Member="Materials_StorageConditions">
+    <Type Name="Materials_StorageConditions">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_StorageConditions_Materials_Specifications_StorageConditions" Member="Materials_Specifications_StorageConditions" ThisKey="ID" OtherKey="ID_StorageCondition" Type="Materials_Specifications_StorageConditions" />
+      <Association Name="Materials_StorageConditions_Materials_StorageConditions" Member="Materials_StorageConditions2" ThisKey="ID" OtherKey="Id_Parent" Type="Materials_StorageConditions" />
+      <Association Name="Materials_StorageConditions_Materials_StorageConditionsML" Member="Materials_StorageConditionsML" ThisKey="ID" OtherKey="ID" Type="Materials_StorageConditionsML" />
+      <Association Name="Materials_StorageConditions_Materials_StorageConditions" Member="Materials_StorageConditions1" ThisKey="Id_Parent" OtherKey="ID" Type="Materials_StorageConditions" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_StorageConditionsML" Member="Materials_StorageConditionsML">
+    <Type Name="Materials_StorageConditionsML">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_StorageConditions_Materials_StorageConditionsML" Member="Materials_StorageConditions" ThisKey="ID" OtherKey="ID" Type="Materials_StorageConditions" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Supplier_MaterialsSpecifications" Member="Materials_Supplier_MaterialsSpecifications">
+    <Type Name="Materials_Supplier_MaterialsSpecifications">
+      <Column Name="IDContact" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="IDMatSpec" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Supplier_MaterialsSpecifications" Member="Materials_MaterialsSpecifications" ThisKey="IDMatSpec" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_UnitFamilies" Member="Materials_UnitFamilies">
+    <Type Name="Materials_UnitFamilies">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_UnitFamilies_Materials_UnitFamiliesML" Member="Materials_UnitFamiliesML" ThisKey="ID" OtherKey="UnitFamiliesID" Type="Materials_UnitFamiliesML" />
+      <Association Name="Materials_UnitFamilies_Materials_MeasureUnit" Member="Materials_MeasureUnit" ThisKey="ID" OtherKey="ID_FamilyUnites" Type="Materials_MeasureUnit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Attachments" Member="Materials_Attachments">
+    <Type Name="Materials_Attachments">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Link" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Materials" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_Materials_Materials_Attachments" Member="Materials_Materials" ThisKey="ID_Materials" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_KB" Member="Materials_KB">
+    <Type Name="Materials_KB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Article" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Materials" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_KB_Materials_KB_ML" Member="Materials_KB_ML" ThisKey="ID" OtherKey="ID" Type="Materials_KB_ML" />
+      <Association Name="Materials_Materials_Materials_KB" Member="Materials_Materials" ThisKey="ID_Materials" OtherKey="ID" Type="Materials_Materials" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_KB_ML" Member="Materials_KB_ML">
+    <Type Name="Materials_KB_ML">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Article" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_KB_Materials_KB_ML" Member="Materials_KB" ThisKey="ID" OtherKey="ID" Type="Materials_KB" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_SeachViewFullText" Member="Materials_SeachViewFullText">
+    <Type Name="Materials_SeachViewFullText">
+      <Column Name="SearchText" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Valeur" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MaterialsSpecifications_Discipline" Member="Materials_MaterialsSpecifications_Discipline">
+    <Type Name="Materials_MaterialsSpecifications_Discipline">
+      <Column Name="ID_Discipline" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_MaterialsSpecifications" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_MaterialsSpecifications_Discipline" Member="Materials_MaterialsSpecifications" ThisKey="ID_MaterialsSpecifications" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Cases" Member="Materials_Cases">
+    <Type Name="Materials_Cases">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="LibCase" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DescriptionCase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DescriptionHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Cases_Materials_CasesML" Member="Materials_CasesML" ThisKey="ID" OtherKey="IDCase" Type="Materials_CasesML" />
+      <Association Name="Materials_Cases_Materials_Norm_Cases1" Member="Materials_Norm_Cases1" ThisKey="ID" OtherKey="IDCase" Type="Materials_Norm_Cases1" />
+      <Association Name="Materials_Cases_Materials_Case_Attachement_KB" Member="Materials_Case_Attachement_KB" ThisKey="ID" OtherKey="IDCase" Type="Materials_Case_Attachement_KB" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_CasesML" Member="Materials_CasesML">
+    <Type Name="Materials_CasesML">
+      <Column Name="IDCase" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="LibCase" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="DescriptionCase" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="DescriptionHTML" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Cases_Materials_CasesML" Member="Materials_Cases" ThisKey="IDCase" OtherKey="ID" Type="Materials_Cases" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Norm_Cases" Member="Materials_Norm_Cases1">
+    <Type Name="Materials_Norm_Cases1">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDCase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDNorm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_Cases_Materials_Norm_Cases1" Member="Materials_Cases" ThisKey="IDCase" OtherKey="ID" Type="Materials_Cases" IsForeignKey="true" />
+      <Association Name="Materials_Norm_Materials_Norm_Cases1" Member="Materials_Norm" ThisKey="IDNorm" OtherKey="ID" Type="Materials_Norm" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Case_Attachement_KB" Member="Materials_Case_Attachement_KB">
+    <Type Name="Materials_Case_Attachement_KB">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Link" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="IDCase" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_Cases_Materials_Case_Attachement_KB" Member="Materials_Cases" ThisKey="IDCase" OtherKey="ID" Type="Materials_Cases" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_MatrixRequirement" Member="Materials_MatrixRequirement">
+    <Type Name="Materials_MatrixRequirement">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IDNCP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IDProperty" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValMin" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ValMax" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Materials_MeasureUnit_Materials_MatrixRequirement" Member="Materials_MeasureUnit" ThisKey="ID_UniteMeasure" OtherKey="ID" Type="Materials_MeasureUnit" IsForeignKey="true" />
+      <Association Name="Materials_Norm_Cases_Properties_Materials_MatrixRequirement" Member="Materials_Norm_Cases_Properties" ThisKey="IDNCP" OtherKey="ID" Type="Materials_Norm_Cases_Properties" IsForeignKey="true" />
+      <Association Name="Materials_Properties_Materials_MatrixRequirement" Member="Materials_Properties" ThisKey="IDProperty" OtherKey="ID" Type="Materials_Properties" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_Materials" Member="Materials_Materials">
+    <Type Name="Materials_Materials">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_MaterialsSpecifications" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="TypeCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_Brand" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AlerteStock" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="StockOptimal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Codedouane" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="EtatVente" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="EtatAchat" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="ID_PaysOrigne" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="Materials_Materials_Materials_Materials_Norm" Member="Materials_Materials_Norm" ThisKey="ID" OtherKey="ID_Materials" Type="Materials_Materials_Norm" />
+      <Association Name="Materials_Materials_Materials_Materials_Properties" Member="Materials_Materials_Properties" ThisKey="ID" OtherKey="ID_Articles" Type="Materials_Materials_Properties" />
+      <Association Name="Materials_Materials_Materials_MaterialsML" Member="Materials_MaterialsML" ThisKey="ID" OtherKey="MaterialsID" Type="Materials_MaterialsML" />
+      <Association Name="Materials_Materials_Materials_SoftwareMaterials" Member="Materials_SoftwareMaterials" ThisKey="ID" OtherKey="ID_Materials" Type="Materials_SoftwareMaterials" />
+      <Association Name="Materials_Materials_Materials_Attachments" Member="Materials_Attachments" ThisKey="ID" OtherKey="ID_Materials" Type="Materials_Attachments" />
+      <Association Name="Materials_Materials_Materials_KB" Member="Materials_KB" ThisKey="ID" OtherKey="ID_Materials" Type="Materials_KB" />
+      <Association Name="Materials_MaterialsSpecifications_Materials_Materials" Member="Materials_MaterialsSpecifications" ThisKey="ID_MaterialsSpecifications" OtherKey="ID" Type="Materials_MaterialsSpecifications" IsForeignKey="true" />
+      <Association Name="Materials_Brands_Materials_Materials" Member="Materials_Brands" ThisKey="ID_Brand" OtherKey="ID" Type="Materials_Brands" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_TechnicalSoftwares" Member="Materials_TechnicalSoftwares">
+    <Type Name="Materials_TechnicalSoftwares">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Version" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Editor" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_TechnicalSoftwares_Materials_TechnicalSoftwares_ML" Member="Materials_TechnicalSoftwares_ML" ThisKey="ID" OtherKey="ID_TechnicalSoftwares" Type="Materials_TechnicalSoftwares_ML" />
+      <Association Name="Materials_TechnicalSoftwares_Materials_TechnicalSoftware_Discipline_Responsable" Member="Materials_TechnicalSoftware_Discipline_Responsable" ThisKey="ID" OtherKey="ID_TechnicalSoftwares" Type="Materials_TechnicalSoftware_Discipline_Responsable" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_TechnicalSoftwares_ML" Member="Materials_TechnicalSoftwares_ML">
+    <Type Name="Materials_TechnicalSoftwares_ML">
+      <Column Name="ID_TechnicalSoftwares" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Locale" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="Editor" Type="System.String" DbType="NVarChar(500) NOT NULL" CanBeNull="false" />
+      <Association Name="Materials_TechnicalSoftwares_Materials_TechnicalSoftwares_ML" Member="Materials_TechnicalSoftwares" ThisKey="ID_TechnicalSoftwares" OtherKey="ID" Type="Materials_TechnicalSoftwares" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Materials_TechnicalSoftware_Discipline_Responsable" Member="Materials_TechnicalSoftware_Discipline_Responsable">
+    <Type Name="Materials_TechnicalSoftware_Discipline_Responsable">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ID_TechnicalSoftwares" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Discipline" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ID_User" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Role" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="Materials_TechnicalSoftwares_Materials_TechnicalSoftware_Discipline_Responsable" Member="Materials_TechnicalSoftwares" ThisKey="ID_TechnicalSoftwares" OtherKey="ID" Type="Materials_TechnicalSoftwares" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.Materials_GetSuppliersByMaterialID" Method="Materials_GetSuppliersByMaterialID">
+    <Parameter Name="Id" Parameter="id" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Materials_GetSuppliersByMaterialIDResult">
+      <Column Name="IDContact" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_GetMaterialProperties" Method="Materials_GetMaterialProperties">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Locale" Parameter="locale" Type="System.String" DbType="NVarChar(6)" />
+    <ElementType Name="Materials_GetMaterialPropertiesResult">
+      <Column Name="UnitDesignation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="UnitAbreviation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PropertyDesignation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Format" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GroupDesignation" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_Articles" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Valeur" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_UniteMeasure" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_Properties" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_MaterialsSpecification_Select" Method="Materials_MaterialsSpecification_Select">
+    <Parameter Name="lang" Type="System.String" DbType="NVarChar(6)" />
+    <ElementType Name="Materials_MaterialsSpecification_SelectResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_DeleteMaterialsNormByMaterials" Method="Materials_DeleteMaterialsNormByMaterials">
+    <Parameter Name="IdMaterials" Parameter="idMaterials" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Materials_Getallmaterialshavingsamepropertyandvalue" Method="Materials_Getallmaterialshavingsamepropertyandvalue">
+    <Parameter Name="ID_Properties" Parameter="iD_Properties" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Valeur" Parameter="valeur" Type="System.String" DbType="NVarChar(MAX)" />
+    <Parameter Name="ID_Articles" Parameter="iD_Articles" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ID_Brand" Parameter="iD_Brand" Type="System.Int32" DbType="Int" />
+    <Parameter Name="CountProp" Parameter="countProp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Materials_GetallmaterialshavingsamepropertyandvalueResult">
+      <Column Name="ID_Articles" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_SelectMaterialsSpecificationByID" Method="Materials_SelectMaterialsSpecificationByID">
+    <Parameter Name="IdSpec" Parameter="idSpec" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Materials_SelectMaterialsSpecificationByIDResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_Parent" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DesignationML" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CreatedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CreatedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Lang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_DeletePropertiesGroup" Method="Materials_DeletePropertiesGroup">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Materials_DeletePropertiesMeasureUnit" Method="Materials_DeletePropertiesMeasureUnit">
+    <Parameter Name="ID_Properties" Parameter="iD_Properties" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Materials_DeleteProperties" Method="Materials_DeleteProperties">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.Materials_GetPropertiesByGroup" Method="Materials_GetPropertiesByGroup">
+    <Parameter Name="Locale" Parameter="locale" Type="System.String" DbType="NVarChar(6)" />
+    <Parameter Name="GroupId" Parameter="groupId" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Materials_GetPropertiesByGroupResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Format" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="LastModifiedByUserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LastModifiedOnDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GroupId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Designation" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="GroupDesignation" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.Materials_GetNameNorm" Method="Materials_GetNameNorm" IsComposable="true">
+    <Parameter Name="IdNorm" Parameter="idNorm" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Locale" Parameter="locale" Type="System.String" DbType="VarChar(10)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.Materials_GetAllAssignedConditionToSpec" Method="Materials_GetAllAssignedConditionToSpec">
+    <Parameter Name="Locale" Parameter="locale" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="IdSpec" Parameter="idSpec" Type="System.Int32" DbType="Int" />
+    <ElementType Name="Materials_GetAllAssignedConditionToSpecResult">
+      <Column Name="MaterialsSpecification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID_MaterialsSpecification" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_StorageCondition" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="StorageCondition" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

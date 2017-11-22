@@ -1,0 +1,4 @@
+C:\Projects\DataLayer\bin\Release\DataLayer.dll
+C:\Projects\DataLayer\bin\Release\DataLayer.pdb
+C:\Projects\DataLayer\obj\Release\DataLayer.dll
+C:\Projects\DataLayer\obj\Release\DataLayer.pdb
